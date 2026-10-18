@@ -2355,6 +2355,27 @@ if ($ExportPreview -or $GuiAutoInstall -or $GuiAutoRestore) {
             Start-GuiRestoreAction
         }
     })
+} else {
+    try {
+        $initTsvTime = if (Test-Path -LiteralPath $TsvPath) { (Get-Item -LiteralPath $TsvPath).LastWriteTimeUtc } else { [DateTime]::MinValue }
+        Start-Process -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$PSCommandPath`" -UpdateTsv" -WindowStyle Hidden
+
+        $bgTimer = New-Object System.Windows.Threading.DispatcherTimer
+        $bgTimer.Interval = [TimeSpan]::FromSeconds(3)
+        $bgTimer.Add_Tick({
+            $bgTimer.Stop()
+            if (Test-Path -LiteralPath $TsvPath) {
+                $currTime = (Get-Item -LiteralPath $TsvPath).LastWriteTimeUtc
+                if ($currTime -gt $initTsvTime) {
+                    $script:CurrentMeta = Get-TsvMetadata $TsvPath
+                    $script:GlossaryLoaded = $false
+                    Update-UiDashboard
+                    Set-ProgressBarState 100 "Nuova versione v$($script:CurrentMeta.versione) scaricata automaticamente da GitHub! Clicca su Aggiorna." $true
+                }
+            }
+        })
+        $bgTimer.Start()
+    } catch {}
 }
 
 [void]$win.ShowDialog()
