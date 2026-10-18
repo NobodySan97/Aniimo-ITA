@@ -1,0 +1,33 @@
+﻿======================================================================
+  ANIIMO - TRADUZIONE ITALIANA (v1.0 - Build 3746914)
+  Installer Leggero Universale (Compatibile con qualsiasi Build)
+======================================================================
+
+COME INSTALLARE O AGGIORNARE LA TRADUZIONE:
+1. Assicurati che Aniimo sia chiuso.
+2. Fai doppio clic su "Installa Traduzione ITA.bat".
+3. Il programma trova automaticamente la cartella di Aniimo (Steam,
+   Xbox o Pawprint) e verifica lo stato della traduzione e della Build.
+4. Premi [1] (o Invio) per installare o aggiornare la traduzione.
+5. Avvia il gioco: partirà direttamente in ITALIANO (non serve
+   cambiare lingua nelle impostazioni).
+
+DOPO UN AGGIORNAMENTO DI STEAM:
+- Quando Aniimo si aggiorna su Steam, riapri semplicemente
+  "Installa Traduzione ITA.bat" e premi Invio.
+- Questo installer NON sostituisce gli script Lua o il database
+  (pmdata.bin) del gioco con versioni vecchie: legge i file della
+  nuova patch appena scaricata sul tuo PC e vi inietta solo i testi
+  in italiano, mantenendo eventuali nuove frasi in inglese finché
+  non verranno tradotte.
+
+AGGIORNAMENTO DIZIONARIO DA GITHUB (OPZIONALE):
+- Dal menu dell'installer puoi anche premere [3] per controllare e
+  scaricare direttamente da GitHub l'ultima versione del file
+  "traduzione_ita.tsv" senza dover riscaricare tutto il pacchetto.
+
+COME RIMUOVERE LA TRADUZIONE (TORNARE ALL'INGLESE):
+- Apri "Installa Traduzione ITA.bat", scegli l'opzione [2] e premi
+  Invio: i file originali in inglese verranno ripristinati in 2
+  secondi senza bisogno di riscaricare nulla da Steam.
+======================================================================
