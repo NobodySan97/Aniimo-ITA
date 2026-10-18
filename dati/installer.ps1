@@ -257,8 +257,8 @@ $TsvPath    = Join-Path $ScriptDir 'traduzione_ita.tsv'
 $ArtPath    = Join-Path $ScriptDir 'sfondo.jpg'
 $ConfigPath = Join-Path $env:APPDATA 'Aniimo_ITA_Installer\config.json'
 
-# URL opzionale per aggiornamento diretto del solo file traduzione_ita.tsv da GitHub
-$RemoteTsvUrl = ""
+# URL ufficiale per aggiornamento diretto del file traduzione_ita.tsv da GitHub
+$RemoteTsvUrl = "https://raw.githubusercontent.com/NobodySan97/Aniimo-ITA/main/dati/traduzione_ita.tsv"
 
 function Format-NumberDot([string]$Value) {
     if (-not $Value) { return '0' }
@@ -380,9 +380,13 @@ function Update-TranslationTsvFromGitHub([switch]$Silent) {
             $sr.Close()
         }
 
-        if ($lineCount -lt 100000) {
-            Remove-Item -LiteralPath $tmpTsv -Force -ErrorAction SilentlyContinue
-            return $false
+        if (Test-Path -LiteralPath $TsvPath) {
+            $localMd5 = Get-Md5File $TsvPath
+            $remoteMd5 = Get-Md5File $tmpTsv
+            if ($localMd5 -eq $remoteMd5) {
+                Remove-Item -LiteralPath $tmpTsv -Force -ErrorAction SilentlyContinue
+                return $false
+            }
         }
 
         Move-Item -LiteralPath $tmpTsv -Destination $TsvPath -Force
