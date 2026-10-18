@@ -2355,22 +2355,6 @@ if ($ExportPreview -or $GuiAutoInstall -or $GuiAutoRestore) {
             Start-GuiRestoreAction
         }
     })
-} else {
-    $win.Add_ContentRendered({
-        # Controllo asincrono all'avvio in background (non blocca l'interfaccia)
-        [System.Threading.ThreadPool]::QueueUserWorkItem({
-            try {
-                if (Update-TranslationTsvFromGitHub -Silent) {
-                    $win.Dispatcher.Invoke([Action]{
-                        $script:CurrentMeta = Get-TsvMetadata $TsvPath
-                        $script:GlossaryLoaded = $false
-                        Update-UiDashboard
-                        Set-ProgressBarState 100 "Nuova versione v$($script:CurrentMeta.versione) scaricata da GitHub! Clicca su Aggiorna." $true
-                    })
-                }
-            } catch {}
-        })
-    })
 }
 
 [void]$win.ShowDialog()
