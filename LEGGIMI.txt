@@ -1,33 +1,39 @@
-﻿======================================================================
-  ANIIMO - TRADUZIONE ITALIANA (v1.0 - Build 3746914)
-  Installer Leggero Universale (Compatibile con qualsiasi Build)
+======================================================================
+  ANIIMO - TRADUZIONE ITALIANA INTEGRALE (v1.0 - Build 3746914)
+  Launcher & Patcher Leggero Universale (Steam · Xbox App · Pawprint)
 ======================================================================
 
 COME INSTALLARE O AGGIORNARE LA TRADUZIONE:
 1. Assicurati che Aniimo sia chiuso.
 2. Fai doppio clic su "Installa Traduzione ITA.bat".
-3. Il programma trova automaticamente la cartella di Aniimo (Steam,
-   Xbox o Pawprint) e verifica lo stato della traduzione e della Build.
-4. Premi [1] (o Invio) per installare o aggiornare la traduzione.
-5. Avvia il gioco: partirà direttamente in ITALIANO (non serve
-   cambiare lingua nelle impostazioni).
+3. Il launcher si avvierà rilevando automaticamente la cartella del
+   gioco e verificando lo stato della traduzione e della Build.
+4. Premi il pulsante "INSTALLA / AGGIORNA TRADUZIONE" in basso a destra
+   (l'operazione richiede circa 1,5 secondi).
+5. Premi "Avvia Aniimo" (oppure avvialo da Steam): il gioco partirà
+   subito in ITALIANO!
 
 DOPO UN AGGIORNAMENTO DI STEAM:
-- Quando Aniimo si aggiorna su Steam, riapri semplicemente
-  "Installa Traduzione ITA.bat" e premi Invio.
-- Questo installer NON sostituisce gli script Lua o il database
-  (pmdata.bin) del gioco con versioni vecchie: legge i file della
-  nuova patch appena scaricata sul tuo PC e vi inietta solo i testi
-  in italiano, mantenendo eventuali nuove frasi in inglese finché
-  non verranno tradotte.
+- Quando Steam rilascia una nuova patch per Aniimo, lascia terminare
+  l'aggiornamento e riapri "Installa Traduzione ITA.bat".
+- Premi nuovamente "REINSTALLA / AGGIORNA TRADUZIONE": l'installer
+  ricompilerà al volo i testi italiani sui nuovi file aggiornati del gioco.
+- Questo installer NON sovrascrive né include vecchi script Lua o file
+  binari (pmdata.bin), garantendo compatibilità totale con qualsiasi patch.
 
-AGGIORNAMENTO DIZIONARIO DA GITHUB (OPZIONALE):
-- Dal menu dell'installer puoi anche premere [3] per controllare e
-  scaricare direttamente da GitHub l'ultima versione del file
-  "traduzione_ita.tsv" senza dover riscaricare tutto il pacchetto.
+DIZIONARIO BILINGUE INTERATTIVO (IT <-> EN):
+- Nella scheda "Dizionario IT <-> EN" del launcher puoi cercare in tempo
+  reale oltre 18.000 termini ufficiali (oggetti, abilità, luoghi e
+  creature) sia in italiano che in inglese, comodissimo per consultare
+  wiki e guide internazionali.
 
-COME RIMUOVERE LA TRADUZIONE (TORNARE ALL'INGLESE):
-- Apri "Installa Traduzione ITA.bat", scegli l'opzione [2] e premi
-  Invio: i file originali in inglese verranno ripristinati in 2
-  secondi senza bisogno di riscaricare nulla da Steam.
+AGGIORNAMENTO DATABASE DA GITHUB:
+- Nella barra superiore del launcher, puoi cliccare in qualsiasi momento
+  su "Aggiorna TSV" per scaricare gli ultimi miglioramenti del file
+  traduzione direttamente da GitHub, senza dover riscaricare lo ZIP.
+
+COME TORNARE ALL'INGLESE (RIPRISTINO):
+- Apri il launcher e premi il pulsante "Ripristina Inglese": i file
+  originali della tua build verranno ripristinati istantaneamente
+  senza dover verificare l'integrità dei file su Steam.
 ======================================================================
