@@ -4,5 +4,17 @@
   "data_rilascio": "2026-10-19",
   "voci": 112418,
   "tsv_md5": "a625c5a29b5db90480204d744cf4295e",
-  "changelog_breve": "Revisione terminologica globale: 968 correzioni specialistiche (Lore, Combattimento, Economia, UI)."
+  "changelog_breve": "Revisione terminologica globale: 968 correzioni specialistiche (Lore, Combattimento, Economia, UI).",
+  "changelog_dettagliato": {
+    "titolo": "Revisione Terminologica Specialistica Globale (968 Perfezionamenti)",
+    "descrizione": "Audit filologico e linguistico condotto confrontando i testi con inglese, spagnolo e francese ufficiali.",
+    "cat1_titolo": "🐾 Lore, Creature & Dimora (352 fix)",
+    "cat1_testo": "• Dimora: unificata la traduzione canonica di Homeland (eliminata la letterale 'Madrepatria').\n• Nomi Specie: ripristinati Whelpy, Stellalord, Shrout, Lucklet, Big Chillmut, Wolferno.\n• Accarezza: corretto il verbo 'Pet' (non più sostantivo 'Animale').\n• Varie: macchina unificata su 'Incubatrice', normalizzate forme 'Alfa' e Livello Camper.",
+    "cat2_titolo": "⚔️ Combattimento & Statistiche (230 fix)",
+    "cat2_testo": "• Difese: standardizzate tutte le sigle su DIF F. e DIF M. (eliminate forme miste inglesi).\n• Parametri: Punti Energia (PE), Tasso critico, attributi Potenza e Grinta.\n• Meccaniche: mossa 'Suprema', distinzione Vigore (schivata) vs Resistenza.\n• Status: corretto 'Bruciatura' (da verbo brucia) e abilità Spezzabruciatura.",
+    "cat3_titolo": "🗺️ Mondo, Luoghi & UI (252 fix)",
+    "cat3_testo": "• Regioni: Pianure Ventose (84 correzioni discordanti), Cresta delle Mille Zanne.\n• Prova del Dottore: risolto il clamoroso calco giudiziario 'Processo del Dottore'.\n• Falsi Amici UI: 'Squadra' al posto di festa (Party), pulsante 'Esci' dai dungeon.\n• Coerenza: I Pathfinder (grammatica) e boccioli mappa standardizzati.",
+    "cat4_titolo": "📦 Oggetti, Fabbricazione & Shop (148 fix)",
+    "cat4_testo": "• Valute: 'Crediti' (non più Riconoscimenti da cinema!) ed energia 'Primegia'.\n• Fabbricazione: verbo 'Cucina' (non più il sostantivo cuoco!) e Fabbricatore Aniipod.\n• Equipaggiamento: 'Strumenti Tenuti' (non più Trattenuti doganali).\n• Palestra & Minerali: Club Colpospirale, Stagno di legno e separazione parole fuse."
+  }
 }

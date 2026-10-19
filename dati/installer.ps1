@@ -324,6 +324,7 @@ function Get-TsvMetadata([string]$PathToTsv) {
             if ($vj.voci)                 { $meta.voci     = [string]$vj.voci }
             if ($vj.tsv_md5)              { $meta.tsv_md5  = [string]$vj.tsv_md5 }
             if ($vj.changelog_breve)      { $meta.changelog = [string]$vj.changelog_breve }
+            if ($vj.changelog_dettagliato) { $meta | Add-Member -MemberType NoteProperty -Name 'changelog_dettagliato' -Value $vj.changelog_dettagliato -Force }
         } catch {}
     }
     if (Test-Path -LiteralPath $PathToTsv) {
@@ -1919,16 +1920,16 @@ function Show-PolarisDialog {
                     <StackPanel Grid.Column="0">
                       <StackPanel Orientation="Horizontal">
                         <Border CornerRadius="6" Background="#1D2A44" BorderBrush="#38BDF8" BorderThickness="1" Padding="8,2" Margin="0,0,8,0">
-                          <TextBlock Text="VERSIONE 1.0.1" Foreground="#38BDF8" FontSize="10" FontWeight="Bold"/>
+                          <TextBlock x:Name="ChangelogVersionBadge" Text="VERSIONE 1.0.1" Foreground="#38BDF8" FontSize="10" FontWeight="Bold"/>
                         </Border>
                         <Border CornerRadius="6" Background="#132E27" BorderBrush="#10B981" BorderThickness="1" Padding="8,2">
-                          <TextBlock Text="BUILD 3746914 ALLINEATA" Foreground="#34D399" FontSize="10" FontWeight="Bold"/>
+                          <TextBlock x:Name="ChangelogBuildBadge" Text="BUILD 3746914 ALLINEATA" Foreground="#34D399" FontSize="10" FontWeight="Bold"/>
                         </Border>
                       </StackPanel>
-                      <TextBlock Text="Revisione Terminologica Specialistica Globale (968 Perfezionamenti)" Foreground="#F8FAFC" FontSize="14.5" FontWeight="Bold" Margin="0,6,0,2"/>
-                      <TextBlock Text="Audit filologico e linguistico condotto confrontando i testi con inglese, spagnolo e francese ufficiali." Foreground="#94A3B8" FontSize="11.5"/>
+                      <TextBlock x:Name="ChangelogTitle" Text="Revisione Terminologica Specialistica Globale (968 Perfezionamenti)" Foreground="#F8FAFC" FontSize="14.5" FontWeight="Bold" Margin="0,6,0,2"/>
+                      <TextBlock x:Name="ChangelogDesc" Text="Audit filologico e linguistico condotto confrontando i testi con inglese, spagnolo e francese ufficiali." Foreground="#94A3B8" FontSize="11.5"/>
                     </StackPanel>
-                    <TextBlock Grid.Column="1" Text="2026-10-19" Foreground="#64748B" FontSize="11.5" FontWeight="SemiBold" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="ChangelogReleaseDate" Grid.Column="1" Text="2026-10-19" Foreground="#64748B" FontSize="11.5" FontWeight="SemiBold" VerticalAlignment="Top"/>
                   </Grid>
 
                   <!-- 4 Categorie a Griglia 2x2 -->
@@ -1947,8 +1948,8 @@ function Show-PolarisDialog {
                     <!-- Lore & Dimora -->
                     <Border Grid.Row="0" Grid.Column="0" CornerRadius="10" Background="#0B101B" BorderBrush="#1E293B" BorderThickness="1" Padding="14,12">
                       <StackPanel>
-                        <TextBlock Text="🐾 Lore, Creature &amp; Dimora (352 fix)" Foreground="#38BDF8" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
-                        <TextBlock Foreground="#CBD5E1" FontSize="11.5" LineHeight="17" TextWrapping="Wrap"
+                        <TextBlock x:Name="Cat1Title" Text="🐾 Lore, Creature &amp; Dimora (352 fix)" Foreground="#38BDF8" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
+                        <TextBlock x:Name="Cat1Text" Foreground="#CBD5E1" FontSize="11.5" LineHeight="17" TextWrapping="Wrap"
                                    Text="• Dimora: unificata la traduzione canonica di Homeland (eliminata la letterale 'Madrepatria').&#x0a;• Nomi Specie: ripristinati Whelpy, Stellalord, Shrout, Lucklet, Big Chillmut, Wolferno.&#x0a;• Accarezza: corretto il verbo 'Pet' (non più sostantivo 'Animale').&#x0a;• Varie: macchina unificata su 'Incubatrice', normalizzate forme 'Alfa' e Livello Camper."/>
                       </StackPanel>
                     </Border>
@@ -1956,8 +1957,8 @@ function Show-PolarisDialog {
                     <!-- Combattimento -->
                     <Border Grid.Row="0" Grid.Column="2" CornerRadius="10" Background="#0B101B" BorderBrush="#1E293B" BorderThickness="1" Padding="14,12">
                       <StackPanel>
-                        <TextBlock Text="⚔️ Combattimento &amp; Statistiche (230 fix)" Foreground="#F43F5E" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
-                        <TextBlock Foreground="#CBD5E1" FontSize="11.5" LineHeight="17" TextWrapping="Wrap"
+                        <TextBlock x:Name="Cat2Title" Text="⚔️ Combattimento &amp; Statistiche (230 fix)" Foreground="#F43F5E" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
+                        <TextBlock x:Name="Cat2Text" Foreground="#CBD5E1" FontSize="11.5" LineHeight="17" TextWrapping="Wrap"
                                    Text="• Difese: standardizzate tutte le sigle su DIF F. e DIF M. (eliminate forme miste inglesi).&#x0a;• Parametri: Punti Energia (PE), Tasso critico, attributi Potenza e Grinta.&#x0a;• Meccaniche: mossa 'Suprema', distinzione Vigore (schivata) vs Resistenza.&#x0a;• Status: corretto 'Bruciatura' (da verbo brucia) e abilità Spezzabruciatura."/>
                       </StackPanel>
                     </Border>
@@ -1965,8 +1966,8 @@ function Show-PolarisDialog {
                     <!-- Mondo & Missioni -->
                     <Border Grid.Row="2" Grid.Column="0" CornerRadius="10" Background="#0B101B" BorderBrush="#1E293B" BorderThickness="1" Padding="14,12">
                       <StackPanel>
-                        <TextBlock Text="🗺️ Mondo, Luoghi &amp; UI (252 fix)" Foreground="#34D399" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
-                        <TextBlock Foreground="#CBD5E1" FontSize="11.5" LineHeight="17" TextWrapping="Wrap"
+                        <TextBlock x:Name="Cat3Title" Text="🗺️ Mondo, Luoghi &amp; UI (252 fix)" Foreground="#34D399" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
+                        <TextBlock x:Name="Cat3Text" Foreground="#CBD5E1" FontSize="11.5" LineHeight="17" TextWrapping="Wrap"
                                    Text="• Regioni: Pianure Ventose (84 correzioni discordanti), Cresta delle Mille Zanne.&#x0a;• Prova del Dottore: risolto il clamoroso calco giudiziario 'Processo del Dottore'.&#x0a;• Falsi Amici UI: 'Squadra' al posto di festa (Party), pulsante 'Esci' dai dungeon.&#x0a;• Coerenza: I Pathfinder (grammatica) e boccioli mappa standardizzati."/>
                       </StackPanel>
                     </Border>
@@ -1974,8 +1975,8 @@ function Show-PolarisDialog {
                     <!-- Oggetti ed Economia -->
                     <Border Grid.Row="2" Grid.Column="2" CornerRadius="10" Background="#0B101B" BorderBrush="#1E293B" BorderThickness="1" Padding="14,12">
                       <StackPanel>
-                        <TextBlock Text="📦 Oggetti, Fabbricazione &amp; Shop (148 fix)" Foreground="#F59E0B" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
-                        <TextBlock Foreground="#CBD5E1" FontSize="11.5" LineHeight="17" TextWrapping="Wrap"
+                        <TextBlock x:Name="Cat4Title" Text="📦 Oggetti, Fabbricazione &amp; Shop (148 fix)" Foreground="#F59E0B" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
+                        <TextBlock x:Name="Cat4Text" Foreground="#CBD5E1" FontSize="11.5" LineHeight="17" TextWrapping="Wrap"
                                    Text="• Valute: 'Crediti' (non più Riconoscimenti da cinema!) ed energia 'Primegia'.&#x0a;• Fabbricazione: verbo 'Cucina' (non più il sostantivo cuoco!) e Fabbricatore Aniipod.&#x0a;• Equipaggiamento: 'Strumenti Tenuti' (non più Trattenuti doganali).&#x0a;• Palestra &amp; Minerali: Club Colpospirale, Stagno di legno e separazione parole fuse."/>
                       </StackPanel>
                     </Border>
@@ -2115,6 +2116,20 @@ $CmbDictionaryCategory = $win.FindName('CmbDictionaryCategory')
 $LvDictionaryTerms     = $win.FindName('LvDictionaryTerms')
 $TxtDictionaryCount    = $win.FindName('TxtDictionaryCount')
 
+$ChangelogVersionBadge = $win.FindName('ChangelogVersionBadge')
+$ChangelogBuildBadge   = $win.FindName('ChangelogBuildBadge')
+$ChangelogReleaseDate  = $win.FindName('ChangelogReleaseDate')
+$ChangelogTitle        = $win.FindName('ChangelogTitle')
+$ChangelogDesc         = $win.FindName('ChangelogDesc')
+$Cat1Title             = $win.FindName('Cat1Title')
+$Cat1Text              = $win.FindName('Cat1Text')
+$Cat2Title             = $win.FindName('Cat2Title')
+$Cat2Text              = $win.FindName('Cat2Text')
+$Cat3Title             = $win.FindName('Cat3Title')
+$Cat3Text              = $win.FindName('Cat3Text')
+$Cat4Title             = $win.FindName('Cat4Title')
+$Cat4Text              = $win.FindName('Cat4Text')
+
 # Caricamento Artwork Hero (sfondo.jpg)
 if (Test-Path -LiteralPath $ArtPath) {
     try {
@@ -2161,6 +2176,23 @@ function Update-UiDashboard {
     $HeroVersionChip.Text = "v$($m.versione) · Build $($m.build)"
     $HeroStringsChip.Text = "$($m.voci_fmt) stringhe · $($m.data)"
     $TxtPatchBuild.Text   = "$($m.build) (v$($m.versione))"
+
+    if ($m.PSObject.Properties.Name -contains 'changelog_dettagliato' -and $m.changelog_dettagliato) {
+        $cd = $m.changelog_dettagliato
+        if ($ChangelogVersionBadge) { $ChangelogVersionBadge.Text = "VERSIONE $($m.versione)" }
+        if ($ChangelogBuildBadge)   { $ChangelogBuildBadge.Text   = "BUILD $($m.build) ALLINEATA" }
+        if ($ChangelogReleaseDate)  { $ChangelogReleaseDate.Text  = [string]$m.data }
+        if ($ChangelogTitle -and $cd.titolo) { $ChangelogTitle.Text = [string]$cd.titolo }
+        if ($ChangelogDesc -and $cd.descrizione) { $ChangelogDesc.Text = [string]$cd.descrizione }
+        if ($Cat1Title -and $cd.cat1_titolo) { $Cat1Title.Text = [string]$cd.cat1_titolo }
+        if ($Cat1Text -and $cd.cat1_testo)   { $Cat1Text.Text  = [string]$cd.cat1_testo }
+        if ($Cat2Title -and $cd.cat2_titolo) { $Cat2Title.Text = [string]$cd.cat2_titolo }
+        if ($Cat2Text -and $cd.cat2_testo)   { $Cat2Text.Text  = [string]$cd.cat2_testo }
+        if ($Cat3Title -and $cd.cat3_titolo) { $Cat3Title.Text = [string]$cd.cat3_titolo }
+        if ($Cat3Text -and $cd.cat3_testo)   { $Cat3Text.Text  = [string]$cd.cat3_testo }
+        if ($Cat4Title -and $cd.cat4_titolo) { $Cat4Title.Text = [string]$cd.cat4_titolo }
+        if ($Cat4Text -and $cd.cat4_testo)   { $Cat4Text.Text  = [string]$cd.cat4_testo }
+    }
 
     $st = Get-TranslationStatus $script:CurrentGameDir $m
     $TxtStatusTitle.Text = $st.Title
