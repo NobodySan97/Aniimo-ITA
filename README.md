@@ -33,7 +33,8 @@
   - Genera al volo l'archivio `LuaScripts.xdf` aggiornando l'indice `LuaScripts.xdt` in meno di 1,5 secondi.
   - **Immune a rotture post-aggiornamento**: se Steam aggiorna il gioco con nuove meccaniche o script, l'installer inietta la traduzione direttamente nella nuova versione preservandone il codice intatto.
 - 📖 **Dizionario Bilingue Integrato (IT ↔ EN)**: Oltre 18.000 termini ufficiali (oggetti, abilità, materiali, luoghi e creature) ricercabili istantaneamente all'interno del launcher per consultare wiki, guide e build in inglese senza dover cambiare la lingua di gioco.
-- ☁️ **Sincronizzazione Automatica Cloud**: Pulsante *Aggiorna TSV* dedicato per verificare e scaricare in pochi istanti gli ultimi affinamenti del dizionario direttamente da GitHub, senza dover riscaricare l'intero pacchetto ZIP.
+- ☁️ **Sincronizzazione Intelligente Cloud**: Controllo versione ultraleggero (~300 byte via `versione.json`) per verificare se la traduzione su GitHub è stata aggiornata. Scarica il file TSV solo in caso di effettive modifiche (zero sprechi di banda e zero API rate-limit).
+- 📜 **Changelog Visivo Integrato**: Scheda dedicata *Changelog & Guida* nel launcher e file [CHANGELOG.md](CHANGELOG.md) per consultare tutte le migliorie e i 968 perfezionamenti terminologici apportati.
 - ⏪ **Ripristino Sicuro in 1 Clic**: Ripristina i file originali in inglese istantaneamente, senza bisogno di verificare l'integrità dei file su Steam o riscaricare dati.
 
 ---
@@ -51,11 +52,21 @@ Grazie al motore di indicizzazione interno, la scheda **Dizionario IT ↔ EN** i
 
 ---
 
+## 📜 Registro delle Modifiche (Changelog)
+
+<p align="center">
+  <img src="docs/preview_changelog.png" alt="Changelog e Guida Tecnica nel Launcher" width="900" style="border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
+</p>
+
+Tutte le modifiche, le revisioni terminologiche e i miglioramenti sono documentati dettagliatamente nel file [**CHANGELOG.md**](CHANGELOG.md) e direttamente all'interno della scheda **Changelog & Guida** del launcher.
+
+---
+
 ## 📊 Stato della Traduzione e Copertura
 
 | Parametro | Dettaglio |
 | :--- | :--- |
-| **Versione Traduzione** | **v1.0** (19 Ottobre 2026 - Revisione Terminologica Specialistica Applicata) |
+| **Versione Traduzione** | **v1.0.1** (19 Ottobre 2026 - Revisione Terminologica Specialistica Applicata) |
 | **Build Gioco Verificata** | **Build `3746914`** |
 | **Voci Tradotte** | **112.418 su 112.418** (100% copertura verificata) |
 | **Nomi Creature Aniimo** | Nomi ufficiali preservati e allineati al canone |
@@ -69,8 +80,6 @@ Grazie al motore di indicizzazione interno, la scheda **Dizionario IT ↔ EN** i
 ### Metodo 1: Installazione con Interfaccia Grafica (Consigliato)
 
 1. Scarica l'archivio **`Aniimo_Traduzione_ITA_v1.0.zip`** dalla pagina [Releases](https://github.com/NobodySan97/Aniimo-ITA/releases/latest).
-
-
 2. Estrai l'archivio in una cartella a piacere (es. sul Desktop).
 3. Assicurati che **Aniimo sia chiuso**.
 4. Fai doppio clic su **`Installa Traduzione ITA.bat`**.
@@ -89,10 +98,10 @@ Per gli utenti avanzati o per automatizzare l'installazione, è possibile esegui
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "dati\installer.ps1" -Install
 
 # Ripristino della lingua inglese originale
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "dati\installer.ps1" -Restore
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "dati\installer.ps1" -Uninstall
 
-# Verifica e sincronizzazione aggiornamenti da GitHub
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "dati\installer.ps1" -CheckUpdate
+# Verifica e sincronizzazione intelligente da GitHub (senza interfaccia)
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "dati\installer.ps1" -UpdateTsv
 ```
 
 ---

@@ -251,14 +251,16 @@ Add-Type -TypeDefinition $csharpCode -ReferencedAssemblies "System.IO.Compressio
 # ---------------------------------------------------------------------
 #  Percorsi, Configurazione e Metadati
 # ---------------------------------------------------------------------
-$ScriptDir  = Split-Path -Parent $MyInvocation.MyCommand.Path
-$RootDir    = Split-Path -Parent $ScriptDir
-$TsvPath    = Join-Path $ScriptDir 'traduzione_ita.tsv'
-$ArtPath    = Join-Path $ScriptDir 'sfondo.jpg'
-$ConfigPath = Join-Path $env:APPDATA 'Aniimo_ITA_Installer\config.json'
+$ScriptDir       = Split-Path -Parent $MyInvocation.MyCommand.Path
+$RootDir         = Split-Path -Parent $ScriptDir
+$TsvPath         = Join-Path $ScriptDir 'traduzione_ita.tsv'
+$VersionJsonPath = Join-Path $ScriptDir 'versione.json'
+$ArtPath         = Join-Path $ScriptDir 'sfondo.jpg'
+$ConfigPath      = Join-Path $env:APPDATA 'Aniimo_ITA_Installer\config.json'
 
-# URL ufficiale per aggiornamento diretto del file traduzione_ita.tsv da GitHub
-$RemoteTsvUrl = "https://raw.githubusercontent.com/NobodySan97/Aniimo-ITA/main/dati/traduzione_ita.tsv"
+# URL ufficiali per aggiornamento diretto da GitHub
+$RemoteVersionUrl = "https://raw.githubusercontent.com/NobodySan97/Aniimo-ITA/main/dati/versione.json"
+$RemoteTsvUrl     = "https://raw.githubusercontent.com/NobodySan97/Aniimo-ITA/main/dati/traduzione_ita.tsv"
 
 function Format-NumberDot([string]$Value) {
     if (-not $Value) { return '0' }
@@ -278,8 +280,9 @@ function Get-InstallerConfig {
         } catch {}
     }
     return [pscustomobject]@{
-        game_dir       = ""
-        remote_tsv_url = ""
+        game_dir           = ""
+        remote_tsv_url     = ""
+        remote_version_url = ""
     }
 }
 
@@ -291,8 +294,9 @@ function Save-InstallerConfig([string]$SavedGameDir) {
         }
         $cfg = Get-InstallerConfig
         $obj = [pscustomobject]@{
-            game_dir       = $SavedGameDir
-            remote_tsv_url = if ($cfg.PSObject.Properties.Name -contains 'remote_tsv_url') { $cfg.remote_tsv_url } else { "" }
+            game_dir           = $SavedGameDir
+            remote_tsv_url     = if ($cfg.PSObject.Properties.Name -contains 'remote_tsv_url') { $cfg.remote_tsv_url } else { "" }
+            remote_version_url = if ($cfg.PSObject.Properties.Name -contains 'remote_version_url') { $cfg.remote_version_url } else { "" }
         }
         $json = $obj | ConvertTo-Json -Depth 3
         $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
@@ -302,11 +306,25 @@ function Save-InstallerConfig([string]$SavedGameDir) {
 
 function Get-TsvMetadata([string]$PathToTsv) {
     $meta = [pscustomobject]@{
-        versione  = '1.0'
+        versione  = '1.0.1'
         build     = '3746914'
-        data      = '2026-10-18'
+        data      = '2026-10-19'
         voci      = '112418'
         voci_fmt  = '112.418'
+        tsv_md5   = 'a625c5a29b5db90480204d744cf4295e'
+        changelog = 'Revisione terminologica globale: 968 correzioni specialistiche.'
+    }
+    # Lettura ultra-rapida da versione.json se presente
+    if (Test-Path -LiteralPath $VersionJsonPath) {
+        try {
+            $vj = Get-Content -LiteralPath $VersionJsonPath -Raw -Encoding UTF8 | ConvertFrom-Json
+            if ($vj.versione_traduzione) { $meta.versione = [string]$vj.versione_traduzione }
+            if ($vj.build_gioco)          { $meta.build    = [string]$vj.build_gioco }
+            if ($vj.data_rilascio)        { $meta.data     = [string]$vj.data_rilascio }
+            if ($vj.voci)                 { $meta.voci     = [string]$vj.voci }
+            if ($vj.tsv_md5)              { $meta.tsv_md5  = [string]$vj.tsv_md5 }
+            if ($vj.changelog_breve)      { $meta.changelog = [string]$vj.changelog_breve }
+        } catch {}
     }
     if (Test-Path -LiteralPath $PathToTsv) {
         try {
@@ -351,18 +369,59 @@ function Get-RemoteRepoTsvUrl {
     return ""
 }
 
-function Update-TranslationTsvFromGitHub([switch]$Silent) {
-    $url = Get-RemoteRepoTsvUrl
-    if (-not $url) { return $false }
+function Get-RemoteRepoVersionUrl {
+    if ($RemoteVersionUrl) { return $RemoteVersionUrl }
+    $cfg = Get-InstallerConfig
+    if ($cfg.PSObject.Properties.Name -contains 'remote_version_url' -and $cfg.remote_version_url) {
+        return [string]$cfg.remote_version_url
+    }
+    $tsvUrl = Get-RemoteRepoTsvUrl
+    if ($tsvUrl) {
+        return ($tsvUrl -replace 'traduzione_ita\.tsv$', 'versione.json')
+    }
+    return ""
+}
 
+function Update-TranslationTsvFromGitHub([switch]$Silent) {
+    $verUrl = Get-RemoteRepoVersionUrl
+    $tsvUrl = Get-RemoteRepoTsvUrl
+    if (-not $tsvUrl) { return $false }
+
+    $wc = $null
     $tmpTsv = "$TsvPath.download"
     try {
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
         $wc = New-Object System.Net.WebClient
         $wc.Encoding = [System.Text.Encoding]::UTF8
         $wc.Headers.Add('User-Agent', 'Aniimo-ITA-Installer/1.0')
-        $wc.DownloadFile($url, $tmpTsv)
 
+        # FASE 1: Controllo smart ultra-rapido (solo ~300 byte) tramite versione.json
+        $remoteVerJson = $null
+        $jsonText = $null
+        if ($verUrl) {
+            try {
+                $jsonText = $wc.DownloadString($verUrl)
+                if ($jsonText) {
+                    $remoteVerJson = $jsonText | ConvertFrom-Json
+                }
+            } catch {}
+        }
+
+        # Se il manifest remoto ha lo stesso MD5 del file locale, non riscarichiamo 7.5 MB inutilmente
+        if ($remoteVerJson -and $remoteVerJson.tsv_md5 -and (Test-Path -LiteralPath $TsvPath)) {
+            $localMeta = Get-TsvMetadata $TsvPath
+            if ($localMeta.tsv_md5 -and ($localMeta.tsv_md5 -ieq $remoteVerJson.tsv_md5)) {
+                return $false
+            }
+            $localFileMd5 = Get-Md5File $TsvPath
+            if ($localFileMd5 -ieq $remoteVerJson.tsv_md5) {
+                try { [System.IO.File]::WriteAllText($VersionJsonPath, $jsonText, [System.Text.Encoding]::UTF8) } catch {}
+                return $false
+            }
+        }
+
+        # FASE 2: Scaricamento completo della nuova traduzione
+        $wc.DownloadFile($tsvUrl, $tmpTsv)
         if (-not (Test-Path -LiteralPath $tmpTsv)) { return $false }
         $len = (Get-Item -LiteralPath $tmpTsv).Length
         if ($len -lt 1000000) {
@@ -370,32 +429,30 @@ function Update-TranslationTsvFromGitHub([switch]$Silent) {
             return $false
         }
 
-        $lineCount = 0
-        $sr = New-Object System.IO.StreamReader($tmpTsv, [System.Text.Encoding]::UTF8)
-        try {
-            while ($null -ne ($l = $sr.ReadLine())) {
-                if ($l.Length -gt 0 -and $l[0] -ne '#') { $lineCount++ }
-            }
-        } finally {
-            $sr.Close()
-        }
-
         if (Test-Path -LiteralPath $TsvPath) {
             $localMd5 = Get-Md5File $TsvPath
             $remoteMd5 = Get-Md5File $tmpTsv
             if ($localMd5 -eq $remoteMd5) {
                 Remove-Item -LiteralPath $tmpTsv -Force -ErrorAction SilentlyContinue
+                if ($remoteVerJson -and $jsonText) {
+                    try { [System.IO.File]::WriteAllText($VersionJsonPath, $jsonText, [System.Text.Encoding]::UTF8) } catch {}
+                }
                 return $false
             }
         }
 
         Move-Item -LiteralPath $tmpTsv -Destination $TsvPath -Force
+        if ($remoteVerJson -and $jsonText) {
+            try { [System.IO.File]::WriteAllText($VersionJsonPath, $jsonText, [System.Text.Encoding]::UTF8) } catch {}
+        }
         return $true
     } catch {
         if (Test-Path -LiteralPath $tmpTsv) {
             Remove-Item -LiteralPath $tmpTsv -Force -ErrorAction SilentlyContinue
         }
         return $false
+    } finally {
+        if ($wc) { $wc.Dispose() }
     }
 }
 
@@ -1139,7 +1196,7 @@ function Show-PolarisDialog {
 [xml]$xaml = @"
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Aniimo — Localizzazione Italiana v1.0" Height="800" Width="1250"
+        Title="Aniimo — Localizzazione Italiana (v1.0.1)" Height="800" Width="1250"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
         WindowStyle="None" AllowsTransparency="True" Background="Transparent" FontFamily="Segoe UI">
   <Window.Resources>
@@ -1182,13 +1239,13 @@ function Show-PolarisDialog {
     <Style x:Key="PolarisNavTab" TargetType="RadioButton">
       <Setter Property="Cursor" Value="Hand"/>
       <Setter Property="Foreground" Value="#94A3B8"/>
-      <Setter Property="FontSize" Value="12.5"/>
+      <Setter Property="FontSize" Value="12"/>
       <Setter Property="FontWeight" Value="SemiBold"/>
-      <Setter Property="Margin" Value="3,0"/>
+      <Setter Property="Margin" Value="1.5,0"/>
       <Setter Property="Template">
         <Setter.Value>
           <ControlTemplate TargetType="RadioButton">
-            <Border x:Name="pill" CornerRadius="9" Background="Transparent" BorderBrush="Transparent" BorderThickness="1" Padding="15,7">
+            <Border x:Name="pill" CornerRadius="9" Background="Transparent" BorderBrush="Transparent" BorderThickness="1" Padding="10,6">
               <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                 <TextBlock x:Name="ico" Text="{TemplateBinding Tag}" FontFamily="Segoe MDL2 Assets" FontSize="13"
                            Foreground="#64748B" VerticalAlignment="Center" Margin="0,0,8,0"/>
@@ -1514,7 +1571,7 @@ function Show-PolarisDialog {
                   <Border Width="14" Height="3" CornerRadius="1.5" Background="#10B981" Margin="0,0,3,0"/>
                   <Border Width="14" Height="3" CornerRadius="1.5" Background="#F8FAFC" Margin="0,0,3,0"/>
                   <Border Width="14" Height="3" CornerRadius="1.5" Background="#F43F5E" Margin="0,0,8,0"/>
-                  <TextBlock x:Name="HeaderSubMeta" Text="Polaris FastPacker · v1.0 (112.418 voci)" Foreground="#64748B" FontSize="10.5" VerticalAlignment="Center"/>
+                  <TextBlock x:Name="HeaderSubMeta" Text="Polaris FastPacker · v1.0.1 (112.418 voci)" Foreground="#64748B" FontSize="10.5" VerticalAlignment="Center"/>
                 </StackPanel>
               </StackPanel>
             </StackPanel>
@@ -1525,7 +1582,7 @@ function Show-PolarisDialog {
               <StackPanel Orientation="Horizontal">
                 <RadioButton x:Name="TabDashboard" Style="{StaticResource PolarisNavTab}" GroupName="MainNav" Content="Dashboard &amp; Patch" IsChecked="True" Tag="&#xE80F;"/>
                 <RadioButton x:Name="TabDictionary" Style="{StaticResource PolarisNavTab}" GroupName="MainNav" Content="Dizionario IT &#8596; EN" Tag="&#xE721;"/>
-                <RadioButton x:Name="TabArchitecture" Style="{StaticResource PolarisNavTab}" GroupName="MainNav" Content="Architettura &amp; FAQ" Tag="&#xE946;"/>
+                <RadioButton x:Name="TabArchitecture" Style="{StaticResource PolarisNavTab}" GroupName="MainNav" Content="Changelog &amp; Guida" Tag="&#xE81C;"/>
               </StackPanel>
             </Border>
 
@@ -1539,10 +1596,10 @@ function Show-PolarisDialog {
               </Border>
 
               <Button x:Name="BtnCheckGitHub" Style="{StaticResource PolarisSecondaryButton}" Height="32" Padding="12,0" Margin="0,0,10,0"
-                      ToolTip="Controlla e scarica aggiornamenti del dizionario da GitHub">
+                      ToolTip="Verifica la versione online e aggiorna la traduzione da GitHub">
                 <StackPanel Orientation="Horizontal" Margin="10,0">
                   <TextBlock Text="&#xE895;" FontFamily="Segoe MDL2 Assets" FontSize="11" Foreground="#38BDF8" VerticalAlignment="Center" Margin="0,0,7,0"/>
-                  <TextBlock Text="Aggiorna TSV" FontSize="11.5" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                  <TextBlock Text="Aggiorna Traduzione" FontSize="11.5" FontWeight="SemiBold" VerticalAlignment="Center"/>
                 </StackPanel>
               </Button>
 
@@ -1606,7 +1663,7 @@ function Show-PolarisDialog {
                     <Border CornerRadius="8" Background="#1A10B981" BorderBrush="#6610B981" BorderThickness="1" Padding="12,5">
                       <StackPanel Orientation="Horizontal">
                         <TextBlock x:Name="HeroCompatIcon" Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="11.5" Foreground="#34D399" VerticalAlignment="Center" Margin="0,0,7,0"/>
-                        <TextBlock x:Name="HeroCompatLabel" Text="VERSIONE 1.0 · AGGIORNATA ALL'ULTIMA BUILD (3746914)" Foreground="#ECFDF5" FontSize="10.5" FontWeight="Bold" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="HeroCompatLabel" Text="VERSIONE 1.0.1 · AGGIORNATA ALL'ULTIMA BUILD (3746914)" Foreground="#ECFDF5" FontSize="10.5" FontWeight="Bold" VerticalAlignment="Center"/>
                       </StackPanel>
                     </Border>
                   </StackPanel>
@@ -1634,7 +1691,7 @@ function Show-PolarisDialog {
                     <Border CornerRadius="8" Background="#162235" BorderBrush="#26FFFFFF" BorderThickness="1" Padding="11,6" Margin="0,0,0,6">
                       <StackPanel Orientation="Horizontal">
                         <TextBlock Text="&#xE945;" FontFamily="Segoe MDL2 Assets" FontSize="11" Foreground="#A5B4FC" VerticalAlignment="Center" Margin="0,0,6,0"/>
-                        <TextBlock x:Name="HeroVersionChip" Text="v1.0 · Build 3746914" Foreground="#E2E8F0" FontSize="11" FontWeight="SemiBold"/>
+                        <TextBlock x:Name="HeroVersionChip" Text="v1.0.1 · Build 3746914" Foreground="#E2E8F0" FontSize="11" FontWeight="SemiBold"/>
                       </StackPanel>
                     </Border>
                   </WrapPanel>
@@ -1842,14 +1899,91 @@ function Show-PolarisDialog {
           </Grid>
 
           <!-- ===================================================================== -->
-          <!-- VISTA 3: ARCHITETTURA TECNICA & FAQ                                   -->
+          <!-- VISTA 3: CHANGELOG & GUIDA TECNICA                                    -->
           <!-- ===================================================================== -->
           <ScrollViewer x:Name="ViewArchitecture" Visibility="Collapsed" VerticalScrollBarVisibility="Auto" Margin="22,18,22,14">
-            <StackPanel>
-              <TextBlock Text="Architettura Tecnica &amp; Domande Frequenti" Foreground="#F8FAFC" FontSize="22" FontWeight="Bold"/>
-              <TextBlock Text="Perché Polaris FastPacker è universale, veloce e immune ai crash dopo gli aggiornamenti di Steam."
+            <StackPanel Margin="0,0,10,0">
+              <TextBlock Text="Registro delle Modifiche &amp; Guida Tecnica" Foreground="#F8FAFC" FontSize="22" FontWeight="Bold"/>
+              <TextBlock Text="Migliorie della traduzione, standardizzazione terminologica e architettura in-memory di Polaris."
                          Foreground="#94A3B8" FontSize="12" Margin="0,3,0,16"/>
 
+              <!-- CARD CHANGELOG v1.0.1 -->
+              <Border CornerRadius="14" Background="#0F1626" BorderBrush="#2638BDF8" BorderThickness="1" Padding="20,16" Margin="0,0,0,14">
+                <StackPanel>
+                  <!-- Header Release v1.0.1 -->
+                  <Grid Margin="0,0,0,12">
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*"/>
+                      <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                      <StackPanel Orientation="Horizontal">
+                        <Border CornerRadius="6" Background="#1D2A44" BorderBrush="#38BDF8" BorderThickness="1" Padding="8,2" Margin="0,0,8,0">
+                          <TextBlock Text="VERSIONE 1.0.1" Foreground="#38BDF8" FontSize="10" FontWeight="Bold"/>
+                        </Border>
+                        <Border CornerRadius="6" Background="#132E27" BorderBrush="#10B981" BorderThickness="1" Padding="8,2">
+                          <TextBlock Text="BUILD 3746914 ALLINEATA" Foreground="#34D399" FontSize="10" FontWeight="Bold"/>
+                        </Border>
+                      </StackPanel>
+                      <TextBlock Text="Revisione Terminologica Specialistica Globale (968 Perfezionamenti)" Foreground="#F8FAFC" FontSize="14.5" FontWeight="Bold" Margin="0,6,0,2"/>
+                      <TextBlock Text="Audit filologico e linguistico condotto confrontando i testi con inglese, spagnolo e francese ufficiali." Foreground="#94A3B8" FontSize="11.5"/>
+                    </StackPanel>
+                    <TextBlock Grid.Column="1" Text="2026-10-19" Foreground="#64748B" FontSize="11.5" FontWeight="SemiBold" VerticalAlignment="Top"/>
+                  </Grid>
+
+                  <!-- 4 Categorie a Griglia 2x2 -->
+                  <Grid>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*"/>
+                      <ColumnDefinition Width="12"/>
+                      <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                      <RowDefinition Height="Auto"/>
+                      <RowDefinition Height="10"/>
+                      <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Lore & Dimora -->
+                    <Border Grid.Row="0" Grid.Column="0" CornerRadius="10" Background="#0B101B" BorderBrush="#1E293B" BorderThickness="1" Padding="14,12">
+                      <StackPanel>
+                        <TextBlock Text="🐾 Lore, Creature &amp; Dimora (352 fix)" Foreground="#38BDF8" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
+                        <TextBlock Foreground="#CBD5E1" FontSize="11.5" LineHeight="17" TextWrapping="Wrap"
+                                   Text="• Dimora: unificata la traduzione canonica di Homeland (eliminata la letterale 'Madrepatria').&#x0a;• Nomi Specie: ripristinati Whelpy, Stellalord, Shrout, Lucklet, Big Chillmut, Wolferno.&#x0a;• Accarezza: corretto il verbo 'Pet' (non più sostantivo 'Animale').&#x0a;• Varie: macchina unificata su 'Incubatrice', normalizzate forme 'Alfa' e Livello Camper."/>
+                      </StackPanel>
+                    </Border>
+
+                    <!-- Combattimento -->
+                    <Border Grid.Row="0" Grid.Column="2" CornerRadius="10" Background="#0B101B" BorderBrush="#1E293B" BorderThickness="1" Padding="14,12">
+                      <StackPanel>
+                        <TextBlock Text="⚔️ Combattimento &amp; Statistiche (230 fix)" Foreground="#F43F5E" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
+                        <TextBlock Foreground="#CBD5E1" FontSize="11.5" LineHeight="17" TextWrapping="Wrap"
+                                   Text="• Difese: standardizzate tutte le sigle su DIF F. e DIF M. (eliminate forme miste inglesi).&#x0a;• Parametri: Punti Energia (PE), Tasso critico, attributi Potenza e Grinta.&#x0a;• Meccaniche: mossa 'Suprema', distinzione Vigore (schivata) vs Resistenza.&#x0a;• Status: corretto 'Bruciatura' (da verbo brucia) e abilità Spezzabruciatura."/>
+                      </StackPanel>
+                    </Border>
+
+                    <!-- Mondo & Missioni -->
+                    <Border Grid.Row="2" Grid.Column="0" CornerRadius="10" Background="#0B101B" BorderBrush="#1E293B" BorderThickness="1" Padding="14,12">
+                      <StackPanel>
+                        <TextBlock Text="🗺️ Mondo, Luoghi &amp; UI (252 fix)" Foreground="#34D399" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
+                        <TextBlock Foreground="#CBD5E1" FontSize="11.5" LineHeight="17" TextWrapping="Wrap"
+                                   Text="• Regioni: Pianure Ventose (84 correzioni discordanti), Cresta delle Mille Zanne.&#x0a;• Prova del Dottore: risolto il clamoroso calco giudiziario 'Processo del Dottore'.&#x0a;• Falsi Amici UI: 'Squadra' al posto di festa (Party), pulsante 'Esci' dai dungeon.&#x0a;• Coerenza: I Pathfinder (grammatica) e boccioli mappa standardizzati."/>
+                      </StackPanel>
+                    </Border>
+
+                    <!-- Oggetti ed Economia -->
+                    <Border Grid.Row="2" Grid.Column="2" CornerRadius="10" Background="#0B101B" BorderBrush="#1E293B" BorderThickness="1" Padding="14,12">
+                      <StackPanel>
+                        <TextBlock Text="📦 Oggetti, Fabbricazione &amp; Shop (148 fix)" Foreground="#F59E0B" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
+                        <TextBlock Foreground="#CBD5E1" FontSize="11.5" LineHeight="17" TextWrapping="Wrap"
+                                   Text="• Valute: 'Crediti' (non più Riconoscimenti da cinema!) ed energia 'Primegia'.&#x0a;• Fabbricazione: verbo 'Cucina' (non più il sostantivo cuoco!) e Fabbricatore Aniipod.&#x0a;• Equipaggiamento: 'Strumenti Tenuti' (non più Trattenuti doganali).&#x0a;• Palestra &amp; Minerali: Club Colpospirale, Stagno di legno e separazione parole fuse."/>
+                      </StackPanel>
+                    </Border>
+                  </Grid>
+                </StackPanel>
+              </Border>
+
+              <!-- CARD GUIDA TECNICA 1 -->
               <Border CornerRadius="14" Background="#0F1626" BorderBrush="#2638BDF8" BorderThickness="1" Padding="20,16" Margin="0,0,0,12">
                 <StackPanel>
                   <TextBlock Text="1. PATCHING IN-MEMORY SU STREAMINGASSETS (ZERO FILE OBSOLETI)" Foreground="#38BDF8" FontSize="11" FontWeight="Bold" Margin="0,0,0,6"/>
@@ -1858,6 +1992,7 @@ function Show-PolarisDialog {
                 </StackPanel>
               </Border>
 
+              <!-- CARD GUIDA TECNICA 2 -->
               <Border CornerRadius="14" Background="#0F1626" BorderBrush="#2638BDF8" BorderThickness="1" Padding="20,16" Margin="0,0,0,12">
                 <StackPanel>
                   <TextBlock Text="2. AVVIO DIRETTO IN ITALIANO (SLOT INGLESE NATIVO)" Foreground="#34D399" FontSize="11" FontWeight="Bold" Margin="0,0,0,6"/>
@@ -1866,11 +2001,12 @@ function Show-PolarisDialog {
                 </StackPanel>
               </Border>
 
+              <!-- CARD GUIDA TECNICA 3 -->
               <Border CornerRadius="14" Background="#0F1626" BorderBrush="#2638BDF8" BorderThickness="1" Padding="20,16">
                 <StackPanel>
-                  <TextBlock Text="3. COSA FARE DOPO UN AGGIORNAMENTO DI STEAM O DEL DIZIONARIO" Foreground="#A5B4FC" FontSize="11" FontWeight="Bold" Margin="0,0,0,6"/>
+                  <TextBlock Text="3. COSA FARE DOPO UN AGGIORNAMENTO DI STEAM O DELLA TRADUZIONE" Foreground="#A5B4FC" FontSize="11" FontWeight="Bold" Margin="0,0,0,6"/>
                   <TextBlock Foreground="#CBD5E1" FontSize="12.5" LineHeight="20" TextWrapping="Wrap"
-                             Text="Quando Steam scarica una nuova patch di Aniimo, il pannello di stato rileverà automaticamente la nuova Build del gioco e ti mostrerà l'avviso 'Nuova patch rilevata'. Ti basterà premere il pulsante azzurro in basso a destra per riallineare la traduzione alla nuova build in 1,5 secondi, mantenendo intatti tutti i nuovi contenuti del gioco."/>
+                             Text="Quando Steam scarica una nuova patch di Aniimo o pubblichiamo una nuova revisione delle traduzioni, ti basterà aprire l'app e premere il pulsante in basso a destra. L'applicazione riallineerà i file in 1,5 secondi senza dover riscaricare file o rifare procedure manuali."/>
                 </StackPanel>
               </Border>
             </StackPanel>
@@ -2191,25 +2327,26 @@ $BtnCheckGitHub.Add_Click({
     $url = Get-RemoteRepoTsvUrl
     if (-not $url) {
         [void](Show-PolarisDialog -Title "Repository GitHub non configurato" -Badge "INFO" -Severity "Information" -Messages @(
-            "Il dizionario locale (v$($script:CurrentMeta.versione) · Build $($script:CurrentMeta.build)) è già presente e pronto all'uso in dati\traduzione_ita.tsv.",
-            "Quando la cartella sarà collegata a un repository GitHub remoto, questo pulsante scaricherà in automatico eventuali aggiornamenti online."
+            "La traduzione locale (v$($script:CurrentMeta.versione) · Build $($script:CurrentMeta.build)) è già presente e pronta all'uso in dati\traduzione_ita.tsv.",
+            "Quando la cartella sarà collegata al repository GitHub remoto, questo pulsante verificherà in automatico eventuali aggiornamenti online."
         ))
         return
     }
-    Set-ProgressBarState 40 "Verifica aggiornamenti su GitHub in corso..." $false
+    Set-ProgressBarState 40 "Verifica versione traduzione su GitHub in corso..." $false
     if (Update-TranslationTsvFromGitHub) {
         $script:GlossaryLoaded = $false
         Update-UiDashboard
-        Set-ProgressBarState 100 "Dizionario aggiornato da GitHub (v$($script:CurrentMeta.versione))." $true
-        [void](Show-PolarisDialog -Title "Dizionario aggiornato!" -Badge "AGGIORNATO" -Severity "Success" -Messages @(
-            "È stata scaricata l'ultima versione di traduzione_ita.tsv da GitHub:",
-            "Versione: v$($script:CurrentMeta.versione) · Build $($script:CurrentMeta.build) ($($script:CurrentMeta.voci_fmt) stringhe).",
+        Set-ProgressBarState 100 "Traduzione aggiornata da GitHub (v$($script:CurrentMeta.versione))." $true
+        [void](Show-PolarisDialog -Title "Nuova traduzione scaricata!" -Badge "AGGIORNATA" -Severity "Success" -Messages @(
+            "È stata scaricata l'ultima versione di traduzione_ita.tsv da GitHub (v$($script:CurrentMeta.versione)):",
+            "Build $($script:CurrentMeta.build) · $($script:CurrentMeta.voci_fmt) stringhe.",
+            "$($script:CurrentMeta.changelog)",
             "Premi ora il pulsante azzurro in basso a destra per applicarla al gioco!"
         ))
     } else {
-        Set-ProgressBarState 100 "Dizionario locale già allineato." $true
-        [void](Show-PolarisDialog -Title "Nessun nuovo aggiornamento" -Badge "ALLINEATO" -Severity "Information" -Messages @(
-            "Il file dati\traduzione_ita.tsv locale (v$($script:CurrentMeta.versione) · Build $($script:CurrentMeta.build)) è già allineato."
+        Set-ProgressBarState 100 "Traduzione locale già allineata (v$($script:CurrentMeta.versione))." $true
+        [void](Show-PolarisDialog -Title "Traduzione già aggiornata" -Badge "ALLINEATA" -Severity "Information" -Messages @(
+            "La traduzione locale (v$($script:CurrentMeta.versione) · Build $($script:CurrentMeta.build)) è già allineata all'ultima versione disponibile online."
         ))
     }
 })
@@ -2370,7 +2507,7 @@ if ($ExportPreview -or $GuiAutoInstall -or $GuiAutoRestore) {
                     $script:CurrentMeta = Get-TsvMetadata $TsvPath
                     $script:GlossaryLoaded = $false
                     Update-UiDashboard
-                    Set-ProgressBarState 100 "Nuova versione v$($script:CurrentMeta.versione) scaricata automaticamente da GitHub! Clicca su Aggiorna." $true
+                    Set-ProgressBarState 100 "Nuova versione traduzione v$($script:CurrentMeta.versione) scaricata da GitHub! Clicca su Installa per applicarla." $true
                 }
             }
         })
