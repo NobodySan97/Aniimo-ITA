@@ -1,7 +1,8 @@
 ======================================================================
-  ANIIMO - TRADUZIONE ITALIANA INTEGRALE (v1.0 - Build 3746914)
+  ANIIMO - TRADUZIONE ITALIANA INTEGRALE (v1.1 - Build 3746914)
   Launcher & Patcher Leggero Universale (Steam · Xbox App · Pawprint)
 ======================================================================
+
 
 COME INSTALLARE O AGGIORNARE LA TRADUZIONE:
 1. Assicurati che Aniimo sia chiuso.
