@@ -3,11 +3,12 @@
 # 🇮🇹 Aniimo — Traduzione Italiana Integrale
 **Launcher & Patcher Leggero Universale per PC (Steam · Xbox App · Pawprint Client)**
 
-[![Versione Release](https://img.shields.io/badge/Release-v1.1-2ea043?style=for-the-badge&logo=github)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
+[![Versione Release](https://img.shields.io/badge/Release-v1.0-2ea043?style=for-the-badge&logo=github)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
 [![Build Verificata](https://img.shields.io/badge/Build_Gioco-3746914+-4f46e5?style=for-the-badge)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
 [![Copertura Traduzione](https://img.shields.io/badge/Stringhe_Tradotte-112.418_%2F_112.418-10b981?style=for-the-badge)](#stato-della-traduzione-e-copertura)
 [![Download Totali](https://img.shields.io/github/downloads/NobodySan97/Aniimo-ITA/total?style=for-the-badge&logo=github&color=0284c7&label=Download)](https://github.com/NobodySan97/Aniimo-ITA/releases)
-[![Download Zip](https://img.shields.io/badge/Download_ZIP-3.12_MB-38bdf8?style=for-the-badge&logo=windows)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
+[![Download Zip](https://img.shields.io/badge/Download_ZIP-3.11_MB-38bdf8?style=for-the-badge&logo=windows)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
+
 
 
 
@@ -54,7 +55,7 @@ Grazie al motore di indicizzazione interno, la scheda **Dizionario IT ↔ EN** i
 
 | Parametro | Dettaglio |
 | :--- | :--- |
-| **Versione Traduzione** | **v1.1** (19 Ottobre 2026 - Revisione Terminologica Globale: 968 correzioni) |
+| **Versione Traduzione** | **v1.0** (19 Ottobre 2026 - Revisione Terminologica Specialistica Applicata) |
 | **Build Gioco Verificata** | **Build `3746914`** |
 | **Voci Tradotte** | **112.418 su 112.418** (100% copertura verificata) |
 | **Nomi Creature Aniimo** | Nomi ufficiali preservati e allineati al canone |
@@ -67,7 +68,8 @@ Grazie al motore di indicizzazione interno, la scheda **Dizionario IT ↔ EN** i
 
 ### Metodo 1: Installazione con Interfaccia Grafica (Consigliato)
 
-1. Scarica l'archivio **`Aniimo_Traduzione_ITA_v1.1.zip`** dalla pagina [Releases](https://github.com/NobodySan97/Aniimo-ITA/releases/latest).
+1. Scarica l'archivio **`Aniimo_Traduzione_ITA_v1.0.zip`** dalla pagina [Releases](https://github.com/NobodySan97/Aniimo-ITA/releases/latest).
+
 
 2. Estrai l'archivio in una cartella a piacere (es. sul Desktop).
 3. Assicurati che **Aniimo sia chiuso**.
