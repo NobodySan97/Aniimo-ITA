@@ -1,10 +1,10 @@
 {
-  "versione_traduzione": "1.0.2",
+  "versione_traduzione": "1.0.3",
   "build_gioco": "3746914",
   "data_rilascio": "2026-10-20",
   "voci": 112418,
-  "tsv_md5": "9c5e6e96b78a4d164e88c780f747a385",
-  "changelog_breve": "Armonizzazione profonda Lore & Terminologia v1.0.2: 807 correzioni (Morphling unificato, saga Echoback/Echonite, Dimora & Combattimento).",
+  "tsv_md5": "816396b37f56f5791eeb1383ecfb484f",
+  "changelog_breve": "Audit globale al 100% (112.418 voci): rifinitura canonica finale di specie, titoli quest, drop e tag UI.",
   "changelog_dettagliato": {
     "titolo": "Armonizzazione Filologica e Lore Globale v1.0.2 (807 Perfezionamenti)",
     "descrizione": "Audit forense condotto cross-referenziando i binari ufficiali Compress_en.bin, Compress_es_ES.bin e Compress_fr_FR.bin per eliminare frammentazioni di specie, lore e formule ripetitive.",

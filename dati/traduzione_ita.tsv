@@ -1,4 +1,4 @@
-# Aniimo Traduzione ITA | Versione: 1.0.2 | Build: 3746914 | Data: 2026-10-20 | Voci: 112418
+# Aniimo Traduzione ITA | Versione: 1.0.3 | Build: 3746914 | Data: 2026-10-20 | Voci: 112418
 102824283	Morphling
 103804646	Morphling
 1073747461	Collaborare?
@@ -2075,7 +2075,7 @@
 1096132216	Lampadina tremolante?
 1096133332	Esci
 1096136448	Una <style=Hint_BgL>materia prima</style> prodotta dal Letto Nimbus nella tua Dimora. Può essere venduta nei negozi o lavorata ulteriormente.
-1096150209	Puoi scegliere una delle seguenti rune Leggendarie come ricompensa: Runa DIF F. Premium o Runa DIF M. Premium.
+1096150209	Puoi scegliere una delle seguenti rune <style=Q_5>Leggendarie</style> come ricompensa: <style=Q_5>Runa DIF F. Premium</style> o <style=Q_5>Runa DIF M. Premium</style>.
 1096152840	Uhm... corpo robusto, muscoli sodi. Sembri uno dei Dewy migliori in circolazione!
 1096155370	Ruggisci, ruggisci, ruggisci. Scatena la bestia selvaggia dentro di te!
 1096160544	Mobile di prova N. 2
@@ -8667,7 +8667,7 @@
 1164493060	Ottieni un Aniimo in Forma Prismana.
 1164498697	Sblocca il distintivo leggendario Le maree salgono, i fiori cadono
 1164505840	Scudo di vento
-1164519499	Coral Beats: cuffie alla moda che si abbinano a qualsiasi look.
+1164519499	<style=Hint_BgD>Coral Beats:</style> cuffie alla moda che si abbinano a qualsiasi look.
 1164522284	Aggiungi
 1164533109	Testo stato vuoto (segnaposto)
 1164539729	Legati con un Aniimo e avvicinati a Glacy mentre hai pochi PS
@@ -39151,7 +39151,7 @@
 1484662783	Molto bene... allora vado a preparare la pista—
 1484689967	Registrazione emote 3C
 1484702993	Entra nello stato Cavalca Onde consumando resistenza.
-1484715306	Gocce di oggetti tenuti raddoppiate durante l'evento!
+1484715306	Rilasci di strumenti tenuti raddoppiati durante l'evento!
 1484715955	Benvenuti a Bloomville! Sono la profumiera Sunia, e questo è il mio compagno Aniimo, Apiao.
 1484725217	Fammi pensare...
 1484728466	Un Aniipod fabbricato appositamente usato nelle Fenditure di Vene per calmare e catturare gli Aniimo Leggendari.
@@ -43546,7 +43546,8 @@
 1530780043	Tieni premuto per continuare a infondere
 1530783247	Seleziona un Aniipod per addomesticare l'Alfa.
 1530784743	Somniwing
-1530788909	In questo modo, anche se dovesse perdersi di nuovo, non ci sarà da preoccuparsi! Eh eh.\nQuesto dovrebbe essere il principio impresso nella parte più profonda della memoria di ogni Morfoide: non lo dimenticheranno nemmeno se la loro maschera dovesse rompersi!
+1530788909	In questo modo, anche se dovesse perdersi di nuovo, non ci sarà da preoccuparsi! Eh eh.
+Questo dovrebbe essere il principio impresso nella parte più profonda della memoria di ogni Morphling: non lo dimenticheranno nemmeno se la loro maschera dovesse rompersi!
 1530803731	A un prezzo irrisorio, puoi potenziare le tue attitudini in men che non si dica! Non è una crescita forzata, promesso.
 1530811399	Tieni duro, Puffy, ti porterò in un posto più fresco.
 1530812556	Raggiungi il livello 15 del camper.
@@ -52739,7 +52740,8 @@
 1627039790	Margherita Calice d'oro
 1627062098	PNG
 1627062977	Vai a Titolo di promozione
-1627064648	Li hai trovati di nuovo? Oh wow, manca poco che ti assuma a tempo pieno per rifornire il nostro negozio. Lord Stella è d'accordo, vero?\n...Uhm? Lord Stella? Che c'è?
+1627064648	Li hai trovati di nuovo? Oh wow, manca poco che ti assuma a tempo pieno per rifornire il nostro negozio. Stellalord è d'accordo, vero?
+...Uhm? Stellalord? Che c'è?
 1627067662	Io
 1627070940	Nascondi nomi Aniimo
 1627075166	Buff meccanico manichino di legno - Mostro
@@ -60089,7 +60091,7 @@
 1704363581	Gamba sinistra
 1704395191	Voce indistinta
 1704406007	Scatta in avanti e ruota creando un campo magico che scaglia <style=Hint_BgL>3</style> lame di ghiaccio per 3 colpi, infliggendo danni e applicando <style=Hint_BgL>5</style> accumuli di <style=Hint_BgL><link="source_8038"><u>[Debuff Ghiaccio]</u></link></style>.
-1704407702	Q2608_02Bocciolavilla
+1704407702	Q2608_02Bloomville
 1704422954	PS ottenuti
 1704431789	Ottieni distintivi di raccolta in 4 aree di Pianure Ventose.
 1704438473	Aggiungi Aniimo.
@@ -94076,7 +94078,7 @@
 2061740730	12/12
 2061741299	Spara 3 proiettili di Luce sui bersagli, dando priorità a bersagli diversi. Applica il <style=Hint_BgL>[Marchio della volpe]</style> ai bersagli colpiti, riducendo la loro Resistenza alla Luce del <style=Hint_BgL><customRichText(calcData,buff,2137105,param0,1,%d)>%</style>. Si accumula fino a <style=Hint_BgL><customRichText(buffConfigData,2137105,maxLayer)></style> volte e dura <style=Hint_BgL><customRichText(buffConfigData,2137105,duration)></style> s.
 2061765786	Durata (minuti) (0 = Ora corrente predefinita)
-2061773403	Tuttavia, durante il viaggio di Trasforma, Trasforma ha accidentalmente rotto la sua maschera e ne ha perso i pezzi ovunque... quindi ora ci sono molte cose che Trasforma non riesce a ricordare chiaramente.
+2061773403	Tuttavia, durante il viaggio di Morphling, Morphling ha accidentalmente rotto la sua maschera e ne ha perso i pezzi ovunque... quindi ora ci sono molte cose che Morphling non riesce a ricordare chiaramente.
 2061778285	Infergon evocato
 2061781242	Come faccio, ehi?
 2061782554	GoGoHomes potrebbe non essere il tipo di svolta che cambia un'epoca, ma almeno tutti hanno concordato che offre davvero <style=Hint_BgD>un modo completamente nuovo di vivere</style>.
