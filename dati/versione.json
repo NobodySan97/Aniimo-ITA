@@ -1,20 +1,20 @@
 {
-  "versione_traduzione": "1.0.1",
+  "versione_traduzione": "1.0.2",
   "build_gioco": "3746914",
-  "data_rilascio": "2026-10-19",
+  "data_rilascio": "2026-10-20",
   "voci": 112418,
-  "tsv_md5": "a625c5a29b5db90480204d744cf4295e",
-  "changelog_breve": "Revisione terminologica globale: 968 correzioni specialistiche (Lore, Combattimento, Economia, UI).",
+  "tsv_md5": "9c5e6e96b78a4d164e88c780f747a385",
+  "changelog_breve": "Armonizzazione profonda Lore & Terminologia v1.0.2: 807 correzioni (Morphling unificato, saga Echoback/Echonite, Dimora & Combattimento).",
   "changelog_dettagliato": {
-    "titolo": "Revisione Terminologica Specialistica Globale (968 Perfezionamenti)",
-    "descrizione": "Audit filologico e linguistico condotto confrontando i testi con inglese, spagnolo e francese ufficiali.",
-    "cat1_titolo": "🐾 Lore, Creature & Dimora (352 fix)",
-    "cat1_testo": "• Dimora: unificata la traduzione canonica di Homeland (eliminata la letterale 'Madrepatria').\n• Nomi Specie: ripristinati Whelpy, Stellalord, Shrout, Lucklet, Big Chillmut, Wolferno.\n• Accarezza: corretto il verbo 'Pet' (non più sostantivo 'Animale').\n• Varie: macchina unificata su 'Incubatrice', normalizzate forme 'Alfa' e Livello Camper.",
-    "cat2_titolo": "⚔️ Combattimento & Statistiche (230 fix)",
-    "cat2_testo": "• Difese: standardizzate tutte le sigle su DIF F. e DIF M. (eliminate forme miste inglesi).\n• Parametri: Punti Energia (PE), Tasso critico, attributi Potenza e Grinta.\n• Meccaniche: mossa 'Suprema', distinzione Vigore (schivata) vs Resistenza.\n• Status: corretto 'Bruciatura' (da verbo brucia) e abilità Spezzabruciatura.",
-    "cat3_titolo": "🗺️ Mondo, Luoghi & UI (252 fix)",
-    "cat3_testo": "• Regioni: Pianure Ventose (84 correzioni discordanti), Cresta delle Mille Zanne.\n• Prova del Dottore: risolto il clamoroso calco giudiziario 'Processo del Dottore'.\n• Falsi Amici UI: 'Squadra' al posto di festa (Party), pulsante 'Esci' dai dungeon.\n• Coerenza: I Pathfinder (grammatica) e boccioli mappa standardizzati.",
-    "cat4_titolo": "📦 Oggetti, Fabbricazione & Shop (148 fix)",
-    "cat4_testo": "• Valute: 'Crediti' (non più Riconoscimenti da cinema!) ed energia 'Primegia'.\n• Fabbricazione: verbo 'Cucina' (non più il sostantivo cuoco!) e Fabbricatore Aniipod.\n• Equipaggiamento: 'Strumenti Tenuti' (non più Trattenuti doganali).\n• Palestra & Minerali: Club Colpospirale, Stagno di legno e separazione parole fuse."
+    "titolo": "Armonizzazione Filologica e Lore Globale v1.0.2 (807 Perfezionamenti)",
+    "descrizione": "Audit forense condotto cross-referenziando i binari ufficiali Compress_en.bin, Compress_es_ES.bin e Compress_fr_FR.bin per eliminare frammentazioni di specie, lore e formule ripetitive.",
+    "cat1_titolo": "🐾 Morphling & Creature Compagne (31 fix critici)",
+    "cat1_testo": "• Morphling unificato: eliminati i 14 nomi discordanti di machine translation (Mutagenero, Mutantor, Morfingo, Morfoide, Trasformino, Cambiaforma, Morfide, Morfo, Mutomorfo, trasmutatore, Morfolino, Trasforma, Mutaforme) standardizzando tutte le missioni sul canone 'Morphling'.\n• Residui Pet: convertiti i residui di sistema 'pet/i pet' in 'Aniimo/degli Aniimo' e 'Cattura-Aniimo'.",
+    "cat2_titolo": "🌊 Saga di Echoback & Minerali Echonite (18 fix)",
+    "cat2_testo": "• Echoback: eliminata la frammentazione della creatura ancestrale ('Ecoschiena', 'Il canto dell\\'Approdo', 'Canto eterno del ritorno dell\\'eco', 'Ecoros') unificata su 'Echoback'.\n• Sale di Echoback: ricondotti a coerenza i 4 nomi del sale di missione (Approdo dell\\'Eco, Ecocorazza, Sale Riecheggiante).\n• Echonite: armonizzato il cristallo di risonanza (da 'echioliti' e 'Econite' a 'Echonite').",
+    "cat3_titolo": "⚔️ UI Tattica & Combattimento (112 fix)",
+    "cat3_testo": "• Tasto Arrenditi: corretto il clamoroso 'Renditi' presente nella schermata di scontro in 'Arrenditi'.\n• Danni Puri: convertito 'Danni Veri / Danno vero' nel termine canonico videoludico 'Danni Puri / Danno Puro'.\n• Bruciatura: standardizzato status '[Bruciatura]' (da Scottatura).\n• Primegia: convertite 21 occorrenze residue inglesi 'Primegy' e 'Primenergia' in 'Primegia'.",
+    "cat4_titolo": "🏡 Dimora, Valute & Mondo di Gioco (646 fix)",
+    "cat4_testo": "• Monete della Dimora: standardizzate 52 voci di valuta precedentemente divise tra 'Monete Casa', 'Monete Dimora' e varianti.\n• Formule di Costruzione: armonizzate 146 descrizioni fisse di arredi ('Utilizzato per le costruzioni nella tua Dimora.' e 'Un blocco da costruzione per decorare la tua Dimora.').\n• Elementi Mappa & Minigiochi: unificati Teletrasporto (77x), Morra cinese (62x), Ambra Lumin (203x), Nido d\\'uova (64x), Capo fotografo (45x) e Battaglia ad alta difficoltà (42x).\n• Schermate: corretta 'Impostazioni Terreni Coltivabili' (da Fattoria) e titolo missione non tradotto 'Mare di Fiori'."
   }
 }
