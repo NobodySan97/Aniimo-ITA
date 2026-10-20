@@ -504,6 +504,136 @@ function Resolve-AniimoDir([string]$Candidate) {
     return $null
 }
 
+function Find-AllAniimoInstallations {
+    $results = @{}
+
+    # 1. Ricerca librerie Steam (Registry e libraryfolders.vdf)
+    $steamPaths = New-Object System.Collections.Generic.List[string]
+    foreach ($regPath in @('HKCU:\Software\Valve\Steam', 'HKLM:\SOFTWARE\WOW6432Node\Valve\Steam')) {
+        $regProps = Get-ItemProperty $regPath -ErrorAction SilentlyContinue
+        if ($regProps) {
+            foreach ($val in @($regProps.SteamPath, $regProps.InstallPath)) {
+                if ($val -and -not $steamPaths.Contains($val)) { $steamPaths.Add($val) }
+            }
+        }
+    }
+    foreach ($basePath in @($steamPaths.ToArray())) {
+        $vdfFile = Join-Path $basePath 'steamapps\libraryfolders.vdf'
+        if (Test-Path -LiteralPath $vdfFile) {
+            $rawVdf = Get-Content -LiteralPath $vdfFile -Raw -ErrorAction SilentlyContinue
+            if ($rawVdf) {
+                foreach ($match in [regex]::Matches($rawVdf, '"path"\s+"([^"]+)"')) {
+                    $libDir = $match.Groups[1].Value.Replace('\\', '\')
+                    if (-not $steamPaths.Contains($libDir)) { $steamPaths.Add($libDir) }
+                }
+            }
+        }
+    }
+    foreach ($libRoot in $steamPaths) {
+        $manifest = Join-Path $libRoot 'steamapps\appmanifest_4126040.acf'
+        if (Test-Path -LiteralPath $manifest) {
+            $acfContent = Get-Content -LiteralPath $manifest -Raw -ErrorAction SilentlyContinue
+            $mDir = [regex]::Match([string]$acfContent, '"installdir"\s+"([^"]+)"')
+            if ($mDir.Success) {
+                $p = Resolve-AniimoDir (Join-Path $libRoot ('steamapps\common\' + $mDir.Groups[1].Value))
+                if ($p -and -not $results.ContainsKey('Steam')) { $results['Steam'] = $p }
+            }
+        }
+        $p = Resolve-AniimoDir (Join-Path $libRoot 'steamapps\common\Aniimo')
+        if ($p -and -not $results.ContainsKey('Steam')) { $results['Steam'] = $p }
+    }
+
+    # 2. Ricerca tramite Registro di Windows (PawPrint Launcher, Standalone, ecc.)
+    foreach ($regRoot in @(
+        'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall',
+        'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall',
+        'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
+    )) {
+        if (Test-Path -LiteralPath $regRoot) {
+            $subKeys = Get-ChildItem -LiteralPath $regRoot -ErrorAction SilentlyContinue
+            if ($subKeys) {
+                foreach ($sk in $subKeys) {
+                    $dn = $sk.GetValue('DisplayName')
+                    if ($dn -and ($dn -like '*Aniimo*' -or $dn -like '*PawPrint*')) {
+                        $il = $sk.GetValue('InstallLocation')
+                        if ($il) {
+                            $p = Resolve-AniimoDir $il
+                            if ($p) {
+                                if ($il -like '*PawPrint*' -or $dn -like '*PawPrint*') {
+                                    if (-not $results.ContainsKey('PawPrint')) { $results['PawPrint'] = $p }
+                                } elseif ($p -notlike '*steamapps*') {
+                                    if (-not $results.ContainsKey('PawPrint')) { $results['PawPrint'] = $p }
+                                }
+                            }
+                        }
+                        $us = $sk.GetValue('UninstallString')
+                        if ($us) {
+                            $usClean = ($us -replace '^"|"[^"]*$', '').Trim()
+                            $parentDir = Split-Path -Parent $usClean
+                            $p = Resolve-AniimoDir $parentDir
+                            if ($p) {
+                                if ($parentDir -like '*PawPrint*' -or $dn -like '*PawPrint*') {
+                                    if (-not $results.ContainsKey('PawPrint')) { $results['PawPrint'] = $p }
+                                } elseif ($p -notlike '*steamapps*') {
+                                    if (-not $results.ContainsKey('PawPrint')) { $results['PawPrint'] = $p }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    # 3. Scansione dischi fissi (tutti i drive con cartelle tipiche PawPrint, Steam, Xbox e Standalone)
+    foreach ($drv in [System.IO.DriveInfo]::GetDrives() | Where-Object { $_.IsReady -and $_.DriveType -eq 'Fixed' }) {
+        $root = $drv.RootDirectory.FullName
+        if (-not $results.ContainsKey('PawPrint')) {
+            foreach ($sub in @(
+                'PawPrint\Aniimo\game',
+                'PawPrint\Aniimo',
+                'PawPrint',
+                'Program Files\PawPrint\Aniimo\game',
+                'Program Files\PawPrint\Aniimo',
+                'Program Files\PawPrint',
+                'Program Files (x86)\PawPrint\Aniimo\game',
+                'Program Files (x86)\PawPrint\Aniimo',
+                'Program Files (x86)\PawPrint',
+                'Games\PawPrint\Aniimo\game',
+                'Games\PawPrint\Aniimo',
+                'Games\PawPrint'
+            )) {
+                $cand = Join-Path $root $sub
+                if (Test-Path -LiteralPath $cand) {
+                    $p = Resolve-AniimoDir $cand
+                    if ($p) {
+                        $results['PawPrint'] = $p
+                        break
+                    }
+                }
+            }
+        }
+        if (-not $results.ContainsKey('Steam')) {
+            foreach ($sub in @(
+                'SteamLibrary\steamapps\common\Aniimo',
+                'Program Files (x86)\Steam\steamapps\common\Aniimo',
+                'Program Files\Steam\steamapps\common\Aniimo'
+            )) {
+                $cand = Join-Path $root $sub
+                if (Test-Path -LiteralPath $cand) {
+                    $p = Resolve-AniimoDir $cand
+                    if ($p) {
+                        $results['Steam'] = $p
+                        break
+                    }
+                }
+            }
+        }
+    }
+
+    return $results
+}
+
 function Find-AniimoDir([string]$ExplicitDir) {
     $resolved = Resolve-AniimoDir $ExplicitDir
     if ($resolved) { return $resolved }
@@ -514,98 +644,10 @@ function Find-AniimoDir([string]$ExplicitDir) {
         if ($resolved) { return $resolved }
     }
 
-    # 1. Ricerca tramite Registro di Windows (PawPrint Launcher, Steam, Xbox App, ecc.)
-    foreach ($regRoot in @(
-        'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall',
-        'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall',
-        'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
-    )) {
-        if (Test-Path -LiteralPath $regRoot) {
-            $subKeys = Get-ChildItem -LiteralPath $regRoot -ErrorAction SilentlyContinue
-            foreach ($sk in $subKeys) {
-                $dn = $sk.GetValue('DisplayName')
-                if ($dn -and ($dn -like '*Aniimo*' -or $dn -like '*PawPrint*')) {
-                    $il = $sk.GetValue('InstallLocation')
-                    if ($il) {
-                        $found = Resolve-AniimoDir $il
-                        if ($found) { return $found }
-                    }
-                    $us = $sk.GetValue('UninstallString')
-                    if ($us) {
-                        $usClean = ($us -replace '^"|"[^"]*$', '').Trim()
-                        $parentDir = Split-Path -Parent $usClean
-                        $found = Resolve-AniimoDir $parentDir
-                        if ($found) { return $found }
-                    }
-                }
-            }
-        }
-    }
+    $all = Find-AllAniimoInstallations
+    if ($all.ContainsKey('Steam')) { return $all['Steam'] }
+    if ($all.ContainsKey('PawPrint')) { return $all['PawPrint'] }
 
-    # 2. Ricerca librerie Steam (Registry e libraryfolders.vdf)
-    $steamPaths = New-Object System.Collections.Generic.List[string]
-    foreach ($regPath in @('HKCU:\Software\Valve\Steam', 'HKLM:\SOFTWARE\WOW6432Node\Valve\Steam')) {
-        $regProps = Get-ItemProperty $regPath -ErrorAction SilentlyContinue
-        foreach ($val in @($regProps.SteamPath, $regProps.InstallPath)) {
-            if ($val -and -not $steamPaths.Contains($val)) { $steamPaths.Add($val) }
-        }
-    }
-    foreach ($basePath in @($steamPaths.ToArray())) {
-        $vdfFile = Join-Path $basePath 'steamapps\libraryfolders.vdf'
-        if (Test-Path -LiteralPath $vdfFile) {
-            $rawVdf = Get-Content -LiteralPath $vdfFile -Raw
-            foreach ($match in [regex]::Matches($rawVdf, '"path"\s+"([^"]+)"')) {
-                $libDir = $match.Groups[1].Value.Replace('\\', '\')
-                if (-not $steamPaths.Contains($libDir)) { $steamPaths.Add($libDir) }
-            }
-        }
-    }
-    foreach ($libRoot in $steamPaths) {
-        $manifest = Join-Path $libRoot 'steamapps\appmanifest_4126040.acf'
-        if (Test-Path -LiteralPath $manifest) {
-            $acfContent = Get-Content -LiteralPath $manifest -Raw -ErrorAction SilentlyContinue
-            $mDir = [regex]::Match([string]$acfContent, '"installdir"\s+"([^"]+)"')
-            if ($mDir.Success) {
-                $found = Resolve-AniimoDir (Join-Path $libRoot ('steamapps\common\' + $mDir.Groups[1].Value))
-                if ($found) { return $found }
-            }
-        }
-        $found = Resolve-AniimoDir (Join-Path $libRoot 'steamapps\common\Aniimo')
-        if ($found) { return $found }
-    }
-
-    # 3. Scansione dischi fissi (tutti i drive con cartelle tipiche PawPrint, Steam, Xbox e Standalone)
-    foreach ($drv in [System.IO.DriveInfo]::GetDrives() | Where-Object { $_.IsReady -and $_.DriveType -eq 'Fixed' }) {
-        $root = $drv.RootDirectory.FullName
-        foreach ($relPath in @(
-            'PawPrint\Aniimo\game',
-            'PawPrint\Aniimo',
-            'PawPrint',
-            'SteamLibrary\steamapps\common\Aniimo',
-            'Program Files (x86)\Steam\steamapps\common\Aniimo',
-            'Program Files\Steam\steamapps\common\Aniimo',
-            'Program Files\PawPrint\Aniimo\game',
-            'Program Files\PawPrint\Aniimo',
-            'Program Files\PawPrint',
-            'Program Files (x86)\PawPrint\Aniimo\game',
-            'Program Files (x86)\PawPrint\Aniimo',
-            'Program Files (x86)\PawPrint',
-            'Games\PawPrint\Aniimo\game',
-            'Games\PawPrint\Aniimo',
-            'Games\PawPrint',
-            'Games\Aniimo\game',
-            'Games\Aniimo',
-            'XboxGames\Aniimo',
-            'Aniimo\game',
-            'Aniimo'
-        )) {
-            $candidatePath = Join-Path $root $relPath
-            if (Test-Path -LiteralPath $candidatePath) {
-                $found = Resolve-AniimoDir $candidatePath
-                if ($found) { return $found }
-            }
-        }
-    }
     return $null
 }
 
@@ -1460,6 +1502,26 @@ function Show-PolarisDialog {
       </Setter>
     </Style>
 
+    <!-- Pulsante Switcher Client Rapido (PolarisClientSwitchBtn) -->
+    <Style x:Key="PolarisClientSwitchBtn" TargetType="Button">
+      <Setter Property="Cursor" Value="Hand"/>
+      <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Button">
+            <Border x:Name="bd" CornerRadius="7" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
+              <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Opacity" Value="0.85"/>
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
     <!-- Casella di Ricerca (PolarisSearchBox) -->
     <Style x:Key="PolarisSearchBox" TargetType="TextBox">
       <Setter Property="Foreground" Value="#F8FAFC"/>
@@ -1838,20 +1900,68 @@ function Show-PolarisDialog {
                     </StackPanel>
                   </Border>
 
-                  <!-- Selettore Cartella di Gioco -->
-                  <Border Grid.Row="2" VerticalAlignment="Bottom" CornerRadius="11" Background="#090D16" BorderBrush="#1E293B" BorderThickness="1" Padding="14,10" Margin="0,10,0,0">
+                  <!-- Selettore Client & Cartella di Gioco (con Switcher Rapido Steam / PawPrint) -->
+                  <Border Grid.Row="2" VerticalAlignment="Bottom" CornerRadius="12" Background="#090D16" BorderBrush="#1E293B" BorderThickness="1" Padding="14,10" Margin="0,10,0,0">
                     <Grid>
-                      <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                      </Grid.ColumnDefinitions>
-                      <TextBlock Grid.Column="0" Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="13" Foreground="#10B981" VerticalAlignment="Center" Margin="0,0,10,0"/>
-                      <TextBlock Grid.Column="1" x:Name="TxtInstallPath" Text="" Foreground="#CBD5E1" FontSize="11" TextTrimming="CharacterEllipsis" VerticalAlignment="Center"/>
-                      <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" Margin="12,0,0,0">
-                        <Button x:Name="BtnOpenFolder" Style="{StaticResource PolarisGhostButton}" Content="Apri cartella" FontSize="11.5" FontWeight="SemiBold" Margin="0,0,14,0"/>
-                        <Button x:Name="BtnSelectFolder" Style="{StaticResource PolarisGhostButton}" Content="Cambia percorso" Foreground="#38BDF8" FontSize="11.5" FontWeight="Bold"/>
-                      </StackPanel>
+                      <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                      </Grid.RowDefinitions>
+
+                      <!-- Riga 0: Selettore Rapido Client & Azioni Cartella -->
+                      <Grid Grid.Row="0" Margin="0,0,0,8">
+                        <Grid.ColumnDefinitions>
+                          <ColumnDefinition Width="Auto"/>
+                          <ColumnDefinition Width="*"/>
+                          <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Bottoni Selezione Rapida Client (Steam / PawPrint) -->
+                        <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+                          <TextBlock Text="INSTALLAZIONE:" Foreground="#64748B" FontSize="9.5" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,8,0"/>
+
+                          <!-- Pulsante Steam -->
+                          <Button x:Name="BtnSwitchSteam" Style="{StaticResource PolarisClientSwitchBtn}" Height="28" Padding="10,0" Margin="0,0,6,0" Cursor="Hand" ToolTip="Passa all'installazione Steam di Aniimo">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                              <Ellipse x:Name="IcoBtnSteamDot" Width="6" Height="6" Fill="#38BDF8" Margin="0,0,6,0" VerticalAlignment="Center"/>
+                              <TextBlock Text="🎮" FontSize="10.5" Margin="0,0,4,0" VerticalAlignment="Center"/>
+                              <TextBlock x:Name="TxtBtnSteamLabel" Text="Steam" FontSize="11.5" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                            </StackPanel>
+                          </Button>
+
+                          <!-- Pulsante PawPrint -->
+                          <Button x:Name="BtnSwitchPawPrint" Style="{StaticResource PolarisClientSwitchBtn}" Height="28" Padding="10,0" Margin="0,0,6,0" Cursor="Hand" ToolTip="Passa all'installazione del Launcher ufficiale PawPrint">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                              <Ellipse x:Name="IcoBtnPawPrintDot" Width="6" Height="6" Fill="#F59E0B" Margin="0,0,6,0" VerticalAlignment="Center"/>
+                              <TextBlock Text="🐾" FontSize="10.5" Margin="0,0,4,0" VerticalAlignment="Center"/>
+                              <TextBlock x:Name="TxtBtnPawPrintLabel" Text="PawPrint" FontSize="11.5" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                            </StackPanel>
+                          </Button>
+
+                          <!-- Badge Personalizzato (se percorso manuale diverso) -->
+                          <Border x:Name="BadgeCustomFolder" CornerRadius="6" Background="#162032" BorderBrush="#334155" BorderThickness="1" Padding="8,3" Margin="0,0,6,0" Visibility="Collapsed" VerticalAlignment="Center">
+                            <TextBlock Text="📁 Personalizzato" Foreground="#94A3B8" FontSize="11" FontWeight="SemiBold"/>
+                          </Border>
+                        </StackPanel>
+
+                        <!-- Pulsanti Apri / Cambia Percorso -->
+                        <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                          <Button x:Name="BtnOpenFolder" Style="{StaticResource PolarisGhostButton}" Content="Apri cartella" FontSize="11.5" FontWeight="SemiBold" Margin="0,0,12,0"/>
+                          <Button x:Name="BtnSelectFolder" Style="{StaticResource PolarisGhostButton}" Content="📁 Sfoglia..." Foreground="#38BDF8" FontSize="11.5" FontWeight="Bold"/>
+                        </StackPanel>
+                      </Grid>
+
+                      <!-- Riga 1: Indicatore e Percorso Completo su Disco -->
+                      <Border Grid.Row="1" BorderBrush="#141E30" BorderThickness="0,1,0,0" Padding="0,7,0,0">
+                        <Grid>
+                          <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                          </Grid.ColumnDefinitions>
+                          <TextBlock Grid.Column="0" Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="12.5" Foreground="#10B981" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                          <TextBlock Grid.Column="1" x:Name="TxtInstallPath" Text="" Foreground="#CBD5E1" FontSize="11" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" ToolTip="Percorso attivo su disco"/>
+                        </Grid>
+                      </Border>
                     </Grid>
                   </Border>
                 </Grid>
@@ -2173,6 +2283,13 @@ $TxtBuildMatchBanner   = $win.FindName('TxtBuildMatchBanner')
 $TxtInstallPath        = $win.FindName('TxtInstallPath')
 $BtnOpenFolder         = $win.FindName('BtnOpenFolder')
 $BtnSelectFolder       = $win.FindName('BtnSelectFolder')
+$BtnSwitchSteam        = $win.FindName('BtnSwitchSteam')
+$BtnSwitchPawPrint     = $win.FindName('BtnSwitchPawPrint')
+$TxtBtnSteamLabel      = $win.FindName('TxtBtnSteamLabel')
+$TxtBtnPawPrintLabel   = $win.FindName('TxtBtnPawPrintLabel')
+$IcoBtnSteamDot        = $win.FindName('IcoBtnSteamDot')
+$IcoBtnPawPrintDot     = $win.FindName('IcoBtnPawPrintDot')
+$BadgeCustomFolder     = $win.FindName('BadgeCustomFolder')
 
 $TxtProgressStatus     = $win.FindName('TxtProgressStatus')
 $BarInstallProgress    = $win.FindName('BarInstallProgress')
@@ -2215,8 +2332,9 @@ if (Test-Path -LiteralPath $ArtPath) {
     } catch {}
 }
 
-$script:CurrentGameDir = $ResolvedGameDir
-$script:CurrentMeta    = $TsvMeta
+$script:CurrentGameDir   = $ResolvedGameDir
+$script:DetectedInstalls = Find-AllAniimoInstallations
+$script:CurrentMeta      = $TsvMeta
 $script:GlossaryData   = $null
 $script:GlossaryLoaded = $false
 $script:IsBusy         = $false
@@ -2277,6 +2395,58 @@ function Update-UiDashboard {
     $brushConv = New-Object System.Windows.Media.BrushConverter
     $StatusOrb.Fill = $brushConv.ConvertFromString($st.DotColor)
     $StatusOrbGlow.Color = [System.Windows.Media.ColorConverter]::ConvertFromString($st.DotColor)
+
+    # Aggiornamento Selettore Client Rapido (Steam / PawPrint)
+    $hasSteam    = $script:DetectedInstalls.ContainsKey('Steam')
+    $hasPawPrint = $script:DetectedInstalls.ContainsKey('PawPrint')
+    $steamPath   = if ($hasSteam) { $script:DetectedInstalls['Steam'] } else { '' }
+    $pawPath     = if ($hasPawPrint) { $script:DetectedInstalls['PawPrint'] } else { '' }
+
+    $isSteamActive    = $script:CurrentGameDir -and ($script:CurrentGameDir.TrimEnd('\') -ieq $steamPath.TrimEnd('\'))
+    $isPawPrintActive = $script:CurrentGameDir -and ($script:CurrentGameDir.TrimEnd('\') -ieq $pawPath.TrimEnd('\'))
+
+    if ($BtnSwitchSteam) {
+        $BtnSwitchSteam.Visibility = if ($hasSteam) { 'Visible' } else { 'Collapsed' }
+        if ($isSteamActive) {
+            $BtnSwitchSteam.Background = $brushConv.ConvertFromString('#162E44')
+            $BtnSwitchSteam.BorderBrush = $brushConv.ConvertFromString('#38BDF8')
+            $BtnSwitchSteam.BorderThickness = New-Object Windows.Thickness 1.2
+            $TxtBtnSteamLabel.Foreground = $brushConv.ConvertFromString('#38BDF8')
+            $TxtBtnSteamLabel.FontWeight = [Windows.FontWeights]::Bold
+            $IcoBtnSteamDot.Fill = $brushConv.ConvertFromString('#38BDF8')
+        } else {
+            $BtnSwitchSteam.Background = $brushConv.ConvertFromString('#0D1526')
+            $BtnSwitchSteam.BorderBrush = $brushConv.ConvertFromString('#1E293B')
+            $BtnSwitchSteam.BorderThickness = New-Object Windows.Thickness 1
+            $TxtBtnSteamLabel.Foreground = $brushConv.ConvertFromString('#94A3B8')
+            $TxtBtnSteamLabel.FontWeight = [Windows.FontWeights]::SemiBold
+            $IcoBtnSteamDot.Fill = $brushConv.ConvertFromString('#475569')
+        }
+    }
+
+    if ($BtnSwitchPawPrint) {
+        $BtnSwitchPawPrint.Visibility = if ($hasPawPrint) { 'Visible' } else { 'Collapsed' }
+        if ($isPawPrintActive) {
+            $BtnSwitchPawPrint.Background = $brushConv.ConvertFromString('#2A2016')
+            $BtnSwitchPawPrint.BorderBrush = $brushConv.ConvertFromString('#F59E0B')
+            $BtnSwitchPawPrint.BorderThickness = New-Object Windows.Thickness 1.2
+            $TxtBtnPawPrintLabel.Foreground = $brushConv.ConvertFromString('#FBBF24')
+            $TxtBtnPawPrintLabel.FontWeight = [Windows.FontWeights]::Bold
+            $IcoBtnPawPrintDot.Fill = $brushConv.ConvertFromString('#F59E0B')
+        } else {
+            $BtnSwitchPawPrint.Background = $brushConv.ConvertFromString('#0D1526')
+            $BtnSwitchPawPrint.BorderBrush = $brushConv.ConvertFromString('#1E293B')
+            $BtnSwitchPawPrint.BorderThickness = New-Object Windows.Thickness 1
+            $TxtBtnPawPrintLabel.Foreground = $brushConv.ConvertFromString('#94A3B8')
+            $TxtBtnPawPrintLabel.FontWeight = [Windows.FontWeights]::SemiBold
+            $IcoBtnPawPrintDot.Fill = $brushConv.ConvertFromString('#475569')
+        }
+    }
+
+    if ($BadgeCustomFolder) {
+        $isCustom = (-not $isSteamActive) -and (-not $isPawPrintActive) -and ($null -ne $script:CurrentGameDir)
+        $BadgeCustomFolder.Visibility = if ($isCustom) { 'Visible' } else { 'Collapsed' }
+    }
 
     if ($script:CurrentGameDir) {
         $TxtInstallPath.Text = $script:CurrentGameDir
@@ -2385,6 +2555,26 @@ $TabArchitecture.Add_Checked({
     $ViewDashboard.Visibility    = 'Collapsed'
     $ViewDictionary.Visibility   = 'Collapsed'
     $ViewArchitecture.Visibility = 'Visible'
+})
+
+$BtnSwitchSteam.Add_Click({
+    if ($script:DetectedInstalls.ContainsKey('Steam')) {
+        $script:CurrentGameDir = $script:DetectedInstalls['Steam']
+        $script:GlossaryLoaded = $false
+        Save-InstallerConfig $script:CurrentGameDir
+        Update-UiDashboard
+        Set-ProgressBarState 100 "Installazione attiva: Steam" $true
+    }
+})
+
+$BtnSwitchPawPrint.Add_Click({
+    if ($script:DetectedInstalls.ContainsKey('PawPrint')) {
+        $script:CurrentGameDir = $script:DetectedInstalls['PawPrint']
+        $script:GlossaryLoaded = $false
+        Save-InstallerConfig $script:CurrentGameDir
+        Update-UiDashboard
+        Set-ProgressBarState 100 "Installazione attiva: PawPrint Launcher" $true
+    }
 })
 
 $BtnOpenFolder.Add_Click({
