@@ -713,20 +713,47 @@ function Get-Md5Bytes([byte[]]$Bytes) {
 
 function Get-GameBuild([string]$TargetDir) {
     if (-not $TargetDir) { return 'Sconosciuta' }
-    $verFile = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\verlist.txt'
-    if (Test-Path -LiteralPath $verFile) {
-        $txt = (Get-Content -LiteralPath $verFile -Raw).Trim()
-        return ($txt.Split(',')[0]).Trim()
+
+    # 1. Controlla manifest di patch online (aggiornamenti hotfix scaricati in cvs)
+    $patchVer = Join-Path $TargetDir 'Aniimo_Data\cvs\res\uab\win\DefaultPackage\ManifestFiles\PackageManifest_DefaultPackage.version'
+    if (Test-Path -LiteralPath $patchVer) {
+        $v = (Get-Content -LiteralPath $patchVer -Raw -ErrorAction SilentlyContinue).Trim()
+        if ($v) { return $v }
     }
-    foreach ($rel in @(
-        'Aniimo_Data\cvs\res\uab\win\DefaultPackage\ManifestFiles\PackageManifest_DefaultPackage.version',
-        'Aniimo_Data\StreamingAssets\cvs\res\uab\win\DefaultPackage\PackageManifest_DefaultPackage.version'
-    )) {
-        $pkgVer = Join-Path $TargetDir $rel
-        if (Test-Path -LiteralPath $pkgVer) {
-            return (Get-Content -LiteralPath $pkgVer -Raw).Trim()
+
+    # 2. Controlla verlist.txt (nella cartella principale del gioco o in StreamingAssets)
+    foreach ($vlRel in @('verlist.txt', 'Aniimo_Data\StreamingAssets\verlist.txt')) {
+        $vl = Join-Path $TargetDir $vlRel
+        if (Test-Path -LiteralPath $vl) {
+            $txt = (Get-Content -LiteralPath $vl -Raw -ErrorAction SilentlyContinue).Trim()
+            if ($txt) { return ($txt.Split(',')[0]).Trim() }
         }
     }
+
+    # 3. Controlla salvataggio patch launcher (res_save.json di PawPrint)
+    $resSave = Join-Path $TargetDir 'Aniimo_Data\cvs\res\patchv2\res\res_save.json'
+    if (Test-Path -LiteralPath $resSave) {
+        try {
+            $json = Get-Content -LiteralPath $resSave -Raw -ErrorAction SilentlyContinue | ConvertFrom-Json
+            if ($json -and $json.ThisVer) { return [string]$json.ThisVer }
+        } catch {}
+    }
+
+    # 4. Controlla manifest base StreamingAssets
+    $saVer = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\uab\win\DefaultPackage\PackageManifest_DefaultPackage.version'
+    if (Test-Path -LiteralPath $saVer) {
+        $v = (Get-Content -LiteralPath $saVer -Raw -ErrorAction SilentlyContinue).Trim()
+        if ($v) { return $v }
+    }
+
+    # 5. Controlla indice cache Lua (1.0.<build>)
+    $lcv = Join-Path $TargetDir 'Aniimo_Data\cvs\res\lua\LuaCacheVer.txt'
+    if (Test-Path -LiteralPath $lcv) {
+        $txt = (Get-Content -LiteralPath $lcv -Raw -ErrorAction SilentlyContinue).Trim()
+        $m = [regex]::Match($txt, '1\.0\.(\d+)')
+        if ($m.Success) { return $m.Groups[1].Value }
+    }
+
     return 'Sconosciuta'
 }
 
