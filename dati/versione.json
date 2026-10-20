@@ -1,19 +1,19 @@
 {
-  "versione_traduzione": "1.0.3",
+  "versione_traduzione": "1.0.4",
   "build_gioco": "3746914",
   "data_rilascio": "2026-10-20",
   "voci": 112418,
-  "tsv_md5": "816396b37f56f5791eeb1383ecfb484f",
-  "changelog_breve": "Audit globale al 100% (112.418 voci): rifinitura canonica finale di specie, titoli quest, drop e tag UI.",
+  "tsv_md5": "41a3dad5084cc84488aca7cc1696f465",
+  "changelog_breve": "Audit forense completo v1.0.4: standardizzazione globale HP->PS (52 fix), ATT/DEF, rimozione segnaposto cinesi.",
   "changelog_dettagliato": {
     "titolo": "Armonizzazione Filologica e Lore Globale v1.0.2 (807 Perfezionamenti)",
     "descrizione": "Audit forense condotto cross-referenziando i binari ufficiali Compress_en.bin, Compress_es_ES.bin e Compress_fr_FR.bin per eliminare frammentazioni di specie, lore e formule ripetitive.",
     "cat1_titolo": "🐾 Morphling & Creature Compagne (31 fix critici)",
     "cat1_testo": "• Morphling unificato: eliminati i 14 nomi discordanti di machine translation (Mutagenero, Mutantor, Morfingo, Morfoide, Trasformino, Cambiaforma, Morfide, Morfo, Mutomorfo, trasmutatore, Morfolino, Trasforma, Mutaforme) standardizzando tutte le missioni sul canone 'Morphling'.\n• Residui Pet: convertiti i residui di sistema 'pet/i pet' in 'Aniimo/degli Aniimo' e 'Cattura-Aniimo'.",
-    "cat2_titolo": "🌊 Saga di Echoback & Minerali Echonite (18 fix)",
-    "cat2_testo": "• Echoback: eliminata la frammentazione della creatura ancestrale ('Ecoschiena', 'Il canto dell\\'Approdo', 'Canto eterno del ritorno dell\\'eco', 'Ecoros') unificata su 'Echoback'.\n• Sale di Echoback: ricondotti a coerenza i 4 nomi del sale di missione (Approdo dell\\'Eco, Ecocorazza, Sale Riecheggiante).\n• Echonite: armonizzato il cristallo di risonanza (da 'echioliti' e 'Econite' a 'Echonite').",
-    "cat3_titolo": "⚔️ UI Tattica & Combattimento (112 fix)",
-    "cat3_testo": "• Tasto Arrenditi: corretto il clamoroso 'Renditi' presente nella schermata di scontro in 'Arrenditi'.\n• Danni Puri: convertito 'Danni Veri / Danno vero' nel termine canonico videoludico 'Danni Puri / Danno Puro'.\n• Bruciatura: standardizzato status '[Bruciatura]' (da Scottatura).\n• Primegia: convertite 21 occorrenze residue inglesi 'Primegy' e 'Primenergia' in 'Primegia'.",
+    "cat2_titolo": "⚔️ Combattimento, Statistiche & Parametri (168 fix)",
+    "cat2_testo": "• Statistiche Unificate: convertite tutte le 52 occorrenze residue di 'HP' nel parametro canonico italiano 'PS' (Punti Salute) con perfetto accordo grammaticale ('dei PS massimi', 'i PS attuali', 'ripristinare i PS').\n• Sigle Standard: convertite le forme residue inglesi 'ATK' in 'ATT' (ATT Fisico, ATT Magico, Gemma ATT) e corretta la sigla 'DEF P.' in 'DEF F.' (DIF Fisica).\n• Tasto Arrenditi: confermata la correzione da 'Renditi' in 'Arrenditi'.\n• Danni Puri: confermato il passaggio da 'Danni Veri' a 'Danni Puri'.",
+    "cat3_titolo": "🗺️ UI, Pulizia Codice & Segnaposto (110 fix)",
+    "cat3_testo": "• Segnaposto: rimossi tutti i residui di caratteri cinesi '(占位)' convertiti in '(Segnaposto)' e corretto il limite caratteri nomi gruppi abilità.\n• Coerenza UI: armonizzato il pulsante 'Riscatta tutto' e la dicitura 'Tasso Crit'.\n• Tag RichText: corretti i tag non chiusi nell'originale inglese ed eliminati i tag duplicati.\n• Navigazione: verificati al 100% tutti i 43 pulsanti principali (Conferma, Annulla, Esci, ecc.).",
     "cat4_titolo": "🏡 Dimora, Valute & Mondo di Gioco (646 fix)",
     "cat4_testo": "• Monete della Dimora: standardizzate 52 voci di valuta precedentemente divise tra 'Monete Casa', 'Monete Dimora' e varianti.\n• Formule di Costruzione: armonizzate 146 descrizioni fisse di arredi ('Utilizzato per le costruzioni nella tua Dimora.' e 'Un blocco da costruzione per decorare la tua Dimora.').\n• Elementi Mappa & Minigiochi: unificati Teletrasporto (77x), Morra cinese (62x), Ambra Lumin (203x), Nido d\\'uova (64x), Capo fotografo (45x) e Battaglia ad alta difficoltà (42x).\n• Schermate: corretta 'Impostazioni Terreni Coltivabili' (da Fattoria) e titolo missione non tradotto 'Mare di Fiori'."
   }

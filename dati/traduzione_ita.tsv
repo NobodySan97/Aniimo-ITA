@@ -1,4 +1,4 @@
-# Aniimo Traduzione ITA | Versione: 1.0.3 | Build: 3746914 | Data: 2026-10-20 | Voci: 112418
+# Aniimo Traduzione ITA | Versione: 1.0.4 | Build: 3746914 | Data: 2026-10-20 | Voci: 112418
 102824283	Morphling
 103804646	Morphling
 1073747461	Collaborare?
@@ -4834,7 +4834,7 @@
 1125451605	Aumenta il tasso critico del 10%
 1125459316	Pietra Artiglio di Drago (distruggibile)
 1125474181	Limite Settimanale
-1125475935	Ricevi 3 olo-dispositivi [Vitalità] casuali a costo di perdere l'80% degli HP attuali
+1125475935	Ricevi 3 olo-dispositivi [Vitalità] casuali a costo di perdere l'80% dei PS attuali
 1125478373	Robot offensivo
 1125482923	Corno gargantuesco
 1125483738	Velouria
@@ -6737,7 +6737,7 @@
 1144999881	ATT +2%
 1145003297	Amplificatore di breccia
 1145006928	È la prima volta che vedo il signor Fox comportarsi così seriamente, anche se tutto ciò che ci ha insegnato finora è come scappare più velocemente... Signor Fox, si suppone che lei sia il leggendario Pathfinder che ha attraversato Idyll con 80.000 Aniimo!
-1145041394	Il Potenziale HP acquisito è 6 o superiore
+1145041394	Il Potenziale PS acquisito è 6 o superiore
 1145053079	Yaaawn—
 1145073975	Mobili di prova N. 7
 1145091953	Buff ATT
@@ -10259,7 +10259,7 @@
 1181030905	Inizio a diventare un po' nervoso...
 1181032032	Stufa ardente (Livello 4)
 1181033541	Segnaposto scheda
-1181039739	Perdi l'80% degli HP attuali per ottenere 3 congegni "Valore" casuali
+1181039739	Perdi l'80% dei PS attuali per ottenere 3 congegni "Valore" casuali
 1181062773	Suggerimento: Prova prima a far avanzare l'indizio "Il profumiere sembra ansioso". Tocca qui per una rapida visualizzazione.
 1181078996	Emberpup mette se stesso alla prova
 1181087719	Bagliore
@@ -10357,7 +10357,7 @@
 1182232787	Lunara
 1182265494	Obiettivi fase
 1182272898	Un regalo di pre-registrazione da Idyll
-1182274457	Fornisce agli alleati nell'area bersaglio uno scudo pari al <style=Hint_BgL><customRichText(calcData,buff,2123105,param0,1,%d)>%</style> degli HP massimi di chi lo lancia per <style=Hint_BgL><customRichText(buffConfigData,2123105,duration)></style> s.
+1182274457	Fornisce agli alleati nell'area bersaglio uno scudo pari al <style=Hint_BgL><customRichText(calcData,buff,2123105,param0,1,%d)>%</style> dei PS massimi di chi lo lancia per <style=Hint_BgL><customRichText(buffConfigData,2123105,duration)></style> s.
 1182280928	Vuoi davvero partecipare alla gara con il tuo <style=Hint_BgD>Aniimo attuale</style>?
 1182294928	Schiena
 1182296963	Ambra in fuga: Discesa fluttuante
@@ -17122,7 +17122,7 @@
 1253853181	Dott. Glass
 1253875877	Ottenuto
 1253882205	Strutture Aniimo
-1253892838	Il Tasso di Crit aumenta di <style=Hint_BgD><customRichText(getConfigData,rogue_talent_data,32,param0)>%</style>.
+1253892838	Il Tasso Crit aumenta di <style=Hint_BgD><customRichText(getConfigData,rogue_talent_data,32,param0)>%</style>.
 1253905001	Susuta
 1253918801	Valutazione Eleganza: 9.5. Meno 0.5 perché non può essere ripetuta.
 1253919364	Notifica
@@ -21605,7 +21605,7 @@
 1299510377	Io
 1299517257	Creazione Dimora
 1299526014	Usa il suo amplificatore caudale per emettere continuamente onde sonar, rilevando i punti deboli dei bersagli nel raggio d'azione. Mantenendo la Debolezza del bersaglio al centro per <style=Hint_BgL>0,4</style> s, applica su di esso <style=Hint_BgL>Marchio di debolezza</style>, riducendo la sua resistenza ai CRIT di <style=Hint_BgL><customRichText(calcData,buff, 2144301,param0,1,%d)></style> e il danno inflitto del <style=Hint_BgL><customRichText(calcData,buff, 21443011,param1,1,%d)>%</style> per <style=Hint_BgL><customRichText(calcData,ability,14430201,param0,1)></style> s.
-1299527963	+ <style=Hint_BgL>{param0}%</style> di Riduzione danni. Imposta gli HP recuperabili al <style=Hint_BgL>{param1}%</style> degli HP massimi e aumenta l'ATT del <style=Hint_BgL>{param2}%</style>.
+1299527963	+ <style=Hint_BgL>{param0}%</style> di Riduzione danni. Imposta i PS recuperabili al <style=Hint_BgL>{param1}%</style> dei PS massimi e aumenta l'ATT del <style=Hint_BgL>{param2}%</style>.
 1299551156	Camper Liv. 8
 1299551256	Forziere
 1299554804	Lotto 1 sgombrato
@@ -25906,7 +25906,7 @@
 1344248021	Susuta, per diventare un eccellente Pathfinder come l'istruttrice Lita...
 1344256126	Cos'è questo?
 1344268054	Sfida fallita: Tempo scaduto
-1344271917	Modalità visualizzazione HP
+1344271917	Modalità visualizzazione PS
 1344286020	<style=Hint_BgL>Oggetto temporaneo. Utilizzabile solo in questa partita. Non può essere portato fuori durante l'estrazione.</style>\nUn chip Amplificatore d'attacco con l'abilità Traslazione. Evita di usarlo quando sei rivolto verso un muro.
 1344289766	Piccoli oggetti che restano al tuo fianco ogni giorno e lo riempiono di piccoli momenti di felicità.
 1344296859	Onde scarmigliate sferzano nel vento ululante.
@@ -26086,7 +26086,7 @@
 1346184101	Un elegante palo quadrato in legno dalle linee pulite.
 1346187416	Colori? Perché?
 1346187923	Allenamento del Fuoco - Difficile
-1346188414	Ripristina continuamente HP pari al <customRichText(calcData,buff,2104301,param0,1,%d)>% degli HP massimi di chi l'ha lanciato ogni secondo per <customRichText(buffConfigData,2104301,duration)>s.
+1346188414	Ripristina continuamente PS pari al <customRichText(calcData,buff,2104301,param0,1,%d)>% dei PS massimi di chi l'ha lanciato ogni secondo per <customRichText(buffConfigData,2104301,duration)>s.
 1346192067	Blocco da costruzione - Viola grigio scuro
 1346197915	Evento di rischio
 1346204420	Uovo prodigio
@@ -28273,7 +28273,7 @@
 1368719567	Helmut del Campanone
 1368745646	Chip guarigione di base illusorio
 1368752016	Movimento Base
-1368759563	I nomi dei gruppi di abilità non possono superare sette caratteri 简体中文
+1368759563	I nomi dei gruppi di abilità non possono superare 7 caratteri
 1368768984	Ricerca del Percorso
 1368774345	Una bolla magica cristallizzata dalla volontà dell'Erlath, custodita per generazioni, che porta il tenero segno della sopravvivenza della famiglia.
 1368780111	Cristalli di Lumin x9.990
@@ -29952,7 +29952,7 @@
 1386999443	Budclaw
 1387000736	Camper Liv. 5
 1387001468	Contenuto: Registrazioni di cinque chiamate telefoniche da Blitzwood.
-1387010486	Perdi l'80% degli HP attuali, ottieni 3 Congegni "Corazzati" casuali
+1387010486	Perdi l'80% dei PS attuali, ottieni 3 Congegni "Corazzati" casuali
 1387035711	1 Spettatore
 1387037115	Un Veilfloat scambiato per un faro? Ha senso, considerando che tutti i membri della famiglia Bulbly hanno paura del buio.
 1387040914	Acconciatura
@@ -33096,7 +33096,7 @@
 1420967863	Sembra che io debba legarmi con un Aniimo più piccolo.
 1420974249	Mobile di test n. 8
 1420983099	Addio, mio compagno
-1420986589	Soglia di esecuzione, giustizia all'istante sotto questo livello di HP
+1420986589	Soglia di esecuzione, giustizia all'istante sotto questo livello di PS
 1420999449	Una volta radunati tutti e dieci i colori, il germoglio si agita e infine produce un Uovo di Iris di Prismana.
 1421002474	Pilastro dei registri di crescita
 1421006822	Tutorial livello elemento
@@ -33250,7 +33250,7 @@
 1422340676	Sunia
 1422343936	I Pebbling sono nati per scavare. Con un po' di guida e di pratica, si muoveranno sottoterra come professionisti in men che non si dica.
 1422351320	Bohr
-1422362458	Si radica saldamente nel terreno, conferendo a se stesso e all'Hummin <style=Hint_BgL><customRichText(calcData,buff, 2120704,param0,1,%d)>%</style> di efficienza di BREAK.\nRipristina istantaneamente <style=Hint_BgL><customRichText(calcData,buff, 2120704,param1,1,%d)>%</style> di HP a tutti gli Hummin, e cura se stesso e gli Hummin vicini del <style=Hint_BgL><customRichText(calcData,buff, 2120704,param2,1,%d)>%</style> di HP ogni secondo.
+1422362458	Si radica saldamente nel terreno, conferendo a se stesso e all'Hummin <style=Hint_BgL><customRichText(calcData,buff, 2120704,param0,1,%d)>%</style> di efficienza di BREAK.\nRipristina istantaneamente <style=Hint_BgL><customRichText(calcData,buff, 2120704,param1,1,%d)>%</style> di PS a tutti gli Hummin, e cura se stesso e gli Hummin vicini del <style=Hint_BgL><customRichText(calcData,buff, 2120704,param2,1,%d)>%</style> di PS ogni secondo.
 1422367674	...Quel Somniwing significa che Lady Irelia sta ancora dormendo?\nÈ strano. I registri di Bloomville dicono chiaramente che si sveglia sempre in tempo per far cadere la pioggia di fiori...
 1422371840	Vengono condotti esperimenti di reazione energetica per accelerare in sicurezza l'incubazione delle uova.
 1422375967	Blocco da costruzione - Indaco chiaro
@@ -36012,7 +36012,7 @@
 1451673484	Troppo spaventoso!
 1451674882	Usa per sbloccare l'<style=Hint_BgL>Estate Fresca - Sangria</style>.
 1451696241	Danni Bonus Inflitti allo Scudo di Questa Unità (Si Applica al Bersaglio)
-1451698287	Moltiplicatore Perdita HP
+1451698287	Moltiplicatore Perdita PS
 1451699761	Melloblum
 1451708645	Pozzanghera
 1451709346	Manuale del Compagno Gratuito Livello 61
@@ -36825,7 +36825,7 @@
 1459889289	Una luce soffusa ondeggia, riflettendo lo scintillio del mare.
 1459889554	Lampada da tavolo a fungo dell'avventuriero
 1459894878	Sunia
-1459898224	Aumenta la tua quantità di cure del <style=Hint_BgL>{param1}%</style> per ogni <style=Hint_BgL>{param0}%</style> di HP persi. L'aumento della quantità di cure riceverà un ulteriore incremento del <style=Hint_BgL>{param3}%</style> e raggiungerà il limite massimo quando i tuoi HP scendono al <style=Hint_BgL>{param2}%</style>.
+1459898224	Aumenta la tua quantità di cure del <style=Hint_BgL>{param1}%</style> per ogni <style=Hint_BgL>{param0}%</style> di PS persi. L'aumento della quantità di cure riceverà un ulteriore incremento del <style=Hint_BgL>{param3}%</style> e raggiungerà il limite massimo quando i tuoi PS scendono al <style=Hint_BgL>{param2}%</style>.
 1459908596	Spazio di archiviazione insufficiente
 1459910294	Collaborazione con rednote
 1459912703	Reliquia di Grizbo
@@ -36861,7 +36861,7 @@
 1460186885	Matchmaking in corso...
 1460212606	Dobbiamo accendere l'incenso qui?
 1460215834	Un nuovo Pawney... abbastanza forte da prendere il tesoro più prezioso del boss Infergon.
-1460215864	Fornisce uno Scudo d'Acqua pari al <customRichText(calcData,buff,2158302,param0,1,%d)>% degli HP massimi di chi lo lancia per <customRichText(buffConfigData,2158302,duration)>s.
+1460215864	Fornisce uno Scudo d'Acqua pari al <customRichText(calcData,buff,2158302,param0,1,%d)>% dei PS massimi di chi lo lancia per <customRichText(buffConfigData,2158302,duration)>s.
 1460220238	Io
 1460225969	Riduzione della Resilienza in base a Tasso, Potenza e Altri Bonus
 1460232272	Gara di braccio di ferro?
@@ -37610,13 +37610,13 @@
 1467637758	Visualizza progressi raccolta
 1467640683	<color=#e19c17><b>20</b></color>/20
 1467642235	Addestramento
-1467642263	Crea un'area di vento caldo sotto i piedi, curando continuamente l'intera squadra per il <style=Hint_BgL>9%</style> degli HP massimi di chi la usa per <style=Hint_BgL>8</style> s. Gli Aniimo di tipo Vento ricevono un ulteriore <style=Hint_BgL>3%</style> di cure.
+1467642263	Crea un'area di vento caldo sotto i piedi, curando continuamente l'intera squadra per il <style=Hint_BgL>9%</style> dei PS massimi di chi la usa per <style=Hint_BgL>8</style> s. Gli Aniimo di tipo Vento ricevono un ulteriore <style=Hint_BgL>3%</style> di cure.
 1467649447	Festa con Aniimo
 1467671849	Vai all'Area Camper
 1467703159	Zanna feroce
 1467707869	Hai ricongiunto le anime degli Ecoradici. Questo spetta a te.\nPer quanto mi riguarda... continuerò a viaggiare, cercando i paesaggi della mia memoria.
 1467725313	Abbandona partita in squadra
-1467748313	Usa il meccanismo per ripristinare gli HP!
+1467748313	Usa il meccanismo per ripristinare i PS!
 1467751381	Una conservazione inadeguata ha lasciato penetrare macchie e aloni.
 1467756330	Scheda profilo esclusiva del Negozio Punti.
 1467759661	Ciondolo Cercacuore
@@ -37752,7 +37752,7 @@
 1469164433	Guarda attentamente: uno di loro dovrebbe apparire diverso dagli altri.
 1469180039	Dicono che portarlo con sé porti fortuna durante le avventure.
 1469187739	20% di sconto sulla prima estrazione
-1469189477	Crea uno Scudo di Nuvole che assorbe danni pari al <style=Hint_BgL><customRichText(calcData,buff, 2126101,param1,1,%d)>%</style> degli HP massimi e riduce il consumo di vigore del <style=Hint_BgL><customRichText(calcData,buff, 2126101,param0,1,%d)>%</style>.
+1469189477	Crea uno Scudo di Nuvole che assorbe danni pari al <style=Hint_BgL><customRichText(calcData,buff, 2126101,param1,1,%d)>%</style> dei PS massimi e riduce il consumo di vigore del <style=Hint_BgL><customRichText(calcData,buff, 2126101,param0,1,%d)>%</style>.
 1469208971	Trasporta tutti gli Aniimo fantoccio standard alla Scena 113 (modalità: 0 = no Forme multiple | 1 = Forme multiple abilitate)
 1469214207	Hai già votato
 1469219619	Tutte le risposte precedenti
@@ -44596,7 +44596,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1541833185	Sunia
 1541836709	Warren
 1541836977	Raccogli l'energia Lumin dispersa
-1541857717	Tutti i membri perdono l'80% degli HP attuali, ottengono casualmente 3 olo-dispositivi [Energia].
+1541857717	Tutti i membri perdono l'80% dei PS attuali, ottengono casualmente 3 olo-dispositivi [Energia].
 1541866568	Grr-woo...
 1541875586	12/12
 1541893449	Raggiungi il livello 8 del camper
@@ -45476,7 +45476,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1550974878	Sfondo Studio
 1550976994	Così stanco... Non ho avuto molto Spirito ultimamente...
 1550988468	Hexxin
-1551009841	Tutti i membri perdono l'80% degli HP attuali, ottengono casualmente 3 Olo-congegni [Ondata].
+1551009841	Tutti i membri perdono l'80% dei PS attuali, ottengono casualmente 3 Olo-congegni [Ondata].
 1551025272	Sfida Alfa sul Percorso Sinistro
 1551025823	Io
 1551038851	Volontà Residua
@@ -48028,7 +48028,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1577611076	Traendo forza dal terreno, coltiva radici uniche.
 1577626933	Valuta insufficiente
 1577627136	Wow... Oh-oh!
-1577633162	HP massimi aumentati del 10%
+1577633162	PS massimi aumentati del 10%
 1577639786	Progetto mobile: Fresca estate - Set bevande
 1577654555	Negozio Luna del Raccolto
 1577667555	<style=Hint_BgL>Colture mutate</style> prodotte raramente dai terreni agricoli della tua Dimora. Possono essere raccolte o vendute al rispettivo negozio a un prezzo più alto.
@@ -48185,7 +48185,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1579176884	Arlo
 1579199540	Dott. Lewis
 1579207898	Dott. Glass
-1579224205	Perdi l'80% degli HP attuali, ottieni 3 marchingegni "Ricchezza" casuali
+1579224205	Perdi l'80% dei PS attuali, ottieni 3 marchingegni "Ricchezza" casuali
 1579247476	Devi legarti con uno Shelly perché funzioni! Riprova!
 1579251248	Utilizzato per le costruzioni nella tua Dimora.
 1579258380	Sunia ci ha chiamati...
@@ -48255,7 +48255,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1579845669	Questa missione non è stata ancora accettata.
 1579848324	BINI #9 attiva una fonte di luce temporanea, disperdendo la nebbia entro 20 m davanti al Pathfinder per <customRichText(buffConfigData,6001006,duration)>s. Tempo di ricarica: 120s
 1579849883	Ti dà una speciale visione da detective che ti consente di vedere oggetti metallici e Aniimo invisibili nelle vicinanze.
-1579860223	Quando gli HP scendono sotto il <style=Hint_BgL><customRichText(calcData,buff, 2051003,param0,1,%d)>%</style>, ottiene uno scudo pari al <style=Hint_BgL><customRichText(calcData,buff, 20510030,param0,1,%d)>%</style> degli HP massimi per <style=Hint_BgL><customRichText(buffConfigData,20510030,duration)></style> s. Tempo di ricarica: <style=Hint_BgL><customRichText(calcData,buff, 2051003,param1,1)></style> s.
+1579860223	Quando i PS scendono sotto il <style=Hint_BgL><customRichText(calcData,buff, 2051003,param0,1,%d)>%</style>, ottiene uno scudo pari al <style=Hint_BgL><customRichText(calcData,buff, 20510030,param0,1,%d)>%</style> dei PS massimi per <style=Hint_BgL><customRichText(buffConfigData,20510030,duration)></style> s. Tempo di ricarica: <style=Hint_BgL><customRichText(calcData,buff, 2051003,param1,1)></style> s.
 1579860314	#playerName#, da questa parte.
 1579867750	Cattura un Aniimo Alfa
 1579887971	Tempo di giocare?
@@ -53665,7 +53665,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1636433940	Completato
 1636438566	Morbide foglie succulente blu-verdi si schiudono dal centro in strati delicati, formando una rosetta simile a un loto in fiore.
 1636453704	Diversità della natura
-1636454978	Converte le cure in eccesso in uno scudo quando gli HP sono al massimo, fino al 20% degli HP massimi.
+1636454978	Converte le cure in eccesso in uno scudo quando i PS sono al massimo, fino al 20% dei PS massimi.
 1636457898	Acquista
 1636490522	Impostazioni dell'account
 1636495571	Colmo di vita vibrante, quest'uovo nutre un Aniimo eccezionalmente dotato. Garantisce la schiusa di un Aniimo con potenziale <style=Hint_BgL>Perfetto</style>.
@@ -54479,7 +54479,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1644658861	RIGEN
 1644665212	Torre di Cattura Creature
 1644671709	Giusto, non vi ho ancora presentati.
-1644672621	Essenza di marea coltivata all'interno di conchiglie marine. Usa per ripristinare completamente gli HP di tutti gli Aniimo nella tua squadra.
+1644672621	Essenza di marea coltivata all'interno di conchiglie marine. Usa per ripristinare completamente i PS di tutti gli Aniimo nella tua squadra.
 1644696285	Barton
 1644709675	Auto
 1644726870	La struttura è stabile e, una volta aperta, puoi sederti comodamente e goderti il paesaggio.
@@ -54607,7 +54607,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1646044448	Robot Offensivo
 1646066200	Aumenta notevolmente la difesa contro i <style=Hint_BgL>bersagli a difficoltà Caos e Incubo o inferiore</style>.\nCon un chip installato, <style=Hint_BgL>aumenta leggermente la difesa e la velocità di recupero della resistenza</style>.
 1646078704	Alba Floreale
-1646120729	Ricevi 3 olo-congegni [Difesa] casuali al costo dell'80% degli HP attuali
+1646120729	Ricevi 3 olo-congegni [Difesa] casuali al costo dell'80% dei PS attuali
 1646124772	Un blocco da costruzione grigio scuro-rosa per tutti i tipi di strutture.
 1646126927	Dreadlocks Giovanili
 1646151070	I Dewy e Iris in quest'area saranno amichevoli con te.
@@ -54966,7 +54966,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1649746002	Aggancio
 1649747666	Aumenta la resistenza massima del 10% nelle Isole Whisperwake.
 1649753502	[Avviso di violazione] Accesso visitatori alla casa sospeso
-1649766150	Crea uno scudo di nuvole per proteggersi, assorbendo danni fino al <style=Hint_BgL><customRichText(calcData,buff, 2126101,param1,1,%d)>%</style> degli HP massimi e riducendo il consumo di resistenza del <style=Hint_BgL><customRichText(calcData,buff, 2126101,param0,1,%d)>%</style> per <style=Hint_BgL><customRichText(buffConfigData,2126101,duration)></style> s. Mentre si è affetti da <style=Hint_BgL><link="source_8060"><u>[Avvolto nella nebbia]</u></link></style>, lo scudo assorbe invece danni fino al <style=Hint_BgL><customRichText(calcData,buff, 2126109,param1,1,%d)>%</style> degli HP massimi, e il consumo di resistenza viene ridotto del <style=Hint_BgL><customRichText(calcData,buff, 2126109,param0,1,%d)>%</style> per <style=Hint_BgL><customRichText(buffConfigData,2126109,duration)></style> s.
+1649766150	Crea uno scudo di nuvole per proteggersi, assorbendo danni fino al <style=Hint_BgL><customRichText(calcData,buff, 2126101,param1,1,%d)>%</style> dei PS massimi e riducendo il consumo di resistenza del <style=Hint_BgL><customRichText(calcData,buff, 2126101,param0,1,%d)>%</style> per <style=Hint_BgL><customRichText(buffConfigData,2126101,duration)></style> s. Mentre si è affetti da <style=Hint_BgL><link="source_8060"><u>[Avvolto nella nebbia]</u></link></style>, lo scudo assorbe invece danni fino al <style=Hint_BgL><customRichText(calcData,buff, 2126109,param1,1,%d)>%</style> dei PS massimi, e il consumo di resistenza viene ridotto del <style=Hint_BgL><customRichText(calcData,buff, 2126109,param0,1,%d)>%</style> per <style=Hint_BgL><customRichText(buffConfigData,2126109,duration)></style> s.
 1649771145	Robot offensivo
 1649796073	Esaurito
 1649821539	Emory
@@ -54983,7 +54983,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1649896457	Maree impetuose, Bagliore perlato - Sinistra
 1649903815	Collezionista autodidatta
 1649909716	Esatto. Come suggerisce il nome, il <style=Hint_BgD>Collegamento olo-battaglia</style> richiede di combattere insieme ad altri studenti. Mette alla prova non solo le abilità tue e dei tuoi Aniimo, ma anche il lavoro di squadra con gli altri.
-1649910769	HP (Segnaposto)
+1649910769	PS (Segnaposto)
 1649919296	Danno +15%.
 1649921049	Io
 1649921242	Robot offensivo
@@ -55512,7 +55512,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1655229210	Rinvio fallito
 1655236506	Nessun oggetto
 1655238756	Dott. Lewis
-1655245026	Al <customRichText(calcData,buff, 270020006,param0,1,%d)>% di HP, ripristina rapidamente il <customRichText(calcData,buff, 2700200060,param1,1,%d)>% di HP in <customRichText(buffConfigData,2700200060,duration)> s.
+1655245026	Al <customRichText(calcData,buff, 270020006,param0,1,%d)>% di PS, ripristina rapidamente il <customRichText(calcData,buff, 2700200060,param1,1,%d)>% di PS in <customRichText(buffConfigData,2700200060,duration)> s.
 1655250053	Mobile di prova N. 12
 1655256907	Abilità del Pathfinder
 1655272090	Helmut dice di no!
@@ -56657,7 +56657,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1667591143	Cattura questo Aniimo
 1667600754	Offerta speciale
 1667606412	Jaeger
-1667617857	Ottiene uno Scudo d'Acqua pari al <style=Hint_BgL><customRichText(calcData,buff,2117421,param0,1,%d)>%</style> degli HP massimi per <style=Hint_BgL><customRichText(buffConfigData,2117421,duration)></style>s. Quando è attivo, ogni colpo di abilità infligge un'istanza aggiuntiva di danni da abilità al bersaglio. Intervallo di attivazione: <style=Hint_BgL>0.5</style>s.
+1667617857	Ottiene uno Scudo d'Acqua pari al <style=Hint_BgL><customRichText(calcData,buff,2117421,param0,1,%d)>%</style> dei PS massimi per <style=Hint_BgL><customRichText(buffConfigData,2117421,duration)></style>s. Quando è attivo, ogni colpo di abilità infligge un'istanza aggiuntiva di danni da abilità al bersaglio. Intervallo di attivazione: <style=Hint_BgL>0.5</style>s.
 1667626010	Punteggio indice
 1667629124	Raccolto del set della Luna Piena
 1667631109	Di cosa si tratta innanzitutto?
@@ -57106,7 +57106,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1672012934	Dirigiti verso la <style=Hint_BgL>Forest of Falling Stars</style>, cattura Eko e Pomegg e parti all'avventura con ancora più compagni Aniimo!
 1672027425	Helmwhelp
 1672044554	<sprite name="UI_CharY_2"><sprite name="UI_CharY_5"><sprite name="UI_CharY_Dot"><sprite name="UI_CharY_1"><sprite name="UI_CharY_2"><sprite name="UI_CharY_Dot"><sprite name="UI_CharY_1"><sprite name="UI_CharY_2">
-1672048433	Aumenta gli HP del 15%
+1672048433	Aumenta i PS del 15%
 1672048488	Sigillati all'interno di uova misteriose, aspettano di ricongiungersi con te. Ogni Aniimo porta con sé un profondo legame emotivo, desiderando combattere ancora una volta al tuo fianco.
 1672077387	In modalità Combattimento di squadra, solo il primo Aniimo del tuo gruppo funge da <style=Hint_BgL>Aniimo attivo principale</style>. Gli altri tre possono fornire solo un breve supporto <style=Hint_BgL>usando le abilità primarie</style>, dopodiché tornerai automaticamente all'Aniimo attivo principale. Questa modalità viene utilizzata per il gioco di squadra, come Interlink Olo-Battaglia e Operazione: Furto d'Uova.
 1672088632	Imposta conteggio acquisti a livelli
@@ -59025,7 +59025,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1692637615	Ora puoi posizionare <style=Hint_BgL>36</style> Aniimo nella tua Casa.\n<style=Hint_BgL>Nuovi oggetti</style> sono disponibili nel Negozio della Casa e nel Negozio di Mobili, <style=Hint_BgL>con strutture di produzione più avanzate da scoprire!</style>\nAumentato il <style=Hint_BgL>limite massimo di strutture funzionali</style> posizionabili nella tua Casa\nIl <link="item_4040015"><color=#5090df><u>Modulo energetico</u></color></link> può essere potenziato al <style=Hint_BgL>Liv. 2</style>.\nIl <link="item_4040011"><color=#5090df><u>Modulo ecologico</u></color></link> può essere potenziato al <style=Hint_BgL>Liv. 6</style>.
 1692673598	Mobile di prova n. 13
 1692673810	Grano Shining colorato
-1692682178	DEF P. e DEF M. bonus
+1692682178	DEF F. e DEF M. bonus
 1692684862	Pavimentazione in legno massello con motivo a spina di pesce: elegante, robusta e fatta per durare.
 1692702039	Nessuno è abbastanza veloce da prendermi!
 1692710663	Turbo alfa si è attaccato a un Nimbi! Segui la <color=#D89C28>direzione da cui proviene il colpo di nuvola</color> per trovare gli altri Nimbi. <color=#D89C28>(Progresso caduta: 1/4)</color>
@@ -62588,7 +62588,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1730990635	Emberpup spaventato
 1731014346	Irelia
 1731018297	Padroneggia il potere del fulmine per attaccare i bersagli a corto raggio.
-1731021605	La tua intera squadra perde l'80% degli HP attuali e ottieni casualmente 3 Olo-aggeggi.
+1731021605	La tua intera squadra perde l'80% dei PS attuali e ottieni casualmente 3 Olo-aggeggi.
 1731066554	Schiusa
 1731086237	Venatura pallida - Muretto bicolore marrone caldo
 1731102735	I preparativi sono completi!\nLa Raccolta del Raccolto inizierà presto...\nAttendi i festeggiamenti con trepidazione insieme al tuo Aniimo!
@@ -62622,7 +62622,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1731378400	Pilastro di pietra grezza e robusta.
 1731383183	Smetti di spruzzare
 1731391766	Scultura in legno
-1731398136	Evoca acqua fluente attorno a sé, ripristinando continuamente i propri HP.
+1731398136	Evoca acqua fluente attorno a sé, ripristinando continuamente i propri PS.
 1731408356	Oswen
 1731408457	Testo a schermo nero
 1731412105	Associa per la prima volta per ottenerlo (inviato tramite Posta).
@@ -62703,7 +62703,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1732166023	Completa Santuario: Prima scintilla.
 1732170814	Appunti sul campo dell'ecologia di Idyll
 1732178229	Un blocco da costruzione verde inchiostro per strutture di ogni tipo.
-1732186832	Perdi l'80% degli HP attuali e ricevi 3 marchingegni "Ondata" casuali
+1732186832	Perdi l'80% dei PS attuali e ricevi 3 marchingegni "Ondata" casuali
 1732196440	Puoi goderti un'ottima vista dal <style=Hint_BgL>muro di pietra in cima</style>. Prova a guardare più in alto!
 1732199592	Posizionalo nella tua Dimora per asciugare gli oggetti.
 1732215448	Interruttore a pressione
@@ -62801,7 +62801,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1733109445	Bozzolo della Sorgente Linfatica
 1733116275	Appunti di ricette perfezionati attraverso innumerevoli prove. La grafia potrà anche essere disordinata, ma le istruzioni sono abbastanza chiare da guidarti verso le proporzioni perfette.
 1733123554	Ogni volta che si subiscono danni, innesca 1 istanza di danno di tipo Acqua pari al <customRichText(calcData,buff,4004111,param0,1,%d)>% dell'ATT attuale.
-1733125283	Crea uno Scudo di Nuvole Avanzato che assorbe danni pari al <style=Hint_BgL><customRichText(calcData,buff, 2126109,param1,1,%d)>%</style> degli HP massimi e riduce il consumo di vigore del <style=Hint_BgL><customRichText(calcData,buff, 2126109,param0,1,%d)>%</style>.
+1733125283	Crea uno Scudo di Nuvole Avanzato che assorbe danni pari al <style=Hint_BgL><customRichText(calcData,buff, 2126109,param1,1,%d)>%</style> dei PS massimi e riduce il consumo di vigore del <style=Hint_BgL><customRichText(calcData,buff, 2126109,param0,1,%d)>%</style>.
 1733131115	La <style=Hint_BgL>Modalità Creativa</style> e la <style=Hint_BgL>Modalità Selfie</style> includono un <style=Hint_BgL>Menu della Fotocamera</style>. Regola le diverse <style=Hint_BgL>impostazioni della fotocamera</style> per ottenere scatti migliori!
 1733153360	Usa Suprema
 1733171808	Robot difensivo
@@ -64257,7 +64257,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1748043334	Tiro a vortice d'erba
 1748052052	Vaga per le Pianure Ventose, segui le tracce degli Aniimo, osserva le loro abitudini e diventa il miglior osservatore di Aniimo nei paraggi.
 1748052485	Segnaposto scheda
-1748062659	Woalf può evolversi in molteplici specie, acquisendo sempre più abilità e capacità attraverso l'evoluzione continua.(占位)
+1748062659	Woalf può evolversi in molteplici specie, acquisendo sempre più abilità e capacità attraverso l'evoluzione continua.(Segnaposto)
 1748072513	Elementomanzia
 1748105054	Miracoloso Ravanello Rugiadalunare con mutazioni triple, avvolto da un bagliore simile all'arcobaleno e scintillante di punti di luce abbaglianti, dotato di radici eccezionalmente grandi e carnose.
 1748105294	Una pianta in vaso per la tua Casa.
@@ -65219,7 +65219,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1758125340	Mentre il profumo si diffonde, il mondo inizia a farsi sfocato...
 1758128978	Registro Chiamate Bolty V
 1758131045	Davvero, semplici starine?
-1758132033	Tutti i membri perdono l'80% degli HP attuali, ottengono casualmente 3 Olo-congegni [Corazzato].
+1758132033	Tutti i membri perdono l'80% dei PS attuali, ottengono casualmente 3 Olo-congegni [Corazzato].
 1758134172	Proprietario del Coilstrike Club
 1758137313	Andiamo—
 1758144822	Mobile di Prova N. 10
@@ -65254,7 +65254,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1758375702	Io
 1758396361	Marcia
 1758426690	Entrare nel Legame?
-1758432078	Recupero HP di Valore Fisso
+1758432078	Recupero PS di Valore Fisso
 1758439355	Io
 1758440644	Durante le ricerche, la probabilità di incontrare <color=#e1a347><b>{0}</color></b> aumenta del <color=#e1a347><b>{1}%</color></b>
 1758441091	Io
@@ -66902,7 +66902,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1774974561	Premi ovunque per uscire
 1774986327	Congegno di base
 1774991763	Chip di espansione capacità intermedio
-1774997166	Caro/a (占位) Nome:
+1774997166	Caro/a (Segnaposto) Nome:
 1775048810	Lunara
 1775051940	Riepilogo della storia
 1775052652	Ricordi della Frattura del Filone
@@ -66930,7 +66930,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1775282728	Castagna
 1775291448	Ottiene uno scudo pari al <style=Hint_BgL><customRichText(calcData,buff, 2118707,param0,1,%d)>%</style> dei PF massimi. In postura difensiva, ogni colpo subito aumenta lo scudo ottenuto del <style=Hint_BgL>10%</style>, fino al <style=Hint_BgL>100%</style>. Quando lo scudo scade, converte il <style=Hint_BgL><customRichText(calcData,buff, 2118707,param1,1,%d)>%</style> della quantità rimanente dello scudo in guarigione.
 1775313577	Robot offensivo
-1775351772	Scheda<占位>
+1775351772	Scheda<Segnaposto>
 1775372053	Visualizza mappa
 1775379527	I popolarissimi biscotti Aniimo di Astra, amati dagli Aniimo di tutto il mondo.
 1775401095	Dopo aver catturato gli Aniimo, torna da me per richiedere le tue scorte.
@@ -68569,7 +68569,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1792696773	Forziere Ricompensa Storia - Un Filo di Lana Dorata (Collana)
 1792700380	Si è unito allo studio attuale.
 1792703569	A poco a poco si coprì di fango, finché non seppe più dove finisse il Baleetle e iniziasse la palla.
-1792712400	Produci una melodia curativa con un flauto, ripristinando continuamente gli HP dell'Aniimo impegnato.
+1792712400	Produci una melodia curativa con un flauto, ripristinando continuamente i PS dell'Aniimo impegnato.
 1792715514	Dov'è andato?
 1792728888	Una scultura di sabbia a forma di Budclaw, sdraiata sotto un ombrellone con acqua di cocco in entrambi gli artigli, totalmente immersa nella sua vacanza al mare.
 1792729068	Parole del Vento\nIl tempo passa e non si ferma mai.
@@ -68592,7 +68592,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1792900807	Fase 5
 1792920095	Mobile da Cucina Retrò
 1792933322	<color=#5090df>%s</color> è soffocato con la frutta per aver mangiato troppo in fretta, e c'è voluto un po' per sputarla fuori.
-1792952027	Riproduce musica e ottiene il buff della serie di movimento: <style=Hint_BgL>[Marcia]</style>, ripristinando il <style=Hint_BgL><customRichText(calcData,buff, 2118102,param0,1,%.1f)>%</style> di HP massimi ogni secondo per <style=Hint_BgL><customRichText(buffConfigData,2118102,duration)></style>s. Con <style=Hint_BgL>3</style> buff della serie di movimento attivi, tutti gli effetti di quei buff aumentano del <style=Hint_BgL><customRichText(calcData,buff, 2118104,param0,1,%d)>%</style>.
+1792952027	Riproduce musica e ottiene il buff della serie di movimento: <style=Hint_BgL>[Marcia]</style>, ripristinando il <style=Hint_BgL><customRichText(calcData,buff, 2118102,param0,1,%.1f)>%</style> di PS massimi ogni secondo per <style=Hint_BgL><customRichText(buffConfigData,2118102,duration)></style>s. Con <style=Hint_BgL>3</style> buff della serie di movimento attivi, tutti gli effetti di quei buff aumentano del <style=Hint_BgL><customRichText(calcData,buff, 2118104,param0,1,%d)>%</style>.
 1792957847	Eemee!
 1792965295	Nuvola
 1792972683	A distanza
@@ -68620,7 +68620,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1793173679	Migliora gli Strumenti Tenuti
 1793178395	Conferma Equipaggiamento Aniipod
 1793185405	Sono pronto.
-1793186945	Ripristino HP Basato sul Rapporto HP Max
+1793186945	Ripristino PS Basato sul Rapporto PS Max
 1793194387	Rapporto Catture Aniimo
 1793202829	Nucleo
 1793234925	Infondi energia nel Ramo nelle Pianure Ventose per un totale di 30 volte.
@@ -70934,7 +70934,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1818031083	Forziere
 1818046381	Forzare l'attivazione del Tratto Non Comune? (0 = No, 1 = Sì)
 1818048541	Raccogli
-1818052958	Ripristina a tutti gli alleati una quantità di HP pari al <style=Hint_BgL><customRichText(calcData,ability,10430120,param1,1,%d)>%</style> degli HP massimi del lanciatore, e ripristina al lanciatore una quantità di HP pari al <style=Hint_BgL>12%</style> dei suoi HP massimi nell'arco di <style=Hint_BgL><customRichText(buffConfigData,2104304,duration)></style>s.
+1818052958	Ripristina a tutti gli alleati una quantità di PS pari al <style=Hint_BgL><customRichText(calcData,ability,10430120,param1,1,%d)>%</style> dei PS massimi del lanciatore, e ripristina al lanciatore una quantità di PS pari al <style=Hint_BgL>12%</style> dei suoi PS massimi nell'arco di <style=Hint_BgL><customRichText(buffConfigData,2104304,duration)></style>s.
 1818057502	Traboccante di vibrante vitalità, quest'Uovo culla un Aniimo dal talento eccezionale. Garantisce la schiusa di un Aniimo con potenziale <style=Hint_BgL>Perfetto</style>.
 1818087510	Guida al combattimento
 1818134705	Criteri di valutazione non soddisfatti
@@ -70969,7 +70969,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1818358633	Completa la missione "Sistema di controllo ambientale: Parte 1".
 1818360384	Fiori secchi
 1818368858	Giga-Uovo Leggendario
-1818388859	Per ogni <style=Hint_BgL>1%</style> di HP persi, il danno aumenta del <style=Hint_BgL><customRichText(calcData,buff,2050000,param0,1)>%</style>. Al <style=Hint_BgL>25%</style> di HP, l'effetto raggiunge il suo massimo, e il danno aumenta di un ulteriore <style=Hint_BgL><customRichText(calcData,buff,2050000,param1,1,%d)>%</style>.
+1818388859	Per ogni <style=Hint_BgL>1%</style> di PS persi, il danno aumenta del <style=Hint_BgL><customRichText(calcData,buff,2050000,param0,1)>%</style>. Al <style=Hint_BgL>25%</style> di PS, l'effetto raggiunge il suo massimo, e il danno aumenta di un ulteriore <style=Hint_BgL><customRichText(calcData,buff,2050000,param1,1,%d)>%</style>.
 1818396215	Alfa Tubster
 1818406773	Avvio caricamento dei registri
 1818412708	Sembra esserci un indizio sottoterra
@@ -71277,7 +71277,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1821546472	Buff Parco
 1821564276	Una pianta a cespuglio con fiori dorati annidati tra foglie verdi, che rilascia una delicata fragranza di notte.
 1821583851	Non so chi continui a spruzzarmi con l'acqua...
-1821591895	Perdi l'80% degli HP attuali, ottieni 3 marchingegni "Difesa" casuali
+1821591895	Perdi l'80% dei PS attuali, ottieni 3 marchingegni "Difesa" casuali
 1821615754	Lavazar ingordo
 1821682745	Pioggia di stelle cadenti
 1821702749	Cosa?! Hai pronunciato quelle parole senza esitare! Sei un rinforzo mandato dagli istruttori?\nNon importa! Affronta il giudizio!
@@ -71363,7 +71363,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1822410648	Protezione
 1822414345	?(richiesto)
 1822417030	Idyll Sparkling
-1822420969	Quando un bersaglio viene sconfitto, c'è una probabilità del <style=Hint_BgL><customRichText(calcData,buff, 2030005,param0,1)>%</style> che rilasci un oggetto di cura. Raccoglierlo ripristina il <style=Hint_BgL><customRichText(calcData,timeline, 2031002,param0,1,%d)>%</style> degli HP massimi.
+1822420969	Quando un bersaglio viene sconfitto, c'è una probabilità del <style=Hint_BgL><customRichText(calcData,buff, 2030005,param0,1)>%</style> che rilasci un oggetto di cura. Raccoglierlo ripristina il <style=Hint_BgL><customRichText(calcData,timeline, 2031002,param0,1,%d)>%</style> dei PS massimi.
 1822425044	Il guscio pesante è un simbolo di crescita.
 1822426572	Forziere
 1822449051	Mobile di prova n. 1
@@ -73966,7 +73966,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1849466652	Io
 1849469086	Annulla
 1849480934	Bubbeep assonnato
-1849491866	Gemma ATK
+1849491866	Gemma ATT
 1849498436	Un lampo di ispirazione, e la risposta è quasi a portata di mano.
 1849507627	Recupero energia fuori dal combattimento
 1849515950	Premi per andare
@@ -74013,7 +74013,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1850025018	Fiaschetta da marcia
 1850030756	Legati con l'Aniimo e premi #kHud/ExploreSkill#z per <style=Hint_BgL>vedere gli oggetti speciali attraverso gli ostacoli</style>. Premilo di nuovo per uscire da questa visuale.
 1850051936	Appare dopo aver completato la missione del Viaggio "Giuramento vincolante" nei Mistwoods.
-1850052032	Valore di forza dell'ATK Fisico dell'Aniimo. Per ogni 50 punti di ATK Fisico, l'ATK Fisico dell'Aniimo aumenta di ulteriori 5 punti.
+1850052032	Valore di forza dell'ATT Fisico dell'Aniimo. Per ogni 50 punti di ATT Fisico, l'ATT Fisico dell'Aniimo aumenta di ulteriori 5 punti.
 1850113372	Morbidoso
 1850137068	Triplice offerta della Costa dello Zefiro
 1850146508	Sopracciglia
@@ -75013,7 +75013,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1860388390	Ottieni di più
 1860392620	Quei trafficanti si intrufolano a Idyll per catturare gli Aniimo e venderli per profitto. Molti Aniimo finiscono per subire danni a causa loro.
 1860398397	Estrazione fallita
-1860405486	Aumenta il danno del 10%, la tenacia del 15%, il vampirismo fisico e usa una lunga coda o le braccia per sferrare uno schiaffo o un attacco con colpo.(占位)
+1860405486	Aumenta il danno del 10%, la tenacia del 15%, il vampirismo fisico e usa una lunga coda o le braccia per sferrare uno schiaffo o un attacco con colpo.(Segnaposto)
 1860406850	Ambra in fuga: Immersione rapida
 1860419116	Che diavolo.
 1860431151	Voglio solo vivere una vita normale ad Astra.
@@ -75700,7 +75700,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1867247631	Riscatta dopo aver completato 1 Evacuazione Sicura in qualsiasi modalità
 1867280926	Marmellata d'Uva
 1867307363	Chat
-1867331897	Ripristino HP Basato sul Rapporto HP Max
+1867331897	Ripristino PS Basato sul Rapporto PS Max
 1867339609	Il mio è il più bello!
 1867340893	Fitch
 1867367825	Io
@@ -76568,7 +76568,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1876421301	Zampa posteriore destra
 1876446392	Fentuft disponibile
 1876465509	Yu
-1876467568	Perdi l'80% degli HP attuali e ricevi 3 marchingegni "Energia" casuali
+1876467568	Perdi l'80% dei PS attuali e ricevi 3 marchingegni "Energia" casuali
 1876468708	1
 1876476847	Fantine
 1876491762	Amici
@@ -76594,7 +76594,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1876638838	Una <style=Hint_BgL>materia prima</style> prodotta dal Pozzo nella tua Dimora. Può essere venduta nei negozi o lavorata ulteriormente.
 1876647602	Schiudi l'uovo negli <style=Hint_BgL>Incubatori dell'Avamposto</style> e negli <style=Hint_BgL>Incubatori della Dimora</style>.
 1876659494	Trasporto di Cozite - Bolla 1
-1876663287	Quando attacchi con un elemento <style=Hint_BgL>contrastato dall'elemento nemico</style>, i tuoi attacchi infliggeranno danni agli HP e danni BREAK <style=Hint_BgL>ridotti</style>.\nLo stesso vale quando il tuo Aniimo subisce danni da un elemento che lo contrasta.
+1876663287	Quando attacchi con un elemento <style=Hint_BgL>contrastato dall'elemento nemico</style>, i tuoi attacchi infliggeranno danni ai PS e danni BREAK <style=Hint_BgL>ridotti</style>.\nLo stesso vale quando il tuo Aniimo subisce danni da un elemento che lo contrasta.
 1876670623	Durante l'<style=Hint_BgL>evento "Chi è quell'Aniimo?"</style>, la fotocamera può riconoscere le forme degli Aniimo. Accedi alla modalità fotocamera tramite l'ingresso dell'evento. Se l'Aniimo Misterioso del giorno appare nell'inquadratura, la fotocamera lo <style=Hint_BgL>identificherà automaticamente</style> e ti darà un indizio.
 1876671138	Jaff
 1876691345	L'invito è scaduto
@@ -76689,7 +76689,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1877717309	Vietato avvicinarsi. Vietato parlare. Vietato disturbare il mare.
 1877719787	Reparti del secondo piano
 1877757244	Originari della Beast Fang Ridge, questi alberi oscillano al vento con foglie calde e dorate che tremolano come fiamme danzanti.
-1877766349	Estrae del cibo per curare la squadra del <style=Hint_BgL><customRichText(calcData,ability,699930200,param0,1,%d)>%</style> degli HP di Sparkelf. Se gli HP dell'unità sono inferiori al <style=Hint_BgL>50%/25%</style>, la cura invece del <style=Hint_BgL><customRichText(calcData,ability,699930200,param1,1,%d)>%/<customRichText(calcData,ability,699930200,param2,1,%d)>%</style> degli HP di Sparkelf.
+1877766349	Estrae del cibo per curare la squadra del <style=Hint_BgL><customRichText(calcData,ability,699930200,param0,1,%d)>%</style> dei PS di Sparkelf. Se i PS dell'unità sono inferiori al <style=Hint_BgL>50%/25%</style>, la cura invece del <style=Hint_BgL><customRichText(calcData,ability,699930200,param1,1,%d)>%/<customRichText(calcData,ability,699930200,param2,1,%d)>%</style> dei PS di Sparkelf.
 1877772668	In breve tempo la Vena appassì e questa terra sfumò in una distesa giallastra e inaridita.\n"Ti preghiamo di riportare Bloomville al suo antico splendore", pregava la gente.
 1877790318	Vedi quella ragazza laggiù indaffarata con un Glacy? È mia sorella, la proprietaria e barista di questo caffè!
 1877796956	Ecco che cambi di nuovo discorso... Ehi, aspetta!
@@ -84846,7 +84846,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1964361155	Nella conca dei pietrafiori incontri un vecchio Bouldus, con il cuore spezzato nello scoprire che la perfetta sfera di pietra che una volta aveva spinto fin qui tra innumerevoli peripezie è andata in frantumi. Ti racconta di come una frana abbia scagliato lui e la sfera da questo lato della montagna, e decide quindi di trovare una sfera più grande e più rotonda per risospingerla fino al punto di partenza. Dalla sua storia, capisci che potrebbe avere qualcosa a che fare con il leggendario "corridore perfetto" e quella pista da corsa.
 1964366438	Usa per sbloccare <style=Hint_BgL>Luna del raccolto - Bancarella del mercato</style>.
 1964373909	%s<style=Q2_5>+%s</style>
-1964385386	Dopo aver ripristinato il {0}% degli HP della squadra con l'acqua, ripristina il {1}% degli HP della squadra al secondo per {2}s.
+1964385386	Dopo aver ripristinato il {0}% dei PS della squadra con l'acqua, ripristina il {1}% dei PS della squadra al secondo per {2}s.
 1964396489	Viff?
 1964412018	Sunia
 1964437524	Scusa... ho altre cose da fare.
@@ -84964,7 +84964,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 1965672223	Io
 1965679918	Dall'aspetto bizzarro
 1965710489	Debuff elementale
-1965749124	Aumenta i danni inflitti ai bersagli con meno del 50% di HP del 15%
+1965749124	Aumenta i danni inflitti ai bersagli con meno del 50% di PS del 15%
 1965750511	Parete diagonale bicolore con motivi a rombi verdi sullo strato interno e una sobria finitura esterna grigio chiaro, fresca e rustica.
 1965764698	Shelly sulla spiaggia
 1965789490	Recupero cattura Aniipod comune
@@ -88237,7 +88237,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 2000155764	5h 30m
 2000187888	Copertina
 2000195975	Negozio della Luna del Raccolto
-2000196041	Riscatta Tutto
+2000196041	Riscatta tutto
 2000197886	Ciao, #playerName#, come va? Sto leggendo i dati che hai caricato sulla Console di Ricerca.
 2000206867	Rilevato registro Aniimo: Icho.\nFunzione di traduzione per legame simulato attivata.
 2000227221	Forziere
@@ -89225,7 +89225,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 2010062786	Non hai ottenuto il titolo di <style=Hint_BgD>Pioniere di Grado I</style>. I regolamenti dell'Istituto richiedono che tutti i soggetti del test soddisfino i requisiti minimi.
 2010063471	Teletrasporto
 2010064911	Era tutto quello che volevi sapere?
-2010072974	Infliggere danni mentre si scava genera Impulso. A 5 accumuli, emergere dal terreno aumenta l'efficacia di BREAK del <customRichText(calcData,buff, 9116114,param0,1,%d)>% per <customRichText(buffConfigData,9116114,duration)> s e conferisce uno scudo pari al <customRichText(calcData,buff, 9116113,param0,1,%d)>% degli HP max.
+2010072974	Infliggere danni mentre si scava genera Impulso. A 5 accumuli, emergere dal terreno aumenta l'efficacia di BREAK del <customRichText(calcData,buff, 9116114,param0,1,%d)>% per <customRichText(buffConfigData,9116114,duration)> s e conferisce uno scudo pari al <customRichText(calcData,buff, 9116113,param0,1,%d)>% dei PS max.
 2010098132	...Ricordi ancora il tuo desiderio di vedere un Flusso di Prismana.
 2010124541	Un blocco da costruzione rosa brillante per ogni tipo di struttura.
 2010154923	Fentuft trepidante
@@ -91857,7 +91857,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 2038402573	L'Aniipod trasportato non può essere vuoto
 2038416988	Scultura in legno pregiato
 2038451624	Mi scusi!
-2038476449	Aumenta i tuoi HP massimi del <style=Hint_BgL>{param0}%</style>.
+2038476449	Aumenta i tuoi PS massimi del <style=Hint_BgL>{param0}%</style>.
 2038482266	(BREAK) Controlla il potere del ghiaccio per attaccare i bersagli a distanza.
 2038488941	Desidero unirmi all'Istituto Polaris.
 2038509479	Gli Aniimo si trovano in tutto il mondo aperto. Usa la <link="appearHelp_103"><color=#5090df><u>Mappa</u></color></link> per controllare dove compaiono.
@@ -96140,7 +96140,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 2083245834	Solo gli amici possono modificare i gruppi.
 2083256861	Quando un'unità contrassegnata da Coinwisp viene sconfitta, il marchio si trasferisce a un altro bersaglio vicino e la sua durata viene ripristinata. Inoltre, ripristina immediatamente <style=Hint_BgL><customRichText(calcData,buff, 9163302,param0,1)></style> PE. Può attivarsi una volta ogni <style=Hint_BgL><customRichText(buffConfigData,9163303,duration)></style> s.
 2083268722	Esclusivo per {0}. Catturane uno per sbloccarlo
-2083275847	Scorchhowl alfa è un Alfa incentrato sui DPS con potenti attacchi a raffica caricati e meccaniche di auto-danno. Può attirare i bersagli verso di sé per poi consumare HP e scatenare un colpo devastante.
+2083275847	Scorchhowl alfa è un Alfa incentrato sui DPS con potenti attacchi a raffica caricati e meccaniche di auto-danno. Può attirare i bersagli verso di sé per poi consumare PS e scatenare un colpo devastante.
 2083287177	[Abbondanza] Consumo di vigore ridotto del 10%
 2083291060	Un grazioso ornamento a forma di Helmut dall'aspetto accattivante.
 2083309823	Un reperto di un'antica civiltà. Ripristina una grande quantità di energia dell'amplificatore, ma ne riduce anche la durabilità.
@@ -101309,7 +101309,7 @@ Questo dovrebbe essere il principio impresso nella parte più profonda della mem
 2136991590	<style=Hint_BgL>Beni lavorati</style> prodotti dalla Stufa Fiammeggiante nella tua Casa. Possono essere venduti nel rispettivo negozio o ulteriormente lavorati.
 2137014130	Io
 2137031049	Gli Helgon hanno continuato a volteggiare all'esterno. Adorano afferrarci e lasciarci cadere in posti strani.
-2137045024	Ottiene uno Scudo pari al <style=Hint_BgL><customRichText(calcData,buff,20510030,param0,1,%d)>%</style> degli HP massimi.
+2137045024	Ottiene uno Scudo pari al <style=Hint_BgL><customRichText(calcData,buff,20510030,param0,1,%d)>%</style> dei PS massimi.
 2137065858	Acconciatura
 2137083747	Lascia la grotta
 2137131856	Chiave dorata
