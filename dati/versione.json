@@ -3,7 +3,7 @@
   "build_gioco": "3746914",
   "data_rilascio": "2026-10-20",
   "voci": 112418,
-  "tsv_md5": "41a3dad5084cc84488aca7cc1696f465",
+  "tsv_md5": "6942049787e73da733cb87d431f979e7",
   "changelog_breve": "Audit forense completo v1.0.4: standardizzazione globale HP->PS (52 fix), ATT/DEF, rimozione segnaposto cinesi.",
   "changelog_dettagliato": {
     "titolo": "Armonizzazione Filologica e Lore Globale v1.0.2 (807 Perfezionamenti)",
