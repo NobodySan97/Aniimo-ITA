@@ -469,13 +469,38 @@ function Resolve-AniimoDir([string]$Candidate) {
         $Candidate = Split-Path -Parent $Candidate
     }
 
-    foreach ($sub in @('', 'game', 'Content', 'Aniimo')) {
+    # Controllo rapido percorsi noti e combinazioni tipiche (Steam, PawPrint, Xbox, Standalone)
+    foreach ($sub in @(
+        '',
+        'game',
+        'Aniimo\game',
+        'Aniimo',
+        'PawPrint\Aniimo\game',
+        'PawPrint\Aniimo',
+        'PawPrint\game',
+        'Content\game',
+        'Content'
+    )) {
         $testDir = if ($sub) { Join-Path $Candidate $sub } else { $Candidate }
         $xdf = Join-Path $testDir 'Aniimo_Data\StreamingAssets\cvs\res\lua\LuaScripts.xdf'
         if (Test-Path -LiteralPath $xdf) {
             return $testDir
         }
     }
+
+    # Ricerca ricorsiva intelligente (fino a 4 livelli di profondità)
+    try {
+        $foundXdf = Get-ChildItem -LiteralPath $Candidate -Filter 'LuaScripts.xdf' -Recurse -Depth 4 -ErrorAction SilentlyContinue | Select-Object -First 1
+        if ($foundXdf) {
+            $p = $foundXdf.FullName
+            $idx = $p.IndexOf('\Aniimo_Data\', [System.StringComparison]::OrdinalIgnoreCase)
+            if ($idx -gt 0) {
+                $dir = $p.Substring(0, $idx)
+                if (Test-Path -LiteralPath $dir) { return $dir }
+            }
+        }
+    } catch {}
+
     return $null
 }
 
@@ -489,6 +514,35 @@ function Find-AniimoDir([string]$ExplicitDir) {
         if ($resolved) { return $resolved }
     }
 
+    # 1. Ricerca tramite Registro di Windows (PawPrint Launcher, Steam, Xbox App, ecc.)
+    foreach ($regRoot in @(
+        'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall',
+        'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall',
+        'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
+    )) {
+        if (Test-Path -LiteralPath $regRoot) {
+            $subKeys = Get-ChildItem -LiteralPath $regRoot -ErrorAction SilentlyContinue
+            foreach ($sk in $subKeys) {
+                $dn = $sk.GetValue('DisplayName')
+                if ($dn -and ($dn -like '*Aniimo*' -or $dn -like '*PawPrint*')) {
+                    $il = $sk.GetValue('InstallLocation')
+                    if ($il) {
+                        $found = Resolve-AniimoDir $il
+                        if ($found) { return $found }
+                    }
+                    $us = $sk.GetValue('UninstallString')
+                    if ($us) {
+                        $usClean = ($us -replace '^"|"[^"]*$', '').Trim()
+                        $parentDir = Split-Path -Parent $usClean
+                        $found = Resolve-AniimoDir $parentDir
+                        if ($found) { return $found }
+                    }
+                }
+            }
+        }
+    }
+
+    # 2. Ricerca librerie Steam (Registry e libraryfolders.vdf)
     $steamPaths = New-Object System.Collections.Generic.List[string]
     foreach ($regPath in @('HKCU:\Software\Valve\Steam', 'HKLM:\SOFTWARE\WOW6432Node\Valve\Steam')) {
         $regProps = Get-ItemProperty $regPath -ErrorAction SilentlyContinue
@@ -520,18 +574,36 @@ function Find-AniimoDir([string]$ExplicitDir) {
         if ($found) { return $found }
     }
 
+    # 3. Scansione dischi fissi (tutti i drive con cartelle tipiche PawPrint, Steam, Xbox e Standalone)
     foreach ($drv in [System.IO.DriveInfo]::GetDrives() | Where-Object { $_.IsReady -and $_.DriveType -eq 'Fixed' }) {
         $root = $drv.RootDirectory.FullName
         foreach ($relPath in @(
+            'PawPrint\Aniimo\game',
+            'PawPrint\Aniimo',
+            'PawPrint',
             'SteamLibrary\steamapps\common\Aniimo',
             'Program Files (x86)\Steam\steamapps\common\Aniimo',
             'Program Files\Steam\steamapps\common\Aniimo',
+            'Program Files\PawPrint\Aniimo\game',
+            'Program Files\PawPrint\Aniimo',
+            'Program Files\PawPrint',
+            'Program Files (x86)\PawPrint\Aniimo\game',
+            'Program Files (x86)\PawPrint\Aniimo',
+            'Program Files (x86)\PawPrint',
+            'Games\PawPrint\Aniimo\game',
+            'Games\PawPrint\Aniimo',
+            'Games\PawPrint',
+            'Games\Aniimo\game',
             'Games\Aniimo',
             'XboxGames\Aniimo',
+            'Aniimo\game',
             'Aniimo'
         )) {
-            $found = Resolve-AniimoDir (Join-Path $root $relPath)
-            if ($found) { return $found }
+            $candidatePath = Join-Path $root $relPath
+            if (Test-Path -LiteralPath $candidatePath) {
+                $found = Resolve-AniimoDir $candidatePath
+                if ($found) { return $found }
+            }
         }
     }
     return $null
