@@ -1,20 +1,20 @@
 {
-  "versione_traduzione": "1.0.7",
+  "versione_traduzione": "1.0.8",
   "build_gioco": "3746914",
   "data_rilascio": "2026-10-21",
   "voci": 112418,
-  "tsv_md5": "c05e99ca75369dc4632ca7c6bc27adad",
-  "changelog_breve": "Audit Comparativo Completo v1.0.7: 320 armonizzazioni forensi (Isole Whisperwake, Valle delle Lumilucciole, Slot Equipaggiamento, Controlli, Dimora e Olo-Battaglia).",
+  "tsv_md5": "936f189d33606d253982e851fd9c88ad",
+  "changelog_breve": "Audit Forense Rigoroso Ogni Riga v1.0.8: 300+ armonizzazioni (Statistiche DIF F./DIF M./PS/Vigore, Boss Tucking, Nightwolf, Camper e Interazioni UI).",
   "changelog_dettagliato": {
-    "titolo": "Audit Comparativo Forense Steam EN v1.0.7 (320 Perfezionamenti)",
-    "descrizione": "Audit comparativo e allineamento semantico completo con i file ufficiali Steam NewTextMap_en e Compress_en.bin.",
-    "cat1_titolo": "🗺️ Geografia, Regioni & Filiali (56 fix)",
-    "cat1_testo": "• Isole Whisperwake: eliminate le allucinazioni di traduzione automatica (Isole Sussurradegli, Sussurradormiveglia, Sussurradipietra, Veglia Sussurrata) unificando tutte le occorrenze nel nome ufficiale 'Isole Whisperwake' e 'Filiale delle Isole Whisperwake'.\n• Valle delle Lumilucciole: unificate tutte le occorrenze della regione e dei suoi cancelli/missioni nel nome canonico 'Valle delle Lumilucciole' (eliminate le forme spurie Valle dei Lumivoli, Lucilumen, Falene Luminose).",
-    "cat2_titolo": "⚔️ Controlli, Combattimento & Olo-Battaglia (116 fix)",
-    "cat2_testo": "• Controlli: unificati 'Suprema' (2x da Definitiva), 'Usa Suprema' (23x tra cui Usa Ultimate/Ultra), 'Aggancio bersaglio' (16x da Puntamento/Blocco bersaglio) e 'Schivata' (2x da Schiva).\n• Olo-Battaglia: armonizzati 'Simulatore Olo-Battaglia' (41x) e 'Interconnessione Olo-Battaglia' (16x).\n• Obiettivi di Sfida: standardizzate 34 voci di 'Core Skills Used' in 'Abilità base usate'.",
-    "cat3_titolo": "👗 Slot Equipaggiamento & Strumenti (61 fix)",
-    "cat3_testo": "• Slot abbigliamento: unificati Top su 'Parte superiore' (26x da Superiore/Torso) e Bottom su 'Parte inferiore' (10x da Pantaloni/Basso/Gambe).\n• Rune: unificati tutti i 25 residui di 'Held Item Rune' sul termine canonico RPG 'Runa strumento tenuto'.",
-    "cat4_titolo": "🏡 Dimora, Housing & Polish Generale (87 fix)",
-    "cat4_testo": "• Dimora: corrette 44 stringhe dove 'Homeland' era stato erroneamente tradotto con Territorio, Focolare, Rifugio o Terra d'origine, riallineandole alla 'Dimora'.\n• Buff & Statistiche: corretto 'Damage Amp' da Amplificatore Danno ad 'Amplificazione danno' (9x).\n• Creature & UI: rifiniti Hummin peculiare (9x), Shrout in preda al panico (2x) e 'Volume principale' (1x)."
+    "titolo": "Audit Forense Linea per Linea Steam EN v1.0.8 (300+ Perfezionamenti)",
+    "descrizione": "Scansione sistematica di tutte le 112.418 righe a confronto con i dati binari di Steam.",
+    "cat1_titolo": "⚔️ Parametri e Statistiche di Combattimento (97 fix)",
+    "cat1_testo": "• Difesa Fisica: unificate 32 voci residue di DIF P., DEF P. e DEF F. nel termine canonico 'DIF F.'.\n• Difesa Magica: standardizzate le voci DEF M. su 'DIF M.'.\n• Punti Salute (PS): eliminate tutte le 56 occorrenze di 'PV' uniformandole a 'PS' e risolto il bisticcio semantico 'PV, PE e PS' con 'PS, PE e Vigore'.\n• Vigore (SP): standardizzati 5 riferimenti spuri da 'SP' a 'Vigore'.\n• Attacco: corretto l'ultimo residuo 'l'ATK' in 'l'ATT'.",
+    "cat2_titolo": "🌿 Boss, Creature e Traduzioni Erranti (88 fix)",
+    "cat2_testo": "• Boss Tucking: eliminate le aberranti traduzioni letterali dal verbo inglese (Rimboccare, Rimboccamento, Rimboccando, Tuckeggiare, Barba rimboccata) ripristinando il nome ufficiale 'Tucking' e 'Barba di Tucking'.\n• Ortografia Tucking: uniformate oltre 70 occorrenze tronche 'Tuckin' (senza g) alla forma canonica corretta 'Tucking'.\n• Nightwolf: eliminate le forme spurie (Luporotante, Lupanotte, Lupo della notte, Luporoccia notturno) uniformando la specie a 'Nightwolf'.",
+    "cat3_titolo": "🚐 Camper, Housing & Dimora (38 fix)",
+    "cat3_testo": "• Risoluzione 'VR': corrette 10 stringhe in cui l'acronimo spagnolo/inglese RV era stato maldestramente reso con 'VR' (Realtà Virtuale!), riallineandolo al 'Camper' (Costruttore del camper, Parcheggio camper, Livello del camper).\n• Negozi & Ordini: unificate tutte le occorrenze residue di Negozio della Casa su 'Negozio della Dimora' (21x) e 'Ordini della Dimora' (7x).",
+    "cat4_titolo": "🔘 Pulsanti UI, Fiori & Interazioni del Mondo (83 fix)",
+    "cat4_testo": "• Fioriture: tradotte 22 occorrenze rimaste in inglese come 'Bloom' in 'Fioritura'.\n• Foto e Scatti: standardizzati 10 residui di 'Snap' (Schiocco / Scatto felino) sul canonico 'Scatto'.\n• Ecologia e Nutrimento: unificate 41 occorrenze del tasto interazione 'Nurture' sul termine canonico 'Nutri'.\n• UI & Navigazione: uniformati 'Visualizza info' (8x), 'Visualizza mappa' (25x) e 'Esci dalla caverna' (23x)."
   }
 }
