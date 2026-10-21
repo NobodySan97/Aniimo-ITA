@@ -1,20 +1,20 @@
 {
-  "versione_traduzione": "1.0.5",
+  "versione_traduzione": "1.0.6",
   "build_gioco": "3746914",
   "data_rilascio": "2026-10-21",
   "voci": 112418,
-  "tsv_md5": "1f86e13831851eec0024bbc71038e0ad",
-  "changelog_breve": "Cross-Audit Steam EN v1.0.5: 469 armonizzazioni (BREAK unificato, regioni geografiche complete, Congegni/Gizmo e pulsanti UI).",
+  "tsv_md5": "11f797651f6414344176c89629b1b23d",
+  "changelog_breve": "Audit Comparativo Completo v1.0.6: 114 armonizzazioni (Furto d'Uova, Strumenti Tenuti, Olo-congegni, Attacco Base e BREAK).",
   "changelog_dettagliato": {
-    "titolo": "Allineamento Filologico Steam EN & Meccaniche Globali (469 Perfezionamenti)",
-    "descrizione": "Audit comparativo diretto condotto a fronte dell'edizione ufficiale Steam in lingua inglese per allineare geografia, stati di combattimento e interfaccia.",
-    "cat1_titolo": "🐾 Morphling & Creature Compagne (31 fix critici)",
-    "cat1_testo": "• Morphling unificato: eliminati i 14 nomi discordanti di machine translation (Mutagenero, Mutantor, Morfingo, Morfoide, Trasformino, Cambiaforma, Morfide, Morfo, Mutomorfo, trasmutatore, Morfolino, Trasforma, Mutaforme) standardizzando tutte le missioni sul canone 'Morphling'.\n• Residui Pet: convertiti i residui di sistema 'pet/i pet' in 'Aniimo/degli Aniimo' e 'Cattura-Aniimo'.",
-    "cat2_titolo": "⚔️ Meccanica di BREAK & Combattimento (21 fix)",
-    "cat2_testo": "• BREAK State Unificato: eliminate le 10 traduzioni contrastanti (stato di Frantumazione, Sfondamento, Fenditura, Rottura, Crisi, Sconforto, Breccia, Frattura) standardizzando tutte le abilità e guide su 'stato di BREAK' e 'barra di BREAK'.\n• Furia: armonizzato lo stato [Infuriato] anche nelle abilità con residui [Furente].",
+    "titolo": "Audit Comparativo Completo Steam EN v1.0.6 (114 Perfezionamenti)",
+    "descrizione": "Audit comparativo semantico e terminologico a tappeto condotto confrontando ogni stringa con i testi ufficiali inglesi di Steam.",
+    "cat1_titolo": "🥚 Operazione Furto d'Uova & Eventi (16 fix)",
+    "cat1_testo": "• Modalità Furto d'Uova: unificati tutti i riferimenti alla modalità, al Negozio del Furto d'Uova e ai Biglietti (eliminate le forme spurie 'Colpo dell'Uovo', 'Caccia all'uovo' e 'Razzia di Uova').\n• Minigiochi: standardizzati gli ultimi residui di Morra cinese.",
+    "cat2_titolo": "⚔️ Combattimento, Attacco Base & BREAK (30 fix)",
+    "cat2_testo": "• Efficienza di BREAK: armonizzate tutte le abilità su 'efficienza di BREAK' e corretto il residuo 'recupero da Frattura' in 'recupero da BREAK'.\n• Attacco Base: unificate tutte le occorrenze di Normal Attack sulla forma canonica 'Attacco Base' (eliminato 'Attacco Normale').",
     "cat3_titolo": "🗺️ Geografia del Mondo & Nomi Regionali (273 fix)",
     "cat3_testo": "• Cresta delle Mille Zanne: armonizzate 170 stringhe rimaste in inglese come 'Beast Fang Ridge' (della Beast Fang Ridge, a Beast Fang Ridge, sul Beast Fang Ridge).\n• Campi di Nembi: tradotte 100 stringhe residue inglesi di 'Nimbus Fields'.\n• Valle Berillina: armonizzate le ultime occorrenze residue di 'Berylline Vale'.\n• Museo Astra: unificate tutte le occorrenze della 'Sala delle Memorie' (eliminata l'alternanza disallineata con Sala dei Ricordi).",
-    "cat4_titolo": "🔧 Roguelike, Congegni & Dimora (175 fix)",
-    "cat4_testo": "• Congegni e Gizmo: rimossi gli 'Olo-aggeggi' e 'Olo-dispositivi' unificando tutti i potenziamenti su 'Olo-congegno' e 'Congegno Centrale'.\n• Addestramento Speciale: standardizzate 'Monete d'Addestramento' (21x), 'Stile di Addestramento' (10x) e 'Addestramento Speciale' (5x).\n• Dimora: unificati 56 detriti di quarzo/ferro su 'Disordine (minerale di ...)'.\n• Pulsanti UI: corretto il tasto 'Invio' in 'Entra', 'Aperto' in 'Apri' e la 'Morra cinese'."
+    "cat4_titolo": "📦 Strumenti Tenuti & Olo-congegni (68 fix)",
+    "cat4_testo": "• Strumenti Tenuti: armonizzate 57 voci da 'Oggetto tenuto' al termine canonico RPG 'Strumento tenuto' e 'Runa strumento tenuto'.\n• Olo-congegni: convertite le ultime 13 voci residue di 'congegno olografico' nel termine canone 'Olo-congegno'."
   }
 }
