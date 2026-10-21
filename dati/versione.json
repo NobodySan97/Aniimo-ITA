@@ -1,20 +1,20 @@
 {
-  "versione_traduzione": "1.0.6",
+  "versione_traduzione": "1.0.7",
   "build_gioco": "3746914",
   "data_rilascio": "2026-10-21",
   "voci": 112418,
-  "tsv_md5": "11f797651f6414344176c89629b1b23d",
-  "changelog_breve": "Audit Comparativo Completo v1.0.6: 114 armonizzazioni (Furto d'Uova, Strumenti Tenuti, Olo-congegni, Attacco Base e BREAK).",
+  "tsv_md5": "c05e99ca75369dc4632ca7c6bc27adad",
+  "changelog_breve": "Audit Comparativo Completo v1.0.7: 320 armonizzazioni forensi (Isole Whisperwake, Valle delle Lumilucciole, Slot Equipaggiamento, Controlli, Dimora e Olo-Battaglia).",
   "changelog_dettagliato": {
-    "titolo": "Audit Comparativo Completo Steam EN v1.0.6 (114 Perfezionamenti)",
-    "descrizione": "Audit comparativo semantico e terminologico a tappeto condotto confrontando ogni stringa con i testi ufficiali inglesi di Steam.",
-    "cat1_titolo": "🥚 Operazione Furto d'Uova & Eventi (16 fix)",
-    "cat1_testo": "• Modalità Furto d'Uova: unificati tutti i riferimenti alla modalità, al Negozio del Furto d'Uova e ai Biglietti (eliminate le forme spurie 'Colpo dell'Uovo', 'Caccia all'uovo' e 'Razzia di Uova').\n• Minigiochi: standardizzati gli ultimi residui di Morra cinese.",
-    "cat2_titolo": "⚔️ Combattimento, Attacco Base & BREAK (30 fix)",
-    "cat2_testo": "• Efficienza di BREAK: armonizzate tutte le abilità su 'efficienza di BREAK' e corretto il residuo 'recupero da Frattura' in 'recupero da BREAK'.\n• Attacco Base: unificate tutte le occorrenze di Normal Attack sulla forma canonica 'Attacco Base' (eliminato 'Attacco Normale').",
-    "cat3_titolo": "🗺️ Geografia del Mondo & Nomi Regionali (273 fix)",
-    "cat3_testo": "• Cresta delle Mille Zanne: armonizzate 170 stringhe rimaste in inglese come 'Beast Fang Ridge' (della Beast Fang Ridge, a Beast Fang Ridge, sul Beast Fang Ridge).\n• Campi di Nembi: tradotte 100 stringhe residue inglesi di 'Nimbus Fields'.\n• Valle Berillina: armonizzate le ultime occorrenze residue di 'Berylline Vale'.\n• Museo Astra: unificate tutte le occorrenze della 'Sala delle Memorie' (eliminata l'alternanza disallineata con Sala dei Ricordi).",
-    "cat4_titolo": "📦 Strumenti Tenuti & Olo-congegni (68 fix)",
-    "cat4_testo": "• Strumenti Tenuti: armonizzate 57 voci da 'Oggetto tenuto' al termine canonico RPG 'Strumento tenuto' e 'Runa strumento tenuto'.\n• Olo-congegni: convertite le ultime 13 voci residue di 'congegno olografico' nel termine canone 'Olo-congegno'."
+    "titolo": "Audit Comparativo Forense Steam EN v1.0.7 (320 Perfezionamenti)",
+    "descrizione": "Audit comparativo e allineamento semantico completo con i file ufficiali Steam NewTextMap_en e Compress_en.bin.",
+    "cat1_titolo": "🗺️ Geografia, Regioni & Filiali (56 fix)",
+    "cat1_testo": "• Isole Whisperwake: eliminate le allucinazioni di traduzione automatica (Isole Sussurradegli, Sussurradormiveglia, Sussurradipietra, Veglia Sussurrata) unificando tutte le occorrenze nel nome ufficiale 'Isole Whisperwake' e 'Filiale delle Isole Whisperwake'.\n• Valle delle Lumilucciole: unificate tutte le occorrenze della regione e dei suoi cancelli/missioni nel nome canonico 'Valle delle Lumilucciole' (eliminate le forme spurie Valle dei Lumivoli, Lucilumen, Falene Luminose).",
+    "cat2_titolo": "⚔️ Controlli, Combattimento & Olo-Battaglia (116 fix)",
+    "cat2_testo": "• Controlli: unificati 'Suprema' (2x da Definitiva), 'Usa Suprema' (23x tra cui Usa Ultimate/Ultra), 'Aggancio bersaglio' (16x da Puntamento/Blocco bersaglio) e 'Schivata' (2x da Schiva).\n• Olo-Battaglia: armonizzati 'Simulatore Olo-Battaglia' (41x) e 'Interconnessione Olo-Battaglia' (16x).\n• Obiettivi di Sfida: standardizzate 34 voci di 'Core Skills Used' in 'Abilità base usate'.",
+    "cat3_titolo": "👗 Slot Equipaggiamento & Strumenti (61 fix)",
+    "cat3_testo": "• Slot abbigliamento: unificati Top su 'Parte superiore' (26x da Superiore/Torso) e Bottom su 'Parte inferiore' (10x da Pantaloni/Basso/Gambe).\n• Rune: unificati tutti i 25 residui di 'Held Item Rune' sul termine canonico RPG 'Runa strumento tenuto'.",
+    "cat4_titolo": "🏡 Dimora, Housing & Polish Generale (87 fix)",
+    "cat4_testo": "• Dimora: corrette 44 stringhe dove 'Homeland' era stato erroneamente tradotto con Territorio, Focolare, Rifugio o Terra d'origine, riallineandole alla 'Dimora'.\n• Buff & Statistiche: corretto 'Damage Amp' da Amplificatore Danno ad 'Amplificazione danno' (9x).\n• Creature & UI: rifiniti Hummin peculiare (9x), Shrout in preda al panico (2x) e 'Volume principale' (1x)."
   }
 }
