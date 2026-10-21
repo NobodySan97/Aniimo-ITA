@@ -1,20 +1,20 @@
 {
-  "versione_traduzione": "1.0.4",
+  "versione_traduzione": "1.0.5",
   "build_gioco": "3746914",
-  "data_rilascio": "2026-10-20",
+  "data_rilascio": "2026-10-21",
   "voci": 112418,
-  "tsv_md5": "6942049787e73da733cb87d431f979e7",
-  "changelog_breve": "Audit forense completo v1.0.4: standardizzazione globale HP->PS (52 fix), ATT/DEF, rimozione segnaposto cinesi.",
+  "tsv_md5": "1f86e13831851eec0024bbc71038e0ad",
+  "changelog_breve": "Cross-Audit Steam EN v1.0.5: 469 armonizzazioni (BREAK unificato, regioni geografiche complete, Congegni/Gizmo e pulsanti UI).",
   "changelog_dettagliato": {
-    "titolo": "Armonizzazione Filologica e Lore Globale v1.0.2 (807 Perfezionamenti)",
-    "descrizione": "Audit forense condotto cross-referenziando i binari ufficiali Compress_en.bin, Compress_es_ES.bin e Compress_fr_FR.bin per eliminare frammentazioni di specie, lore e formule ripetitive.",
+    "titolo": "Allineamento Filologico Steam EN & Meccaniche Globali (469 Perfezionamenti)",
+    "descrizione": "Audit comparativo diretto condotto a fronte dell'edizione ufficiale Steam in lingua inglese per allineare geografia, stati di combattimento e interfaccia.",
     "cat1_titolo": "🐾 Morphling & Creature Compagne (31 fix critici)",
     "cat1_testo": "• Morphling unificato: eliminati i 14 nomi discordanti di machine translation (Mutagenero, Mutantor, Morfingo, Morfoide, Trasformino, Cambiaforma, Morfide, Morfo, Mutomorfo, trasmutatore, Morfolino, Trasforma, Mutaforme) standardizzando tutte le missioni sul canone 'Morphling'.\n• Residui Pet: convertiti i residui di sistema 'pet/i pet' in 'Aniimo/degli Aniimo' e 'Cattura-Aniimo'.",
-    "cat2_titolo": "⚔️ Combattimento, Statistiche & Parametri (168 fix)",
-    "cat2_testo": "• Statistiche Unificate: convertite tutte le 52 occorrenze residue di 'HP' nel parametro canonico italiano 'PS' (Punti Salute) con perfetto accordo grammaticale ('dei PS massimi', 'i PS attuali', 'ripristinare i PS').\n• Sigle Standard: convertite le forme residue inglesi 'ATK' in 'ATT' (ATT Fisico, ATT Magico, Gemma ATT) e corretta la sigla 'DEF P.' in 'DEF F.' (DIF Fisica).\n• Tasto Arrenditi: confermata la correzione da 'Renditi' in 'Arrenditi'.\n• Danni Puri: confermato il passaggio da 'Danni Veri' a 'Danni Puri'.",
-    "cat3_titolo": "🗺️ UI, Pulizia Codice & Segnaposto (110 fix)",
-    "cat3_testo": "• Segnaposto: rimossi tutti i residui di caratteri cinesi '(占位)' convertiti in '(Segnaposto)' e corretto il limite caratteri nomi gruppi abilità.\n• Coerenza UI: armonizzato il pulsante 'Riscatta tutto' e la dicitura 'Tasso Crit'.\n• Tag RichText: corretti i tag non chiusi nell'originale inglese ed eliminati i tag duplicati.\n• Navigazione: verificati al 100% tutti i 43 pulsanti principali (Conferma, Annulla, Esci, ecc.).",
-    "cat4_titolo": "🏡 Dimora, Valute & Mondo di Gioco (646 fix)",
-    "cat4_testo": "• Monete della Dimora: standardizzate 52 voci di valuta precedentemente divise tra 'Monete Casa', 'Monete Dimora' e varianti.\n• Formule di Costruzione: armonizzate 146 descrizioni fisse di arredi ('Utilizzato per le costruzioni nella tua Dimora.' e 'Un blocco da costruzione per decorare la tua Dimora.').\n• Elementi Mappa & Minigiochi: unificati Teletrasporto (77x), Morra cinese (62x), Ambra Lumin (203x), Nido d\\'uova (64x), Capo fotografo (45x) e Battaglia ad alta difficoltà (42x).\n• Schermate: corretta 'Impostazioni Terreni Coltivabili' (da Fattoria) e titolo missione non tradotto 'Mare di Fiori'."
+    "cat2_titolo": "⚔️ Meccanica di BREAK & Combattimento (21 fix)",
+    "cat2_testo": "• BREAK State Unificato: eliminate le 10 traduzioni contrastanti (stato di Frantumazione, Sfondamento, Fenditura, Rottura, Crisi, Sconforto, Breccia, Frattura) standardizzando tutte le abilità e guide su 'stato di BREAK' e 'barra di BREAK'.\n• Furia: armonizzato lo stato [Infuriato] anche nelle abilità con residui [Furente].",
+    "cat3_titolo": "🗺️ Geografia del Mondo & Nomi Regionali (273 fix)",
+    "cat3_testo": "• Cresta delle Mille Zanne: armonizzate 170 stringhe rimaste in inglese come 'Beast Fang Ridge' (della Beast Fang Ridge, a Beast Fang Ridge, sul Beast Fang Ridge).\n• Campi di Nembi: tradotte 100 stringhe residue inglesi di 'Nimbus Fields'.\n• Valle Berillina: armonizzate le ultime occorrenze residue di 'Berylline Vale'.\n• Museo Astra: unificate tutte le occorrenze della 'Sala delle Memorie' (eliminata l'alternanza disallineata con Sala dei Ricordi).",
+    "cat4_titolo": "🔧 Roguelike, Congegni & Dimora (175 fix)",
+    "cat4_testo": "• Congegni e Gizmo: rimossi gli 'Olo-aggeggi' e 'Olo-dispositivi' unificando tutti i potenziamenti su 'Olo-congegno' e 'Congegno Centrale'.\n• Addestramento Speciale: standardizzate 'Monete d'Addestramento' (21x), 'Stile di Addestramento' (10x) e 'Addestramento Speciale' (5x).\n• Dimora: unificati 56 detriti di quarzo/ferro su 'Disordine (minerale di ...)'.\n• Pulsanti UI: corretto il tasto 'Invio' in 'Entra', 'Aperto' in 'Apri' e la 'Morra cinese'."
   }
 }
