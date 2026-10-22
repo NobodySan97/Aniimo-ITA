@@ -4,6 +4,54 @@ Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **A
 
 ---
 
+## [1.1.4] - 2026-10-22
+
+### ⚔️ Allineamento Totale Missioni Secondarie, Atti & Lore Originale Steam
+Audit filologico completo e incrociato tra i file originali Steam (`NewTextMap_en.json` e `NewTextMap_zh_CN.json`) e la localizzazione italiana su tutte le missioni secondarie, catene di atti, requisiti e terminologia:
+
+- **Allineamento Titoli Missioni Secondarie & Requisiti (Atti della Dimora)**:
+  - **Atto 2**: Allineato il requisito `Completa la missione "Un raccolto più ricco"` con il titolo canonico del capitolo `Atto secondo: Un raccolto più ricco` (eliminata la divergenza con *"Raccolti più ricchi"*).
+  - **Atto 3**: Unificati il titolo del capitolo `Atto Terzo: Una nuova formula` e il requisito `Completa la missione "Una nuova formula"` (eliminata la divergenza tra *"Una Formula Completamente Nuova"* e *"Nuove ricette"*).
+  - **Atto 4**: Uniformati i titoli dei capitoli `Atto quattro: È tempo di esplorare (Parte 1/2)` con i prompt di sblocco (eliminata la discrepanza con *"Esci ed esplora"*).
+  - **Atto 5**: Allineato il requisito `Completa la missione "Sistema di controllo climatico: Parte 1"` con il titolo `Atto quinto: Sistema di controllo climatico (Parte 1)` (eliminato *"Sistema di controllo ambientale"*).
+  - **Atto 6**: Sincronizzati i capitoli `Atto sei: La casa dei sogni (Parte 1/2)` e i relativi requisiti di completamento (eliminata la discrepanza con *"Casetta da sogno"*).
+  - **Atto 7**: Unificati il titolo `Atto sette: Festival di Astra` e la missione `Completa la missione "Festival di Astra"` (eliminato *"La stagione del Festival di Astra"*).
+  - **Tutorial**: Aggiornato in `missione tutorial: "Prima prova nella Dimora"` (eliminato *"Prima prova a Casa"*).
+
+- **Allineamento Oggetti & Trame delle Missioni Secondarie**:
+  - **La Missione dell'Elmo Rotto (Sorora - Russet Highlands)**: Risolto il clamoroso disallineamento in cui l'oggetto chiave veniva chiamato *"Casco spezzato"*, *"Casco rotto"* ed *"Elmo Spezzato"*. Ora è uniformato ovunque su **`Elmo rotto`** (*"Trova l'Elmo rotto"*, *"Dai l'Elmo rotto a Sorora"*, *"Rumor: Un elmo rotto?"*).
+  - **La Spada del Coraggio**: Unificata la leggendaria lama di Pawney su **`Spada del Coraggio`** (eliminate le occorrenze residue di *"Spada del Valore"*). Uniformata inoltre la versione arrugginita su **`Spada di ferro arrugginita`**.
+  - **Missione del Faro (Sayn)**: Allineato il titolo della missione **`È forse un... faro?`** con il prompt di completamento `Completa la missione: È forse un... faro? e torna da Sayn` (eliminato *"Quello è un... faro?"*).
+  - **Missioni Guerriero / Lottatore (Cresta delle Mille Zanne & Altopiani)**: Sincronizzati i suggerimenti di progressione HUD con i titoli effettivi delle missioni nel registro (sostituito l'inesistente *"Il lottatore"* e *"Il guerriero"* con **`Guerriero`**).
+  - **Rosetower Woods**: Normalizzata la notazione delle missioni su **`Fiori e spine: Rosetower Woods`** (unificati i trattini e il singolare *"wood"*).
+  - **Le Stelle e il Cavaliere**: Standardizzata la capitalizzazione in tutte le missioni di viaggio su **`Le Stelle e il Cavaliere`**.
+  - **La Leggenda della Terra di Lampi e Tuoni**: Sincronizzato il capitolo di viaggio con la menzione canonica delle leggende di Breezy Plains.
+  - **Fragranza Colorata**: Sincronizzato il titolo del capitolo della storia principale con le guide dell'evento (eliminato *"Colori Profumati"*).
+
+- **Lore & Nomenclatura Mitologica (Eolo & Costa dello Zefiro)**:
+  - **Aeolus -> Eolo**: Sostituite tutte le 56 occorrenze residue del nome inglese `Aeolus` con il canonico dio dei venti italiano **`Eolo`** e **`Eone Eolo`** (in dialoghi, targhette PNG e testi rituali).
+  - **Costa Zefira -> Costa dello Zefiro**: Normalizzate le diciture geografiche su **`Costa dello Zefiro`**.
+
+- **Homeland: Normalizzazione Sistematica Dimora (489 Stringhe)**:
+  - Risolta la frammentazione terminologica tra *Casa* e *Dimora* nei contesti del sistema Homeland (`家园`). Sostituite sistematicamente 489 occorrenze con le forme corrette: **`nella tua Dimora`**, **`della Dimora`**, **`alla Dimora`**, **`Lotto della Dimora`**, **`Incubatrice della Dimora`**, **`Costruzione della Dimora`**, **`Invito alla Dimora`**, ecc.
+
+- **Comandi di Tracciamento & Eventi**:
+  - **Track Homeland Journey**: Unificate le 5 formulazioni divergenti sull'unica dicitura corretta **`Traccia il Viaggio della Dimora`** (eliminate le varianti *"Traccia Viaggio verso la terra d'origine."* e *"Traccia Viaggio verso casa."*).
+  - **Track Aniipod Maker**: Corretta l'assurda traduzione letterale *"Fabbricatore di Aniipod su binari (Livello 1/2/3)"* in **`Traccia Fabbricatore Aniipod (Livello 1/2/3)`**.
+  - **Segnaposto Viaggio di Astra**: Normalizzati tutti i 33 segnaposto delle missioni di viaggio nella forma standard **`Segnaposto Viaggio di Astra <N>`**.
+  - **Sulle Tracce del Sentiero**: Sincronizzate tutte le denominazioni dell'evento a tempo limitato (eliminate varianti come *"Tracciando la pista"*, *"Sulle tracce"* e *"Seguendo la traccia"*).
+  - **Arena Battaglia Secondaria ARK Voxel**: Eliminata la traduzione errata *"Arena di battaglia laterale"*.
+
+- **Grammatica & Preposizioni nei Requisiti di Gioco**:
+  - Corrette le preposizioni articolate errate: `Vai alla Cresta delle Mille Zanne` (da *"al Cresta"*), `Vai ai Russet Highlands` e `dei Russet Highlands` (da *"agli/degli Russet"*).
+  - Corretto il refuso dell'opzione binaria da `N.` a `No.` in chiave 2094195296.
+  - Sostituito il nome provvisorio `Farfalletti` con il canonico `Flutternym` nella descrizione della quest 1205944301.
+
+- **Armonizzazione Cluster Non Contestuali**:
+  - Armonizzate decine di stringhe di sistema ripetute: descrizioni sfide d'élite, forzieri misteriosi, avvisi Alfa, requisiti di abbandono mondo cooperativo, pulsanti UI e badge di primo completamento.
+
+---
+
 ## [1.1.3] - 2026-10-22
 
 ### ✍️ Perfezionamento Fonotattico & Grammaticale (56 Correzioni Mirate)

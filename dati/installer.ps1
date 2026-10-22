@@ -193,6 +193,16 @@ public static class AniimoFastPacker {
         return "Termini e Interfaccia";
     }
 
+    private static ZipArchiveEntry GetEntrySafe(ZipArchive zip, string entryName) {
+        var e = zip.GetEntry(entryName);
+        if (e != null) return e;
+        foreach (var entry in zip.Entries) {
+            if (string.Equals(entry.FullName, entryName, StringComparison.OrdinalIgnoreCase))
+                return entry;
+        }
+        return null;
+    }
+
     public static List<GlossaryRecord> LoadGlossaryRecords(string saXdfPath, string tsvPath) {
         var result = new List<GlossaryRecord>(20000);
         if (string.IsNullOrEmpty(saXdfPath) || !File.Exists(saXdfPath) || !File.Exists(tsvPath)) return result;
@@ -201,11 +211,13 @@ public static class AniimoFastPacker {
         string enMapTxt = null;
         byte[] enBlob = null;
         using (var zip = ZipFile.OpenRead(saXdfPath)) {
-            var eMap = zip.GetEntry("xfs/luascripts/Data/I18N/NewTextMap_en.json");
+            var eMap = GetEntrySafe(zip, "xfs/luascripts/Data/I18N/NewTextMap_en.json");
+            var eBin = GetEntrySafe(zip, "xfs/luascripts/Data/I18N/Compress_en.bin");
+            if (eMap == null || eBin == null) return result;
+
             using (var sr = new StreamReader(eMap.Open(), Encoding.UTF8)) {
                 enMapTxt = sr.ReadToEnd();
             }
-            var eBin = zip.GetEntry("xfs/luascripts/Data/I18N/Compress_en.bin");
             using (var s = eBin.Open())
             using (var ms = new MemoryStream((int)eBin.Length)) {
                 s.CopyTo(ms);
@@ -306,13 +318,13 @@ function Save-InstallerConfig([string]$SavedGameDir) {
 
 function Get-TsvMetadata([string]$PathToTsv) {
     $meta = [pscustomobject]@{
-        versione  = '1.0.1'
+        versione  = '1.1.4'
         build     = '3746914'
-        data      = '2026-10-19'
+        data      = '2026-10-22'
         voci      = '112418'
         voci_fmt  = '112.418'
-        tsv_md5   = 'a625c5a29b5db90480204d744cf4295e'
-        changelog = 'Revisione terminologica globale: 968 correzioni specialistiche.'
+        tsv_md5   = '8471262cdad8739618ec9d96729bc33a'
+        changelog = 'Controllo totale Steam: allineamento missioni secondarie, atti Dimora, Eolo, Spada del Coraggio e armonizzazione cluster.'
     }
     # Lettura ultra-rapida da versione.json se presente
     if (Test-Path -LiteralPath $VersionJsonPath) {
@@ -390,7 +402,9 @@ function Get-RemoteRepoVersionUrl {
 function Update-TranslationTsvFromGitHub([switch]$Silent) {
     $verUrl = Get-RemoteRepoVersionUrl
     $tsvUrl = Get-RemoteRepoTsvUrl
-    if (-not $tsvUrl) { return $false }
+    if (-not $tsvUrl) {
+        return [pscustomobject]@{ Success = $false; Status = 'NoUrl'; Message = 'URL repository remoto non configurato.' }
+    }
 
     $wc = $null
     $tmpTsv = "$TsvPath.download"
@@ -413,25 +427,37 @@ function Update-TranslationTsvFromGitHub([switch]$Silent) {
         }
 
         # Se il manifest remoto ha lo stesso MD5 del file locale, non riscarichiamo 7.5 MB inutilmente
-        if ($remoteVerJson -and $remoteVerJson.tsv_md5 -and (Test-Path -LiteralPath $TsvPath)) {
+        if ($remoteVerJson -and (Test-Path -LiteralPath $TsvPath)) {
             $localMeta = Get-TsvMetadata $TsvPath
-            if ($localMeta.tsv_md5 -and ($localMeta.tsv_md5 -ieq $remoteVerJson.tsv_md5)) {
-                return $false
+            if ($localMeta.tsv_md5 -and $remoteVerJson.tsv_md5 -and ($localMeta.tsv_md5 -ieq $remoteVerJson.tsv_md5)) {
+                if ($jsonText) { try { [System.IO.File]::WriteAllText($VersionJsonPath, $jsonText, [System.Text.Encoding]::UTF8) } catch {} }
+                return [pscustomobject]@{ Success = $false; Status = 'AlreadyUpToDate'; Message = 'La traduzione locale è già allineata.' }
             }
             $localFileMd5 = Get-Md5File $TsvPath
-            if ($localFileMd5 -ieq $remoteVerJson.tsv_md5) {
-                try { [System.IO.File]::WriteAllText($VersionJsonPath, $jsonText, [System.Text.Encoding]::UTF8) } catch {}
-                return $false
+            if ($localFileMd5 -and $remoteVerJson.tsv_md5 -and ($localFileMd5 -ieq $remoteVerJson.tsv_md5)) {
+                if ($jsonText) { try { [System.IO.File]::WriteAllText($VersionJsonPath, $jsonText, [System.Text.Encoding]::UTF8) } catch {} }
+                return [pscustomobject]@{ Success = $false; Status = 'AlreadyUpToDate'; Message = 'La traduzione locale è già allineata.' }
             }
+            # Se la versione locale è già uguale o più recente della remota, non sovrascrivere
+            try {
+                $remVerStr = if ($remoteVerJson.versione_traduzione) { $remoteVerJson.versione_traduzione } else { $remoteVerJson.versione }
+                $remVer = [version]($remVerStr -replace '[^\d\.]', '')
+                $locVer = [version]($localMeta.versione -replace '[^\d\.]', '')
+                if ($locVer -ge $remVer) {
+                    return [pscustomobject]@{ Success = $false; Status = 'AlreadyUpToDate'; Message = "La traduzione locale (v$($localMeta.versione)) è già aggiornata o più recente di quella remota (v$remVerStr)." }
+                }
+            } catch {}
         }
 
         # FASE 2: Scaricamento completo della nuova traduzione
         $wc.DownloadFile($tsvUrl, $tmpTsv)
-        if (-not (Test-Path -LiteralPath $tmpTsv)) { return $false }
+        if (-not (Test-Path -LiteralPath $tmpTsv)) {
+            return [pscustomobject]@{ Success = $false; Status = 'DownloadFailed'; Message = 'Download non completato.' }
+        }
         $len = (Get-Item -LiteralPath $tmpTsv).Length
         if ($len -lt 1000000) {
             Remove-Item -LiteralPath $tmpTsv -Force -ErrorAction SilentlyContinue
-            return $false
+            return [pscustomobject]@{ Success = $false; Status = 'InvalidData'; Message = 'File scaricato incompleto o non valido.' }
         }
 
         if (Test-Path -LiteralPath $TsvPath) {
@@ -442,7 +468,7 @@ function Update-TranslationTsvFromGitHub([switch]$Silent) {
                 if ($remoteVerJson -and $jsonText) {
                     try { [System.IO.File]::WriteAllText($VersionJsonPath, $jsonText, [System.Text.Encoding]::UTF8) } catch {}
                 }
-                return $false
+                return [pscustomobject]@{ Success = $false; Status = 'AlreadyUpToDate'; Message = 'La traduzione locale è già allineata.' }
             }
         }
 
@@ -450,12 +476,12 @@ function Update-TranslationTsvFromGitHub([switch]$Silent) {
         if ($remoteVerJson -and $jsonText) {
             try { [System.IO.File]::WriteAllText($VersionJsonPath, $jsonText, [System.Text.Encoding]::UTF8) } catch {}
         }
-        return $true
+        return [pscustomobject]@{ Success = $true; Status = 'Updated'; Message = 'Nuova traduzione scaricata con successo.' }
     } catch {
         if (Test-Path -LiteralPath $tmpTsv) {
             Remove-Item -LiteralPath $tmpTsv -Force -ErrorAction SilentlyContinue
         }
-        return $false
+        return [pscustomobject]@{ Success = $false; Status = 'NetworkError'; Message = $_.Exception.Message }
     } finally {
         if ($wc) { $wc.Dispose() }
     }
@@ -660,7 +686,9 @@ function Select-AniimoFolderDialog {
     $dlg.Description = "Seleziona la cartella di installazione di Aniimo (es. ...\steamapps\common\Aniimo)"
     $dlg.ShowNewFolderButton = $false
     if ($dlg.ShowDialog() -eq [System.Windows.Forms.DialogResult]::OK) {
-        return (Resolve-AniimoDir $dlg.SelectedPath)
+        $res = Resolve-AniimoDir $dlg.SelectedPath
+        if ($res) { return $res }
+        return "" # Stringa vuota indica selezione non valida (mentre $null indica annullato)
     }
     return $null
 }
@@ -1342,7 +1370,7 @@ function Show-PolarisDialog {
 [xml]$xaml = @"
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Aniimo — Localizzazione Italiana (v1.0.1)" Height="800" Width="1250"
+        Title="Aniimo — Localizzazione Italiana (Launcher v1.0)" Height="800" Width="1250"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
         WindowStyle="None" AllowsTransparency="True" Background="Transparent" FontFamily="Segoe UI">
   <Window.Resources>
@@ -1737,7 +1765,7 @@ function Show-PolarisDialog {
                   <Border Width="14" Height="3" CornerRadius="1.5" Background="#10B981" Margin="0,0,3,0"/>
                   <Border Width="14" Height="3" CornerRadius="1.5" Background="#F8FAFC" Margin="0,0,3,0"/>
                   <Border Width="14" Height="3" CornerRadius="1.5" Background="#F43F5E" Margin="0,0,8,0"/>
-                  <TextBlock x:Name="HeaderSubMeta" Text="Polaris FastPacker · v1.0.1 (112.418 voci)" Foreground="#64748B" FontSize="10.5" VerticalAlignment="Center"/>
+                  <TextBlock x:Name="HeaderSubMeta" Text="Polaris FastPacker v1.0 · Traduzione v1.1.4 (112.418 voci)" Foreground="#64748B" FontSize="10.5" VerticalAlignment="Center"/>
                 </StackPanel>
               </StackPanel>
             </StackPanel>
@@ -1829,7 +1857,7 @@ function Show-PolarisDialog {
                     <Border CornerRadius="8" Background="#1A10B981" BorderBrush="#6610B981" BorderThickness="1" Padding="12,5">
                       <StackPanel Orientation="Horizontal">
                         <TextBlock x:Name="HeroCompatIcon" Text="&#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="11.5" Foreground="#34D399" VerticalAlignment="Center" Margin="0,0,7,0"/>
-                        <TextBlock x:Name="HeroCompatLabel" Text="VERSIONE 1.0.1 · AGGIORNATA ALL'ULTIMA BUILD (3746914)" Foreground="#ECFDF5" FontSize="10.5" FontWeight="Bold" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="HeroCompatLabel" Text="TRADUZIONE v1.1.4 · AGGIORNATA ALL'ULTIMA BUILD (3746914)" Foreground="#ECFDF5" FontSize="10.5" FontWeight="Bold" VerticalAlignment="Center"/>
                       </StackPanel>
                     </Border>
                   </StackPanel>
@@ -1857,7 +1885,7 @@ function Show-PolarisDialog {
                     <Border CornerRadius="8" Background="#162235" BorderBrush="#26FFFFFF" BorderThickness="1" Padding="11,6" Margin="0,0,0,6">
                       <StackPanel Orientation="Horizontal">
                         <TextBlock Text="&#xE945;" FontFamily="Segoe MDL2 Assets" FontSize="11" Foreground="#A5B4FC" VerticalAlignment="Center" Margin="0,0,6,0"/>
-                        <TextBlock x:Name="HeroVersionChip" Text="v1.0.1 · Build 3746914" Foreground="#E2E8F0" FontSize="11" FontWeight="SemiBold"/>
+                        <TextBlock x:Name="HeroVersionChip" Text="Traduzione v1.1.4 · Build 3746914" Foreground="#E2E8F0" FontSize="11" FontWeight="SemiBold"/>
                       </StackPanel>
                     </Border>
                   </WrapPanel>
@@ -2133,7 +2161,7 @@ function Show-PolarisDialog {
                     <StackPanel Grid.Column="0">
                       <StackPanel Orientation="Horizontal">
                         <Border CornerRadius="6" Background="#1D2A44" BorderBrush="#38BDF8" BorderThickness="1" Padding="8,2" Margin="0,0,8,0">
-                          <TextBlock x:Name="ChangelogVersionBadge" Text="VERSIONE 1.0.1" Foreground="#38BDF8" FontSize="10" FontWeight="Bold"/>
+                          <TextBlock x:Name="ChangelogVersionBadge" Text="VERSIONE 1.1.4" Foreground="#38BDF8" FontSize="10" FontWeight="Bold"/>
                         </Border>
                         <Border CornerRadius="6" Background="#132E27" BorderBrush="#10B981" BorderThickness="1" Padding="8,2">
                           <TextBlock x:Name="ChangelogBuildBadge" Text="BUILD 3746914 ALLINEATA" Foreground="#34D399" FontSize="10" FontWeight="Bold"/>
@@ -2393,8 +2421,9 @@ function Update-UiDashboard {
     $script:CurrentMeta = Get-TsvMetadata $TsvPath
     $m = $script:CurrentMeta
 
-    $HeaderSubMeta.Text   = "Polaris FastPacker · v$($m.versione) ($($m.voci_fmt) voci)"
-    $HeroVersionChip.Text = "v$($m.versione) · Build $($m.build)"
+    if ($win) { $win.Title = "Aniimo — Localizzazione Italiana (Launcher v1.0 · Traduzione v$($m.versione))" }
+    $HeaderSubMeta.Text   = "Polaris FastPacker v1.0 · Traduzione v$($m.versione) ($($m.voci_fmt) voci)"
+    $HeroVersionChip.Text = "Traduzione v$($m.versione) · Build $($m.build)"
     $HeroStringsChip.Text = "$($m.voci_fmt) stringhe · $($m.data)"
     $TxtPatchBuild.Text   = "$($m.build) (v$($m.versione))"
 
@@ -2487,7 +2516,7 @@ function Update-UiDashboard {
         if ($gb -eq $m.build) {
             $TxtBuildMatchBanner.Text       = "✔ Traduzione aggiornata all'ultima build del gioco!"
             $TxtBuildMatchBanner.Foreground = $brushConv.ConvertFromString('#34D399')
-            $HeroCompatLabel.Text           = "VERSIONE $($m.versione) · AGGIORNATA ALL'ULTIMA BUILD ($gb)"
+            $HeroCompatLabel.Text           = "TRADUZIONE v$($m.versione) · AGGIORNATA ALL'ULTIMA BUILD ($gb)"
             $HeroCompatIcon.Text            = [string][char]0xE73E
             $HeroCompatIcon.Foreground      = $brushConv.ConvertFromString('#34D399')
             $HeaderStatusDot.Fill           = $brushConv.ConvertFromString('#10B981')
@@ -2495,7 +2524,7 @@ function Update-UiDashboard {
         } else {
             $TxtBuildMatchBanner.Text       = "⚡ Build gioco: $gb | Build dizionario: $($m.build) (Patching compatibile attivo)"
             $TxtBuildMatchBanner.Foreground = $brushConv.ConvertFromString('#FBBF24')
-            $HeroCompatLabel.Text           = "VERSIONE $($m.versione) · COMPATIBILE CON BUILD $gb"
+            $HeroCompatLabel.Text           = "TRADUZIONE v$($m.versione) · COMPATIBILE CON BUILD $gb"
             $HeroCompatIcon.Text            = [string][char]0xE946
             $HeroCompatIcon.Foreground      = $brushConv.ConvertFromString('#FBBF24')
             $HeaderStatusDot.Fill           = $brushConv.ConvertFromString('#F59E0B')
@@ -2506,6 +2535,7 @@ function Update-UiDashboard {
         $TxtDetectedBuild.Text          = "N/D"
         $TxtBuildMatchBanner.Text       = "Seleziona la cartella di Aniimo per verificare la build."
         $TxtBuildMatchBanner.Foreground = $brushConv.ConvertFromString('#F43F5E')
+        $HeroCompatLabel.Text           = "TRADUZIONE v$($m.versione) · BUILD $($m.build)"
         $HeaderStatusDot.Fill           = $brushConv.ConvertFromString('#F43F5E')
         $HeaderStatusText.Text          = "Cartella di gioco da selezionare"
     }
@@ -2622,7 +2652,7 @@ $BtnSelectFolder.Add_Click({
         Save-InstallerConfig $picked
         Update-UiDashboard
         Set-ProgressBarState 100 "Percorso di gioco aggiornato." $true
-    } elseif ($null -ne $picked) {
+    } elseif ($picked -eq "") {
         [void](Show-PolarisDialog -Title "Cartella non valida" -Badge "ERRORE PERCORSO" -Severity "Error" -Messages @(
             "Nella cartella selezionata non è stato trovato l'archivio Aniimo_Data\StreamingAssets\cvs\res\lua\LuaScripts.xdf.",
             "Seleziona la cartella principale di Aniimo (es. C:\Program Files (x86)\Steam\steamapps\common\Aniimo)."
@@ -2658,7 +2688,8 @@ $BtnCheckGitHub.Add_Click({
         return
     }
     Set-ProgressBarState 40 "Verifica versione traduzione su GitHub in corso..." $false
-    if (Update-TranslationTsvFromGitHub) {
+    $upd = Update-TranslationTsvFromGitHub
+    if ($upd.Status -eq 'Updated') {
         $script:GlossaryLoaded = $false
         Update-UiDashboard
         Set-ProgressBarState 100 "Traduzione aggiornata da GitHub (v$($script:CurrentMeta.versione))." $true
@@ -2668,10 +2699,17 @@ $BtnCheckGitHub.Add_Click({
             "$($script:CurrentMeta.changelog)",
             "Premi ora il pulsante azzurro in basso a destra per applicarla al gioco!"
         ))
-    } else {
+    } elseif ($upd.Status -eq 'AlreadyUpToDate') {
         Set-ProgressBarState 100 "Traduzione locale già allineata (v$($script:CurrentMeta.versione))." $true
         [void](Show-PolarisDialog -Title "Traduzione già aggiornata" -Badge "ALLINEATA" -Severity "Information" -Messages @(
             "La traduzione locale (v$($script:CurrentMeta.versione) · Build $($script:CurrentMeta.build)) è già allineata all'ultima versione disponibile online."
+        ))
+    } else {
+        Set-ProgressBarState 100 "Verifica aggiornamenti non riuscita." $false
+        [void](Show-PolarisDialog -Title "Verifica aggiornamenti non riuscita" -Badge "ERRORE RETE" -Severity "Warning" -Messages @(
+            "Non è stato possibile verificare gli aggiornamenti su GitHub.",
+            "Assicurati che la connessione a Internet sia attiva e riprova.",
+            "Dettaglio: $($upd.Message)"
         ))
     }
 })
@@ -2680,7 +2718,15 @@ function Start-GuiInstallAction {
     if ($script:IsBusy) { return }
     if (-not $script:CurrentGameDir) {
         $picked = Select-AniimoFolderDialog
-        if (-not $picked) { return }
+        if (-not $picked) {
+            if ($picked -eq "") {
+                [void](Show-PolarisDialog -Title "Cartella non valida" -Badge "ERRORE PERCORSO" -Severity "Error" -Messages @(
+                    "Nella cartella selezionata non è stato trovato l'archivio Aniimo_Data\StreamingAssets\cvs\res\lua\LuaScripts.xdf.",
+                    "Seleziona la cartella principale di Aniimo."
+                ))
+            }
+            return
+        }
         $script:CurrentGameDir = $picked
         Save-InstallerConfig $picked
         Update-UiDashboard
@@ -2712,7 +2758,8 @@ function Start-GuiInstallAction {
     $BtnApplyPatch.IsEnabled      = $false
     $BtnRestoreOriginal.IsEnabled = $false
     try {
-        if (Update-TranslationTsvFromGitHub -Silent) {
+        $upd = Update-TranslationTsvFromGitHub -Silent
+        if ($upd -and $upd.Success) {
             Update-UiDashboard
         }
         $res = Invoke-TranslationInstall $script:CurrentGameDir $script:CurrentMeta {
@@ -2822,18 +2869,24 @@ if ($ExportPreview -or $GuiAutoInstall -or $GuiAutoRestore) {
         $initTsvTime = if (Test-Path -LiteralPath $TsvPath) { (Get-Item -LiteralPath $TsvPath).LastWriteTimeUtc } else { [DateTime]::MinValue }
         Start-Process -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$PSCommandPath`" -UpdateTsv" -WindowStyle Hidden
 
+        $script:BgPollCount = 0
         $bgTimer = New-Object System.Windows.Threading.DispatcherTimer
-        $bgTimer.Interval = [TimeSpan]::FromSeconds(3)
+        $bgTimer.Interval = [TimeSpan]::FromSeconds(2)
         $bgTimer.Add_Tick({
-            $bgTimer.Stop()
+            $script:BgPollCount++
             if (Test-Path -LiteralPath $TsvPath) {
                 $currTime = (Get-Item -LiteralPath $TsvPath).LastWriteTimeUtc
                 if ($currTime -gt $initTsvTime) {
+                    $bgTimer.Stop()
                     $script:CurrentMeta = Get-TsvMetadata $TsvPath
                     $script:GlossaryLoaded = $false
                     Update-UiDashboard
                     Set-ProgressBarState 100 "Nuova versione traduzione v$($script:CurrentMeta.versione) scaricata da GitHub! Clicca su Installa per applicarla." $true
+                    return
                 }
+            }
+            if ($script:BgPollCount -ge 15) {
+                $bgTimer.Stop()
             }
         })
         $bgTimer.Start()

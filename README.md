@@ -66,7 +66,7 @@ Tutte le modifiche, le revisioni terminologiche e i miglioramenti sono documenta
 
 | Parametro | Dettaglio |
 | :--- | :--- |
-| **Versione Traduzione** | **v1.0.1** (19 Ottobre 2026 - Revisione Terminologica Specialistica Applicata) |
+| **Versione Traduzione** | **v1.1.4** (22 Ottobre 2026 - Allineamento Totale Missioni Secondarie & Lore Steam) |
 | **Build Gioco Verificata** | **Build `3746914`** |
 | **Voci Tradotte** | **112.418 su 112.418** (100% copertura verificata) |
 | **Nomi Creature Aniimo** | Nomi ufficiali preservati e allineati al canone |
