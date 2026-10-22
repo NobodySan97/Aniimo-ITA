@@ -1,9 +1,9 @@
 {
-  "versione": "1.1.1",
+  "versione": "1.1.2",
   "build": "3746914",
   "data": "2026-10-22",
   "voci": "112418",
   "voci_fmt": "112.418",
-  "tsv_md5": "f1b994386c011bceb7b14f5f3e1e7e89",
-  "changelog": "Perfezionamento finale delle entità: risolte 308 residue discrepanze (nomi PNG, lore, terreni e interfaccia)."
+  "tsv_md5": "cfab453a41d2b0f6e47133e18fd5d16b",
+  "changelog": "Perfezionamento al 100%: armonizzazione collezione Luna del Raccolto, acconciature, brand ChillBeanz e pulizia totale."
 }

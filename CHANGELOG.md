@@ -4,6 +4,23 @@ Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **A
 
 ---
 
+## [1.1.2] - 2026-10-22
+
+### 💎 Certificazione di Qualità Totale al 100% (Verifica Esaustiva Rigorosa)
+- **Armonizzazione Collezione Luna del Raccolto**:
+  - Risolti gli ultimi 8 progetti e blueprint che menzionavano ancora frammentazioni obsolete (*"Luna della Vendemmia"* e *"Luna della mietitura"*), unificandoli tutti nella nomenclatura canonica **`Luna del Raccolto`** (*Coniglio Lunare*, *Verde Giardino*, *Bacche Aspre*, *Mosaico di Frutta*, *Onda di Riso*, *Pioggia di Osmanto*, *Luce Stellare*).
+  - Unificata la festa stagionale in **`Raduno del Raccolto`**.
+- **Coerenza Brand, Nomi & Stile**:
+  - Uniformato l'addetto all'accoglienza su **`Addetto alla reception di ChillBeanz`** (eliminato *"FagioliRelax"*).
+  - Normalizzati tutti i menu di personalizzazione su **`Seleziona acconciatura`** e **`Importa dati acconciatura`** (eliminato l'obsoleto *"pettinatura"*).
+  - Standardizzata la notazione delle statistiche difensive su **`DIF F./DIF M.`** in tutte le schede equipaggiamento.
+- **Pulizia dei Segnaposto di Test**:
+  - Rimossi i caratteri cinesi residui nelle stringhe interne di test (sostituito `简体中文` con `Cinese Semplificato`).
+- **Verifica Statistica Globale**:
+  - Zero refusi grammaticali, zero tag non bilanciati, parametri `{param}` e `%s` verificati al 100% identici alla versione Steam.
+
+---
+
 ## [1.1.1] - 2026-10-22
 
 ### 🎯 Perfezionamento Entità & Discrepanze Residue (308 Correzioni Mirate)
