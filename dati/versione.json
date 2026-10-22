@@ -1,9 +1,9 @@
 {
-  "versione": "1.1.0",
+  "versione": "1.1.1",
   "build": "3746914",
   "data": "2026-10-22",
   "voci": "112418",
   "voci_fmt": "112.418",
-  "tsv_md5": "cee803f111869812853dd22c8f8303c6",
-  "changelog": "Controllo riga per riga globale con Steam: armonizzate 17406 incongruenze terminologiche e tradotte voci residue."
+  "tsv_md5": "f1b994386c011bceb7b14f5f3e1e7e89",
+  "changelog": "Perfezionamento finale delle entità: risolte 308 residue discrepanze (nomi PNG, lore, terreni e interfaccia)."
 }

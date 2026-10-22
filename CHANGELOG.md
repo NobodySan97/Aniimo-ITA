@@ -4,6 +4,24 @@ Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **A
 
 ---
 
+## [1.1.1] - 2026-10-22
+
+### 🎯 Perfezionamento Entità & Discrepanze Residue (308 Correzioni Mirate)
+- **Nomi Propri dei PNG & Lore**:
+  - Ripristinato **`Clovis`** (eliminato l'arcaico *"Clodoveo"* in *"Diario di Clovis"*, *"Clovis III"* e *"Clovis Junior"*).
+  - Unificato **`Floret`** in tutte le targhette di dialogo e diari (eliminate 11 occorrenze residue di *"Fiorellino"*).
+  - Normalizzato il nome di **`ChillBeanz`** (eliminato *"FagioliFreddi"*).
+- **Dimora, Terreni & Coltivazione**:
+  - Corretto l'errore di traduzione sui terreni coltivabili: **`Sblocca lotto 4`** e **`Nome del lotto`** (eliminata la bizzarra traduzione letterale *"Sblocca trama 4"* e *"Nome della trama"* da *plot*).
+  - Unificato il comando di ritorno alla base in **`Vai alla Dimora`** e **`Segnala Dimora`** (eliminati gli ultimi *"Vai alla Casa"* e *"Segnala casa"*).
+- **Estrazione, Abilità & Combattimento**:
+  - Corretto il nodo di estrazione mineraria in **`Miniera`** (eliminato il clamoroso pronome possessivo inglese tradotto *"Mio"*).
+  - Corretta l'abilità berserker in **`Furia scatenata`** (eliminato il ridicolo calco *"Furia Furiosa"* da *Raging Rampage*).
+  - Rimosso l'a capo spurio su **`Santuario: Acque Frigide`** e **`Aggiungi dal profilo`**.
+  - Unificati termini come **`Corsa con timbro`**, **`Ambra Sogno di Farfalla`**, **`Riduzione tempo di ricarica`**, **`Vigore massimo`**.
+
+---
+
 ## [1.1.0] - 2026-10-22
 
 ### 🔬 Controllo Globale Riga per Riga con Database Steam (17.406 Perfezionamenti)

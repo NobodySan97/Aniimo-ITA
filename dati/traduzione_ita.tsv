@@ -363,7 +363,7 @@
 1077376568	Uovo di Prismana
 1077394663	Arrampicata/Nuoto/Volo
 1077405208	Guanti
-1077410964	Abilità Pathfinder
+1077410964	Abilità del Pathfinder
 1077414846	Viffo...! Te ne vai anche tu in un posto lontano?
 1077435456	Chat
 1077435533	Sì, per chi non ha un addestramento sistematico al combattimento, la difficoltà è piuttosto alta.
@@ -690,7 +690,7 @@
 1080913949	Pronto
 1080920626	Richiede livello di ricerca\n{0}{1}
 1080923143	Nuovo
-1080941645	Sostegno Energetico
+1080941645	Mantenimento Energia
 1080957612	Budclaw
 1080964725	Cip!
 1080985987	Ha sfidato il percorso ancora e ancora, sperando in una corsa "perfetta", ma ha sempre fallito.
@@ -931,7 +931,7 @@
 1083427870	Tasso di Resistenza ai CRIT
 1083429416	Sono un viaggiatore proveniente da Bloomville. Mi piace vagabondare, vedere il mondo... Beh, si potrebbe anche dire che sono disoccupato, immagino.\nMi piacciono quei Celestis, quindi vengo spesso qui a guardare... cioè, volevo dire, ad osservarli.
 1083442919	Fai crescere il Ramo fino al Livello %s.
-1083449864	Sostegno di Potenza
+1083449864	Mantenimento Energia
 1083476243	Spara una catena di fulmini dal petto per attaccare il bersaglio. All'impatto, si propaga ai bersagli vicini infliggendo Danni Magici. Lo stesso bersaglio non può essere colpito due volte.
 1083476610	Camper Liv. 9
 1083523851	La leggenda narra che un secolo fa la Vena si spezzò, privando la terra di ogni colore.\nI bambini nati in queste terre disseccate avrebbero sofferto di <style=Hint_BgD>acromia</style>.\nNascevano deboli e perdevano la percezione del colore, soffrendo di ogni genere di disturbo, persino...
@@ -1949,7 +1949,7 @@
 1094771992	Aniipod che richiede vigore (Segnaposto)
 1094774226	Grano variopinto gigante
 1094801420	Peperoncino enorme della luna crescente
-1094807039	Vigore max
+1094807039	Vigore massimo
 1094819343	L'odore di arrosto si diffonde nell'aria, attirando i buongustai ad avvicinarsi di soppiatto, anche se chi non ha pazienza non ne assaggerà neanche un boccone per non essere riuscito ad afferrarlo.
 1094828732	Fiuu... va molto meglio, grazie.\nSei qui anche tu per l'Aniimo in Forma Campo Innevato?
 1094830610	Ho lavorato per mesi—e ho perso così tanti capelli! Ho modificato la formula più di una dozzina di volte, fatto esplodere tre matracci di distillazione... Ho quasi preso tutte le scaglie che potevo trovare dalle Flutternym! E sono stato persino sgridato un po' dal capo villaggio...
@@ -2784,7 +2784,7 @@
 1103445738	Canna da zucchero rara mutata con fusti eccezionalmente grandi e succosi.
 1103447252	Esplosione stellare - Parete alta in mattoni albicocca calda
 1103452907	Cristallo di Goccia di Jawling Semilavorato
-1103471202	Aggancia bersaglio
+1103471202	Aggancio bersaglio
 1103507355	Budclaw
 1103510820	Tufty, scatta!
 1103510976	Lavanda estremamente rara con doppia mutazione, scintillante di punti di luce abbaglianti e con spighe di fiori eccezionalmente grandi e rigogliose.
@@ -3016,7 +3016,7 @@
 1105773118	Esatto! Puoi vederlo, toccarlo e persino venderlo per guadagnarci qualcosa! In che modo sarebbe solo un vuoto giro di parole?
 1105788605	Arbusti costellati di frutti delicati, che infondono una vita vibrante nella Dimora.
 1105797321	Secondo la letteratura antica, Helmut e Jawling non dovrebbero andare d'accordo.\nMa guarda i due soggetti davanti a noi: hanno dormito uno accanto all'altro per sette giorni!
-1105798726	Squadra di Battaglia
+1105798726	Squadra di battaglia
 1105800741	Raggiungi il livello 4 del camper.
 1105803986	Dopo aver ottenuto un <style=Hint_BgL>Celestis</style>, ottieni la capacità di volare. <style=Hint_BgL>Segui</style> il <style=Hint_BgL>comando del pulsante</style> che appare mentre sei a mezz'aria per iniziare a volare, poi <style=Hint_BgL>premilo di nuovo</style> per fermarti.\nPremi <style=Hint_BgL>Salta</style> per usare "Ascesa", sollevandoti rapidamente verso l'alto a un costo elevato di Resistenza.
 1105834626	Grano Colorato Gigante
@@ -3478,7 +3478,7 @@
 1110742649	Continua a lottare con disperazione...
 1110743822	Raggiungi il livello 11 del camper.
 1110749204	Visualizza
-1110797197	Snowy
+1110797197	Innevato
 1110797492	Silas
 1110800735	Possiedi 1 Grizbo Prismana Sparkling.
 1110819236	Promessa di luce
@@ -3738,7 +3738,7 @@
 1113387106	Le Starine sono il cibo preferito di Celestis. Potrebbe mangiarne a ogni pasto senza stancarsene mai.
 1113406898	Il gruppo predefinito non può essere modificato.
 1113415478	Velouria
-1113425290	Riduzione danno
+1113425290	Riduzione danni
 1113437590	Così straordinario?
 1113439656	Mobile di prova n. 4
 1113451738	#playerName# ha affermato in un'intervista: "Lo stile non riguarda ciò che indossi, ma quanto tieni ai tuoi Aniimo."
@@ -4015,7 +4015,7 @@
 1116585706	Braccio destro
 1116587728	Come giocare
 1116587801	Condizioni per salire di livello
-1116588193	Carica pirotecnica
+1116588193	Carica Pyro
 1116597867	Esplorazione del mondo - Monticello di terra
 1116599798	Voce indistinta
 1116630769	Oh, certo. È l'ora di tornare a casa mia... sbadiglio...
@@ -4237,7 +4237,7 @@
 1118808403	Disordine (legno)
 1118830491	Accessorio personaggio
 1118837260	Stessa regola di prima. Indovina quale Aniimo ho disegnato, portamelo e il dipinto sarà tuo.
-1118874375	Snowy
+1118874375	Innevato
 1118894319	Chiamata di Bolty
 1118901941	<sprite name="UI_Icon_SneakTipIcon">Si muove lentamente. Difficile da individuare.
 1118908262	Ti sei avvicinato troppo?\nAlcuni Aniimo sono timidi e si mimetizzano non appena si spaventano.
@@ -4722,7 +4722,7 @@
 1124237778	Thornblade alfa
 1124246324	Deve raggiungere il livello Aniimo richiesto
 1124291874	I segni sono irregolari... sparsi, ripetuti... profondi e frastagliati.
-1124299047	Ricompense di rango
+1124299047	Ricompense di grado
 1124309034	Lista amici
 1124323785	Il murale ha iniziato a brillare debolmente, e i simboli del sole e della luna hanno effettivamente preso forma davanti ai nostri occhi!\nPer un breve istante, sembravano bestie sacre e bellissime. Poi si sono improvvisamente trasformate in due minuscoli Aniimo.\nAdorabili, certo. Ma rispetto al murale... non c'era proprio paragone!
 1124346816	Mm-woo!
@@ -4768,7 +4768,7 @@
 1124790472	Una volta inviato come regalo, il destinatario riceve 6.000 Crediti e tu ricevi 6.000 Crediti. Inviarlo a un amico concede 10 di Affinità extra.
 1124802422	Oh, è un <style=Hint_BgD>Bocciolo</style>!
 1124814834	Riepilogo della storia
-1124816390	Idro rotolata
+1124816390	Idrorotolamento
 1124821463	Un uovo contenente l'energia estremamente rara del Prismana. Il suo guscio brilla di una luce fluida e i suoi segni vitali sono eccezionalmente forti. Si schiuderà sicuramente in un Aniimo in <style=Hint_BgL>Forma Prismana</style>, e l'uso di un Cubo Sparkling su di esso potrebbe conferire la mutazione <style=Hint_BgL>Sparkling dell'Ombra</style>.
 1124837308	I Punti Suprema non sono del tutto carichi.
 1124838466	Prefisso
@@ -5341,7 +5341,7 @@
 1130782567	Pranky alfa
 1130790582	Tiro fuori il collare con la scritta "Pippi".
 1130799121	Terreno con poca sabbia e forte adesività, spesso usato per creare oggetti d'artigianato.
-1130799163	Sostegno di Potenza
+1130799163	Mantenimento Energia
 1130872038	Progresso:
 1130877471	Come se la tua portata fosse davvero così impressionante?
 1130879739	Runa d'attacco primaria
@@ -5440,7 +5440,7 @@
 1131782268	In produzione
 1131789220	Ho bisogno di dormire, ma tu me lo stai rendendo impossibile!
 1131820994	Aumenta il danno di tipo Erba e la Resistenza a Erba del <customRichText(calcData,buff,10094,param0,1,%d)>%.
-1131821969	Tutto
+1131821969	Tutti
 1131824255	Fiamme ruggenti riposano all'interno del corno, attendendo l'eroe prescelto dal destino. Quando il ruggito del drago sarà infine scatenato, il destino si consumerà nel fuoco.
 1131827784	Ajay
 1131828017	Come ottenere (segnaposto) Ottieni
@@ -6049,7 +6049,7 @@
 1137984730	Sei pronto? Allora iniziamo!
 1137991678	Starla
 1137997481	Testa
-1138026157	Rilascia
+1138026157	Rilascio
 1138033345	Carta da parati rinfrescante di un celeste tenue che addolcisce l'illuminazione interna e si adatta a qualsiasi stile di arredamento.
 1138043005	Forma completa
 1138047158	Tutorial livello elemento
@@ -6145,7 +6145,7 @@
 1138899487	Vedi questi pezzi? Sembra che si incastrino in qualche modo...
 1138907171	Aiuto! Vi prego... qualcuno!
 1138932431	7h 59m
-1138937504	Onda d'urto euforica
+1138937504	Onda Sonora Euforica
 1138972622	Pronti, salto!
 1138981326	Sfida i Pathfinder in tutto il mondo aperto per dimostrare la tua forza e ottenere generose ricompense.
 1138981434	Sylvie
@@ -6391,7 +6391,7 @@
 1141494055	Tocca la statua per riscattare l'Aniimo esclusivo del Santuario.
 1141525639	Fragranza pericolosa
 1141527031	Wow! Sei davvero abile!
-1141546708	Pebbling addormentato
+1141546708	Pebbling dormiente
 1141553488	Il manuale di profumeria più venduto di Bloomville, che documenta dettagliatamente varie tecniche per la creazione di fragranze.
 1141554342	Fenrier guida la discussione
 1141567807	Dormiente
@@ -6485,7 +6485,7 @@
 1142415787	Già. Ma nemmeno il preside ha ancora confermato cosa abbia riportato #playerGender#.
 1142424466	Io
 1142437787	Io
-1142443874	Riduzione danno
+1142443874	Riduzione danni
 1142447330	Maestria di allenamento massima raggiunta.
 1142448650	Set
 1142450313	Lampone rosso
@@ -7137,7 +7137,7 @@
 1149367178	Placcaggio di Ghiaia
 1149369158	Sblocca {0}/{1} Voci dell'Indice delle Piante Mutanti Stagionali
 1149382529	Velouria
-1149395540	"Comandante del Drago"
+1149395540	"Comandante dei draghi"
 1149396115	Raggiungi il livello 9 del camper
 1149405949	Raro riso mutato, avvolto da un bagliore simile a un arcobaleno.
 1149421253	Spara un raggio solare che infligge Danni al bersaglio. Tieni premuto il pulsante dell'Abilità per consumare Energia per un ATT continuo.
@@ -7166,10 +7166,10 @@
 1149726452	Ingredienti e condimenti si mescolano all'interno del barattolo, dove il tempo e la fermentazione li trasformano in sapori del tutto nuovi. Raggiungi il <style=Hint_BgL>livello 12</style> del Camper per passare alla modalità E.
 1149753245	Conferma
 1149765378	Conferma
-1149765999	Svago
+1149765999	Tempo libero
 1149766469	Sunia... è davvero cresciuta...
 1149767484	Allineamento alla Griglia Attivo
-1149769852	Partecipa
+1149769852	Unisciti
 1149771894	I tuoi capelli fluttuano vaporosi e leggeri, freschi e naturali.
 1149789601	Gesto del Cuore
 1149797815	La prossima riga è... du-du... ugh, è troppo bassa. È orribile da cantare.
@@ -7748,7 +7748,7 @@
 1155078030	Schiudi l'uovo nelle <style=Hint_BgL>Incubatrici dell'Avamposto</style> e nelle <style=Hint_BgL>Incubatrici della Dimora</style>.
 1155099270	Sblocca Gesto d'Interazione - Saluta
 1155120437	Voce indistinta
-1155130806	Maestria di Addestramento
+1155130806	Maestria di addestramento
 1155138633	Collega due Pathfinder con una catena, perdendo continuamente PS.
 1155141838	Dono di ringraziamento di Helmut
 1155144043	Maestro collezionista
@@ -7902,7 +7902,7 @@
 1156599675	Chic retrò
 1156599809	Fantastico! Solo 723 confessioni, e finalmente ci sono riuscito!
 1156603077	Modificatore velocità di movimento Forma Uovo
-1156606847	\nSanctum: Acque Frigide
+1156606847	Santuario: Acque Frigide
 1156619748	Piazzalo nella tua Dimora e gli Aniimo lasceranno dei materiali all'interno.
 1156626171	Ho dormito bene, grazie. La stanza era davvero comoda!
 1156630357	Raccogli
@@ -8270,7 +8270,7 @@
 1160359029	A proposito, Sunia, potremo ricevere la benedizione domani?
 1160381180	Camper Liv. 8
 1160414825	Joff
-1160417284	Fiorellino
+1160417284	Floret
 1160437732	Guida all'esplorazione
 1160444838	Quale Aniimo è <style=Hint_BgD>più adatto per sfidare lo Stellarys Alfa di elemento Oscurità</style>?
 1160454624	Stadio Gamma
@@ -8931,7 +8931,7 @@
 1167267928	Cos'era?
 1167283284	Completa tutto l'Addestramento Base per sbloccare l'Addestramento Avanzato
 1167304692	Teletrasporto
-1167304998	Valutazione titolo
+1167304998	Valutazione del titolo
 1167320041	Limite attuale del livello di addestramento
 1167323920	Kairanos
 1167346944	Utilizzato per migliorare i componenti del camper.
@@ -9301,7 +9301,7 @@
 1171089963	È emersa un'orda di Aniimo infuriati! Evacuare ora!
 1171111425	Moneta Addestramento Grande Calma
 1171128943	Raccolta di Lumin: Pendio innevato
-1171130879	Snowy
+1171130879	Innevato
 1171142881	Hoshino
 1171165532	Veilfloat
 1171167714	In modalità Cattura, il mirino si muove automaticamente verso un Aniimo vicino. Maggiore è la forza, più velocemente si muove.
@@ -9785,7 +9785,7 @@
 1176319505	Aumenta l'EXP dell'Aniimo in base all'ActorId
 1176319718	Puntamento Manuale
 1176335662	Scopri la Regione del Mondo: Europa.
-1176347392	Riduzione danno
+1176347392	Riduzione danni
 1176347603	Esplora il mondo aperto per ulteriori missioni.
 1176358272	Segnaposto scheda
 1176401533	Istruttore Bohr—
@@ -10004,7 +10004,7 @@
 1178479246	Danni subiti
 1178483649	PS
 1178502063	Dott. Glass
-1178527360	Molte grazie! Forse non sarò Clodoveo III, ma tu sei davvero il tipo di Pathfinder eroico che si trova nei romanzi: gentile, coraggioso, forte e saggio.
+1178527360	Molte grazie! Forse non sarò Clovis III, ma tu sei davvero il tipo di Pathfinder eroico che si trova nei romanzi: gentile, coraggioso, forte e saggio.
 1178534154	Entra nella casa
 1178542794	Patata estremamente rara con doppia mutazione, che scintilla con punti di luce abbaglianti e presenta tuberi eccezionalmente grandi e polposi.
 1178556939	Una robusta piattaforma da salto in legno massiccio con un soffice pompon sottostante, realizzato con il piumino perso dai Tubster.
@@ -10102,7 +10102,7 @@
 1179516468	Visualizza Oggetto
 1179520135	Bolty
 1179528445	Di Wolfie
-1179528835	Posseduti:
+1179528835	Posseduto:
 1179529542	Innanzitutto, il primissimo posto in cui è andato dopo che ti ho chiesto di inseguirlo—
 1179547490	Risultati della ricerca
 1179557092	Forziere
@@ -11519,7 +11519,7 @@
 1195382288	Oh, intendo la mia migliore amica, Mary. È entrata all'Istituto l'anno scorso...
 1195395440	Budclaw
 1195400093	Carica
-1195427566	*ronzio*
+1195427566	*canticchia*
 1195449895	Aumenta il recupero al 20%. Raddoppia la quantità per qualsiasi altro effetto ad attivazione da Esausto o di autodistruzione che si attivi anch'esso.
 1195462081	Ora puoi collocare <style=Hint_BgL>38</style> Aniimo nella tua Base.\n<style=Hint_BgL>Nuovi oggetti</style> sono disponibili nel Negozio Base e nel Negozio di mobili, <style=Hint_BgL>con strutture di produzione più avanzate tutte da scoprire!</style>\nAumentato il <style=Hint_BgL>limite massimo di strutture funzionali</style> che puoi collocare nella tua Base\nAumentato il <style=Hint_BgL>limite massimo di ordini</style>\n<link="item_4040016"><color=#5090df><u>Modulo ricerca botanica</u></color></link> può essere potenziato al <style=Hint_BgL>Liv. 4</style>.\n<link="item_4040013"><color=#5090df><u>Rilevatore di risorse</u></color></link> può essere potenziato al <style=Hint_BgL>Liv. 5</style>.
 1195468608	Dott. Glass
@@ -11563,7 +11563,7 @@
 1195871421	Sblocca la difficoltà Caos per la modalità a squadre di Operazione: Furto d'Uova.
 1195874608	Raggiunto il limite di accelerazione dell'oggetto.
 1195886012	Tocca
-1195896849	Sovraccaricato
+1195896849	Sovraccarico
 1195901589	Evolvi
 1195907134	Lama di luce potenziata
 1195916637	BINI #9
@@ -11651,7 +11651,7 @@
 1196958423	Raggiungi il livello 4 del camper.
 1196964023	Pura essenza dell'Oscurità
 1196964052	Trovato! È questo quello che stiamo cercando?
-1196974976	Snowy
+1196974976	Innevato
 1196981703	Visualizza aspetto
 1196986145	La forza bruta fa miracoli
 1196990348	Può essere usato per personalizzare il tuo personaggio e l'Aniimo
@@ -12725,7 +12725,7 @@
 1208157490	No... No, devo prima trovare un modo prima di poter entrare nella Valle delle Lumilucciole...
 1208169634	Nai-li
 1208202698	Certamente! Sei il papà più, più, più potente di sempre!
-1208216304	Snowy
+1208216304	Innevato
 1208216345	Parte inferiore
 1208226182	Esci dalla schermata di costruzione e vedrai che il terreno agricolo è stato posizionato nella tua Dimora.
 1208244489	Camper Liv. 4
@@ -12854,7 +12854,7 @@
 1209442530	Bailite capace
 1209444790	Struttura
 1209467714	Scogliera Crescendo.
-1209487625	Piena energia
+1209487625	Energia al massimo
 1209489401	Disponibile Ven.–Dom.
 1209493070	Camper Liv. 4
 1209512470	Dopo aver sconfitto Cecelia, si congratula con te per aver esplorato le Pianure Ventose in così poco tempo e ti parla delle sue meraviglie nascoste, dagli sciami di meduse lungo la Tideblossom Coast agli Shelly ad Echoback Landing. La vera esplorazione non ha una linea d'arrivo. Piuttosto che affrettarsi ad andare avanti, ciò che conta è notare i piccoli miracoli lungo il cammino e godersi il viaggio per conto proprio.
@@ -13805,7 +13805,7 @@
 1219266084	Questa è la nostra collezione di tesori. Ti prego di accettarli!
 1219280768	Nicole
 1219296916	Ottieni 3 collezionabili prismatici in Operazione: Furto d'Uova.
-1219314137	Custodia elementale
+1219314137	Guardia Elementale
 1219341983	Apri taccuino
 1219343353	Invoca un fulmine nella posizione bersaglio per ATT., infliggendo Danni magici.
 1219357322	Danza delle spade
@@ -13830,7 +13830,7 @@
 1219518177	Dott. Glass
 1219529507	Progresso
 1219532941	Posso legarmi con alcuni degli Aniimo nella foresta, ma non con tutti.
-1219536957	Build consigliata
+1219536957	Configurazione consigliata
 1219545394	Lanugine lasciata da un Fentuft dopo aver giocato. Può diffondere felicità.
 1219549205	Orchidea falena in vaso
 1219566216	Tucker, a cui piaceva rintanarsi in un angolo a cantare, e Ron, il ragazzo che anelava alle stelle e ai luoghi lontani... due anime sole, incontrandosi, non furono più sole. Eppure cento anni a volte possono essere troppo brevi, e a volte molto lunghi. Dirsi addio significa non incontrarsi mai più.
@@ -13912,7 +13912,7 @@
 1220348759	Muovi il mirino e usa il <style=Hint_BgL>pulsante Trascina</style> per selezionare e sollevare un ostacolo.
 1220349453	Un risveglio ogni dieci anni
 1220372852	Sembra fantastico.
-1220377973	Giovane Omega Sherro
+1220377973	Sherro Omega giovane
 1220380424	Ciao. Puoi farmi un favore?
 1220380644	Manutenzione della funzionalità in corso; controlla gli annunci ufficiali per l'orario di apertura.
 1220386007	Premi <style=Hint_BgL>Abilità 2</style> per usare un'abilità di <style=Hint_BgL>Fuoco</style> e incendiare l'erba alta per produrre un campo di vento.
@@ -13987,7 +13987,7 @@
 1221064832	Popapus cattivo perdente
 1221065153	Sebbene questi ricordi possano disperdersi nel vento attraverso le ere...\nUn giorno, il vento li raccoglierà di nuovo e il passato sarà ricordato ancora una volta.
 1221073426	Emberpup profumato
-1221132253	Zaino d'avventura
+1221132253	Zaino da avventura
 1221140971	Evolvi
 1221173047	(Versione funzionalità)
 1221191145	Alfa Eko
@@ -15081,7 +15081,7 @@
 1232377900	Alto
 1232385654	Superiorità aerea
 1232394545	Titolo
-1232399994	Gran Mago
+1232399994	Gran Stregone
 1232402919	Rompi la prigione di ghiaccio di Geoclaw usando le abilità di Fuoco
 1232410312	Pausa
 1232426796	Unico di Echoback Landing. Invia gli Aniimo a raccoglierlo vicino all'Area Camper in questa zona.
@@ -15818,7 +15818,7 @@
 1240405821	Loulla si lancia in un canto, con i suoi colpi di tamburo che risuonano in lungo e in largo.
 1240411041	Iris Alfa
 1240435148	Cosa c'è, Nim? Qualcuno ti sta guardando?
-1240438901	Riduzione Danno
+1240438901	Riduzione danni
 1240449455	Parla
 1240456440	Ogni lancio di abilità conferisce <style=Hint_BgL>1</style> accumulo di <style=Hint_BgL>[Volume]</style>, fino a <style=Hint_BgL>6</style> accumuli. A <style=Hint_BgL>6</style> accumuli di <style=Hint_BgL>[Volume]</style>, aumenta il tasso critico del <style=Hint_BgL><customRichText(calcData,buff,91471021,param0,1,%d)>%</style> per <style=Hint_BgL><customRichText(buffConfigData,91471021,duration)></style> s.
 1240456491	Camper Liv. 5
@@ -16156,7 +16156,7 @@
 1244094282	Robot offensivo
 1244098204	Aniipod Pro
 1244119019	Rampicanti ostruenti
-1244121246	Sblocca trama 4
+1244121246	Sblocca lotto 4
 1244133712	Pur sapendo questo, desideri ancora diventare una Spina Letale?
 1244137277	BINI #9
 1244151802	Robot offensivo
@@ -16184,7 +16184,7 @@
 1244391972	Enorme fragola colorata
 1244395214	Grazie a te, ho finalmente tutti i dati di cui ho bisogno per il mio esperimento!
 1244395455	Set di bicchieri Tubster
-1244407281	Nuoto
+1244407281	Nuota
 1244416644	Notte di libertà
 1244417553	Cozite
 1244418083	Ristorante galleggiante
@@ -16298,7 +16298,7 @@
 1245540875	Raggiungi il livello 6 del camper
 1245542369	Usa Suprema
 1245544193	Dott. Glass
-1245554089	Helmwhelp Arrabbiato
+1245554089	Helmwhelp furioso
 1245583730	C
 1245593120	Agave Shining Enorme
 1245603710	Fannie
@@ -17081,7 +17081,7 @@
 1253434468	Avviso per un Gioco Salutare
 1253442699	Segnaposto Valutazione
 1253451706	Io
-1253485079	Rilascia
+1253485079	Rilascio
 1253493883	Operazione: Corteggiamento
 1253505699	Non ci sono abbastanza oggetti nell'Inventario. Entra nella tua Casa e usa gli oggetti dal magazzino per potenziare.
 1253515809	ATT
@@ -17439,7 +17439,7 @@
 1257291070	Berretto Arancione
 1257312131	Intrecciata con paglia dorata, questa staccionata cattura il caldo sole autunnale e la gioia delle risaie che ondeggiano verso il raccolto.
 1257326288	Alcuni Shelly indugiano nelle vicinanze, in attesa. Un nuovo Sherro sta raccogliendo le forze per evolversi, ti dicono, ma ci vorranno ancora diversi giorni e notti prima che sia pronto.
-1257328898	Piena energia
+1257328898	Energia al massimo
 1257337527	Ho mangiato dieci stelline tutte in una volta! Sono così pieno! Burp!
 1257338193	Budclaw Umbral
 1257381910	Luna del raccolto - Alloro
@@ -17990,7 +17990,7 @@
 1263049440	Il cappello del suo fungo si illumina davvero. Che magia!
 1263059187	Mobile basso lungo in legno - Quercia
 1263064361	Trasferisci leadership
-1263075189	Custodia elementale
+1263075189	Guardia Elementale
 1263081970	Posizionalo nella tua Dimora per produrre bevande e ingredienti.
 1263086872	Riposo
 1263129318	Lunara
@@ -18238,7 +18238,7 @@
 1265496344	???
 1265501924	Distendi le braccia e goditi la spensieratezza del momento.
 1265516828	Cos'è questo rumore...?
-1265527761	Posseduti:
+1265527761	Posseduto:
 1265579280	Mobile di prova N. 15
 1265579757	Forziere
 1265582047	Sogno della Rinascita
@@ -18498,7 +18498,7 @@
 1267913997	Runa ATT comune
 1267918377	Ha abbandonato i suoi sogni ed è diventata così spenta.\nChe si presenti o meno, fa lo stesso.
 1267932478	Impugna il potere della terra per attaccare i bersagli a distanza.
-1267949341	Snowy
+1267949341	Innevato
 1267950781	Al suo interno scorre un bagliore brillante. Garantisce la schiusa di un Aniimo Prismana.
 1267982010	Ancora un po' e Nicole non avrebbe più retto. Il suo corpo...
 1267995298	Nicole
@@ -19037,7 +19037,7 @@
 1273650132	Niente più giochi per creare l'acqua, e i due nomi Recas e Icho divennero sinonimo dei più potenti Glynsera e Scorchhowl.
 1273658076	Sovraffollato
 1273679212	Awen
-1273710177	Italiano
+1273710177	Inglese
 1273715551	Manuale Compagno Premium Livello 62
 1273717966	Lana
 1273726771	Targa in legno per allenamento
@@ -19580,7 +19580,7 @@
 1278873959	Parla con Fannie.
 1278876810	Sybil
 1278879586	Camminiamo insieme per un po', poi ci separiamo. Ma chissà? Le nostre strade potrebbero incrociarsi di nuovo un giorno.
-1278887016	Maestria d'addestramento
+1278887016	Maestria di addestramento
 1278901796	——————
 1278930782	Sayn
 1278933655	Completa le Attività giornaliere per ottenere fantastiche ricompense.
@@ -19946,7 +19946,7 @@
 1282579412	Camper Liv. 8
 1282580405	Fannie
 1282596613	Visualizza
-1282622908	Finitura
+1282622908	Fine
 1282623542	PNG scavatore 1
 1282625958	Raccogli prima <style=Hint_BgD>3 congegni dello stesso Stile di Addestramento</style> per sbloccare la corrispondente <style=Hint_BgD>Trasformazione Alfa</style>.
 1282627083	Frutta secca brasata al vino
@@ -19988,7 +19988,7 @@
 1282971934	Campo magico Frutto di fiamma (Impossibile piazzare direttamente)
 1282979580	Abilita registro di combattimento Pathfinder
 1283012666	Mobile di prova n. 6
-1283022957	Snowy
+1283022957	Innevato
 1283044073	Parla con %s
 1283050145	Segui il profumo di Bloomville e incontra gli Aniimo delle Pianure Ventose. Sotto il bagliore di Prismana, assisti a un dono di fiori e ombre di farfalle.
 1283050864	Una <style=Hint_BgL>materia prima</style> prodotta dall'area boschiva della tua Dimora. Può essere venduta nei negozi o lavorata ulteriormente.
@@ -20005,7 +20005,7 @@
 1283140206	Sorora
 1283171975	Bonus cattura riuscita
 1283190091	BINI #9
-1283194876	Riduzione danno
+1283194876	Riduzione danni
 1283198605	Cronologia
 1283207303	Pathfinder timido
 1283212416	x1
@@ -20165,7 +20165,7 @@
 1284848816	Persino il modo in cui arriccia la coda è semplicemente perfetto!
 1284851068	Pronti! Inizio della sfida!
 1284851134	Ottieni il leggendario Aniimo Irisalis con un potenziale Perfetto garantito.
-1284878324	Riduzione danno
+1284878324	Riduzione danni
 1284887832	Panpanta extra grande
 1284891487	Runa strumento tenuto
 1284893671	Nome (Segnaposto)
@@ -20558,7 +20558,7 @@
 1288872128	Thais
 1288906902	Scatta una foto a Jawling che litiga con Helmut
 1288914244	Premi [#kCatch/Throw#z] per lanciare un <style=Hint_BgL>[Tumbler]</style>.
-1288919892	Lascia il gruppo
+1288919892	Lascia la squadra
 1288931820	Terzo premio
 1288939998	Sembra essere un totem. Vuoi attivarlo?
 1288959184	Premi #kHud/SkillQ#z vicino a una <style=Hint_BgL>batteria</style> per usare Attrazione Gravitazionale
@@ -21296,7 +21296,7 @@
 1296457342	Dott. Lewis
 1296459828	Selene
 1296465681	Amaca Cascata di Stelle
-1296475430	Riduzione danno
+1296475430	Riduzione danni
 1296484148	Segnaposto scheda
 1296485191	Appunti del vecchio cercatore di tartufi I
 1296498482	Decorazioni luminose, ordinate, robuste e bellissime... e per di più, il punto più alto del castello...
@@ -22027,7 +22027,7 @@
 1303893386	Fornisce alta temperatura
 1303904522	Io
 1303925096	Flameruff
-1303934713	Awooo? (Sembra molto curioso)
+1303934713	Auuu? (Sembra molto curioso)
 1303940098	Varie
 1303950309	Io
 1303956328	Completa una qualsiasi missione nella riga 2 del Viaggio delle Prove
@@ -22603,7 +22603,7 @@
 1310072801	Combattimento
 1310079240	Una ricetta antichissima, scritta nell'antica lingua di Idyll, ormai quasi del tutto sbiadita. Per fortuna BINI può tradurla:\nOffri la fragranza della vita e della crescita, e gli Eoni concederanno la benedizione della rigenerazione.\nOffri la fragranza della tolleranza e del cambiamento, e gli Eoni concederanno la benedizione della protezione.\nOffri la fragranza del coraggio e della passione, e gli Eoni concederanno la benedizione della speranza.
 1310086837	Zucca Shining variopinta
-1310120027	Fiorellino
+1310120027	Floret
 1310125351	Flutternym
 1310152221	Usa per sbloccare <style=Hint_BgL>Estate fresca - Mattone con venature del legno</style>.
 1310164347	Premi <style=Hint_BgL>#kPlayer/Jump#z</style> per volare nel Campo di Vento.
@@ -22626,7 +22626,7 @@
 1310309798	Ripristina i PS di tutti gli alleati di una quantità pari al <style=Hint_BgL><customRichText(calcData,ability,10410100,param1,1,%d)>%</style> dei PS massimi di chi la usa, e ripristina i PS di chi la usa di una quantità pari al <style=Hint_BgL>10%</style> dei suoi PS massimi nell'arco di <style=Hint_BgL><customRichText(buffConfigData,2104301,duration)></style> s.
 1310319468	Vaso per Biglietti Germoglio
 1310329026	Tu e Tucking
-1310330496	Sintonia
+1310330496	Sintonizzazione
 1310339547	Mobile di prova n. 6
 1310345791	Tipo di meteo
 1310352771	Wow! Sei fantastico!
@@ -23129,7 +23129,7 @@
 1315054958	Impara Bersaglio cinguettante
 1315063527	Parla
 1315073458	Elena
-1315082927	Snowy
+1315082927	Innevato
 1315098260	Moltiplicatore bonus da tasso CRIT in eccesso a Danno CRIT
 1315107043	Vecchio Recas
 1315107484	Visualizza il veicolo a nuova energia
@@ -23310,7 +23310,7 @@
 1317167581	Negozio di Kim
 1317173251	Segnala Aniimo Alfa
 1317188935	Si sblocca creando un Aniipod leggendario.
-1317232824	Progresso Ricerca
+1317232824	Progressi della ricerca
 1317237843	Vittoria! Ottenuto un Olo-congegno casuale.
 1317238817	Ricordi per Principianti
 1317243368	Bacca amara
@@ -23328,7 +23328,7 @@
 1317376774	Nicole
 1317379537	Budsquire
 1317381115	Uomo avvisato, mezzo salvato. I miei Gracewing sono ottimi guaritori. Non trattenerti.
-1317383168	Custodia elementale
+1317383168	Guardia Elementale
 1317384135	Mobile di prova n. 4
 1317385370	Invia le voci di ricerca completate per ottenere <style=Hint_BgL>Punti Ricerca</style> e <style=Hint_BgL>Safari</style>. Questo aumenta il tuo <style=Hint_BgL>livello</style> Aniilog e il <style=Hint_BgL>livello del personaggio</style>, migliorando le tue <style=Hint_BgL>abilità del personaggio</style>.
 1317403661	Consigliato
@@ -23485,7 +23485,7 @@
 1319114861	Papera di gomma gigante
 1319117337	Bolla
 1319131960	Zampa posteriore destra
-1319138892	Luccicante
+1319138892	Cromatico
 1319152557	Onda guaritrice
 1319154729	Segnala sblocco Aniimo Voce di ricerca
 1319174736	Segnaposto scheda
@@ -23611,7 +23611,7 @@
 1320368535	Raggiungi il livello 6 del camper
 1320373654	Ramo
 1320377307	<style=Hint_BgL>{0}</style> ha interagito con il/la <style=Hint_BgL>{2}</style> di <style=Hint_BgL>{1}</style> e ha aumentato con entusiasmo il Potenziale Acquisito!
-1320379213	Riduzione danno
+1320379213	Riduzione danni
 1320381787	Anche i fiori lì sono stupendi, ma i fiori freschi non durano a lungo.\nFaresti meglio a vederli di persona.
 1320388138	La Valutazione di Promozione deve essere completata per sbloccare i talenti e apprendere le Abilità Pathfinder. Congratulazioni per aver sbloccato <style=Hint_BgL>Abilità Livello 6</style>.
 1320389004	99
@@ -23657,7 +23657,7 @@
 1320878495	Wow, hai un aspetto davvero fantastico!
 1320913792	Sherro
 1320915423	Icho
-1320925825	Collezione Lumin
+1320925825	Raccolta di Lumin
 1320930860	Non ti manca mai il coraggio di fronte all'ignoto, e il tuo amore per gli Aniimo è a dir poco sincero.
 1320931938	Io
 1320939547	Avamposto N.: 123456
@@ -23949,7 +23949,7 @@
 1323762928	Segnala un Aniimo con mutazione Sparkling all'avamposto.
 1323765216	Tucking alfa
 1323767087	Robot offensivo
-1323767687	Super efficace
+1323767687	Superefficace
 1323768473	Istantanea prestazioni
 1323771615	Risveglio sacro
 1323788852	Posizionalo nella tua Dimora per asciugare gli oggetti.
@@ -24347,7 +24347,7 @@
 1327773780	1/3
 1327787778	<style=Hint_BgL>Beni lavorati</style> prodotti dal Cuocitore a Presa nella tua Dimora. Lavorali in altri prodotti o vendili al negozio pertinente.
 1327790408	Completa il tema di ricerca prerequisito per sbloccare.
-1327811372	Mina
+1327811372	Miniera
 1327812585	Deve raggiungere il livello Aniimo richiesto
 1327829608	Io
 1327832523	Il mio migliore amico è uno di loro. All'improvviso è diventato sempre più nero e si è fatto davvero scorbutico. C'è voluto un po' per calmarlo...
@@ -24447,7 +24447,7 @@
 1328699267	Capo fotografo
 1328699814	Completa 5 santuari.
 1328704534	Hanno vinto davvero!
-1328708149	Spina del cuore
+1328708149	Pungiglione del Cuore
 1328732192	Oh cielo, che tempismo pessimo!\nSunia era appena andata a cercarti!
 1328743977	Visualizza mappa
 1328744589	Acquista biglietti per il furto d'uova
@@ -24564,7 +24564,7 @@
 1329821290	Piastrelle lisce e resistenti posate in linee nitide e ordinate. Le loro tonalità tenui rendono ogni stanza più luminosa e spaziosa.
 1329838492	La nuova valutazione sarà disponibile tra {0}.
 1329840056	Quella ragazza è la guida dei Pathfinder assegnata dall'Istituto?
-1329843897	Debuff Fuoco
+1329843897	Debuff da fuoco
 1329847104	(Versione funzionalità)
 1329848979	Requisiti di attivazione:\n1. Avvia in modalità DX12\n2. Scheda grafica NVIDIA serie RTX 40 o superiore\n3. Windows 10 con HAGS (pianificazione GPU con accelerazione hardware) abilitato. Percorso: Fai clic con il tasto destro sul desktop - Schermo - Grafica - Pianificazione GPU con accelerazione hardware (riavvio richiesto).
 1329853896	Grazie per aver lavorato la terra! <color=#5090df>%s</color> ti ha portato alcuni regali.
@@ -25087,7 +25087,7 @@
 1335289318	BINI #9
 1335295359	Un fiore contenente l'essenza della Luce.\nPuò essere scambiato con <link="item_4040019"><style=Q_4><u>Gemma Elementale</u></style></link> x<style=Hint_BgL>10</style>.\nPosizionarlo nel Parco Camper conferisce ai residenti un buff parco di +<style=Hint_BgL>2</style>% Attacco Luce e +<style=Hint_BgL>2</style>% Resistenza Luce.
 1335322209	Sfilata di Meduse
-1335336813	Casa
+1335336813	Dimora
 1335337041	Impossibile salire sulla giostra. ID posto non valido.
 1335340036	...Quei "vagabondi" sono ancora vivi?
 1335366507	Camper Liv. 12
@@ -25284,7 +25284,7 @@
 1337386565	Habi-Cubo
 1337399000	Forma Astra-Voxel - Nimbi
 1337414435	Seleziona modalità di controllo
-1337420288	Snowy
+1337420288	Innevato
 1337438484	Informazioni frammentate
 1337464225	Flameruff
 1337471487	Ottenuto affisso Non comune {0}
@@ -25563,7 +25563,7 @@
 1340737956	Xbox Network non è al momento disponibile. Riprova più tardi.
 1340740868	Novembre
 1340794089	Nicole
-1340804511	Operazione: Furto d'Uova Modalità di squadra
+1340804511	Operazione: Furto d'Uova - Modalità di squadra
 1340813764	Usato per costruire tetti nella tua Dimora.
 1340844289	Cristallo Aniimo
 1340849835	Seleziona cibo.
@@ -25878,7 +25878,7 @@
 1343981167	Ma tutti dicono che è pericoloso là fuori...
 1343997686	Nimbi
 1343999130	Io
-1344032641	Nome della trama
+1344032641	Nome del lotto
 1344033578	Sopracciglia 3
 1344038605	Scarpe
 1344046423	Avetine
@@ -26254,7 +26254,7 @@
 1347900982	Wuu?
 1347918616	Come un fotografo professionista: scatto geniale!
 1347919036	Quando nasce un potente Aniimo Leggendario, l'energia della Vena si raccoglie in modi strani e instabili, squarciando insoliti varchi energetici. Ma la perturbazione si sta diffondendo. L'energia della Vena è diventata selvaggia e caotica, e l'Irisalis nato da essa è diventato irrequieto, instabile e pericolosamente aggressivo. Pathfinder, dirigiti subito verso il varco. Trova un modo per calmare questo spirito leggendario smarrito con coraggio e un cuore guaritore.
-1347919213	Regalo del compagno
+1347919213	Dono del compagno
 1347920218	Io
 1347953461	Durante la pausa di riposo, Nicole ti parla dell'obiettivo della squadra di spedizione, il Flusso Prismana, oltre che del misterioso continente di Idyll e dei suoi stemmi. Proprio in quel momento, BINI #9 fa scattare all'improvviso un allarme...
 1347962397	Phew—finalmente vi rivedo tutti! State bene?
@@ -26817,7 +26817,7 @@
 1353524066	Impegnato a scavare...
 1353530495	Aster
 1353546471	[Tieni premuto] Annulla aggancio bersaglio
-1353553925	Scatola a sorpresa olo-congegno
+1353553925	Scatola Sorpresa Olo-gadget
 1353555133	Energia di Lumin
 1353560446	Invito al Dungeon
 1353579463	Tiredor
@@ -27312,7 +27312,7 @@
 1358524147	Quei due sciocchini sono così divertenti!
 1358532378	Impatto sismico
 1358559708	Selens
-1358568749	Sciogli
+1358568749	Sciogli legame
 1358584216	Può essere usato per personalizzare il tuo personaggio e l'Aniimo
 1358584598	Io
 1358591581	Parte superiore
@@ -27348,7 +27348,7 @@
 1358972277	C'è un forziere nelle vicinanze. Vuoi andare a dare un'occhiata?\n(Usa la Modalità comando per iniziare. Si chiude dopo 3 secondi)
 1358972686	Studente ben equipaggiato
 1359030084	Gli Aniimo schiusi con un <style=Hint_BgL>Aniipod Ultra</style> avranno una valutazione del Potenziale pari almeno a <style=Q_4>Élite</style>.
-1359041096	Note di ricerca sulla rosa Bianca Neve
+1359041096	Appunti di ricerca sulla Rosa Biancaneve
 1359046740	Punti ottenuti dalla trasmogrificazione.
 1359058271	Tubster
 1359065211	Esplosione stellare - Parete triangolare albicocca calda - Grande
@@ -27527,7 +27527,7 @@
 1360965722	Straniero, sarai tu il testimone di questo duello finale?
 1360966149	La porta enigmatica è apparsa!
 1360982119	8%
-1360988697	Rilascia
+1360988697	Libera
 1360992920	Mobile di prova n. 1
 1360997672	Dott. Lewis
 1361000604	Camper Liv. 8
@@ -27611,7 +27611,7 @@
 1361896978	Riduzione del danno di tipo Terra
 1361901618	Usa abilità
 1361910679	Lancia uno Spirito Flameruff che rimbalza tra i bersagli, dando priorità al bersaglio agganciato al momento del lancio. Aumenta l'efficienza di BREAK per i bersagli colpiti del <style=Hint_BgL><customRichText(calcData,buff,2105501,param0,1,%d)>%</style> per accumulo, fino a <style=Hint_BgL>3</style> accumuli, della durata di <style=Hint_BgL><customRichText(calcData,ability,10550101,param1,1)></style> s. Rimbalzi base: <style=Hint_BgL>6</style> volte. Rimbalza <style=Hint_BgL>8</style> volte mentre si trova nello stato <style=Hint_BgL><link="source_8046"><u>Energia massima</u></link></style>.
-1361911507	Mio
+1361911507	Miniera
 1361922444	Libera Aniimo
 1361956433	Imponente e sempreverde, inflessibile ma pieno di vitalità.
 1361960113	Hesper e Aurel mi hanno salutato e se ne sono andati. Sembrava che si stessero dirigendo verso Cresta delle Mille Zanne...
@@ -27872,7 +27872,7 @@
 1364646854	Attivo
 1364648000	Vuoi davvero liberare un Aniimo non comune?
 1364650940	Negozio della Dimora
-1364672514	Operazione: Furto d'Uova Modalità di squadra
+1364672514	Operazione: Furto d'Uova - Modalità di squadra
 1364682353	Ricompense completamento rapido Scalata della Torre
 1364683127	Sono tornato!
 1364687717	Saltare fino alla fine...?
@@ -28323,7 +28323,7 @@
 1369260976	Sorora
 1369288555	Enorme Patata Shining
 1369304714	Qual è il risultato?
-1369310980	Scambio Monete Zampa
+1369310980	Scambio Zampamonete
 1369351299	Perché sei così cattivo con i bambini? Questo non è il tuo Carbone Ardente.
 1369361716	Helmut Utile
 1369402359	Residuo Energetico
@@ -28639,7 +28639,7 @@
 1372419585	Più o meno, togli pure la parte di "Pathfinder", sono piuttosto leggendario. Chiunque abbia un Aniimo ad Astra sa chi sono: sono il guaritore di Aniimo più popolare in circolazione!
 1372432548	Segnaposto scheda
 1372442283	Etichetta aspetto
-1372442919	Come ottenerlo
+1372442919	Come ottenere
 1372453475	Raggio di rilevamento
 1372456669	Quando gli Aniimo lavorano al Cuocitore Acchiappa-pupazzi e al Forno a Camino, la loro efficienza lavorativa aumenta del 20%.
 1372489300	♫ Piccolo Celestis, dolce stellina, io sono il blu della notte, tu la mia stella piccina... ♫
@@ -28920,7 +28920,7 @@
 1375508456	Usa ora
 1375520027	Legati a Magmarex e avvicinati a Pebbling selvatico.
 1375528897	Vivace e all'avanguardia, davvero unico nel suo genere.
-1375528974	Nome del Pathfinder (segnaposto)
+1375528974	Nome Pathfinder (Segnaposto)
 1375545536	Il divario tra la vita e la morte si estende oltre la vasta distanza che la luce delle stelle percorre per raggiungerci.\nEppure all'interno di questo Canto dell'Echoback risuona una sinfonia di gioiosa riunione.\nLa loro convergenza nel dipinto era destino, poiché nessuna marea avrebbe mai potuto lavare via il loro legame eterno.\nTutti i fiumi ritornano al mare mentre i ricordi scorrono attraverso ogni corrente.
 1375547898	Dia
 1375555134	Guarda! Sono cresciuti dei rampicanti su questo muro! Non è affatto bello...
@@ -28937,7 +28937,7 @@
 1375664801	Premi [<style=Hint_BgL>Avatar Aniimo</style>]\nper passare a <style=Hint_BgL>Stellarys</style>, il cui elemento contrasta quello del bersaglio, e sconfiggilo!
 1375666912	Percorso dei talenti?
 1375669019	Flora
-1375669325	Restare fedeli, essere presenti
+1375669325	Rimanere fedeli, restare a fianco
 1375693206	Fannie
 1375733317	Aumenta i danni di Terra del <customRichText(calcData,buff,6003021,param0,2,%d)>%.
 1375735336	[Prova dell'Acqua] Effetto ambientale
@@ -30022,7 +30022,7 @@
 1387624192	Ottieni un Aniimo Sparkling
 1387626917	Beee...
 1387627481	Premi [<style=Hint_BgL>Aggancio bersaglio</style>] per <style=Hint_BgL>agganciare</style> il bersaglio attualmente mirato ed entrare nello stato di <style=Hint_BgL>bersaglio agganciato</style>. Quando un bersaglio è <style=Hint_BgL>agganciato</style>, non cambierà automaticamente in base alla distanza. Gli attacchi continueranno a mirare al bersaglio agganciato.\n<style=Hint_BgL>Premi</style> [<style=Hint_BgL>Cambia</style>] per <style=Hint_BgL>cambiare</style> i bersagli agganciati.\n<style=Hint_BgL>Premi</style>[<style=Hint_BgL>Annulla aggancio</style>] per <style=Hint_BgL>annullare</style> l'aggancio del bersaglio.
-1387636340	Nome del Pathfinder (segnaposto)
+1387636340	Nome Pathfinder (Segnaposto)
 1387653097	Morra cinese
 1387658584	Ricompensa pre-registrazione sito ufficiale
 1387667371	Sfida di combattimento
@@ -31256,7 +31256,7 @@
 1400692080	<style=Hint_BgL>Colture mutate</style> raramente prodotte dai campi agricoli nella tua Dimora. Possono essere raccolte o vendute nel negozio dedicato per un prezzo superiore.
 1400700498	Prima prova
 1400707946	Set
-1400715686	Oscuro
+1400715686	Oscurità
 1400728141	Il fulmine squarcia il cielo notturno e questo palco è mio! Tempesta di Fulmini!
 1400739138	Decorazione per recinzione per la Dimora.
 1400753709	Per favore portami un Aniimo che sia <style=Hint_BgD>viola e bianco, con una stella dorata portafortuna proprio sulla fronte</style>!
@@ -31828,7 +31828,7 @@
 1407366081	Vuoi guardare lo streaming dell'evento?
 1407376065	Aniimo con Connessione Azione
 1407391143	Un prezioso collezionabile lasciato da un'antica civiltà. Di inestimabile valore, può essere esposto e ammirato nella bacheca di Operazione: Furto d'Uova. Ottenerlo sblocca un <style=Hint_BgL>accessorio Aniimo</style> <style=Hint_BgL>esclusivo della S1</style>.
-1407423453	Spartito della "Libertà"
+1407423453	Punteggio "Libertà"
 1407425491	Cubbo umbral
 1407436090	No, piccolo mio. Gli Aniimo non pensano in modo così complicato.
 1407453089	?(richiesto)
@@ -31870,7 +31870,7 @@
 1407930639	Aspetta! Non è impossibile se Whelpy lo vuole davvero, è solo che...
 1407936417	Attributi della runa
 1407938109	Tieni premuto #kHud/GamepadMenu#z per aprire la ruota dei menu.
-1407949881	Incredibile uovo di prateria
+1407949881	Incredibile uovo delle praterie
 1407988172	Rimuovi dalla squadra
 1407996617	Clic-clac!!
 1407999270	Camper Liv. 4
@@ -32102,7 +32102,7 @@
 1410109983	Forniture Aniimo per la tua Dimora.
 1410115554	?(richiesto)
 1410118091	Luminelle Alfa
-1410200127	VAI
+1410200127	VIA
 1410209420	Icho
 1410230477	Premi e trascina i lotti per correggere lo schema disordinato
 1410266452	Set Sussurri del bosco caldo
@@ -32873,7 +32873,7 @@
 1418256122	Appena schiuso
 1418263831	Massimo
 1418271802	Io
-1418272582	Snowy
+1418272582	Innevato
 1418283736	Il mistero del fiore
 1418284224	Blocco da costruzione - Rosso arancio brillante
 1418302224	Petali raccolti prima che la rugiada del mattino si asciughi, distillati in una fragranza piena di fascino romantico.
@@ -33157,7 +33157,7 @@
 1421577670	Buongustaio
 1421578420	Discussione Pebbling 3
 1421579961	Si può regalare
-1421583363	Altamente consigliato
+1421583363	Fortemente consigliato
 1421584025	Pebbling impaziente
 1421600998	Negozio delle stelle sfortunate
 1421606521	Entra in Bagno ogni 12s. La bolla successiva sparata diventa una bolla gigante.
@@ -33443,7 +33443,7 @@
 1424487612	Un tavolo giocattolo a forma di Aniipod. Gli Aniimo premono il muso contro la parte superiore trasparente e guardano dentro, solo per non trovare assolutamente nulla.
 1424488684	Iris del Sogno
 1424498720	Potenziamento Aniipod
-1424499163	Ricompense del Tea Party delle Stelle Incrociate
+1424499163	Ricompense del Tea Party Astrale
 1424520982	Camper Liv. 13
 1424530423	Aumento Stelle e Ascensione
 1424532200	PNG di prova 1
@@ -33485,7 +33485,7 @@
 1424911606	L'Enigma del Forziere Antico
 1424937581	Punto Aniimo
 1424938484	Introduzione
-1424940208	Aggancia bersaglio
+1424940208	Aggancio bersaglio
 1424953171	Raccolta del Raccolto
 1424958725	Tracciamento di <style=Hint_BgD>Ambra Lumin</style> interrotto!
 1424967578	Manuale Compagno Gratuito Livello 48
@@ -33730,7 +33730,7 @@
 1427551674	Un blocco da costruzione per decorare la tua Dimora.
 1427556261	Cristallo di rugiada semilavorato pebbling
 1427557026	<sprite name="UI_CharB_2"><sprite name="UI_CharB_5"><sprite name="UI_CharB_Dot"><sprite name="UI_CharB_1"><sprite name="UI_CharB_2"><sprite name="UI_CharB_Dot"><sprite name="UI_CharB_1"><sprite name="UI_CharB_2">
-1427559572	Corsa Stampata
+1427559572	Corsa con timbro
 1427559676	Dopo aver saltato, scagli una lama di ghiaccio contro il bersaglio, infliggendo danni ad area e congelandolo per {0}s.
 1427560207	Parla
 1427569693	Schianto Sonico
@@ -34718,7 +34718,7 @@
 1438186704	Scala
 1438187554	Io
 1438188937	Fannie
-1438210078	Non periziato
+1438210078	Non valutato
 1438229279	Uovo incredibile
 1438234965	Può essere dato da mangiare agli Aniimo per ripristinare l'energia.
 1438237887	Viandante III
@@ -34942,7 +34942,7 @@
 1440448424	Sarò testimone di tutto
 1440449933	Velocità di nuoto normale
 1440455669	Avvicinati a un Eko mentre sei in stato di Occultamento
-1440467924	Pebbling addormentato
+1440467924	Pebbling dormiente
 1440468359	Ingrandisci
 1440486955	Configurazione delle condizioni di sblocco.
 1440513276	09:58:58
@@ -35017,7 +35017,7 @@
 1441295884	Vittorie consecutive in gare contro membri dello stesso gruppo
 1441302782	Investimento aggressivo
 1441309391	Bailite capace
-1441314184	Cronologia delle ricerche
+1441314184	Cronologia ricerche
 1441320994	Nicole
 1441323797	Evolvi Aniimo
 1441324107	8
@@ -35694,7 +35694,7 @@
 1448421520	Con... il nostro spirito combattivo?
 1448437667	Questo calore bruciante che ci viene incontro, questa determinazione incrollabile e questo coraggio...\nBruciano più luminosi di qualsiasi fiamma in questo mondo.
 1448448015	Lancia in avanti una palla di roccia gigante. La palla di roccia travolge i bersagli lungo il suo percorso ed esplode.
-1448450792	Individua Debolezza
+1448450792	Rileva debolezza
 1448459571	Completa la missione: Vieni fuori, Floret
 1448467987	Segnaposto scheda
 1448473772	Manuale del compagno a pagamento Livello 47
@@ -36027,7 +36027,7 @@
 1451824044	Dott. Lewis
 1451839083	Certo che no! \nLunara sta ancora dormendo nel murale, e io sono l'unica che può svegliarla!
 1451841066	25%
-1451845267	Contatori
+1451845267	Contromisure
 1451848675	Lavoro straordinario.\nOra sei ufficialmente un <style=Hint_BgD>Viandante di Grado II</style>.
 1451870974	Con il tempo, crescerà fino a diventare un alto albero crestarossa: una leggenda duratura, perennemente in fiamme.
 1451915138	Traccia Fioriture
@@ -36070,7 +36070,7 @@
 1452268043	Salta
 1452287294	Armadio a Tutta Altezza - Quercia
 1452288475	00:00:50
-1452290077	Carica pirotecnica
+1452290077	Carica Pyro
 1452325861	Collezione Lumin: Gusci Rotolanti
 1452329552	Nicole
 1452353776	...Ancora non va bene. Cosa manca...
@@ -36455,7 +36455,7 @@
 1456140227	Corretto. Sconfiggere gli Aniimo Alfa è il modo principale per ottenere Cristalli di rugiada.
 1456141804	Enorme grano Sparkling e colorato
 1456150155	Visualizza mappa
-1456160022	Dimensione
+1456160022	Dimensioni
 1456162794	Pomawk intrappolato
 1456164820	Test Numerico-Segnaposto
 1456166969	Fiuu... a-amico! Scusa per averti fatto aspettare, sono qui!\nGrazie per aver resistito!
@@ -36500,7 +36500,7 @@
 1456591108	Evento controllabile
 1456613605	Hai perso 500 monete di allenamento!
 1456622336	Recupero PS basato sulla percentuale di PS mancanti
-1456642174	Casa
+1456642174	Dimora
 1456647018	Salta in alto e si schianta al suolo con un pugno fiammeggiante, infliggendo danni su un'ampia area e incendiando il terreno.
 1456655456	Ritiro rapido
 1456666149	I barlumi fluttuano vicini mentre scintille di luce convergono.
@@ -36690,7 +36690,7 @@
 1458531787	Nome missione (segnaposto)
 1458546233	Noah
 1458571705	Sblocca lotto edificabile 4
-1458576361	Fiorellino
+1458576361	Floret
 1458590706	Daisy
 1458596170	Sembra fantastico! Anche gli Aniimo possono riposare qui con me?
 1458602531	L'estrazione dei premi è già terminata. Ti invitiamo ad attendere il nostro prossimo evento.
@@ -37256,12 +37256,12 @@
 1464223365	Una storia su qualcuno di potente!
 1464246388	Io
 1464248964	Usa con saggezza i <link="appearHelp_315"><color=#5090df><u>Contrattacchi Elementali</u></color></link> per infliggere più danni.
-1464251479	Sovraccaricato
+1464251479	Sovraccarico
 1464252600	Dalla consistenza dura, di colore bianco latte e con motivi unici, emette un leggero profumo legnoso e dolce una volta essiccato.
 1464266664	Proteggerò il mio amico Jawling.
 1464270004	Seleziona l'area Campi di Nembi, dove hai ottenuto la <style=Hint_BgL>Spilla di Bronzo</style>, ed esegui una sessione di Allevamento.
 1464273297	Batteria Perpetua Antica (a forma di Aniipod)
-1464288411	Corsa Stampata
+1464288411	Corsa con timbro
 1464290262	Mattonelle di pietra grigio chiaro e beige si aprono a ventaglio in un motivo intricato.
 1464299319	Nessun Biglietto Germoglio disponibile da raccogliere al momento!
 1464322328	Prima cattura di Reefish
@@ -37297,7 +37297,7 @@
 1464652320	Angolo del Colmo del Tetto in Paglia
 1464655467	Noi due possiamo semplicemente prendercela comoda!
 1464663612	Un morbido tappeto a scacchi beige dona calore ed elegante comodità alla Dimora.
-1464666615	Mago degli scherzi
+1464666615	Re delle burle
 1464670808	Attiva
 1464684152	Scorta permanente
 1464695985	Consuma 800 Primegia
@@ -37635,7 +37635,7 @@
 1467909833	Rarità
 1467914787	Oh? Abbiamo una visita. Il nostro pubblico è arrivato!
 1467922656	???
-1467932729	Snowy
+1467932729	Innevato
 1467933256	Nimbi è fantastico proprio così com'è! I Nimbi sono fatti così, e va benissimo!
 1467938989	Cattura 3 Aniimo Alfa.
 1467940345	Ovunque tu vada, che tu possa essere sempre libero come il vento, con la musica sempre al tuo fianco.
@@ -38071,7 +38071,7 @@
 1472848216	Io
 1472861125	Incredibile Uovo di Scintillafata
 1472863743	Quindi, ti prego di concedermi un po' di tempo.\nQuando mi sveglierò, ricominceremo a viaggiare!
-1472866743	Smantella
+1472866743	Smonta
 1472876906	Lita
 1472879407	Fornitura Curativa
 1472896019	Quali nuove merci avrai domani?
@@ -40852,7 +40852,7 @@
 1502435122	Esplosione stellare - Muretto basso in mattoni albicocca caldo
 1502471279	Eren
 1502487727	Parla
-1502496711	Snowy
+1502496711	Innevato
 1502515321	Johnny
 1502518918	GoGoCase - Muro alto in mattoni arancione caldo
 1502523290	No, preferisco che restino qui.
@@ -41252,7 +41252,7 @@
 1506659939	Peperoncino luna crescente Shining variopinto gigante
 1506696464	Dopo aver completato l'addestramento del Capitolo Due, il Dott. Lewis ti manda al Cresta delle Mille Zanne per trovare la squadra di ricerca che sta esplorando l'area e incontrare la Senior Jilly, responsabile della tua prossima valutazione. Ti ricorda che è sia una ricercatrice esperta che una formidabile Pathfinder, e ti consiglia di prendere la valutazione sul serio.
 1506701132	Emberpup
-1506715368	Snowy
+1506715368	Innevato
 1506729096	Statuetta di Susuta II
 1506731077	Voglio davvero giocare con gli amici! Non vedo l'ora!
 1506742987	Io
@@ -41294,7 +41294,7 @@
 1507005132	Bello di giorno, scintillante di notte: basta uno sguardo da lontano per riconoscere il nostro grandioso castello!
 1507015142	Seleziona tutto
 1507034474	Concorrente 1: Albert
-1507036087	Successivo
+1507036087	Avanti
 1507049084	Rispondere a Bolty
 1507049347	[Segnaposto]
 1507065496	Sbrigati a legarti con un Budsquire! Impara da loro e apprendi qualche trucco di duello!
@@ -41612,7 +41612,7 @@
 1510346520	Squarrel
 1510347154	DIF BREAK
 1510349805	Unità Protettiva Illusoria - Esplorazione
-1510374410	Potere della Danza
+1510374410	Potenza di danza
 1510383433	Mobile di prova n. 8
 1510394553	Utilizzato per le costruzioni nella tua Dimora.
 1510412896	Scatola Sorpresa Olo-gadget
@@ -41719,7 +41719,7 @@
 1511662701	Starine ammucchiate, un sogno che si avvera per qualsiasi Celestis.
 1511664463	Abilità di Esplorazione Predefinite (Attualmente Equipaggiate)
 1511681811	Apri la sezione di potenziamento del Camper nella <style=Hint_BgL>Dimora</style>. Una volta soddisfatti i requisiti, spendi Monete di Casa per potenziare il tuo Camper e ottenere ricompense, tra cui <style=Hint_BgL>uova, Barlume e Monete di Casa</style>.
-1511693907	Nessuna chat di gruppo al momento
+1511693907	Ancora nessuna chat di gruppo
 1511712769	Ai Confini del Mare e del Cielo
 1511738273	Dina
 1511754692	Istantanea
@@ -41963,7 +41963,7 @@
 1514637900	Iris
 1514651328	Uno! Due! Tre!
 1514689328	​
-1514696152	Operazione: Furto d'Uova Modalità di squadra
+1514696152	Operazione: Furto d'Uova - Modalità di squadra
 1514708157	Evento di rischio
 1514714247	Questo Aniimo non può essere selezionato.
 1514719230	[Bonus pre-ordine] Grazie per il tuo supporto!
@@ -42224,7 +42224,7 @@
 1517327283	Celestis
 1517332030	Fragola estremamente rara con doppia mutazione, luccicante con punti di luce abbaglianti e frutti eccezionalmente grandi e polposi.
 1517351715	Colori e profumi nutriti da questa terra per migliaia di anni si sono fusi in uno solo.
-1517368643	Fiorellino
+1517368643	Floret
 1517378778	Nettare di Rosa Biancaneve
 1517381268	Popapus competitivo
 1517382562	Mi sono slegato dal Wisptis, e la cosa ha fatto impazzire quelli sulla piattaforma. Poi mi sono saltati tutti addosso, e sono svenuto...
@@ -43295,7 +43295,7 @@
 1528149129	Scambia
 1528188047	Eh? Perché lo dici così all'improvviso?
 1528197423	Jawling
-1528211708	Emberpup emozionato
+1528211708	Emberpup eccitato
 1528214681	Cavaliere del Drago
 1528220068	Quantità: 0
 1528225158	Onda d'urto stonata (per Hummin). Usa la Possanza del mostro.
@@ -44327,7 +44327,7 @@
 1538877334	Floropedia di Bloomville
 1538892511	Io
 1538896612	Aumenta l'Amplificazione Danno contro le unità sotto il Liv. 40.
-1538907733	Maestria d'addestramento
+1538907733	Maestria di addestramento
 1538924030	Pass Allenamento Rapido insufficienti. Vuoi andare all'<style=Hint_BgL>Holo-Shop</style> per scambiarne altri?
 1538933981	Rilevamento
 1538947025	Bambù smeraldo
@@ -44526,7 +44526,7 @@
 1541023615	Note di lettura
 1541037669	Segnaposto scheda
 1541039692	Allora avevo ragione! Oltre Bloomville, devono esserci terre su cui non ho ancora camminato, coperte da fiori che non ho mai visto prima!
-1541046668	Rilascia
+1541046668	Libera
 1541053234	Esplora
 1541059539	Aumenta il danno del 10%
 1541074574	Io
@@ -44921,7 +44921,7 @@
 1545071809	Budsquire
 1545108557	Crea un cerchio magico sotto di sé. Gli alleati nel raggio d'azione ottengono <style=Hint_BgL><customRichText(calcData,buff, 2132404,param0,1,%d)></style> Danno Critico Erba aggiuntivo per <style=Hint_BgL><customRichText(buffConfigData,2132404,duration)></style> s.
 1545116296	Naso
-1545121315	Build consigliata
+1545121315	Configurazione consigliata
 1545122357	Sblocca questo oggetto del Camper per <style=Hint_BgL>lavorare</style> più prodotti nella tua Casa.
 1545138458	Una tecnologia prodigiosa inventata dagli Antichi Idilliani sotto la guida degli Eoni Primordiali. Al suo centro ci sono dispositivi magici capaci di canalizzare l'energia delle Faglie. Si dice che lo scopo originale di questa tecnologia fosse riparare le Faglie danneggiate.
 1545141213	Telaio Ruota della Gioia (Livello 3)
@@ -45242,7 +45242,7 @@
 1548456471	Scava sottoterra per diventare immune a tutti gli attacchi a distanza consumando continuamente resistenza. Le abilità di schiacciata possono lanciare l'Aniimo in aria.
 1548485841	Oh, e non dimenticare di fare scorta prima di partire.\nSe hai bisogno di qualcosa, <style=Hint_BgD>vai da Joff per prendere degli Aniipod</style>.
 1548496975	Tasso critico
-1548510096	Abilità Pathfinder
+1548510096	Abilità del Pathfinder
 1548513292	Shelly al lavoro sulla sua creazione
 1548513952	No! N-Non sono un piantagrane. Ho solo un aspetto diverso da tutti gli altri...
 1548541360	Acquista a Lumen
@@ -45761,7 +45761,7 @@
 1553751117	Sorveglia il teletrasporto per impedire agli avversari di prenderne il controllo
 1553752046	Per quanto riguarda l'uso... il dottor Lewis è l'esperto.\nBene! Torna all'Avamposto e parla con lui. Il tuo titolo ufficiale di Viandante ti aspetta!
 1553798891	Un cuscino a forma di Fentuft. Sembra condividere il talento dei Fentuft nel diffondere la felicità: sedendoti, il tuo umore migliora all'istante.
-1553803367	Incredibile uovo degli altipiani
+1553803367	Incredibile uovo dell'altopiano
 1553807508	Hummin peculiare
 1553818494	Rara lavanda mutata, avvolta da un bagliore simile a un arcobaleno.
 1553823932	Conduttore: Oscar
@@ -45772,7 +45772,7 @@
 1553887525	ATT
 1553917752	Fai una promessa con il tuo Aniimo e parti per un'avventura!
 1553938215	Ottenuto completando il Viaggio delle Prove
-1553951196	Insieme dell'armonia aviaria
+1553951196	Ensemble dell'Armonia Aviaria
 1553955943	Non ci credo...!
 1553957282	Richiesta per il dungeon annullata.
 1553958351	Testa
@@ -46422,7 +46422,7 @@
 1560070503	Pesanti blocchi di legno, dalla forma irregolare. Un materiale semplice ma essenziale.
 1560084062	Soia Colorata
 1560088009	Aniimo di tipo Acqua
-1560103898	Magari più tardi
+1560103898	Forse più tardi
 1560114783	Si sblocca al livello 5 del modulo cucina
 1560148823	Aggancia per la forma {0}
 1560155932	Un tavolo da pranzo in legno naturale abbinato a una fresca tovaglia verde, che dona vita ed energia alla tua casa.
@@ -46470,7 +46470,7 @@
 1560619786	Letto Nimbus (Livello 2)
 1560655860	Ottieni 1000 Sigilli dei nati dal vento
 1560676941	Ala sinistra
-1560718178	Snowy
+1560718178	Innevato
 1560719738	Raggiungi il livello 6 del camper
 1560755974	Scatto
 1560760454	Bonus Nucleo
@@ -47753,7 +47753,7 @@
 1574549407	Dott. Glass
 1574550508	Raggiungi il grado Prismatico per il tuo livello di ricerca di Iris
 1574556036	Dove andrai adesso?
-1574573220	Picco
+1574573220	Ondata
 1574582481	Sottile ma raffinato.
 1574597139	Pieno di vita vibrante, questo Uovo nutre un Aniimo eccezionalmente dotato. Garantisce la schiusa di un Aniimo con potenziale <style=Hint_BgL>Perfetto</style>.
 1574620841	Benedizione del ramo
@@ -47799,7 +47799,7 @@
 1575141337	Legame del cuore
 1575150442	{0} volta/e
 1575160617	Tuttavia, è anche la prima volta che mi avventuro nel profondo di Mistwoods.\nIn precedenza ho esplorato solo i margini esterni.
-1575175782	Nome del tratto (segnaposto)
+1575175782	Nome Tratto (Segnaposto)
 1575176603	Helmwhelp alfa
 1575187648	Quindi non sta schivando: sta cogliendo l'occasione per intrappolare l'avversario!
 1575203259	Jaeger
@@ -47921,7 +47921,7 @@
 1576572087	Game Spud
 1576593189	Stiamo cercando Sunia.
 1576605337	Non riesci a stare al passo?\nNon importa. Dicono che vorrebbero tanto riprovare con te.
-1576612020	Edizione per collezionisti attiva
+1576612020	Collector's Edition attiva
 1576631268	...
 1576637973	Cos'era?
 1576638162	2/3
@@ -48268,7 +48268,7 @@
 1579966238	BINI #9
 1579973704	Mentre Velouria ride, l'aria si increspa come acqua colorata.\nUna figura appare nell'aria.
 1579980954	Volontà di ???
-1580000002	Indagine
+1580000002	Sondaggio
 1580002156	Mercante preoccupato
 1580005893	Ricompare dopo aver fatto avanzare la missione [La Terra delle Illusioni Danzanti].
 1580019330	Luvens
@@ -48408,7 +48408,7 @@
 1581400588	Mercante preoccupato
 1581416577	Stanno svolgendo l'Addestramento di Volo <style=Hint_BgD>presso il campo di vento al primo piano</style>. Vai a dare un'occhiata!
 1581419340	Schiena
-1581424233	Snowy
+1581424233	Innevato
 1581424804	Thornblade anziano
 1581436724	Forgia
 1581436884	Wisptis può evolversi solo sconfiggendo i suoi simili, quindi mantiene le distanze dagli altri Wisptis per evitare di essere colto alla sprovvista.
@@ -48608,7 +48608,7 @@
 1583467827	Raggiungi il livello 9 del camper
 1583470608	Spine Pungenti
 1583478082	Farfallino
-1583487952	Riduzione danno
+1583487952	Riduzione danni
 1583489586	Sta arrivando qualcuno.
 1583499062	Bau-bau! Bau-bau!
 1583503761	Olo-Negozio
@@ -49203,7 +49203,7 @@
 1589840149	Orari di costruzione della casa
 1589840785	Nessun Aniimo corrispondente trovato
 1589842992	Io
-1589843327	Ci penso io
+1589843327	Lascia fare a me
 1589846860	Accessorio personaggio
 1589866949	Manuale del Compagno Livello 72 Gratuito
 1589890894	(Versione funzionalità)
@@ -49551,7 +49551,7 @@
 1593420624	Uovo Nato dall'Acqua
 1593422772	L'Aniimo di fronte a te è estremamente arrabbiato! Fa' attenzione!
 1593441079	Colonna angolare in legno duro - Acero - Piccola
-1593446044	Risonanza di Spezzaguardia
+1593446044	Risonanza Spezzaguardia
 1593451088	Helion
 1593467321	Appartamento Anii
 1593467397	Una staccionata dal fascino elegante ma giocoso, progettata da un vero fan degli Emberpup.
@@ -49774,7 +49774,7 @@
 1595874728	Prossimo Gruppo
 1595875295	Attacca l'area rettangolare di fronte per 3 volte con le liane. I bersagli colpiti non possono beneficiare di effetti curativi per {0}s.
 1595897386	Non preoccuparti, non mi aspetto nulla in cambio.
-1595900842	ID Oggetto di Scambio
+1595900842	ID oggetto da scambiare
 1595910628	Sblocca
 1595913354	Raggiungi il livello 5 del camper
 1595922288	Info Aniimo
@@ -50043,7 +50043,7 @@
 1598815649	Riporta in auge i classici e metti in mostra il romanticismo.
 1598824701	Ooo-aaah?
 1598830908	Eccellente
-1598836379	Snowy
+1598836379	Innevato
 1598847373	Selene
 1598877926	Riservato Alfa
 1598887746	Tutti e tre i Crogioli Elementali sono ora disponibili. Prova ad affrontare anche le altre prove.
@@ -50734,7 +50734,7 @@
 1605910620	Ti senti solo durante la tua avventura? Trova un compagno con cui sei in sintonia e condividi tutto il divertimento e l'emozione lungo il cammino.
 1605918325	Segnaposto nome illusorio
 1605934389	Gli attacchi di Fuoco possono rompere la Prigione di Ghiaccio con più efficacia.
-1605949490	Incremento danni élite
+1605949490	Bonus danni élite
 1605961038	Impossibile... entrambe le barriere sono intatte.\nChi mai potrebbe infiltrarsi e organizzare tutto questo senza essere visto?
 1605975606	Pacchetto preordine Edizione Avanzata - Microsoft
 1605981891	Aumenta i danni da Vento del <style=Hint_BgL><customRichText(calcData,buff, 2118407,param0,1,%d)>%</style>
@@ -50840,7 +50840,7 @@
 1607097808	Il bersaglio ha raggiunto il limite odierno di regali ricevibili
 1607100579	Aniimo arcobaleno ombroso
 1607106193	Testo a schermo nero
-1607109260	FagioliFreddi
+1607109260	ChillBeanz
 1607132095	Mobile di prova n. 8
 1607136713	Ascolta
 1607154297	Descrizione missioni istantanee
@@ -50876,7 +50876,7 @@
 1607482118	Introduzione alle abilità degli Aniimo
 1607490729	I giocatori parassitati da Hummin non possono infliggergli danni.
 1607502275	Diminuisce il moltiplicatore di resistenza elementale.
-1607507341	Snowy
+1607507341	Innevato
 1607512803	Ogni Bolty è unico.
 1607518638	Forma Prismana
 1607534951	Esitante
@@ -51523,7 +51523,7 @@
 1614241027	Iris d'Ombra 03
 1614243142	Guadagni di Monete d'Addestramento aumentati del 10%
 1614244533	Allora? Piaccio anche a te?
-1614255861	Snowy
+1614255861	Innevato
 1614277023	Raggiungi il livello 10 del camper
 1614277615	Risveglio
 1614283430	Moka Soffio di Drago
@@ -51646,7 +51646,7 @@
 1615418651	Io, un Morphling?
 1615423898	Irelia la Guardiana
 1615428901	Nome (Segnaposto)
-1615436415	Fildilupo Gelido
+1615436415	Lama del Lupo del Gelo
 1615437787	Dunque stanno così le cose; non avrei mai immaginato che quei semplici Celestis potessero diventare Stellarys così potenti e misteriosi.
 1615446223	La profumiera Marlowe testa il profumo... e cadi a terra all'istante.
 1615446852	Illuminazione
@@ -51755,7 +51755,7 @@
 1616479366	Uhm!
 1616489317	Inclina la visuale
 1616496111	Il prezzo per diventare più forti
-1616501180	Calore
+1616501180	Caldo
 1616513977	Il motivo del sole e il motivo della luna su di esso emanano un fioco bagliore.\nAttraverso le crepe, puoi scorgere vagamente del testo pittografico nel Nucleo del Prisma Ancestrale...
 1616516334	Non sottovalutare questo sentiero: per Baleetle, simboleggia "Ascesa" e "Talenti"!
 1616531527	Gli Aniimo amano nascondersi dentro questo tavolino rotondo e sporgere una zampa attraverso il traforo, invitandoti a fare "indovina chi".
@@ -52818,7 +52818,7 @@
 1627771102	Modifica Prezzo Consigliato Test
 1627786555	Ragazzo ansioso
 1627813643	Tromber alfa
-1627814565	Abilità Pathfinder
+1627814565	Abilità del Pathfinder
 1627829480	Stato di alimentazione
 1627832141	Dott. Lewis
 1627835421	Clic-clac!
@@ -53594,7 +53594,7 @@
 1635740972	Pebbling
 1635745812	<style=Hint_BgL>Colture mutate</style> raramente prodotte dai terreni agricoli della tua Dimora. Possono essere raccolte, regalate agli amici o vendute al negozio dedicato per un prezzo più alto.
 1635754912	Schiudi l'uovo nelle <style=Hint_BgL>Incubatrici dell'Avamposto</style> e nelle <style=Hint_BgL>Incubatrici della Dimora</style>.
-1635756927	Snowy
+1635756927	Innevato
 1635775640	(Visto che l'atmosfera è quella giusta, continuiamo le prove!)
 1635782611	Tutto ciò che so è che un Flusso di Prismana è il segno che la Vena è colma di energia, ed è estremamente raro.\nSe ne è apparso uno durante il festival, deve esserci sotto qualcosa di insolito.
 1635790729	Grace
@@ -53878,7 +53878,7 @@
 1638703652	Velouria
 1638710458	(BREAK) Scatena il potere elementale per attaccare i bersagli a distanza.
 1638730916	Camper Liv. 4
-1638732269	Riduzione danno
+1638732269	Riduzione danni
 1638738886	Camper Liv. 5
 1638753378	Velo Luminoso di Prismana
 1638756530	Quella sì che è stata una vera, grande battaglia infuocata. Non la dimenticherò!
@@ -54228,7 +54228,7 @@
 1642246403	Siamo finalmente arrivati a Bloomville!\nDicono che il Festival dei Fiori possa far avverare i desideri...\nPrima le cose importanti: prepariamo il profumo per la cerimonia!
 1642249844	Memoria■ ■ ■Posso avere■ ■■ricordi anch'io■■ ■■
 1642255316	(Versione funzionalità)
-1642262918	Gruppo di battaglia
+1642262918	Squadra di battaglia
 1642265106	Il profumo del legno di pino cattura l'essenza di una foresta invernale, delicata ma risoluta.
 1642290035	Wendell
 1642292146	Io
@@ -55431,7 +55431,7 @@
 1654470274	Robot offensivo
 1654477052	Questa volta abbiamo fatto centro!\n<style=Hint_BgD>Cattura</style> quell'Aniimo benedetto, e sarà tuo!
 1654479587	Per test locali
-1654500051	Vai a Promozione Titolo
+1654500051	Vai alla Promozione del titolo
 1654505060	Limite di scambi raggiunto
 1654521822	Emberpup che sfida se stesso
 1654541373	Fannie
@@ -55525,7 +55525,7 @@
 1655359211	Combatti al fianco degli Aniimo e impara a padroneggiare le misteriose Energie Elementali.
 1655373235	Morra cinese
 1655378220	Alcuni dei tuoi mobili sono stati ridimensionati in modo non uniforme, quindi il ridimensionamento proporzionale non sarà disponibile per quei pezzi.
-1655402508	Snowy
+1655402508	Innevato
 1655419086	Vortice di Tempesta di Sabbia (Annulla)
 1655437996	Scatto
 1655438662	Sottobicchiere in sisal
@@ -56715,7 +56715,7 @@
 1668083691	Bosco (Livello 2)
 1668083788	Il mistero del dipinto danneggiato
 1668090593	Completa i <style=Hint_BgL>corsi di Addestramento élite richiesti</style> per salire rapidamente di livello. Puoi anche guadagnare ESP completando missioni, catturando nuovi Aniimo, <link="help_107"><style=Hint_BgL><u>segnalando</u></style></link> le tue catture, ottenendo <link="help_607"><style=Hint_BgL><u>Ambre di Lumin</u></style></link>, liberando <link="help_504"><style=Hint_BgL><u>santuari</u></style></link>, sconfiggendo <link="help_505"><style=Hint_BgL><u>Alpha</u></style></link> e aprendo forzieri.
-1668092724	Build consigliata
+1668092724	Configurazione consigliata
 1668100894	Un'altra scuola di pensiero ritiene che gli aromacristalli prodotti dai Dewy, raffinati attraverso la concentrazione naturale e la fermentazione, possiedano un aroma ricco ma puro, rendendoli materiali ideali per la creazione di profumi.
 1668108077	Marlowe
 1668125156	I danni da contrattacco aumentano del <style=Hint_BgL><customRichText(calcData,buff,4020010,param3,1,%d)>%</style>, mentre i danni non da contrattacco scendono del <style=Hint_BgL><customRichText(calcData,buff,4020010,param1,1,%d)>%</style>.
@@ -56909,7 +56909,7 @@
 1670035192	Camper Liv. 7
 1670041361	Emberpup giocherellone
 1670043662	Posiziona 8 Terreni boschivi nella tua Casa.
-1670051555	Rilascia
+1670051555	Libera
 1670063463	Danno dell'Aniimo aumentato dopo il legame
 1670076251	Santuario Benedetto
 1670085304	Giovane Bolty crespo
@@ -57484,7 +57484,7 @@
 1676346402	Io
 1676354192	Modello olografico dell'Istituto Polaris
 1676394748	12.1
-1676396996	Note di ricerca sulla Rosa Nevebianca
+1676396996	Appunti di ricerca sulla Rosa Biancaneve
 1676397455	100
 1676412778	Baleetle a riposo
 1676416362	Pacco regalo della Dimora
@@ -57754,7 +57754,7 @@
 1679285055	Cambia bersaglio
 1679290255	Segnaposto testo contenuto testo contenuto testo contenuto testo contenuto testo contenuto testo contenuto testo contenuto testo contenuto testo contenuto testo contenuto testo contenuto testo contenuto testo contenuto
 1679308261	La leggenda dell'Echoback Landing
-1679314740	Non periziato
+1679314740	Non valutato
 1679334973	Completa {0}/{1} ordini della Dimora (Ordini stagionali inclusi)
 1679337324	Piccola TV
 1679346869	A proposito, ci sono due lunghe casse di ferro abbandonate vicino alla roccia.
@@ -57942,7 +57942,7 @@
 1681248343	Gli attacchi base e le abilità non attivano più l'effetto gacha e sparano sempre bolle arcobaleno. Danni da attacco base +<style=Hint_BgL><customRichText(calcData,buff, 9162304,param0,1,%d)>%</style>.
 1681253459	Promessa del Compagno
 1681258861	Il mio Emberpup è diventato così schizzinoso con il cibo.
-1681265904	Scatola Sorpresa Rara
+1681265904	Scatola a sorpresa rara
 1681288939	Un fungo speciale e raro di Mistwoods contenente un'energia unica
 1681289975	Gruppo Lumintech
 1681296423	Conquistatore verdeggiante
@@ -58366,7 +58366,7 @@
 1685704505	Io
 1685714366	Difficoltà: Caos
 1685729096	Raggiungi le terre selvagge e parti subito! La S1 Partenza col Vento è ufficialmente iniziata!\n\n[Programma della stagione]\n· Partenza col Vento Parte I: 15 set 2026 - 28 ott 2026 19:59:59 (UTC-4)\n· Partenza col Vento Parte II: dopo la manutenzione per l'aggiornamento del 29 ott 2026 - 9 dic 2026 19:59:59 (UTC-4)\n\n[Eventi della stagione]\n1. Corsa ai francobolli\n· Partecipa alle modalità nell'elenco degli eventi per ottenere i <style=Hint_BgL>Francobolli stagionali</style>.\n· I <style=Hint_BgL>Francobolli stagionali</style> hanno limiti di guadagno settimanali, inclusi limiti per singola modalità e un limite complessivo per tutte le modalità.\n\n2. Manuale del compagno\n· Aniimo compagno di questa stagione: <style=Hint_BgL>Fulmintis</style>.\n· Ottieni <style=Hint_BgL>ESP compagno</style> per far salire di livello il tuo manuale. Fonti di <style=Hint_BgL>ESP compagno</style>:\n※ Completa le missioni del Manuale del compagno.\n※ Guida dell'Istituto: Attività giornaliera\n\n3. Obiettivi della stagione\n· Tipi di modalità che conferiscono punti obiettivo stagionali: Aniimo, Combattimento, Furto di uova e Casa.\n· Completa le missioni degli obiettivi nelle diverse modalità per ottenere <style=Hint_BgL>Punti obiettivo</style> e <style=Hint_BgL>Francobolli stagionali</style>.\n· In base ai tuoi punti obiettivo complessivi in tutte le modalità, potrai aumentare il tuo livello obiettivo stagionale e riscattare le relative ricompense di grado. Scegli <style=Hint_BgL>le modalità che preferisci</style> e buttati nella mischia: <style=Hint_BgL>non è necessario giocare a tutto</style>.\n· I gradi e le ricompense degli obiettivi della stagione (compresi i progressi e le ricompense per ogni modalità) si azzerano <style=Hint_BgL>all'inizio di ciascuna Parte</style>.\n\n[Negozio dei francobolli]\n· Francobolli stagionali S1:\n※ Partenza col Vento Parte I: <style=Hint_BgL>Francobolli nati dal vento</style>\n※ Partenza col Vento Parte II: <style=Hint_BgL>Francobolli cacciatori del vento</style>\n· Fonti di francobolli stagionali:\n※ Guida dell'Istituto: Attività giornaliera\n※ Corsa ai francobolli\n※ Obiettivi della stagione\n※ Manuale del compagno\n※ Collegamento olo-battaglia: Supporto\n· <style=Hint_BgL>Al termine di ogni Parte</style>, tutti i francobolli stagionali non spesi verranno automaticamente convertiti in crediti.\n· Tipi di negozio:\n※ Negozio settimanale: si aggiorna <style=Hint_BgL>ogni lunedì alle 04:00</style>.\n※ Negozio a tempo limitato: si aggiorna <style=Hint_BgL>all'inizio di ogni Parte</style>.
-1685745208	Sostegno Energetico
+1685745208	Mantenimento Energia
 1685750077	Baciato dalle Stelle e Incoronato dalla Luna
 1685757264	Aspetto stravagante simile a un uccello, semplice ma adorabile.
 1685803991	Usa per sbloccare il titolo
@@ -58549,7 +58549,7 @@
 1687449506	Hoya a foglia di cuore in vaso
 1687468128	Nessuna ricompensa missione da riscattare.
 1687472743	Stellarys
-1687484618	Rilascia
+1687484618	Rilascio
 1687487618	Livello Aniimo 21
 1687510657	Palla di fango di Baleetle (Uso narrativo)
 1687539103	Fionda d'oro
@@ -58992,7 +58992,7 @@
 1692301224	Raggiungi il livello 7 del camper
 1692303555	Livello 96 Pagato del Manuale del Compagno
 1692312509	Quando Veilfloat scruta il mare, il suo bagliore viene talvolta scambiato dalle navi di passaggio per la luce di un faro.
-1692316160	Aggancia bersaglio
+1692316160	Aggancio bersaglio
 1692338479	Dott. Lewis
 1692363888	Questo stemma è molto importante per me e sono disposto a offrire molto in cambio. Ma per favore, siamo compagni di classe, non chiedere troppo.
 1692385043	Wow... laggiù c'è Idyll!
@@ -59360,7 +59360,7 @@
 1696022264	Moltiplicatore riflessione danni basato sui PS max
 1696044487	...Immagino di non avere altra scelta che crederci.\nDopotutto, la tua velocità di prima mi ha già aperto gli occhi.
 1696045054	Segnaposto per la descrizione della lore del mondo
-1696065086	Abbandona
+1696065086	Esci
 1696101480	Zampa posteriore destra
 1696101791	Mirtillo rosso Shining
 1696111829	Apri per ricevere ricompense
@@ -59825,7 +59825,7 @@
 1701256080	Produzione Aniimo domestica
 1701258617	Prova a estrarre la spada.
 1701281014	Ripristina il <style=Hint_BgL>{param1}%</style> dei PS massimi per ogni <style=Hint_BgL>{param0}</style> colpo/i subito/i.
-1701316129	Rimozione riuscita
+1701316129	Rimosso con successo
 1701321843	Guanti
 1701323350	Lunara
 1701325439	Va' a fare un tentativo!
@@ -60203,7 +60203,7 @@
 1705579329	​
 1705583831	Un letto erboso punteggiato da morbide nuvole fluttuanti. Gli Aniimo adorano giocarci dentro, lasciandosi alle spalle ogni tipo di materiale.
 1705597646	Scatto
-1705600133	Angelo curatore
+1705600133	Angelo guaritore
 1705604282	Scala
 1705622152	Annulla
 1705651167	Marita
@@ -60523,7 +60523,7 @@
 1709003633	Conto alla rovescia per il lancio:
 1709003801	La storia degli Aniimo è davvero affascinante.
 1709004739	Forza aggancio mirino in modalità cattura
-1709017329	Fiorellino
+1709017329	Floret
 1709022806	Aumenta la velocità di accumulo dell'Energia Prismatica in quest'area.
 1709024969	Mentre gli Aniimo danzano eccitati, assorbe la carica elettrica generata dai loro passi di danza e sintetizza minerali energetici tramite elettrolisi.
 1709027578	Luminelle Alfa
@@ -61235,7 +61235,7 @@
 1716319404	Ordine Grado (Segnaposto)
 1716324082	Aumenta i danni da Fuoco del <customRichText(calcData,buff,6003016,param0,2,%d)>%.
 1716330474	Sto bene. Era solo un normale incenso ipnotico, niente di grave!
-1716336313	Come Ottenere
+1716336313	Come ottenere
 1716337116	Raggiungi il livello 4 del camper.
 1716364847	Per un piccolo prezzo, puoi potenziare le tue Attitudini in un attimo! Non è una crescita forzata, promesso.
 1716370433	Oswen
@@ -61329,7 +61329,7 @@
 1717244434	Leafy
 1717262347	Tessuto in lino, questo tappeto unisce linee pulite e una consistenza confortevole a un fascino vintage senza tempo.
 1717272009	Bee! Bee!
-1717303652	Riscatta Giornaliero
+1717303652	Riscatta giornaliero
 1717305240	Apri schermata
 1717314110	Spazio insufficiente
 1717325139	Legame
@@ -61339,7 +61339,7 @@
 1717341406	Vendi
 1717354897	Pebbling Alfa
 1717364408	Disordine (minerale di quarzo)
-1717373327	Rimozione riuscita
+1717373327	Rimosso con successo
 1717373778	Salta
 1717375331	Fresco e Arioso
 1717376929	Liberati
@@ -62048,7 +62048,7 @@
 1725240374	Metallo
 1725245750	Piume di gufo ricamate, che brillano intensamente attraverso una notte splendida.
 1725246461	Io
-1725249255	Foresta dei sogni di farfalla
+1725249255	Ambra Sogno di Farfalla
 1725254011	No, grazie.
 1725284810	Fannie
 1725284921	Io
@@ -62651,7 +62651,7 @@
 1731591707	Camper Liv. 13
 1731596256	Passeggiata in Giardino
 1731607396	Jeff
-1731617608	Curatore
+1731617608	Guaritore
 1731631692	· Il bonus degli Attributi Cuore Nucleo (segnaposto) ha un solo effetto fisso: ATT aumentato del 50%, Danno aumentato del 20%, testo formattato verificato Il bonus degli Attributi Cuore Nucleo (segnaposto) ha un solo effetto fisso: ATT aumentato del 50%
 1731634994	Evento Stagionale Casa non ancora disponibile
 1731644330	Forma Suprema
@@ -63033,7 +63033,7 @@
 1735537886	Punti ricerca
 1735547197	Velouria
 1735556886	Io
-1735561069	Imposta Pathfinder sulla build massima
+1735561069	Imposta il Pathfinder sulla build massima
 1735564554	Segnala risultati di cattura
 1735567318	Li hai mangiati di nascosto?!
 1735567941	Runa strumento tenuto
@@ -63120,7 +63120,7 @@
 1736502530	Il prossimo è un livello molto più difficile e stimolante.
 1736504344	Gli Aniimo non possono parlare, ma quell'emozione di nostalgia e desiderio è così forte...\nQuando mi sono svegliata stavo piangendo e ho fatto subito diverse chiamate ad Astra!
 1736505271	LIVELLO\nSU
-1736506797	Abilità Pathfinder
+1736506797	Abilità del Pathfinder
 1736514394	Il danno critico aumenta del <style=Hint_BgD><customRichText(getConfigData,rogue_talent_data,33,param0)>%</style>.
 1736546370	Io
 1736548111	Spalla destra
@@ -63461,7 +63461,7 @@
 1740156411	Sconfiggi tutti i bersagli entro 60 secondi per ottenere una ricompensa
 1740170624	Wow! Credo di essere appena diventato più forte dopo aver mangiato quel barbecue!
 1740181637	ATT
-1740194725	Segnala casa
+1740194725	Segnala Dimora
 1740204265	Pebbling scavatore
 1740232450	Annulla
 1740232592	Io
@@ -63507,7 +63507,7 @@
 1740692201	Rimosso con successo
 1740708790	Probabilmente non sarà più a un'ora fissa, ma forse ogni giorno sarà come il Festival della Fioritura!
 1740721695	Prova della vittoria sulla Spina Letale: Thornblade del Thunderstorm.
-1740729999	Progresso Ricerca
+1740729999	Progressi della ricerca
 1740748591	Do-bo!
 1740760533	Io
 1740774526	Camper Liv. 4
@@ -63539,7 +63539,7 @@
 1741009419	Sei incredibile. Questo stemma <style=Hint_BgD>Spine Pungenti</style> ora è tuo!\nPiù duri dei rovi, più affilati delle spine: questo è il cammino che percorriamo!
 1741014657	I contenuti di gioco per la fase successiva sono in fase di scaricamento\nTempo rimanente: %s (%s)
 1741014838	Potenziale Disperato
-1741024504	Spaccatura congelante
+1741024504	Squarcio del congelamento
 1741027220	Decorazioni per piattaforma
 1741046452	Flora
 1741062158	Eh? Dove l'hai visto? Sta bene? È ferito?
@@ -64000,7 +64000,7 @@
 1745805989	Apri Aniilog
 1745812050	Sei proprio una buona forchetta.
 1745813575	Questo oggetto è in un periodo di congelamento e non può essere messo in vendita.
-1745819808	Regalo di Rilascio:
+1745819808	Dono di liberazione:
 1745823513	<style=Hint_BgL>Oggetto temporaneo. Utilizzabile solo in questa partita; impossibile estrarlo durante l'evacuazione.</style>\nAumenta notevolmente i danni inflitti ai bersagli a difficoltà <style=Hint_BgL>Caos e Incubo o inferiore</style>.\nCon i chip installati, <style=Hint_BgL>aumenta notevolmente la capacità di carico</style> e garantisce al Pathfinder l'accesso alle <style=Hint_BgL>abilità tattiche</style>.
 1745831977	Importa Dati Completo
 1745838162	Helmut
@@ -64078,7 +64078,7 @@
 1746387443	Dott. Glass
 1746397445	Un infuso di riso beige chiaro e vellutato con un aroma dolce e leggermente inebriante. La sua ricca fragranza di riso si fonde con un finale fresco e dissetante, rendendolo assolutamente irresistibile.
 1746415861	Wally
-1746419290	Zucca Shining e colorata
+1746419290	Zucca Shining variopinta
 1746420236	Richiesta di comunicazione di emergenza, contatta Nicole.\nConnessione in corso...
 1746428539	Fiuuu~ Conchiglia, fiuuu~
 1746430231	Questo posto significa qualcosa di speciale per lui?
@@ -64166,7 +64166,7 @@
 1747113380	Sempre circondato da seguaci?
 1747127194	La pubblicità di Piopiota ha portato molti ordini da parte dei Susuta. Dobbiamo rifornire immediatamente i nostri materiali.
 1747137054	(Segnaposto) Descrizione oggetto descrizione oggetto descrizione oggetto descrizione oggetto descrizione oggetto descrizione oggetto descrizione oggetto descrizione oggetto descrizione oggetto descrizione oggetto descrizione oggetto
-1747137516	Santuario: Planata impetuosa
+1747137516	Santuario: Planata librante
 1747149348	Segnaposto scheda
 1747159758	Conduttore: Oscar
 1747165311	Ha rimosso il Cuore del rampicante e visto il ricordo
@@ -64520,7 +64520,7 @@
 1750882283	Apri consigli
 1750887970	Un beneficio settimanale del Negozio stagionale. Aprilo per ricevere una ricompensa casuale.
 1750890633	Callum
-1750899255	Snowy
+1750899255	Innevato
 1750922037	Johnny finisce la sua gara in modo impeccabile e si evolve in un Waleetle, rendendosi conto di sentirsi perfetto solo quando è in pista. Decide di cercare nuove piste ancora più impegnative, determinato a non rimanere indietro rispetto al Pilota Perfetto di cui tutti parlano.
 1750932377	DIF M.
 1750950333	Tanto, tanto tempo fa, il Driftwise Meadow era un mondo di puro blu, tranquillo e malinconico, finché un giorno nacque una nuova vita qui: la famiglia dei Fentuft. Erano vivaci e gioiosi, amavano stare in mezzo agli altri e inventavano ogni sorta di giochi. Con il tempo, questo mondo blu fu inondato da un oro abbagliante, abbastanza luminoso da sciogliere persino il ghiaccio e la neve. Erano una nuova forma di vita non toccata dall'era dell'incolore, un piccolo ma vitale cambiamento in un ciclo infinito. Poiché dopo che i colori svaniscono, il ripristino non è mai semplice come tornare a ciò che era un tempo.
@@ -64650,7 +64650,7 @@
 1752112832	Sembri turbato...
 1752118636	Eh? Intendi dire...
 1752134970	Fotografo: Nome del Pathfinder Sette Parole
-1752142479	Individua Debolezza
+1752142479	Rileva debolezza
 1752147101	Utilizzato per le costruzioni nella tua Dimora.
 1752163085	Quando l'Affinità raggiunge il livello 3, puoi inviare inviti Istantanea agli amici.
 1752166157	Bosco (Livello 8)
@@ -64700,7 +64700,7 @@
 1752666222	Beh, è finita qui. Il finale non è stato esattamente un colpo di scena, né particolarmente interessante.
 1752668062	Lento
 1752689413	Lavanda miracolosa con tripla mutazione, avvolta da un bagliore arcobaleno e scintillante di punti luce abbaglianti, con spighe fiorite eccezionalmente grandi e rigogliose.
-1752690799	(Vecchio) Diario di Clodoveo
+1752690799	(Vecchio) Diario di Clovis
 1752697251	Io
 1752698621	Piatto da Portata - Porcellana Bianca
 1752725062	Ala sinistra
@@ -64727,7 +64727,7 @@
 1753032947	Questo sembra vagamente familiare.
 1753036070	Fonte materiale di creazione Alfa
 1753054402	Puoi liberare gli Aniimo dalla sezione <link="appearHelp_202"><color=#5090df><u>Gestione Aniimo</u></color></link>. Gli Aniimo liberati lasciano il fianco del Pathfinder. <style=Hint_BgL>Gli oggetti spesi per l'aumento delle stelle di Risonanza e le ascensioni vengono completamente rimborsati</style>, mentre alcuni oggetti usati per salire di livello vengono rimborsati parzialmente.
-1753054880	Pagina 13\nFiorellino è tornato da me qualche giorno dopo.\nIn qualche modo era diventato più grande... Non si è evoluto; ha solo più forza vitale in sé, suppongo.\nDoveva essere una bella notizia, ma Fiorellino era un po' turbato.\n————\nHa indicato la colonna dell'Idolo nella piazza.\nEro sorpreso. Quella ricerca era per Eolo o per Lady Irelia?\nMa non avrei potuto fare nient'altro.\nNonostante la mia maggiore sensibilità per la vita e la cosiddetta reputazione di fioraio della vita,\nsono solo un fioraio.\nL'unica cosa rimasta da fare è passare più tempo con Clodoveo Junior.
+1753054880	Pagina 13\nFloret è tornato da me qualche giorno dopo.\nIn qualche modo era diventato più grande... Non si è evoluto; ha solo più forza vitale in sé, suppongo.\nDoveva essere una bella notizia, ma Floret era un po' turbato.\n————\nHa indicato la colonna dell'Idolo nella piazza.\nEro sorpreso. Quella ricerca era per Eolo o per Lady Irelia?\nMa non avrei potuto fare nient'altro.\nNonostante la mia maggiore sensibilità per la vita e la cosiddetta reputazione di fioraio della vita,\nsono solo un fioraio.\nL'unica cosa rimasta da fare è passare più tempo con Clovis Junior.
 1753058341	Registra
 1753059421	Un'orgogliosa creazione di un designer di mobili anonimo, con linee pulite, dimensioni chiaramente indicate e una meticolosa maestria nascosta in ogni dettaglio.
 1753072613	Oswen
@@ -64748,7 +64748,7 @@
 1753269485	La modalità compagno non è disponibile
 1753270300	Ha senso.
 1753275307	Ricominciare da capo?
-1753294899	Inseguitore di luce
+1753294899	Cacciatore di Luce
 1753301980	Un'orgogliosa creazione di un designer di mobili anonimo, con linee pulite, dimensioni chiaramente indicate e una meticolosa maestria nascosta in ogni dettaglio.
 1753308235	Uovo perfetto della partenza
 1753308949	Velouria
@@ -64884,7 +64884,7 @@
 1754665019	Manuale compagno a pagamento livello 18
 1754665580	Account bannato
 1754691010	Shrubclaw Alfa
-1754713779	Morbidoso
+1754713779	Fluffy
 1754725562	Molte persone si stanno dirigendo verso la Tideblossom Coast...
 1754735000	Io
 1754751721	Svenuto
@@ -65155,7 +65155,7 @@
 1757508011	Frammento di Tessiluce
 1757510068	Bubbeep Inzuppato
 1757520405	Consegni la Spada di Conchiglia allo Shelly Sparkling, che promette di custodirla per sempre, anche dopo essere diventato un vero cavaliere con una propria spada. Vi accordate di incontrarvi di nuovo non appena si sarà evoluto in uno Sherro.
-1757524129	Buff
+1757524129	Potenziamento
 1757526090	Tucking deve aver piazzato degli ostacoli per impedire ai malvagi di raggiungere il Sanctum. Spero che riuscirai a superare le sfide lungo il cammino e a raggiungere la fine!
 1757539057	Il luogo del ritrovo ora sembra perfetto!\nMa naturalmente, una festa del raccolto ha bisogno di un banchetto adeguato.\nÈ ora di preparare il cibo per il ritrovo!
 1757587492	In lontananza, scorgi l'albero sacro che simboleggia la Vena. Nicole spiega che è uno dei Rami più importanti di Idyll. Uno strano disturbo si propaga attraverso il vento mentre una figura massiccia attraversa l'orizzonte, lasciandoti una sensazione inquietante. Solo allora ti rendi conto che la tua vera indagine su Idyll è appena iniziata.
@@ -65274,7 +65274,7 @@
 1758625678	<dayTime>
 1758626657	Mi stavo godendo il sole, poi ho sentito un tuono... così sono corso e saltato su quest'albero...
 1758646757	Tessera Stagione 1
-1758659763	Lascia il gruppo
+1758659763	Lascia la squadra
 1758672272	Fai clic per posizionare.
 1758714087	Aumenta notevolmente la difesa contro i <style=Hint_BgL>bersagli a difficoltà Caos e Incubo o inferiore</style>.\nCon un chip installato, <style=Hint_BgL>aumenta leggermente la difesa e la capacità di carico</style>.
 1758720800	Apri [<style=Hint_BgL>Aniimo in Viaggio</style>].
@@ -65294,7 +65294,7 @@
 1758950404	Testo contenuto segnaposto testo contenuto segnaposto testo contenuto segnaposto testo contenuto segnaposto testo contenuto segnaposto testo contenuto segnaposto testo contenuto segnaposto testo contenuto segnaposto
 1758951356	Segnaposto scheda
 1758959024	Telaio con Cuscinetti Compositi
-1758959740	Riduzione Danno Fisico
+1758959740	Riduzione del danno fisico
 1758962999	Migliora Componenti Camper
 1758963785	E quello lo chiami mangiare barbecue?
 1758999860	Chat Vocale
@@ -65470,7 +65470,7 @@
 1760617311	Asset ad alta risoluzione
 1760633862	Prova a cercare intorno al grande albero morto vicino all'Altare della Brezza.
 1760634358	Un dispettoso Sparki ha arrostito di nascosto gli ingredienti per la preparazione di domani, quindi dovremo rimpiazzare ciò che è stato consumato!
-1760639603	Aggancia bersaglio
+1760639603	Aggancio bersaglio
 1760654758	<style=Hint_BgL>Premi C</style> per <style=Hint_BgL>legarti</style> con un Aniimo ed entrare in battaglia. Durante il legame, puoi usare le abilità di combattimento dell'Aniimo.
 1760656410	Pulsante semplice
 1760664993	Vai al pannello missioni
@@ -65905,7 +65905,7 @@
 1764934983	Nuovo aspetto
 1764944922	Camper Liv. 10
 1764968918	Popapus alfa
-1764969667	Fiorellino
+1764969667	Floret
 1765015800	— Tutto pronto. La tua iscrizione è ora completata.\nBenvenuto, #playerName#.
 1765017618	Giorno di ricerca 43\nNote di: Profumiera Ampah · Scuola Florifragrante\nUmore: Depresso\nAttività: Modifica della temperatura, delle condizioni del terreno, ecc. Per aiutare a far crescere il germoglio miracoloso.\nRisultati: Notati alcuni cambiamenti, ma dopo essere cresciuto il doppio delle sue dimensioni originali, la crescita si è interrotta.\nNota: Sono a corto di idee e ho bisogno di riposare.\n----\nGiorno di ricerca 50\nNote di: Profumiera Ampah · Scuola Florifragrante\nUmore: Compiaciuto\nAttività: Abbiamo scoperto che raccontare storie al germoglio miracoloso ne incoraggia la crescita.\nRisultati: Il germoglio miracoloso sembra crescere più velocemente quando ascolta storie allegre.\nNote: Una coppia di Azzurropoli è arrivata inaspettatamente ed è rimasta attratta dalle nostre tecniche di profumeria. Hanno deciso di rimanere per il momento. Ho grandi speranze per Joss in particolare, ma sembra più interessato alla Scuola delle Fragranze Miscelate. Vedrò se riesco a convincere Marissa.
 1765046797	Passo dopo passo, il viaggio porta nuovi panorami e storie.
@@ -65974,7 +65974,7 @@
 1765708579	Disegnare Shelly
 1765719659	Ignitis
 1765733691	Scale galleggianti - Pino
-1765756071	Abilità Pathfinder
+1765756071	Abilità del Pathfinder
 1765768378	Nicole
 1765776100	Alba nella Foresta - Magnolia in Vaso
 1765797057	Cattura riuscita di Aniimo
@@ -66562,7 +66562,7 @@
 1771399285	Lorenz
 1771405714	Queenie
 1771429800	Copia info account
-1771431655	Abbandona
+1771431655	Esci
 1771435681	Nicole
 1771444214	Viff?
 1771446865	Sophie
@@ -67216,7 +67216,7 @@
 1778422190	Vuoi dare un'occhiata?
 1778437544	Shura
 1778462107	Riesco a sentire il suo gelo fino dalla cima della montagna.
-1778470133	Zucca Shining e colorata
+1778470133	Zucca Shining variopinta
 1778479662	Premi ovunque per chiudere
 1778533638	Un uovo contenente l'estremamente rara energia Prismana. Il suo guscio brilla di una luce fluida e i suoi segni vitali sono eccezionalmente forti. Garantisce la schiusa in un Aniimo in <style=Hint_BgL>Forma Prismana</style>.
 1778552324	Battaglia ad alta difficoltà
@@ -67536,7 +67536,7 @@
 1781707037	Piccolo Pebbling
 1781709560	Maestria comportamentale
 1781718516	Il piccolo ciondolo, intrecciato con foglie d'erba flessibili, ha un design semplice ma vivace che lo rende durevole e divertente con cui giocare.
-1781734674	Furia Furiosa
+1781734674	Furia scatenata
 1781744930	Cornet acuta
 1781748055	Bosco
 1781753182	Inserisci codice di riscatto
@@ -67636,7 +67636,7 @@
 1782844186	Ho un'idea! Costruiamo un Faro fungo scintillante proprio in cima al castello!
 1782847070	Così, ogni volta che posso, porto Appo all'Echoback Landing e racconto al mare storie su di me e mia madre, sperando che ne faccia sbocciare uno.
 1782855636	Carola
-1782857516	\nAggiungi dal profilo
+1782857516	Aggiungi dal profilo
 1782874540	Generazione di energia in corso...
 1782879056	Aumento crediti
 1782892548	Selene
@@ -68136,7 +68136,7 @@
 1788128312	[NEW] Non esattamente. Quello che ricordi è solo un giocattolo civile con algoritmi obsoleti.
 1788140233	Cos'è <style=Hint_BgD>"quella persona"</style>? È qualcosa che ti rende più forte?
 1788141630	Delicati arbusti a foglia piccola con fogliame ovale, che aggiungono un tocco di verde caratteristico alla Dimora.
-1788142050	Snowy
+1788142050	Innevato
 1788161844	Reimposta condizioni
 1788191300	Marzo
 1788198599	Besauce
@@ -68223,7 +68223,7 @@
 1788945439	fino all'orario di inizio
 1788955433	Materiale per l'evoluzione dell'Aniimo di elemento Kim a Stadio Lumin.
 1788966683	Io
-1788967467	Foresta dei sogni di farfalla
+1788967467	Ambra Sogno di Farfalla
 1788977401	Pietra Sparkling
 1788989669	A scavare!
 1789018479	Anomalia della Frattura
@@ -68520,7 +68520,7 @@
 1792156163	Testa
 1792158902	Oggetti
 1792189118	Attendo con ansia ciò che ti aspetta...\ne il giorno in cui i nostri cammini si incroceranno di nuovo.
-1792192495	Pergamena
+1792192495	Scorri
 1792202346	Visto che sei già qui, perché aspettare? Mettiamoci al lavoro! Ora... l'introduzione del sistema dovrebbe essere—
 1792234932	Sunia
 1792250842	Quattro caratteri grandi
@@ -68652,7 +68652,7 @@
 1793557780	Analizza se esiste o meno un metodo diverso e più ingegnoso per trovare una risposta.
 1793559858	Scatto\n/Schivata
 1793574294	Quando sorge il pericolo, i Cozite decidono di fondersi in uno solo, formando insieme una solida fortezza.
-1793574984	Incredibile Uovo di Bocciolo
+1793574984	Incredibile uovo in fiore
 1793576250	Finanziamento Kim
 1793579440	Fornello acchiappatutto (Livello 3)
 1793602816	Rimuovi Duetto
@@ -68707,7 +68707,7 @@
 1794192030	Aniipod Medio Antico
 1794192562	<style=Hint_BgL>Beni lavorati</style> prodotti dal Cuocitore pesca-premi nella tua Dimora. Vendili nel negozio apposito o lavorali ulteriormente.
 1794201030	Miniera (Livello 6)
-1794219198	Snowy
+1794219198	Innevato
 1794230329	1. Durante l'evento, puoi ottenere Scintille nei seguenti modi:\n · Completa la missione del Codex del Compagno di Fuoco.\n · Partecipa alla modalità Scintille Continue.\n · Effettua il check-in presso la statua di Sparkelf in Piazza Orizzonte (solo una volta al giorno).\n 2. Dettagli modalità Scintille Continue:\n · Ogni giorno, interagisci con gli amici per accendere Scintille. Le interazioni includono:\n ※ Chat: inviatevi messaggi.\n ※ Gruppo: formate una squadra.\n ※ Regalo: inviatevi regali.\n ※ Scambio Aniimo: scambiatevi Aniimo.\n ※ Visita Casa: visitatevi reciprocamente.\n · Dopo aver acceso una Scintilla, un'icona Scintilla apparirà accanto al nickname del tuo amico. Il numero accanto mostra quanti giorni tu e quell'amico avete interagito durante l'evento. Raggiunti 5 giorni o più, anche l'icona Scintilla salirà di livello.\n · L'icona Scintilla diventerà grigia dopo il reset giornaliero del server alle 04:00. Interagisci di nuovo con i tuoi amici per riaccenderla.\n 3. Ricompense dell'evento:\n · Quando il totale personale di Scintille raggiunge la quantità richiesta, puoi riscattare le ricompense dei progressi personali.\n · Quando il totale di Scintille a livello di server raggiunge la quantità richiesta, tutti i giocatori possono riscattare le ricompense dei progressi del server.\n · Note speciali:\n ※ Lo Sparkelf con la <style=Hint_BgL>Mutazione Sparkling</style> (incluse la Forma Base e la Forma Prismana) ha un effetto di contorno Sparkling, ma nessun effetto di ricolorazione parziale.\n ※ Lo Sparkelf (Forma Prismana) non sarà più disponibile al termine dell'evento. Resta sintonizzato per i futuri annunci ufficiali.
 1794257570	Stella esplosiva - Muro alto di mattoni grigio nebbia
 1794269544	?(richiesto)
@@ -70051,7 +70051,7 @@
 1808978436	Ragazza alla moda
 1809016664	Tavolo da pranzo della prateria
 1809019290	Smeraldo
-1809023017	Rapporto
+1809023017	Segnala
 1809023969	Devo andare a vedere l'habitat di Helmut con i miei occhi...
 1809044289	Ornamento seme dorato
 1809055753	255
@@ -70242,7 +70242,7 @@
 1810770720	Un WC a parete con serbatoio e tubi nascosti nel muro. Gli Aniimo curiosi continuano a picchiettarlo, chiedendosi se l'altro lato conduca a un altro mondo.
 1810774877	Celadon Lavato dalla Pioggia - Vasca da Bagno
 1810789211	Un uovo lasciato da un Aniimo sconosciuto, traboccante di vibrante vitalità.
-1810814763	Abilità Pathfinder
+1810814763	Abilità del Pathfinder
 1810829439	C - Per ottenere una grande quantità di Safari.
 1810830951	Aspetta, ma quello è...?
 1810837410	Limite PS
@@ -70486,7 +70486,7 @@
 1813621806	Ottenuto
 1813628372	Frutto della fiamma
 1813633307	Fai squadra
-1813634915	Nome del tratto (segnaposto)
+1813634915	Nome Tratto (Segnaposto)
 1813636388	In pieno giorno?
 1813641213	Reliquia di Bouldus
 1813647792	Premi #kCommon/GamepadConfirm#z per accedere alla [<style=Hint_BgL>Mappa</style>].
@@ -70676,7 +70676,7 @@
 1815272882	Selens indossa la ghirlanda di frutti luccicanti e va a cercare Tucker, sperando di mantenere la promessa del suo antenato, ma Tucker capisce subito che Selens non è l'amico di tanti anni fa e fugge in lacrime. Solo allora Selens comprende che la vera promessa non è mai stata quella di tenere un concerto insieme, ma il legame condiviso da compagni i cui cuori battono all'unisono.
 1815293977	Melloblum
 1815294829	Scatta una foto all'ingresso del Pop Up Store di rednote al livello inferiore di Horizon Square.
-1815312665	Negozio Viaggio leggendario
+1815312665	Negozio del Viaggio Leggendario
 1815318162	Evento: Nascondi menu
 1815343547	La selezione riquadro è attiva. Non puoi ruotare la telecamera al momento.
 1815348311	Sunia
@@ -70912,7 +70912,7 @@
 1817850197	So che mi stai facendo un complimento, ma suona un po' strano...
 1817855007	Posiziona 17 boschetti nella tua Dimora.
 1817855352	Sconfiggi l'Alfa Aniimo.
-1817856463	Sovraccaricato
+1817856463	Sovraccarico
 1817864602	Cozite avventuroso
 1817873201	Salta e si schianta sul bersaglio per infliggere danni. Sono consentiti fino a tre schianti consecutivi, e il terzo schianto stordirà il bersaglio per <style=Hint_BgL><customRichText(buffConfigData,2102608,duration)></style> s.
 1817878677	Aumenta il danno da Acqua e la Resistenza ad Acqua di <customRichText(calcData,buff,10094,param0,1,%d)>%.
@@ -71748,7 +71748,7 @@
 1826530424	RIGEN ottenuta
 1826531419	La Cresta delle Mille Zanne sta finalmente fiorendo.\nForse un vero guerriero è colui che ha compreso il significato della battaglia.
 1826531989	Camper Liv. 7
-1826535016	Operazione: Furto d'Uova Modalità di squadra
+1826535016	Operazione: Furto d'Uova - Modalità di squadra
 1826536655	In attesa di download
 1826548474	Luccichio fluido
 1826569262	Rossore
@@ -73335,7 +73335,7 @@
 1842681062	Missioni evento
 1842689201	Può apparirne solo uno alla volta e non ricompare.
 1842704851	Mi sono separato da uno dei miei amici Nimbi. E non sono riuscito a trovarlo, beee!
-1842706712	Uovo di Thornblade Prismana
+1842706712	Uovo di Prismana Thornblade
 1842727258	Beh, in realtà...
 1842730953	Non mi darai buca, vero? (Deprecato)
 1842731669	Può essere usato per l'Aumento Stelle per potenziare gli attributi degli Aniimo.
@@ -73389,7 +73389,7 @@
 1843346023	Bocciolo di brace
 1843382875	Lavanda variopinta
 1843399127	Sblocca un titolo all'uso
-1843399274	Snowy
+1843399274	Innevato
 1843427552	Trucco labbra
 1843474961	Ottenuto completando gli Ordini Dimora
 1843487479	Aumenta i danni da Fuoco di <customRichText(calcData,buff,6003016,param0,3,%d)>%.
@@ -73414,7 +73414,7 @@
 1843643519	Camper Liv. 5
 1843653766	Visualizza tutti gli oggetti
 1843663036	Attrazione Gravitazionale
-1843664203	Cloud
+1843664203	Nuvola
 1843673197	Ho perso... Riproponiamolo. Questa volta non butterò carta!
 1843691212	Potresti insegnarmi a parlare al telefono con i diversi Bolty?
 1843698645	Riporta il nettare
@@ -73751,7 +73751,7 @@
 1847198766	Vedi quei Pathfinder che si allenano insieme?\nPathfinder motivati e Aniimo si riuniscono spesso per scambiarsi consigli sull'uso di ogni genere di oggetti e discutere i pro e i contro dei diversi metodi di addestramento.
 1847201061	Uhm, come posso spiegarlo... è sicuramente un odore molto... uhm, complesso.
 1847220639	Io
-1847230791	Fiorellino
+1847230791	Floret
 1847244804	Bene! Per i corsi del Dipartimento di Ricerca, tu, presenza dispensata.
 1847250092	Uvetta secca
 1847259157	Può essere acquistato alla Casa d'Aste dei Pathfinder con i Crediti.
@@ -73785,12 +73785,12 @@
 1847499233	Danno da colpo critico
 1847508441	Raggiungi il livello 12 del camper.
 1847508871	Ruggiti selvaggi si mescolano a ritmi travolgenti mentre ondate sonore roventi si infrangono sui timpani, facendo tremare ogni anima indomita. Estrai con successo il collezionabile [Fremito dell'Anima] durante l'Operazione: Furto d'Uova per sbloccarlo.
-1847522692	Incredibile uovo degli altipiani
+1847522692	Incredibile uovo dell'altopiano
 1847523454	Livello 29 del manuale compagno premium
 1847533826	Dopo la partita, Lita fa una richiesta: vorrebbe che Lumin viaggiasse con te d'ora in poi. Lumin ha combattuto al suo fianco per anni, ma ultimamente voleva tornare a Idyll e continuare a esplorare, e il suo lavoro all'Istituto le impedisce di andare con lui. Dice che sei lo studente più talentuoso che abbia mai incontrato e confida che tu e Lumin condividerete molte grandi avventure. E così, ti affida formalmente Lumin.
 1847535302	Scatta 1 foto con un amico nello studio fotografico
 1847541930	Io
-1847600783	Riservato ad Alfa
+1847600783	Riservato Alfa
 1847608852	Nicole
 1847611217	Lunara
 1847620857	Aumenta i danni dell'Erba del <customRichText(calcData,buff,6003022,param0,2,%d)>%.
@@ -74012,7 +74012,7 @@
 1850030756	Legati con l'Aniimo e premi #kHud/ExploreSkill#z per <style=Hint_BgL>vedere gli oggetti speciali attraverso gli ostacoli</style>. Premilo di nuovo per uscire da questa visuale.
 1850051936	Appare dopo aver completato la missione di viaggio "Giuramento Vincolante" a Mistwoods.
 1850052032	Valore di forza dell'ATT Fisico dell'Aniimo. Per ogni 50 punti di ATT Fisico, l'ATT Fisico dell'Aniimo aumenta di ulteriori 5 punti.
-1850113372	Morbidoso
+1850113372	Fluffy
 1850137068	La triplice offerta della Costa dello Zefiro
 1850146508	Sopracciglia
 1850187441	Cristallo di goccia di rugiada di Dazmand
@@ -74197,7 +74197,7 @@
 1852067533	Judy
 1852098437	Tammy
 1852105094	Quando non ci sono avversari nei paraggi, Scorchhowl si allena a combattere contro un nemico immaginario.
-1852111570	Maestria di Addestramento
+1852111570	Maestria di addestramento
 1852114931	Io
 1852140131	Io
 1852145053	Forse più tardi
@@ -74469,11 +74469,11 @@
 1854789785	Bonus personalità
 1854790708	Membro del pubblico 5
 1854799723	Fannie
-1854804882	Negozio di congegni olo
+1854804882	Negozio di olo-congegni
 1854821980	Blocco da costruzione - Rosa acceso
 1854840264	Alcuni Aniimo possono <style=Hint_BgL>volare</style> e aiutarti ad attraversare i dirupi.
 1854843477	Estrazione riuscita
-1854859946	Fiorellino
+1854859946	Floret
 1854877713	Stordito
 1854891327	Raggiungi il livello 13 del camper.
 1854903406	Portatore della Spilla Stella d'Ombra
@@ -74630,7 +74630,7 @@
 1856323652	Poi, proprio così, sono tornato!
 1856326290	Enigmi cooperativi
 1856339234	Attributi: 10
-1856349622	Aggancia bersaglio
+1856349622	Aggancio bersaglio
 1856372045	1. Durante l'evento, l'Istituto Polaris pubblicherà un Elenco di Indagine Ecologica.\n2. I Pathfinder devono seguire l'elenco di indagine e catturare gli Aniimo corrispondenti per aiutare l'Istituto a completare la sua indagine ecologica e guadagnare Punti Indagine.\n3. Ogni Aniimo bersaglio assegna punti solo la prima volta che la sua indagine viene completata. Catturare nuovamente lo stesso bersaglio non assegnerà punti aggiuntivi.\n4. Si prega di prestare molta attenzione alle forme degli Aniimo. Solo la cattura di un Aniimo nella stessa forma indicata nell'elenco di indagine completerà l'indagine corrispondente.\n5. Una volta che i tuoi Punti Indagine accumulati raggiungono i requisiti specificati, potrai riscattare le ricompense dei relativi traguardi.\n6. Se l'obiettivo dell'indagine è un Aniimo che il Pathfinder non ha ancora registrato nell'Aniilog, i punti ottenuti per il completamento della sua indagine per la prima volta saranno raddoppiati.
 1856372271	[Rimborso ricarica] Ricompense del test inviate
 1856374046	Leafy
@@ -74762,7 +74762,7 @@
 1857656349	Una <style=Hint_BgL>materia prima</style> prodotta dall'area boschiva della tua Dimora. Può essere venduta nei negozi o lavorata ulteriormente.
 1857681271	Il limite massimo di livello delle strutture di produzione della Dimora è stato aumentato!
 1857700394	Fannie
-1857701172	Helmwhelp Arrabbiato
+1857701172	Helmwhelp furioso
 1857717697	Mostra cursore
 1857738338	Mobile di prova N. 13
 1857747006	Evento
@@ -74774,7 +74774,7 @@
 1857809531	Brutsch
 1857818516	Emberpup profumato
 1857821355	Interrompi cova
-1857838481	Snowy
+1857838481	Innevato
 1857854948	Muretto Angolare di Macerie Basso
 1857886714	Evolvi
 1857902238	Danno Puro
@@ -74790,7 +74790,7 @@
 1857991982	Segnalare la cattura di un Aniimo ti farà guadagnare Safari, ma non è l'unico modo.
 1857996012	Uovo di Aniimo delle Rovine Profumate
 1857996614	Mmh, sembra proprio da lei. Nella sua proposta di ricerca ha scritto: "È risaputo che la vita ha origine dall'acqua. La vita idylliana è straordinaria, quindi le sue acque devono celare misteri che richiedono un'indagine!".
-1857998753	Riduzione del recupero
+1857998753	Riduzione tempo di ricarica
 1858002822	Inseguendo quel lampo di fulmine attraverso le colline boscose.
 1858020843	Raggiungi il livello 14 del camper.
 1858022111	Lasciami allestire l'arena. Aspetta solo un momento!
@@ -75674,7 +75674,7 @@
 1867007472	Fornisce strumenti sperimentali per coltivare colture di qualità superiore e con rese più elevate.
 1867032597	Entra da %s!
 1867038567	Tatuaggio facciale
-1867045123	Chiave Testo
+1867045123	Chiave di testo
 1867055166	Português
 1867061624	Coda di Cavallo Solare
 1867071733	Morra cinese
@@ -75808,7 +75808,7 @@
 1868688746	La valutazione ufficiale per la promozione a Viandante è dietro l'angolo.\nObiettivo: Loulla della Valle Berillina!\n<style=Hint_BgD>Questa è una valutazione per la promozione del titolo. Completala per diventare un Viandante di Grado I.</style>
 1868703003	Trasporta per Elenco posizioni e raccogli i dati di rendering
 1868706762	Il potenziale raccomandato di questo Aniimo è già al massimo e non può essere utilizzato.
-1868713429	Piena energia
+1868713429	Energia al massimo
 1868717104	Questo finché non è arrivato il grande disastro... ma dovresti già aver imparato tutto a lezione.
 1868729746	Le noci nascoste sotto i loro spessi gusci rilasciano il fragrante aroma degli oli durante la tostatura.
 1868732861	Io
@@ -76374,7 +76374,7 @@
 1874489947	BREAK
 1874491742	Io
 1874500035	Tutorial Scatto
-1874546933	Individua Debolezza
+1874546933	Rileva debolezza
 1874548809	Completa 2 tipi qualsiasi di Addestramento Avanzato
 1874552642	Sarah
 1874553714	Milly
@@ -76419,7 +76419,7 @@
 1874961485	Giovane Bolty crespo
 1874963250	Disconnetti ShaderPush
 1874984043	Echi Azzurri
-1874998210	Tinta
+1874998210	Tintura
 1875003563	Io
 1875020610	In preparazione
 1875022913	Nicole
@@ -76658,7 +76658,7 @@
 1877349627	Io
 1877353702	L'Icho è la vera leggenda della Cresta delle Mille Zanne, perfino io lo so!
 1877376520	Un bagliore profondo e inquietante lo attraversa, racchiudendo molta più energia del solito. Garantisce la schiusa di un Aniimo Ombrarcobaleno.
-1877385125	Snowy
+1877385125	Innevato
 1877387950	Questo canale non è ancora aperto
 1877392191	Nicole
 1877396181	Posso salirci sopra e andare così in alto!
@@ -77237,7 +77237,7 @@
 1883550598	La <link="item_4040026"><style=Hint_BgL><u>Cucina acchiappatutto</u></style></link> nella tua Dimora ha sbloccato una nuova ricetta: <link="item_4020072"><style=Hint_BgL><u>Budino al cocco, cioccolato e frutti di bosco pregiato</u></style></link>.
 1883553643	Raduno del Raccolto - Lanterne
 1883564378	Fotografa Susuta selvatici durante il corteggiamento
-1883565568	Fiorellino
+1883565568	Floret
 1883572930	Legati a un Aniimo, quindi tocca e tieni premuto #kHud/SkillQ#z per mirare. Rilascia per <style=Hint_BgL>lanciare una palla di fuoco verso il bersaglio</style>.\nLanciare palle di fuoco contro <style=Hint_BgL>oggetti infiammabili come forzieri di legno e rampicanti</style> può <style=Hint_BgL>incendiarli</style>. Una volta bruciati del tutto, essi <style=Hint_BgL>spariranno</style>.\n<style=Hint_BgL>Fiamme o oggetti che bruciano</style> possono <style=Hint_BgL>attivare gli obelischi di tipo Fuoco</style>.
 1883573890	Con macchie simili a petali lungo i bordi delle ali, i Flutternym si impegnano al massimo per mimetizzarsi nel Sea of Flowers.
 1883575603	Già nella divisione parco. Nessun bisogno di cambiare.
@@ -77426,7 +77426,7 @@
 1885445010	Ottieni un Aniimo Sparkling
 1885446614	Battaglia normale
 1885448822	Eh...?
-1885449027	Riduci zoom
+1885449027	Rimpicciolisci
 1885453157	Mobile di prova N. 3
 1885473876	Possiedi 5 accessori personaggio.
 1885487109	Sayn
@@ -77828,7 +77828,7 @@
 1889568598	Pathfinder furtivo
 1889570551	Amici
 1889590687	Evento controllabile
-1889600109	Sintonia
+1889600109	Sintonizzazione
 1889606573	Camper Liv. 8
 1889611512	Davanti al grande Kairanos, persino i servitori del Signore dei Demoni non hanno altro destino che la sconfitta!
 1889618320	Dott. Lewis
@@ -77993,7 +77993,7 @@
 1891352922	Ottenuto completando Ordini della Casa di alta qualità
 1891364641	Sfida del Pathfinder
 1891365275	Quando il tuo camper raggiungerà il <style=Hint_BgL>livello 7</style>, potrai acquistare questo lotto.\nRimuovi tutti i detriti da questo lotto per ricevere <link="item_4001064"><style=Hint_BgL><u>Blocco di legno</u></style></link> *<style=Hint_BgL>14.124</style> e <link="item_4001065"><style=Hint_BgL><u>Sabbia minerale</u></style></link> *<style=Hint_BgL>8.250</style>.
-1891389053	Mago degli scherzi
+1891389053	Re delle burle
 1891419169	Velouria
 1891452882	Nicole
 1891454231	Tieni premuto
@@ -78410,7 +78410,7 @@
 1895809786	[Obsoleto] Cuore di Etere
 1895830692	Idyll
 1895851293	Oggetti EXP Aniimo
-1895854692	Sciame meteorico
+1895854692	Pioggia di Meteore
 1895864915	Come hai dormito stanotte? La stanza era comoda?
 1895875272	La pioggia cadeva♪, e un Nimbi è diventato una nuvola scura♪ Dididada♪
 1895885694	Usa per sbloccare il Manuale dei compagni avanzato attuale (Pass del Cammino). Se qualsiasi livello del Manuale dei compagni è già attivo, questo oggetto non può essere utilizzato in questa stagione. Puoi conservarlo per una versione futura.
@@ -78786,7 +78786,7 @@
 1900040315	Nome segnalato: {0}
 1900075115	Esatto.
 1900083897	La tua Casa ha prodotto risorse del valore di <color=#5090df>%s</color>. Che raccolto!
-1900093590	Vigore max
+1900093590	Vigore massimo
 1900112575	Questa forma è ancora un mistero per te
 1900120899	Mostra cursore
 1900127851	Che tipo di profumo è Sussurro del Desiderio?
@@ -78819,7 +78819,7 @@
 1900411033	Manuale Compagno Gratuito Livello 22
 1900414313	Festival dei Fiori Mattutini
 1900415346	Carta da parati giallo caldo stampata con il logo GoGoHomes e rifinita con finta boiserie, accogliente e in stile retrò.
-1900419564	Calore
+1900419564	Caldo
 1900419933	Parte superiore
 1900430131	Emberpup giocherellone
 1900432959	Germogliazione
@@ -79150,7 +79150,7 @@
 1903342815	Questo oggetto è bloccato. Sbloccalo nel tuo Inventario prima di poterlo usare.
 1903346290	Uovo Alfa
 1903346297	Bonus aggiuntivo Valore di Impegno
-1903362461	Soffio di Lava
+1903362461	Soffio Lavico
 1903376015	Un asciugamano di cotone beige, morbido come la lana di Nimbi.
 1903392410	Sferra una combinazione a due pugni in avanti. Se il bersaglio colpito porta il marchio <style=Hint_BgL>Pigna</style>, consuma il marchio e potenzia il prossimo attacco base in <style=Hint_BgL>[Raffica di Pugni]</style>. Se il primo colpo va a segno su un bersaglio marchiato con la <style=Hint_BgL>Pigna</style>, non è più necessario che il secondo colpo colpisca un bersaglio marchiato con la <style=Hint_BgL>Pigna</style> per attivare <style=Hint_BgL>[Raffica di Pugni]</style>.\n<style=Hint_BgL>[Raffica di Pugni]</style>: sferra pugni continui in avanti, infliggendo danni pari a <style=Hint_BgL>60</style> Potenza.
 1903397060	Umpf!
@@ -79997,7 +79997,7 @@
 1912600306	Vai
 1912611573	Io
 1912622127	Non hai sentito quella voce?
-1912633238	Oscuro
+1912633238	Oscurità
 1912635842	Sulla strada principale vicino alle rovine, si sentono dei pianti. Sembrano provenire dalle rovine stesse.
 1912639435	Dott. Lewis
 1912641735	Uff... Novantasette... Novantotto... Novantanove... Ah! Cento!
@@ -81127,7 +81127,7 @@
 1924477894	Ottieni un totale di {0}/{1} Monete della Dimora.
 1924478894	Io
 1924479876	Premi #kHud/SkillQ#z per creare <style=Hint_BgL>Ghiaccio Galleggiante</style>.
-1924495450	Oggetto d'Addestramento Aniimo
+1924495450	Oggetto di addestramento Aniimo
 1924497768	Camper Liv. 10
 1924503072	Raccogli
 1924516919	Jaeger
@@ -81138,7 +81138,7 @@
 1924540985	Parla
 1924550685	Selene
 1924555244	Pietra Prismatica
-1924563073	Rilascia
+1924563073	Libera
 1924603000	Unità Protettiva Illusoria - Resistenza
 1924603860	Jiff
 1924605481	Interi petali di fiori d'arancio immersi in sciroppo limpido, ancora visibili nel liquido, che rilasciano un'elegante e dolce fragranza.
@@ -81294,7 +81294,7 @@
 1926386181	Oh! Mi hai sentito chiamare, Pathfinder?
 1926396016	Non appena una creatura si avvicina, Dazeshroom si <style=Hint_BgL>caricherà e spruzzerà spore</style> per difendersi. Qualsiasi creatura toccata dalle spore <style=Hint_BgL>sviene</style> e spesso si risveglia in un luogo sconosciuto.
 1926411463	Io
-1926415818	Parcheggio camper
+1926415818	Area camper
 1926416774	Una bolla magica cristallizzata dalla volontà dell'Erlath, custodita per generazioni, che porta il tenero segno della sopravvivenza della famiglia.
 1926417459	Consigliato
 1926447312	Capo fotografo
@@ -81844,7 +81844,7 @@
 1932383331	Velouria
 1932393526	Elimina letti
 1932400854	Inventario
-1932417552	Sovraccaricato
+1932417552	Sovraccarico
 1932418933	Uovo di Fulmintis prismana
 1932458366	Dott. Lewis
 1932469955	Completa gli obiettivi per sbloccare una sfida speciale.
@@ -82098,7 +82098,7 @@
 1934917769	Falò di boccioli
 1934936942	Helmwhelp riservato
 1934938454	Attraverso praterie, oceani, fiamme e persino quel regno misterioso, il Suo potere scorre attraverso la Vena, e la Vena risponde alla Sua chiamata...
-1934945177	Incredibile Uovo di Bocciolo
+1934945177	Incredibile uovo in fiore
 1934951173	BREAK +1%
 1934954613	Uaaah... voglio proprio mangiare un po' di corallo rosso...
 1934958453	Gruppo
@@ -82365,7 +82365,7 @@
 1937967207	Il movimento del bersaglio può essere tracciato sulla Mappa in qualsiasi momento.
 1937982139	Brilla, brilla, piccola stella!
 1937984664	Nessun Aniimo corrispondente trovato
-1937985536	Panoramica stagione
+1937985536	Panoramica della stagione
 1937990871	Abbandona sfida
 1938029639	Un lavabo per la tua Dimora.
 1938035826	PNG di prova 1
@@ -82559,7 +82559,7 @@
 1939983879	Vedi Vinnie seduta qui ogni giorno, dev'essere rimasta affascinata dal carisma di questo granchio!
 1939986006	Guarda! Le viti sono cresciute su tutto questo muro! Non ha affatto un bell'aspetto!
 1939996919	Rocce decorative per la tua Dimora.
-1940005825	Risonanza di Spezzaguardia
+1940005825	Risonanza Spezzaguardia
 1940026691	Scatta una foto alle anime di Inferlupa che litigano tra loro.
 1940094354	Set
 1940103224	Uno due tre quattro cinque sei sette otto nove dieci uno due tre quattro cinque sei sette otto\nNon dovrei essermi messo in imbarazzo davanti a Kafka proprio ora, giusto?\nOh giusto, devo assolutamente farmi fare un autografo dall'istruttore Dott. Lewis più tardi! Fatti fare l'autografo dal Dott. Lewis! Fatti fare l'autografo dal Dott. Lewis
@@ -82591,7 +82591,7 @@
 1940345118	Ehi! #playerName#, come va?
 1940347399	Pavimentazione in pietrisco
 1940357848	Icho
-1940359965	Sblocca Lotto 4
+1940359965	Sblocca lotto 4
 1940371297	<style=Hint_BgL>Potenziale %s</style> +1. Il potenziale %s ha raggiunto il limite. Se procedi, i materiali dell'ultimo Risveglio capacità verranno restituiti.
 1940420416	Baa~ Baa!
 1940426411	Fai attenzione. Gli Aniimo Forma delle Nevi vivono tutto l'anno in queste condizioni estreme e possono muoversi liberamente anche attraverso il ghiaccio e la neve più rigidi.\nParti del loro corpo possono persino trasformarsi in ghiaccio e neve. Alcuni possono congelarti all'istante.
@@ -84088,7 +84088,7 @@
 1956230008	Ottieni un Aniimo Sparkling
 1956233606	Helmwhelp
 1956240735	Oggetti per Aniimo
-1956241216	Operazione: Furto d'Uova Modalità di squadra
+1956241216	Operazione: Furto d'Uova - Modalità di squadra
 1956243047	2.500 Monete d'addestramento, include 1 Congegno centrale
 1956249014	<style=Hint_BgL>Colture mutate</style> raramente prodotte dai campi agricoli nella tua Dimora. Possono essere raccolte o vendute nel negozio dedicato per un prezzo superiore.
 1956257192	Grazie. Ora mi sento un po' più sveglio...
@@ -84103,7 +84103,7 @@
 1956359359	Ma il giorno dopo, <style=Hint_BgD>sia Stellino che quella grande stellina erano spariti</style>. Forse la stellina rosa e blu aveva un saporaccio, e per questo è scappato di casa.
 1956370842	Fiuuu—fiuuu fiuuu
 1956377427	18
-1956385554	Gran Mago
+1956385554	Gran Stregone
 1956389495	Lunara
 1956389806	Raggiungi il livello 4 del camper.
 1956390034	Bulbly
@@ -84298,7 +84298,7 @@
 1958473624	Formula rapida: Perla
 1958494315	Grande forziere, sto arrivando!
 1958498575	Raggiungi il livello 13 del camper.
-1958509755	Onda Curativa
+1958509755	Onda guaritrice
 1958520109	Testo stato vuoto (segnaposto)
 1958521131	Produzione della Dimora
 1958525002	Si sblocca al Livello Modulo Ecologico 6
@@ -85217,7 +85217,7 @@
 1968524226	Turbo starnutisce, facendo cadere 7 collezionabili dalla sua lana. Raccogliere un collezionabile ripristina il <style=Hint_BgL><customRichText(calcData,timeline,2126202,param0,1,%d)>%</style> di PS.
 1968531359	Uovo di Aniimo delle Rovine Profumate
 1968549464	Inserisci le coordinate da localizzare.\n
-1968564894	Svago
+1968564894	Tempo libero
 1968567451	La piccola fiammiferaia
 1968575526	Aniimo leggendario?
 1968583201	Aspetta! Credo di essere a corto di fiori...
@@ -85622,7 +85622,7 @@
 1972919462	Io
 1972936159	Cambia il meteo
 1972941710	S-Sto bene! Lunara non è ferita... Lo sento!
-1972954820	Lama di spine di rosa
+1972954820	Lama Spina di Rosa
 1972979580	Flora
 1973000680	Lunara
 1973038440	Segnaposto scheda
@@ -85911,7 +85911,7 @@
 1975975930	Una rara rosa mutata circondata da un'aura arcobaleno e scintille abbaglianti. È cresciuta enorme e rigogliosa, con una lucentezza cristallina che brilla come un tesoro.
 1975981873	Nucleo
 1975983915	Emberpup che cerca di dormire
-1975986432	Aggancia bersaglio
+1975986432	Aggancio bersaglio
 1975988662	0
 1976004103	Scatta in avanti verso il bersaglio. All'impatto, aumenta il tasso critico di questo Aniimo del <style=Hint_BgL><customRichText(calcData,buff,213230100,param0,1,%d)>%</style> per <style=Hint_BgL><customRichText(buffConfigData,213230100,duration)></style> s.
 1976005000	Flutternym annoiato
@@ -86178,7 +86178,7 @@
 1978730178	Allora... cos'ha detto quell'Eko?
 1978746362	Spendere %s per acquistare %s?
 1978763245	Aster
-1978764323	Rilascia
+1978764323	Rilascio
 1978767980	Pelo dritto per la paura
 1978773304	Un fiore che racchiude un'essenza d'Erba ancora più abbondante.\nPuò essere scambiato con <link="item_4040030"><style=Q_5><u>Gemma Elementale Pura</u></style></link> x<style=Hint_BgL>10</style>.\nPosizionarlo nel Parcheggio Camper conferisce ai residenti un buff dell'area di +<style=Hint_BgL>5</style>% Attacco Erba e +<style=Hint_BgL>5</style>% Resistenza Erba.
 1978781915	Seleziona Zona di Costruzione Casa
@@ -86409,7 +86409,7 @@
 1981430259	Uhm? Sembra che vogliano giocare un po' con te... fai solo attenzione, muoviti con delicatezza.\nSe si fanno male per davvero... dovrai vedertela con i miei pugni.
 1981435023	Quest'uovo nutre un Aniimo eccezionalmente dotato. Garantisce la schiusa di un <style=Hint_BgL>Aniimo Umbral</style> con potenziale <style=Hint_BgL>Perfetto</style>.
 1981435203	Durante la battaglia, Bouldus crea <style=Hint_BgL>muri di roccia</style> per intrappolare i Pathfinder, poi ci rotola dentro. I muri infliggono pesanti danni a chiunque li tocchi, quindi stai alla larga.
-1981436177	Riduzione danno
+1981436177	Riduzione danni
 1981436395	Aumenta la probabilità di cattura degli Aniimo in quest'area del 10%.
 1981439340	Radiazione cristallina
 1981442741	Sposta la batteria, completa il circuito e attiva il campo di vento
@@ -86509,13 +86509,13 @@
 1982373947	Un robusto tavolo da griglia blu che mantiene i bollitori fumanti, il pane tostato e gli spiedini sfrigolanti contemporaneamente.
 1982477296	Cristallo Aniimo
 1982480002	Vai alla Dimora
-1982504012	Snowy
+1982504012	Innevato
 1982527413	Limite di acquisizione
 1982528560	Sapevo che scommettere su #playerName# fosse la mossa giusta!
 1982531621	Segnaposto scheda
 1982544866	Fai uscire allo scoperto tutti quegli Hummin!
 1982549791	Ajay
-1982562487	Miglioramento di gruppo\n
+1982562487	Potenziamento in blocco
 1982565464	Raccogli
 1982573137	(Mostrandogli un po' di rispetto.)
 1982577482	Cecelia
@@ -86736,7 +86736,7 @@
 1985143628	Evento di rischio
 1985193239	Bau colorato...? Cosa?
 1985195717	Una pianta per decorare la tua Dimora.
-1985198699	Snowy
+1985198699	Innevato
 1985205207	Una vita misteriosa si agita all'interno di questo guscio, pronta a emergere.
 1985213311	Nel corso della mia vita, riuscirò ad attendere fino a quando Lady Irelia rinascerà...
 1985219952	Hexxin Canterino
@@ -87046,7 +87046,7 @@
 1988300887	In riproduzione
 1988302237	Questi petali sono proprio come i fiori sbocciati prima... solo che ora sono già appassiti.
 1988317685	Raggiungi il traguardo
-1988319204	Rango
+1988319204	Grado
 1988330128	22
 1988345293	Chip di Indebolimento Intermedio Illusorio
 1988347876	Testo configurazione pianificazione 1111111111111111111
@@ -87329,7 +87329,7 @@
 1991135882	Migliora il tuo camper al <style=Hint_BgL>Livello 12</style> e sblocca il <style=Hint_BgL>Modulo Elettrico</style> del camper per impostare determinate strutture della Dimora in Modalità-E.
 1991185958	Si sblocca quando viene ottenuto questo Aniimo Prismana
 1991215153	Suggerimento: prova prima a proseguire con l'indizio "Shhh!". Premi qui per una rapida occhiata.
-1991217728	Potere della Natura
+1991217728	Forza della natura
 1991222274	Lucciole scintillanti passano fluttuando, come farfalle che danzano nella brezza.
 1991229908	Un uovo contenente l'energia estremamente rara del Prismana. Il suo guscio brilla di una luce fluida e i suoi segni vitali sono eccezionalmente forti. Si schiuderà sicuramente in un Aniimo in <style=Hint_BgL>Forma Prismana</style>, e l'uso di un Cubo Sparkling su di esso potrebbe conferire la mutazione <style=Hint_BgL>Sparkling dell'Ombra</style>.
 1991234829	[Apice] Consumo di resistenza ridotto del 10%
@@ -87442,7 +87442,7 @@
 1992396664	fino alla nuova ricerca
 1992398181	Questo Uovo di Aniimo può far schiudere un rarissimo <style=Hint_BgL>Aniimo Prismana</style>. Si consiglia vivamente un <style=Hint_BgL>Cubo Sparkling</style>!
 1992418097	Cecelia senior
-1992427431	Oscuro
+1992427431	Oscurità
 1992428457	Ottenuto completando le missioni delle Imprese Stagionali dell'Hub Stagionale.
 1992429008	Farina raffinata
 1992449592	3 selezionati, 1441.2MB in totale
@@ -87858,7 +87858,7 @@
 1996398814	Si sblocca al livello %s
 1996422184	Eheh, è un segreto! Tutta roba buona! Meglio non chiedere da dove provenga, eh?
 1996429825	Completa la Schiusa dell'Uovo Ora
-1996466380	Supporto
+1996466380	In piedi
 1996472378	Lynn
 1996476495	Mobile di prova N. 2
 1996477878	Cancella tutti i record di prima uccisione dei boss
@@ -88012,7 +88012,7 @@
 1998077427	Aumenta/Diminuisci punti grado
 1998086585	Helmut
 1998086754	Testo stato vuoto (segnaposto)
-1998093772	Corsa Stampata
+1998093772	Corsa con timbro
 1998113823	Sì, quel cappello gli sta davvero bene!
 1998115793	Robot offensivo
 1998116683	La tua palla?
@@ -88339,7 +88339,7 @@
 2001271276	<style=Hint_BgL>Materie prime</style> prodotte dalle Miniere nella tua Casa. Possono essere vendute nei negozi o lavorate ulteriormente.
 2001306329	Un pollice in su a sinistra!
 2001307944	Caro Pathfinder,\nA seguito di un controllo di sistema e di una revisione manuale, abbiamo riscontrato la presenza di oggetti personalizzati collocati nella tua Casa in violazione delle regole. Questo comportamento viola le linee guida operative del gioco e l'accesso dei visitatori alla tua Casa è stato disattivato.\nQuesto è il tuo avviso ufficiale di rettifica: entro 24 ore devi rimuovere o modificare tutti gli oggetti posizionati in violazione e riportare la tua Casa alla conformità. Il mancato completamento delle correzioni in tempo, correzioni incomplete o violazioni ripetute comporteranno un ban temporaneo o permanente dell'account.\nUn ambiente di gioco sano dipende da ciascun Pathfinder. Ti preghiamo di rispettare le regole.
-2001328636	Vai alla Casa
+2001328636	Vai alla Dimora
 2001361109	Camper Liv. 4
 2001364292	Nome Livello (Segnaposto)
 2001370687	Persino ai tè della principessa sorveglia rigidamente le presenze... e cerca perfino di farli finire prima.
@@ -88417,7 +88417,7 @@
 2002178095	Conduttore: Oscar
 2002183118	Ottieni un totale di 10 stelle nell'Interlink Olo-Battaglia.
 2002184361	Un nuovo viaggio
-2002186557	Snowy
+2002186557	Innevato
 2002193721	Scorchhowl
 2002217280	Ahahahahahahahahahahahahahahahahahahahahaha
 2002220442	ATT
@@ -88747,7 +88747,7 @@
 2005302822	Camper Liv. 5
 2005305788	I tesori del mare e dove trovarli (III)
 2005325475	Deve raggiungere il livello Aniimo richiesto
-2005367496	Progetta
+2005367496	Progetto
 2005412716	Skippy - Linguaccia
 2005434286	Sfida del Pathfinder
 2005464957	... Puoi, ma invece di guardare la mia casa, sarebbe più divertente costruire la tua, no?\nVedo che questo camper ti piace davvero tanto. Posso dartene uno nuovo e continuerò a sbloccarti tutte le nuove funzioni man mano che arrivano.
@@ -89384,7 +89384,7 @@
 2011869047	Nicole
 2011873810	Camper Liv. 16
 2011888940	Iris Prismatica
-2011901694	Riduzione danno
+2011901694	Riduzione danni
 2011903466	Forziere
 2011904657	Come giocare
 2011905818	Posiziona 4 lotti di terreno coltivabile nella tua Casa.
@@ -89783,7 +89783,7 @@
 2015901441	BINI #9
 2015904745	Giorni rimanenti per riscattare: %d
 2015908286	Aumenta l'Amplificazione Danno contro le unità sotto il Liv. 60.
-2015913482	Fiorellino
+2015913482	Floret
 2015920457	Sblocca Rampino.
 2015923662	Pastore curioso
 2015948888	Fragranza pericolosa
@@ -89896,7 +89896,7 @@
 2017339339	Non vorrai trovare un tesoro e non avere modo di dissotterrarlo.
 2017339930	Rookey Glass - Livello 1
 2017352898	Un frammento di ispirazione cristallizzata, caduto silenziosamente durante un momento di tessitura.
-2017400585	Aggancia bersaglio
+2017400585	Aggancio bersaglio
 2017408314	Senza suo fratello, diventa più fredda e spietata, con il cuore infrangibile come la sua spina. Il suo fiore... non più innocente, ma uno <style=Hint_BgD>straziante bocciolo di dolore</style>.
 2017414646	Battaglia normale
 2017431543	Notifica
@@ -90106,7 +90106,7 @@
 2019867399	Ragazza di Idyll
 2019890894	Unità di raffreddamento
 2019903694	Splendore e ombre di rami si intrecciano, e il loro luccichio scorre a ogni tuo passo.
-2019912318	Fentuft soccorrevole
+2019912318	Fentuft d'aiuto
 2019933308	Erlath umbral
 2019937898	Ottimo! Sono sicuro che riuscirai a trovare gli Ecoritorti!
 2019938779	Esatto. Puoi acquistare gli Aniipod avanzati dai negozi e dalle botteghe.\nMa puoi anche ottenere gli Aniipod esplorando il mondo e completando le missioni.
@@ -90258,7 +90258,7 @@
 2021396180	Lavazar a riposo
 2021401401	Raggiungi il livello 19 del camper.
 2021423329	Emory
-2021457390	Snowy
+2021457390	Innevato
 2021461543	Nimbi
 2021466899	Entra nella caverna
 2021480515	Evento di rischio
@@ -90874,7 +90874,7 @@
 2027945901	Moltiplicatore bonus riduzione TP nullo
 2027945936	Io
 2027948253	Chirpi
-2027950453	Torrido
+2027950453	Scottatura
 2027959742	Qualcuno mi ha suggerito di prendere qualche Grizbo, ma si sono rivelati ancora più irritabili di me...\nIn realtà ha peggiorato le cose. Ugh, ho proprio bisogno di combattere con qualcuno in questo momento...
 2028021490	Collezionista straordinario
 2028045804	Tutorial sui contrattacchi elementali
@@ -91318,7 +91318,7 @@
 2032410752	WeChat
 2032410827	Usa la Cattura Ottenuta
 2032425976	Esattamente!
-2032441974	Fiorellino
+2032441974	Floret
 2032457890	Piccola TV rubacuori
 2032517252	Uao! Guarda, ce l'abbiamo fatta!
 2032520038	Fai clic sul segno più.
@@ -92227,7 +92227,7 @@
 2042373209	Evolvi
 2042373462	Distintivo
 2042377632	Riscattato
-2042385287	Lascia il gruppo
+2042385287	Lascia la squadra
 2042391112	Patata
 2042394730	Ritorno al cielo stellato...
 2042405864	Io
@@ -92413,7 +92413,7 @@
 2044605358	Aumenta il livello di tutti gli Aniipod di <color=#d89c28>+5</color>.
 2044606507	Piove così forte... ma oggi potrebbe essere il giorno in cui scalerò fino in cima!
 2044620030	Celestis
-2044635294	Restare fedeli, essere presenti
+2044635294	Rimanere fedeli, restare a fianco
 2044636583	Esplosione stellare - Parete inclinata grigio nebbia - Destra
 2044650163	Ali di farfalla tinte dei colori dell'autunno, che scompaiono silenziosamente tra le foglie cadute.
 2044651889	Giapponese
@@ -92643,7 +92643,7 @@
 2046935907	Bagnoschiuma profumato
 2046943559	Incredibile!
 2046948189	Lotto 13
-2046951799	Potere della Danza
+2046951799	Potenza di danza
 2046955875	Set
 2046957206	Quando l'Energia prismatica di un'area si riempie, attirerà gli Aniimo prismana. Gli Aniimo prismana attirati variano a seconda dell'area.
 2046970810	Grace si allontana per un attimo, poi torna e ti porge mezza boccetta di profumo.
@@ -92865,7 +92865,7 @@
 2049392206	Negozio Luna del Raccolto
 2049392932	Amico Intimo
 2049404493	Nutri
-2049408852	Aggancia bersaglio
+2049408852	Aggancio bersaglio
 2049408912	Iris Alfa
 2049447062	Ha-wah!
 2049453234	Fantastico! Shrubclaw è finalmente uscito! Grazie mille!
@@ -93018,7 +93018,7 @@
 2051093667	Completa missione: Guerriero
 2051114915	Richiesta del dungeon scaduta.
 2051123664	Brezza Piumata
-2051142903	Tabella Abilità Famiglia
+2051142903	Tabella abilità della famiglia
 2051149141	Fenrier
 2051176620	Modificato
 2051178854	Parla
@@ -93081,7 +93081,7 @@
 2051611183	Prezzo:
 2051616112	Voce indistinta
 2051624211	Operazione: Furto d'Uova
-2051631697	Canna da Zucchero Colorata Enorme
+2051631697	Enorme canna da zucchero colorata
 2051654978	Collaborazione Heybox.
 2051654983	Posizionalo nella tua Dimora per produrre Aniipod semilavorati.
 2051669712	Limitato
@@ -93429,7 +93429,7 @@
 2055028727	Scaglia il suo soffio in avanti, attaccando i bersagli e applicando <style=Hint_BgL>12</style> accumuli di <style=Hint_BgL><link="source_8038"><u>Debuff Fuoco</u></link></style>.
 2055034091	Orologio a Cornet
 2055056803	Esplora i diversi ecosistemi del continente, visita habitat nascosti in lungo e in largo, incontra Aniimo di ogni forma e tipo e partite all'avventura insieme come compagni.
-2055058969	Negozio di distributori a capsule
+2055058969	Negozio Gachapon
 2055077319	ID configurazione celebrazione
 2055081876	Filma
 2055098750	Yaaawn...
@@ -94517,7 +94517,7 @@
 2066509150	Non è un semplice "incenso ipnotico", è fatto con <style=Hint_BgD>squame di Somniwing</style>!\nE non sono state affatto facili da ottenere...
 2066509643	1. Secondo le osservazioni dell'Istituto, l'energia dei Vena è stata insolitamente attiva in alcune regioni di recente, causando strani cambiamenti nell'ecosistema locale.\n2. Durante l'evento, la probabilità che appaiano Aniimo allo Stadio Nova aumenterà notevolmente per le prime 3 sessioni di Coltivazione condotte nell'area designata ogni fine settimana. Dopo la raccolta del Frutto di Vena, la quantità di Energia Prismatica ottenuta nell'area riceverà un potenziamento aggiuntivo del 50%.\nCompletare la Coltivazione aumenta l'Energia Prismatica dell'area attuale. Anche catturare Aniimo offre una probabilità di attivare un Colpo Fortunato, aumentando l'Energia Prismatica dell'area.\n· Ogni volta che la Coltivazione aumenta l'Energia Prismatica dell'area, c'è una probabilità del 3% di attivare un Flusso Prismatico, facendo apparire Aniimo Prismatici locali.\n· Ogni volta che un Colpo Fortunato attivato durante la cattura di un Aniimo aumenta l'Energia Prismatica dell'area, c'è una probabilità dello 0,6% di attivare un Flusso Prismatico, facendo apparire Aniimo Prismatici locali.\n3. Ogni fine settimana, l'abbondante energia dei Vena attirerà anche un gran numero di Aniimo nell'area designata. Gli Pathfinder possono recarsi lì per esplorare e catturarli.\n4. Durante l'evento, anche alcuni speciali Aniimo Prismatici saranno attratti dall'energia dei Vena e appariranno nelle aree designate per un periodo limitato. Consulta il programma dell'evento di seguito per conoscere gli Aniimo Prismatici che appariranno in ciascuna fase e le relative aree.\n5. Programma di Comparsa degli Aniimo Prismatici:\n21 sett 2026 04:00 – 28 sett 2026 03:59 (UTC+8)\nGlynsera Prismatico appare sulla Cresta delle Mille Zanne.\n28 sett 2026 04:00 – 5 ott 2026 03:59 (UTC+8)\nMelloblum Prismatico appare nei Rosetower Woods.\n5 ott 2026 04:00 – 12 ott 2026 03:59 (UTC+8)\nWaleetle Prismatico appare nella Valle Berillina.\n12 ott 2026 04:00 – 19 ott 2026 03:59 (UTC+8)\nInferlupa Prismatico appare nei Campi di Nembi.\n19 ott 2026 04:00 – 26 ott 2026 03:59 (UTC+8)\nGlynsera Prismatico, Melloblum Prismatico, Waleetle Prismatico e Inferlupa Prismatico appariranno contemporaneamente rispettivamente sulla Cresta delle Mille Zanne, nei Rosetower Woods, nella Valle Berillina e nei Campi di Nembi.
 2066516698	Ho sentito dire che qui c'è un punto fotografico per Aniimo molto famoso!
-2066522012	Panoramica stagione
+2066522012	Panoramica della stagione
 2066524218	Test Numerico-Segnaposto
 2066525576	Io
 2066544876	Parcheggio per camper: Essenza
@@ -94715,7 +94715,7 @@
 2068450224	Eredita Aniimo
 2068453291	Ci sono ancora delle erbacce da estirpare qui, non inciamparci sopra.
 2068455255	Sei esattamente il talento che il nostro Istituto Polaris cerca disperatamente.\nAllora, ti andrebbe di unirti?
-2068460093	Snowy
+2068460093	Innevato
 2068481152	<color=#5090df>%s</color> ha lavorato così tanto che gli fa male tutto il corpo.
 2068490549	Dott. Glass
 2068492873	Uovo super raro. Mettilo in un <style=Hint_BgL>Incubatrice dell'Avamposto</style> per far schiudere un Aniimo super raro: <style=Hint_BgL>Somniwing</style>!
@@ -94848,7 +94848,7 @@
 2069933311	Manuale del Compagno Premium Livello 63
 2069935745	Superi un quiz teorico su Nuclei, Aniimo Prismani e la struttura del Sim. Olo-Battaglia, guadagnando il titolo di Viandante di III Grado, il più alto titolo di Viandante che l'Istituto possa conferire. Oltre ad esso si trova la vera via di un Pioniere, che offre maggiore libertà pur richiedendo di viaggiare più lontano e affrontare l'ignoto.
 2069973278	Interazioni con onde d'urto
-2069974065	Negozio Viaggio leggendario
+2069974065	Negozio del Viaggio Leggendario
 2069986804	I diversi tipi di missioni sono suddivisi in <style=Hint_BgL>schede</style> separate. Passa da una scheda all'altra per vedere le missioni attualmente disponibili.
 2069988476	Raggiungi il livello 15 del camper.
 2069988669	Barlume
@@ -95132,7 +95132,7 @@
 2072848254	Mobile di prova N. 2
 2072889615	Di chi è l'Aniimo con così tanto stile? Il mio, naturalmente!
 2072916666	Storia - Scalata completata
-2072932005	Aggancia bersaglio
+2072932005	Aggancio bersaglio
 2072948802	Stadio Gamma
 2072958322	Guanto di cristallo - Sinistra
 2072967247	Grr-woo...
@@ -95162,7 +95162,7 @@
 2073234997	Agave rara mutata, scintillante di abbaglianti punti luce.
 2073235458	Questa interazione richiede che sia equipaggiato il completo intero (abiti, acconciatura, accessori, articoli di moda e trucco).
 2073244238	Tratti
-2073259223	Operazione: Furto d'Uova Modalità di squadra
+2073259223	Operazione: Furto d'Uova - Modalità di squadra
 2073276781	Accessorio personaggio
 2073290968	Personaggio
 2073336721	ESP
@@ -95988,7 +95988,7 @@
 2081617200	Boss
 2081635740	Cozite spericolato
 2081640797	Sono sicuro che hai fatto il tifo per catture epiche, enigmi e storie.\nE scommetto che sei stato infastidito da bug dispettosi, lag casuali o momenti che ti hanno fatto solo venire voglia di urlare.
-2081646302	Casa
+2081646302	Dimora
 2081656757	Bonus
 2081679321	Tanto, tanto tempo fa, l'Infergon appariva di notte vicino a Bloomville, spaventando a morte la guardia notturna.
 2081687267	Sherro
@@ -96033,7 +96033,7 @@
 2082038069	Pulizia Risorse
 2082053749	Eh? L'energia sta iniziando a fuoriuscire...\nSi è aperto davvero?!
 2082054899	Nei tuoi sogni!
-2082071906	Vento pungente
+2082071906	Vento Tagliente
 2082090697	Un Magmarex venuto a candidarsi come chef ha bruciato la griglia. Dovremo rifornire gli ingredienti prima di aprire il negozio.
 2082101646	Caricamento contenuti caricamento contenuti
 2082143441	Aumenta la guarigione dell'Aniimo del <customRichText(calcData,buff,4001040,param0,1,%d)>%. Dopo la guarigione, aumenta i danni inflitti da se stessi del <customRichText(calcData,buff,4001041,param0,1,%d)>% per <customRichText(buffConfigData,4001041,duration)> s.
@@ -96684,7 +96684,7 @@
 2088961852	Esploratore delle caverne
 2088999744	Unisciti ai Lavazar nella sorgente termale
 2089006817	Wisptis benedetto
-2089007521	Riduzione danno
+2089007521	Riduzione danni
 2089016299	Miglioramento Componente
 2089022086	Bilaterale
 2089024834	Parla
@@ -96747,7 +96747,7 @@
 2089489061	Ci andrò piano con te!
 2089496398	Sconfiggi la prima ondata di pesci piccoli!
 2089534508	<#FFE866> {0}</color><sprite name=UI_Item_BossRush_Star_small> fino alla prossima ricompensa
-2089551559	Snowy
+2089551559	Innevato
 2089559779	Un succo di frutta e verdura color smeraldo ricolmo di freschezza ed energia: un generoso dono della natura in ogni sorso.
 2089567232	Il prezzo per diventare più forti
 2089571139	Il bagliore scorre come la luce dell'alba attraverso i boschi, spargendo pagliuzze dorate.
@@ -97115,7 +97115,7 @@
 2093145277	ATT
 2093153632	Zaino predefinito con solo 4 slot.
 2093174756	Nicole
-2093181888	Passi Graziosi
+2093181888	Passi aggraziati
 2093198458	In ogni caso, abbiamo il tartufo. È ora di iniziare a mescolare.
 2093224938	Decorazione per pavimento per la Dimora.
 2093226721	Cambiare modalità resetterà la formula di questa struttura. Vuoi cambiare?
@@ -97365,7 +97365,7 @@
 2095743778	La mia palla di fango si sta asciugando un po'. È ora di farla rotolare ancora!
 2095743988	Nicole
 2095750443	Riporta l'Ambra Lumin al Ramo e la terra ti concederà diverse Benedizioni.\nRaccogli l'Ambra Lumin, poi vai al Ramo. Consideralo un dono per aver visitato l'albero sacro.
-2095758489	Lascia il gruppo
+2095758489	Lascia la squadra
 2095783544	Consigliato
 2095806155	Visualizza
 2095822236	Completa la missione Canto dell'eco perenne
@@ -97501,7 +97501,7 @@
 2097278834	Mulino a vento floreale
 2097280040	Schiena
 2097283167	Possiedi 4 slot per Forzieri fortunati. È possibile ottenere un massimo di 6 forzieri al giorno.
-2097284072	Custodia elementale
+2097284072	Guardia Elementale
 2097284786	Elimina amico
 2097287097	Aster
 2097295639	DLSS
@@ -98266,7 +98266,7 @@
 2105494204	Un blocco da costruzione per decorare la tua Dimora.
 2105497877	Nicole
 2105518292	Gah! Quando sei entrato qui dentro?!
-2105526935	Potenziamento roccioso
+2105526935	Potenziamento Roccia
 2105528089	Helion
 2105529567	Abilita epLog
 2105547607	Forse Eolo veglia davvero su questo posto... e forse vuole che io me la prenda comoda.
@@ -98370,7 +98370,7 @@
 2106492977	Sintonizzazione
 2106519736	Grace
 2106530445	Completa tutte le missioni nella Colonna 3 del Viaggio delle Prove
-2106542767	Rilascia
+2106542767	Rilascio
 2106562758	Cattura questo Aniimo
 2106566248	G
 2106601322	Piastrella a nove riquadri - Bianco sporco
@@ -99103,7 +99103,7 @@
 2114251371	Giusto! Deve essere questa la ragione!
 2114262153	Abbandonato
 2114264777	Jojo
-2114283126	Operazione: Furto d'Uova Modalità di squadra
+2114283126	Operazione: Furto d'Uova - Modalità di squadra
 2114305828	Aumenta la grinta del 10%
 2114324059	<style=Hint_BgL>Oggetto temporaneo. Utilizzabile solo in questa partita; non può essere portato via durante l'evacuazione.</style>\nAumenta notevolmente la difesa contro <style=Hint_BgL>bersagli a difficoltà Principiante</style>.
 2114324143	Helion
@@ -99129,7 +99129,7 @@
 2114529594	Schiudi più velocemente
 2114566003	Dott. Lewis
 2114568565	Danno da colpo critico Supremo
-2114571842	Avvia
+2114571842	Inizia
 2114580556	Ondata di Magma
 2114580930	Gli <style=Hint_BgL>Oggetti Lavorati Avanzati</style> prodotti dal Tavolo da Lavoro nella tua Casa possono essere venduti al negozio corrispondente per ottenere <style=Hint_BgL>Monete della Dimora</style>.
 2114583196	Emory
@@ -99270,7 +99270,7 @@
 2116307682	Man mano che ti avvicini, sembra quasi che qualcosa—forse la sua volontà—ti stia mettendo alla prova.
 2116356263	Se hai già sbloccato mobili di alto livello, puoi anche potenziarli direttamente consumando alcuni oggetti.
 2116366499	Mmh?
-2116367366	Aggancia bersaglio
+2116367366	Aggancio bersaglio
 2116368861	Portatutto
 2116370214	Comune
 2116373777	A proposito di quella ricompensa...
@@ -99305,7 +99305,7 @@
 2116771775	Camper Liv. 5
 2116774952	DIF F.
 2116793796	Sconfiggi il potente Stellarys Umbral in Operazione: Furto d'Uova per avere la possibilità di ottenerlo.
-2116806178	Info Squadra
+2116806178	Informazioni squadra
 2116816403	Scarica Elettrica
 2116820222	Mobile di prova n. 5
 2116847104	Può essere usato per personalizzare il tuo personaggio e l'Aniimo
@@ -99361,7 +99361,7 @@
 2117434734	Un Pomegg eccitato sta rotolando dappertutto per Astra nonostante le suppliche del suo proprietario...\nSbrigati a raggiungerlo prima che rotoli via per sempre!
 2117454650	Nicole è ancora in stretto contatto con me, viene spesso a trovarmi con il suo Aniimo.\nDi tanto in tanto, compaiono anche gli ID dell'Istituto Polaris nella mia live.
 2117460035	La luce del mattino filtra attraverso il telaio della finestra, risvegliando dolcemente la soffice biancheria e le stanze ricche di verde, donando un nuovo tocco radioso a una giornata tutta nuova.
-2117483026	Snowy
+2117483026	Innevato
 2117490022	Nai-li
 2117495207	È richiesto almeno un Aniimo
 2117506873	Starlet
@@ -99625,7 +99625,7 @@
 2120408922	Voce indistinta
 2120410044	Apri
 2120430894	Onda d'urto
-2120431756	Helmwhelp Arrabbiato
+2120431756	Helmwhelp furioso
 2120434458	Mobile di prova n. 8
 2120442527	Ehi, c'è un Budclaw davvero unico da queste parti. Sembra proprio adorare questa grotta.
 2120455746	Riscatta ricompense collegamento account
@@ -100058,7 +100058,7 @@
 2124555121	Non ne ho il coraggio.
 2124562900	Wendy
 2124571825	Spettatore di mezza età
-2124571839	Punteggio migliore
+2124571839	Miglior punteggio
 2124580137	Nimbi
 2124584707	Pietra di energia armonica di alto grado
 2124593701	Sei bravo ad averlo notato, ma forse vorresti dare un'occhiata ad altre opzioni?
@@ -100390,7 +100390,7 @@
 2127533428	Sparkling Tipo VIII
 2127535372	Attiva un'Ondata Selvaggia e riscatta le ricompense di Fioritura.
 2127539856	Forziere
-2127576040	Riscatta giornaliera
+2127576040	Riscatta giornaliero
 2127583652	Grande Re
 2127587555	E quindi?
 2127595641	Stile di Addestramento casuale
@@ -100415,7 +100415,7 @@
 2127861658	Lin Shuang
 2127867193	Personalizza una sessione di allenamento solo per te! Scegli tra allenamento Normale, Difficoltà Elevata o Estremo: più difficile è la difficoltà, migliori saranno le ricompense.
 2127869191	Materiale di risonanza esclusivo per la famiglia Chirpi.
-2127878247	Svago
+2127878247	Tempo libero
 2127878567	Inoltre, ho anche raccolto abbastanza dati sperimentali attraverso la Raccolta: la mia Ricerca Ascenderà sicuramente.
 2127882253	Bailite capace
 2127888128	Cattura di base
@@ -100470,7 +100470,7 @@
 2128423804	Nessuna risorsa disponibile da ripulire
 2128446832	In riproduzione...
 2128450540	Uovo eccezionale
-2128450963	Risonanza di Spezzaguardia
+2128450963	Risonanza Spezzaguardia
 2128452476	Aggiungi alla pagina principale
 2128453948	Quando non è in campo, crea una zolla di Zolla Erbosa sotto un compagno di squadra dopo che questi ha lanciato <style=Hint_BgL>3</style> abilità.
 2128457999	Popapus competitivo
@@ -100736,7 +100736,7 @@
 2131074162	Se ti interessa, potresti prendere in prestito qualche libro dall'anziano.
 2131076627	Un prezioso collezionabile lasciato da un'antica civiltà. Di inestimabile valore, può essere esposto e ammirato nella bacheca di Operazione: Furto d'Uova. Ottenerlo sblocca un <style=Hint_BgL>accessorio Aniimo</style> <style=Hint_BgL>esclusivo della S1</style>.
 2131102672	Sfera di ghiaccio
-2131113034	Fentuft soccorrevole
+2131113034	Fentuft d'aiuto
 2131115961	Mastro addestratore
 2131120290	Tuttavia, una volta raggiunto lo Stadio Nova, ti sorprenderà sicuramente.\nSpero che tu riesca a resistere fino a quel giorno.
 2131123208	Reimposta tutti gli stati dell'Indice in una volta
@@ -102051,7 +102051,7 @@
 2144976224	Spendi un totale di 60 Primegia.
 2144991785	Questo lotto di terreno non è ancora aperto. Resta sintonizzato!
 2144996375	Tromber distratto
-2145002090	Sintonia
+2145002090	Sintonizzazione
 2145012200	Le condizioni meteo speciali possono richiedere davvero molto tempo per manifestarsi.
 2145014124	Cip ciiip
 2145016919	Raggiungi il livello 6 del camper
@@ -104231,7 +104231,7 @@
 320710719	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dagli Avventurieri o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 320752322	Forziere
 320784161	Sfida del Pathfinder
-320789030	Continua a parlare con il Dott. Lewis
+320789030	Continua a parlare con il Dr. Lewis
 320801090	Questo è un Alfa. Modifica la descrizione dettagliata secondo necessità.
 320812258	Ambra Lumin
 320823641	Consegna: Aromatista Rosa Candida
@@ -105866,7 +105866,7 @@
 365080392	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dagli Avventurieri o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 365235347	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 365258828	Raggiungi il traguardo
-36525930	Dimensione
+36525930	Dimensioni
 365285663	C'è una sorta di motivo sul pilastro davanti?
 365361751	Ottieni 1 Aniimo Umbral.
 365368990	Un forziere estremamente raro, potrebbe nascondere qualcosa di bello
@@ -105875,7 +105875,7 @@
 365402208	Sfida del Pathfinder d'élite
 365441257	Forziere
 365467614	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
-36550519	Dimensione
+36550519	Dimensioni
 365521611	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 365522032	Forziere
 365523116	Forziere
@@ -105943,7 +105943,7 @@
 367463673	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 367467144	Punto Eco Chiave<localizationIdTag&-2109245546>
 367518359	Questo Aniimo sembra essere nei guai. Puoi aiutarlo?
-36754251	Dimensione
+36754251	Dimensioni
 367560456	Ambra Lumin
 367633339	Questo è un punto ecologico chiave. Modifica la descrizione dettagliata secondo necessità.
 367826279	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
@@ -106057,7 +106057,7 @@
 370622171	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 370653816	Attenzione: Aniimo Alfa<BR>Livello di pericolo: Medio
 370669969	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
-370682200	Sfida del Pathfinder Élite
+370682200	Sfida del Pathfinder d'élite
 370860987	Aniimo Omega
 370946206	Raccogli l'energia dell'Ambra Lumin sparsa
 370966114	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
@@ -106426,7 +106426,7 @@
 380852284	Ambra Lumin
 380887450	Perché il Budsquire dovrebbe fare un tè al Cottage dei Fiori Selvatici in una giornata di sole?
 380914125	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
-380935516	Sfida del Pathfinder Élite
+380935516	Sfida del Pathfinder d'élite
 380950807	Traccia di Gelasole
 380977256	Ambra infusa di Potere Lumin. I rami possono assorbire la sua energia per crescere.
 381002335	Bloomville
@@ -108050,7 +108050,7 @@
 424984693	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 424998934	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 425030755	I Pathfinder possono teletrasportarsi da qui.
-425036095	Sfida del Pathfinder Élite
+425036095	Sfida del Pathfinder d'élite
 425046195	Piazza un'Essenza Elementale.
 425046428	Forziere
 425080723	Forziere
@@ -111052,7 +111052,7 @@
 503083767	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 503092227	Questo è un punto ecologico chiave. Modifica la descrizione dettagliata secondo necessità.
 503138360	Forziere raro
-50317850	Taglia
+50317850	Dimensioni
 503256269	Forziere
 503282165	Questo è un punto ecologico chiave. Modifica la descrizione dettagliata secondo necessità.
 503372214	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
@@ -111250,7 +111250,7 @@
 508144846	Forziere
 508164723	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 508193184	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
-508216642	Sfida del Pathfinder Élite
+508216642	Sfida del Pathfinder d'élite
 508217995	Sfida del Pathfinder
 508277682	Un forziere estremamente raro, potrebbe nascondere qualcosa di bello
 508284630	Ambra Lumin
@@ -111300,7 +111300,7 @@
 509475069	Avanza nella missione principale per sbloccare la funzione di Alternanza Giorno e Notte.
 509500119	Forziere
 509565511	Continua la missione prerequisito.
-50959017	Dimensione
+50959017	Dimensioni
 509596404	Sfida del Pathfinder
 509602322	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 509606140	Nido di Stelle
@@ -111392,7 +111392,7 @@
 511875881	Misteriosi forzieri sono sparsi per tutta Idyll. Potrebbero essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 511881492	Forziere raro
 511895136	Oltre alla leggenda della Stella cadente dorata che appare di notte sulla Tideblossom Coast, Leah ha raccontato anche la storia del suo amico, il marinaio Hayes. Hai saputo che ogni volta che Hayes tornava dal mare borbottava a proposito di un "faro". Leah non capisce il perché.
-51194324	Taglia
+51194324	Dimensioni
 511964624	Raccogli l'energia dispersa dell'Ambra Lumin.
 511977112	Ambra infusa di Potere Lumin. I rami possono assorbire la sua energia per crescere.
 511986056	Forziere
@@ -112360,7 +112360,7 @@
 55715504	Occhi
 55770639	Pupille
 55826181	Orecchie
-55890675	Dimensione
+55890675	Dimensioni
 56026640	Verticale
 56537735	Profondità
 56751295	Dimensioni
@@ -112368,7 +112368,7 @@
 57556085	Lunghezza
 57605298	Verticale
 57933578	Sazietà
-58338888	Dimensione
+58338888	Dimensioni
 58963614	Angolo palpebra superiore
 58970534	Profondità
 59143011	Fianchi
@@ -112395,8 +112395,8 @@
 63939677	Palpebre
 64137093	Larghezza
 64351430	Guance
-64516617	Dimensione
-65641329	Dimensione
+64516617	Dimensioni
+65641329	Dimensioni
 65650133	Piega palpebra superiore
 65666481	Collana
 66147080	Avambracci
