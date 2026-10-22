@@ -319,11 +319,15 @@ function Get-TsvMetadata([string]$PathToTsv) {
         try {
             $vj = Get-Content -LiteralPath $VersionJsonPath -Raw -Encoding UTF8 | ConvertFrom-Json
             if ($vj.versione_traduzione) { $meta.versione = [string]$vj.versione_traduzione }
+            elseif ($vj.versione)        { $meta.versione = [string]$vj.versione }
             if ($vj.build_gioco)          { $meta.build    = [string]$vj.build_gioco }
+            elseif ($vj.build)            { $meta.build    = [string]$vj.build }
             if ($vj.data_rilascio)        { $meta.data     = [string]$vj.data_rilascio }
+            elseif ($vj.data)             { $meta.data     = [string]$vj.data }
             if ($vj.voci)                 { $meta.voci     = [string]$vj.voci }
             if ($vj.tsv_md5)              { $meta.tsv_md5  = [string]$vj.tsv_md5 }
             if ($vj.changelog_breve)      { $meta.changelog = [string]$vj.changelog_breve }
+            elseif ($vj.changelog)        { $meta.changelog = [string]$vj.changelog }
             if ($vj.changelog_dettagliato) { $meta | Add-Member -MemberType NoteProperty -Name 'changelog_dettagliato' -Value $vj.changelog_dettagliato -Force }
         } catch {}
     }

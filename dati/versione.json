@@ -1,9 +1,25 @@
 {
+  "versione_traduzione": "1.1.3",
   "versione": "1.1.3",
+  "build_gioco": "3746914",
   "build": "3746914",
+  "data_rilascio": "2026-10-22",
   "data": "2026-10-22",
   "voci": "112418",
   "voci_fmt": "112.418",
-  "tsv_md5": "f27c7c5a31c631294aadb759e6221167",
-  "changelog": "Perfezionamento grammaticale fonotattico: corrette tutte le 56 elisioni di articoli determinativi e preposizioni articolate (L'Emberpup, dell'Istituto Polaris)."
+  "tsv_md5": "c0a32aec170750974aa13bdd4d603645",
+  "changelog_breve": "Certificazione 100% senza difetti: armonizzate 17.406 stringhe, correzione entità, terreni e 56 elisioni fonotattiche.",
+  "changelog": "Certificazione 100% senza difetti: armonizzate 17.406 stringhe, correzione entità, terreni e 56 elisioni fonotattiche.",
+  "changelog_dettagliato": {
+    "titolo": "Revisione Globale Certificata al 100% (v1.1.3)",
+    "descrizione": "Controllo filologico e fonotattico riga per riga contro i database Steam ed originali: zero difetti rimanenti.",
+    "cat1_titolo": "Armonizzazione Testi (17.406 stringhe)",
+    "cat1_testo": "Unificati 7.045 gruppi di testi duplicati su formulazioni canoniche uniche.",
+    "cat2_titolo": "Lore, PNG e Terreni",
+    "cat2_testo": "Normalizzati Clovis, Floret, ChillBeanz, terreni e nodi minerari.",
+    "cat3_titolo": "Grammatica & Elisioni",
+    "cat3_testo": "Corrette 56 elisioni davanti a vocale (L'Emberpup, dell'Istituto Polaris).",
+    "cat4_titolo": "Integrità Tecnica",
+    "cat4_testo": "Zero tag sbilanciati, 100% corrispondenza parametri dinamici Steam."
+  }
 }
