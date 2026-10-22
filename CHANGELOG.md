@@ -4,6 +4,26 @@ Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **A
 
 ---
 
+## [1.1.0] - 2026-10-22
+
+### 🔬 Controllo Globale Riga per Riga con Database Steam (17.406 Perfezionamenti)
+Confronto filologico ed esaustivo di tutte le 112.418 righe di gioco direttamente con il dump estratto dai file di gioco Steam (`NewTextMap_en.json` e `Compress_en.bin`) e i sorgenti originali (`NewTextMap_zh_CN.json`):
+
+- **Armonizzazione di Massa dei Testi Duplicati (17.393 righe sincronizzate)**:
+  - Eliminata la dispersione generata da traduzioni automatiche incoerenti su **7.045 gruppi di testi identici**. Ogni stringa ripetuta nel gioco (descrizioni di forzieri, uova di Aniimo, missioni secondarie, avvisi HUD, requisiti di livello) ora impiega la medesima formulazione italiana certificata.
+  - Sincronizzate decine di colture e materiali (es. *Grano variopinto gigante*, *Minerale di rame pregiato*).
+  - Unificata la dicitura delle lavorazioni (*Lavorazione della dimora* al posto di *Lavorazione domestica* / *Lavorazione della Casa*).
+  - Normalizzate le formule di schiusa uova (*Incubatrici dell'Avamposto* e *Incubatrici della Dimora*).
+- **Risoluzione Voci Residue in Inglese**:
+  - *Sea of Flowers* tradotto ovunque in **`Mare di Fiori`** (11 istanze residue).
+  - *Drop the Beat* localizzato in **`A ritmo di musica`**.
+- **Coerenza Assoluta dei Nomi di Entità & Bottoni**:
+  - Unificati i negozi evento (*Negozio Luna del Raccolto* eliminando *Vendemmia* e *Mietitura*).
+  - Standardizzati i titoli e ruoli dei personaggi (*Cecelia Veterana*, *Loulla Senior*, *Budsquire Cantastorie*).
+  - Risolti i pulsanti di navigazione (*Indietro* per il ritorno a menu, distinguendolo dal parametro anatomico *Schiena*).
+
+---
+
 ## [1.0.1] - 2026-10-19
 
 ### 🌟 Revisione Terminologica Specialistica Globale (968 Perfezionamenti)

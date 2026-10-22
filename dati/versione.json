@@ -1,18 +1,9 @@
 {
-  "versione_traduzione": "1.0.9",
-  "build_gioco": "3746914",
-  "data_rilascio": "2026-10-22",
-  "voci": 112418,
-  "tsv_md5": "e41c4179e8ea911e955441b5b2a75f8e",
-  "changelog_breve": "Audit Team di Agenti v1.0.9: 572 armonizzazioni forensi su Missioni, Progetti/Ricette e Combo di Combattimento.",
-  "changelog_dettagliato": {
-    "titolo": "Audit Team Specializzato v1.0.9 (572 Perfezionamenti)",
-    "descrizione": "Audit forense condotto da 3 subagenti specializzati su Nomi di Missioni, Progetti/Ricette e Combo di Combattimento.",
-    "cat1_titolo": "🗺️ Nomi Missioni, Capitoli & Tracciamento (313 fix)",
-    "cat1_testo": "• Coerenza Titoli vs Obiettivi: risolti i disallineamenti in cui il titolo della missione differiva dagli obiettivi di completamento ('Il camper portentoso' vs prodigioso, 'Vieni fuori, Floret' vs Fiorello, 'Regalo fortunato' vs Dono Fortunato, 'Casetta da sogno', 'Sussurro di Nostalgia').\n• Operazione: Furto d'Uova: armonizzate oltre 168 menzioni sparse tra titoli, obiettivi e collezionabili sulla denominazione canonica unica.\n• Serie e Prove: unificati 'Viaggio delle Prove' (20x da Cammino delle prove), 'Prova del Dr. Glass' (15x), 'Un viaggio profumato' e corretta la traduzione della 'Foresta delle Stelle Cadenti'.\n• Titoli di Viaggio: corretta l'inversione 'La Leggenda di Nebbia e Luce' (era Luce e Nebbia), 'Giuramento Vincolante' e 'Arcobaleno della Terra'.",
-    "cat2_titolo": "📐 Progetti, Schemi, Ricette & Dimora (193 fix)",
-    "cat2_testo": "• Progetti Arredo vs Mobili Creati: allineati i nomi dei progetti a quelli dei mobili risultanti ('Progetto mobile: Estate fresca - Cocco rinfrescante', 'Latte con zampetta', 'Luna del Raccolto', 'Misto di frutta', 'Pioggia di stelle').\n• Ricette di Cucina: risolto il grave calco 'Pepe Lun Completo' e 'Peperoncino lunacera' nel corretto 'Peperoncino della luna crescente'; corretto 'Ravanello Lunaguazza/Rugialuna' in 'Ravanello rugiadaluna'; allineati 'Hot pot umbral' e 'Porridge di ginseng'.\n• Postazioni di Fabbricazione: corretti i refusi ortografici 'Tavolo fonolfattivo' (eliminati i doppi Fonolffattivo e Fonolfaattivo); unificate oltre 15 varianti di 'Barile di fermentazione rimbalzante' (addio all'improprio fusto di birra!); standardizzati 'Fornello acchiappatutto' e 'Banco da lavoro'.\n• Formule e Dimora: corretta la 'Ricetta rapida: Aromatite' (era stata scambiata per la professione 'Aromatista') ed eliminato il residuo inglese 'nella tua Home' -> 'nella tua Dimora'.",
-    "cat3_titolo": "⚔️ Combo di Combattimento, Sinergie & QTE (68 fix)",
-    "cat3_testo": "• Combo Supreme e Catene: corretta la clamorosa traduzione 'Combo Supremazia cooperativa' in 'Combo Suprema cooperativa'; eliminati i calchi spagnoli 'affinché lancino le loro Ultime' -> 'le loro Supreme'; uniformata 'Suprema a Catena' su 7 varianti discordanti.\n• Refusi Farseschi di Combattimento: corretto il grottesco 'Spara una catena di Fulmini dal forziere per ATT il bersaglio' in 'Spara una catena di fulmini dal petto per attaccare il bersaglio'.\n• Sinergia vs Legame: risolta la collisione concettuale tra 'Rimani sempre in Legame' (Twine) e l'Addestramento alla Sinergia (Synergy Training dei Cozite).\n• Risorse di Combattimento: risolta la collisione critica tra Punti Suprema 'PU' (Ultimate Points) e 'PS' (Punti Salute); standardizzate statistiche 'ATT F.' e 'ATT M.' nei QTE."
-  }
+  "versione": "1.1.0",
+  "build": "3746914",
+  "data": "2026-10-22",
+  "voci": "112418",
+  "voci_fmt": "112.418",
+  "tsv_md5": "cee803f111869812853dd22c8f8303c6",
+  "changelog": "Controllo riga per riga globale con Steam: armonizzate 17406 incongruenze terminologiche e tradotte voci residue."
 }
