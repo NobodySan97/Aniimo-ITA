@@ -1,9 +1,9 @@
 {
-  "versione": "1.1.2",
+  "versione": "1.1.3",
   "build": "3746914",
   "data": "2026-10-22",
   "voci": "112418",
   "voci_fmt": "112.418",
-  "tsv_md5": "cfab453a41d2b0f6e47133e18fd5d16b",
-  "changelog": "Perfezionamento al 100%: armonizzazione collezione Luna del Raccolto, acconciature, brand ChillBeanz e pulizia totale."
+  "tsv_md5": "f27c7c5a31c631294aadb759e6221167",
+  "changelog": "Perfezionamento grammaticale fonotattico: corrette tutte le 56 elisioni di articoli determinativi e preposizioni articolate (L'Emberpup, dell'Istituto Polaris)."
 }

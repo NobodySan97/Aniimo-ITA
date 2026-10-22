@@ -4,6 +4,15 @@ Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **A
 
 ---
 
+## [1.1.3] - 2026-10-22
+
+### ✍️ Perfezionamento Fonotattico & Grammaticale (56 Correzioni Mirate)
+- **Elisione Articoli & Preposizioni Articolate davanti a Vocale**:
+  - Unificata la serie di missioni su **`L'Emberpup più forte`** e tutte le 39 menzioni sparse (corretto l'antiestetico *"Il Emberpup"*, *"del Emberpup"*, *"con il Emberpup"* in **`l'Emberpup`**, **`dell'Emberpup`**, **`con l'Emberpup`**).
+  - Normalizzate 17 menzioni dell'istituto scientifico di gioco su **`L'Istituto Polaris`**, **`dell'Istituto Polaris`** e **`dall'Istituto Polaris`** (eliminato *"Il Istituto"*, *"del Istituto"*, *"dal Istituto"*).
+
+---
+
 ## [1.1.2] - 2026-10-22
 
 ### 💎 Certificazione di Qualità Totale al 100% (Verifica Esaustiva Rigorosa)
