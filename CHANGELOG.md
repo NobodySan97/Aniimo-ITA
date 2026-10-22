@@ -4,6 +4,21 @@ Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **A
 
 ---
 
+## [1.1.5] - 2026-10-22
+
+### ⚔️ Fix Compilatore I18N, Olo-Battaglie & Armonizzazione Boss Omega
+- **Correzione Critica Validazione I18N (Unity LanguageImporter)**:
+  - Risolto il bug nel compilatore binario AniimoFastPacker in cui l'header di versione uint32 (4 byte) non veniva scritto in cima a Compress_en.bin.
+  - Questo disallineamento provocava il fallimento di LanguageImporter:ValidateVersion (json=1792149800, bin=1886547789), bloccando l'importazione corretta delle risorse localizzate e impedendo la visualizzazione dell'ologramma/modello del boss **Omega Sherro** nella schermata delle Olo-Battaglie (Simulazione Olo-Battaglia).
+  - Ora l'header binario a 4-byte rispecchia fedelmente _version del file json in tutte le installazioni (Steam e Pawprint).
+
+- **Armonizzazione Completa Boss Olo-Battaglie & Serie Omega**:
+  - Uniformata la nomenclatura di tutti i tre boss attivi delle Olo-Battaglie in formato canonico: **Omega Sherro**, **Omega Infergon** e **Omega Tucking**.
+  - Risolti i segnaposto temporanei (Drago loto (segnaposto) / Lotus (Placeholder) Dragon, ID 1669901594 e 2133940225) mappandoli a **Omega Sherro**.
+  - Invertite tutte le 34 occorrenze residue della serie boss (da *Infergon Omega* a **Omega Infergon**, da *Tucking Omega* a **Omega Tucking**, da *Glynsera Omega* a **Omega Glynsera**, da *Helgon Omega* a **Omega Helgon**, da *Sherro Omega anziano* a **Anziano Omega Sherro**).
+
+---
+
 ## [1.1.4] - 2026-10-22
 
 ### ⚔️ Allineamento Totale Missioni Secondarie, Atti & Lore Originale Steam

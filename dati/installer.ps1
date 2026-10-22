@@ -102,6 +102,12 @@ public static class AniimoFastPacker {
 
         var dedup = new Dictionary<string, int[]>(sortedKeys.Count, StringComparer.Ordinal);
         var msBlob = new MemoryStream(enBlob.Length + 1024 * 1024);
+
+        uint vNum = 0;
+        uint.TryParse(version, out vNum);
+        byte[] vBytes = BitConverter.GetBytes(vNum);
+        msBlob.Write(vBytes, 0, 4);
+
         var sbMap = new StringBuilder(6 * 1024 * 1024);
         sbMap.Append("{\n    \"_count\": ").Append(sortedKeys.Count).Append(",\n    \"_version\": ").Append(version);
 
