@@ -318,13 +318,13 @@ function Save-InstallerConfig([string]$SavedGameDir) {
 
 function Get-TsvMetadata([string]$PathToTsv) {
     $meta = [pscustomobject]@{
-        versione  = '1.1.4'
+        versione  = '1.1.5'
         build     = '3746914'
         data      = '2026-10-22'
         voci      = '112418'
         voci_fmt  = '112.418'
-        tsv_md5   = 'e63bac40beed665e116dd9792f4ae7f7'
-        changelog = 'Controllo totale Steam: allineamento missioni secondarie, atti Dimora, Eolo, Spada del Coraggio, Omega Sherro e armonizzazione cluster.'
+        tsv_md5   = 'f07167fd3a788bfd7d897bbd655c3a82'
+        changelog = 'Armonizzazione boss Olo-Battaglie: Omega Sherro (risolto Drago loto segnaposto), Omega Infergon, Omega Tucking, Omega Helgon e Omega Glynsera.'
     }
     # Lettura ultra-rapida da versione.json se presente
     if (Test-Path -LiteralPath $VersionJsonPath) {
