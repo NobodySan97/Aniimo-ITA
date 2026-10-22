@@ -795,6 +795,46 @@ function Get-GameBuild([string]$TargetDir) {
     return 'Sconosciuta'
 }
 
+function Get-AniimoBaseLuaFiles([string]$TargetDir) {
+    $buildNum = Get-GameBuild $TargetDir
+    # 1. Controlla prima se PawPrint o il patcher ha scaricato hotfix in cvs\res\patchv2\lua\ver\<build>
+    if ($buildNum -and $buildNum -ne 'Sconosciuta') {
+        $patchXdf = Join-Path $TargetDir "Aniimo_Data\cvs\res\patchv2\lua\ver\$buildNum\LuaScripts.xdf"
+        $patchXdt = Join-Path $TargetDir "Aniimo_Data\cvs\res\patchv2\lua\ver\$buildNum\LuaScripts.xdt"
+        if ((Test-Path -LiteralPath $patchXdf) -and (Test-Path -LiteralPath $patchXdt)) {
+            return [pscustomobject]@{
+                Xdf   = $patchXdf
+                Xdt   = $patchXdt
+                Build = $buildNum
+            }
+        }
+    }
+    # 2. Scansione cartelle hotfix patchv2 per la build piu' recente
+    $patchVerDir = Join-Path $TargetDir 'Aniimo_Data\cvs\res\patchv2\lua\ver'
+    if (Test-Path -LiteralPath $patchVerDir) {
+        $subDirs = Get-ChildItem -LiteralPath $patchVerDir -Directory -ErrorAction SilentlyContinue | Sort-Object { [int]($_.Name -replace '\D','') } -Descending
+        foreach ($sd in $subDirs) {
+            $candXdf = Join-Path $sd.FullName 'LuaScripts.xdf'
+            $candXdt = Join-Path $sd.FullName 'LuaScripts.xdt'
+            if ((Test-Path -LiteralPath $candXdf) -and (Test-Path -LiteralPath $candXdt)) {
+                return [pscustomobject]@{
+                    Xdf   = $candXdf
+                    Xdt   = $candXdt
+                    Build = $sd.Name
+                }
+            }
+        }
+    }
+    # 3. Fallback standard su StreamingAssets (usato da Steam / installazioni dirette)
+    $saXdf = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\lua\LuaScripts.xdf'
+    $saXdt = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\lua\LuaScripts.xdt'
+    return [pscustomobject]@{
+        Xdf   = $saXdf
+        Xdt   = $saXdt
+        Build = $buildNum
+    }
+}
+
 function Get-ZipEntryMd5([string]$ZipPath, [string]$EntryName) {
     if (-not (Test-Path -LiteralPath $ZipPath)) { return $null }
     try {
@@ -833,16 +873,15 @@ function Get-TranslationStatus([string]$TargetDir, $CurrentTsvMeta) {
         }
     }
 
-    $saLuaDir  = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\lua'
-    $saXdf     = Join-Path $saLuaDir 'LuaScripts.xdf'
-    $saXdt     = Join-Path $saLuaDir 'LuaScripts.xdt'
+    $baseFiles = Get-AniimoBaseLuaFiles $TargetDir
+    $saXdf     = $baseFiles.Xdf
+    $saXdt     = $baseFiles.Xdt
+    $buildNum  = $baseFiles.Build
     $cvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\cvs\res\lua'
     $cvsXdf    = Join-Path $cvsLuaDir 'LuaScripts.xdf'
     $cvsBin    = Join-Path $cvsLuaDir 'LuaScripts\Data\I18N\Compress_en.bin'
     $cacheFile = Join-Path $cvsLuaDir 'LuaCacheVer.txt'
     $metaFile  = Join-Path $cvsLuaDir 'aniimo_ita_meta.json'
-
-    $buildNum  = Get-GameBuild $TargetDir
     $saXdtLen  = (Get-Item -LiteralPath $saXdt).Length
     $saXdtMd5  = Get-Md5File $saXdt
     $expectedCacheVer = "1.0.$buildNum,$saXdtLen,$saXdtMd5"
@@ -1023,9 +1062,10 @@ function Invoke-TranslationInstall([string]$TargetDir, $Meta, [scriptblock]$OnPr
         throw "File dizionario mancante: $TsvPath"
     }
 
-    $saLuaDir  = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\lua'
-    $saXdf     = Join-Path $saLuaDir 'LuaScripts.xdf'
-    $saXdt     = Join-Path $saLuaDir 'LuaScripts.xdt'
+    $baseFiles = Get-AniimoBaseLuaFiles $TargetDir
+    $saXdf     = $baseFiles.Xdf
+    $saXdt     = $baseFiles.Xdt
+    $buildNum  = $baseFiles.Build
     $cvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\cvs\res\lua'
     $cvsI18n   = Join-Path $cvsLuaDir 'LuaScripts\Data\I18N'
     $cvsData   = Join-Path $cvsLuaDir 'LuaScripts\Common\Data'
@@ -1129,15 +1169,16 @@ function Invoke-TranslationInstall([string]$TargetDir, $Meta, [scriptblock]$OnPr
 }
 
 function Invoke-TranslationRestore([string]$TargetDir, [scriptblock]$OnProgress) {
-    $saLuaDir  = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\lua'
-    $saXdf     = Join-Path $saLuaDir 'LuaScripts.xdf'
-    $saXdt     = Join-Path $saLuaDir 'LuaScripts.xdt'
+    $baseFiles = Get-AniimoBaseLuaFiles $TargetDir
+    $saXdf     = $baseFiles.Xdf
+    $saXdt     = $baseFiles.Xdt
+    $buildNum  = $baseFiles.Build
     $cvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\cvs\res\lua'
     $cvsI18n   = Join-Path $cvsLuaDir 'LuaScripts\Data\I18N'
     $cvsData   = Join-Path $cvsLuaDir 'LuaScripts\Common\Data'
     $metaFile  = Join-Path $cvsLuaDir 'aniimo_ita_meta.json'
 
-    if ($OnProgress) { & $OnProgress 30 "Ripristino archivi originali da StreamingAssets..." }
+    if ($OnProgress) { & $OnProgress 30 "Ripristino archivi originali della build $buildNum..." }
     New-Item -ItemType Directory -Path $cvsI18n -Force | Out-Null
     New-Item -ItemType Directory -Path $cvsData -Force | Out-Null
 
@@ -2556,7 +2597,7 @@ function Initialize-DictionaryData {
     Invoke-UiRefresh
 
     $saXdf = if ($script:CurrentGameDir) {
-        Join-Path $script:CurrentGameDir 'Aniimo_Data\StreamingAssets\cvs\res\lua\LuaScripts.xdf'
+        (Get-AniimoBaseLuaFiles $script:CurrentGameDir).Xdf
     } else { '' }
 
     if ($saXdf -and (Test-Path -LiteralPath $saXdf) -and (Test-Path -LiteralPath $TsvPath)) {

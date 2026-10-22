@@ -6,7 +6,12 @@ Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **A
 
 ## [1.1.5] - 2026-10-22
 
-### ⚔️ Fix Compilatore I18N, Olo-Battaglie & Armonizzazione Boss Omega
+### ⚔️ Fix Compilatore I18N, Supporto PawPrint Launcher & Armonizzazione Boss Omega
+- **Supporto Nativo Architettura PawPrint Launcher (Hotfix patchv2)**:
+  - Risolto un disallineamento critico con il client PawPrint (es. installato su disco D: o cartelle personalizzate): PawPrint mantiene la build di base nel percorso DVD StreamingAssets (build 3584014) e distribuisce gli aggiornamenti in Aniimo_Data\cvs\res\patchv2\lua\ver\3746914\.
+  - In precedenza l'installer rigenerava l'archivio leggendo da StreamingAssets, provocando inavvertitamente il downgrade dei dati alla build 3584014; ciò causava la scomparsa dell'ologramma/modello 3D e delle stelle di **Omega Sherro** e la visualizzazione degli ID numerici grezzi 1924385647 e 1242312851 al posto di **Omega Infergon** e **Omega Tucking**.
+  - Ora l'installer (installer.ps1) rileva automaticamente gli archivi hotfix aggiornati in patchv2, garantendo perfetta compatibilità e integrità al 100% sia su Steam che su PawPrint.
+
 - **Correzione Critica Validazione I18N (Unity LanguageImporter)**:
   - Risolto il bug nel compilatore binario AniimoFastPacker in cui l'header di versione uint32 (4 byte) non veniva scritto in cima a Compress_en.bin.
   - Questo disallineamento provocava il fallimento di LanguageImporter:ValidateVersion (json=1792149800, bin=1886547789), bloccando l'importazione corretta delle risorse localizzate e impedendo la visualizzazione dell'ologramma/modello del boss **Omega Sherro** nella schermata delle Olo-Battaglie (Simulazione Olo-Battaglia).
