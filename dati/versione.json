@@ -1,20 +1,18 @@
 {
-  "versione_traduzione": "1.0.8",
+  "versione_traduzione": "1.0.9",
   "build_gioco": "3746914",
-  "data_rilascio": "2026-10-21",
+  "data_rilascio": "2026-10-22",
   "voci": 112418,
-  "tsv_md5": "936f189d33606d253982e851fd9c88ad",
-  "changelog_breve": "Audit Forense Rigoroso Ogni Riga v1.0.8: 300+ armonizzazioni (Statistiche DIF F./DIF M./PS/Vigore, Boss Tucking, Nightwolf, Camper e Interazioni UI).",
+  "tsv_md5": "e41c4179e8ea911e955441b5b2a75f8e",
+  "changelog_breve": "Audit Team di Agenti v1.0.9: 572 armonizzazioni forensi su Missioni, Progetti/Ricette e Combo di Combattimento.",
   "changelog_dettagliato": {
-    "titolo": "Audit Forense Linea per Linea Steam EN v1.0.8 (300+ Perfezionamenti)",
-    "descrizione": "Scansione sistematica di tutte le 112.418 righe a confronto con i dati binari di Steam.",
-    "cat1_titolo": "⚔️ Parametri e Statistiche di Combattimento (97 fix)",
-    "cat1_testo": "• Difesa Fisica: unificate 32 voci residue di DIF P., DEF P. e DEF F. nel termine canonico 'DIF F.'.\n• Difesa Magica: standardizzate le voci DEF M. su 'DIF M.'.\n• Punti Salute (PS): eliminate tutte le 56 occorrenze di 'PV' uniformandole a 'PS' e risolto il bisticcio semantico 'PV, PE e PS' con 'PS, PE e Vigore'.\n• Vigore (SP): standardizzati 5 riferimenti spuri da 'SP' a 'Vigore'.\n• Attacco: corretto l'ultimo residuo 'l'ATK' in 'l'ATT'.",
-    "cat2_titolo": "🌿 Boss, Creature e Traduzioni Erranti (88 fix)",
-    "cat2_testo": "• Boss Tucking: eliminate le aberranti traduzioni letterali dal verbo inglese (Rimboccare, Rimboccamento, Rimboccando, Tuckeggiare, Barba rimboccata) ripristinando il nome ufficiale 'Tucking' e 'Barba di Tucking'.\n• Ortografia Tucking: uniformate oltre 70 occorrenze tronche 'Tuckin' (senza g) alla forma canonica corretta 'Tucking'.\n• Nightwolf: eliminate le forme spurie (Luporotante, Lupanotte, Lupo della notte, Luporoccia notturno) uniformando la specie a 'Nightwolf'.",
-    "cat3_titolo": "🚐 Camper, Housing & Dimora (38 fix)",
-    "cat3_testo": "• Risoluzione 'VR': corrette 10 stringhe in cui l'acronimo spagnolo/inglese RV era stato maldestramente reso con 'VR' (Realtà Virtuale!), riallineandolo al 'Camper' (Costruttore del camper, Parcheggio camper, Livello del camper).\n• Negozi & Ordini: unificate tutte le occorrenze residue di Negozio della Casa su 'Negozio della Dimora' (21x) e 'Ordini della Dimora' (7x).",
-    "cat4_titolo": "🔘 Pulsanti UI, Fiori & Interazioni del Mondo (83 fix)",
-    "cat4_testo": "• Fioriture: tradotte 22 occorrenze rimaste in inglese come 'Bloom' in 'Fioritura'.\n• Foto e Scatti: standardizzati 10 residui di 'Snap' (Schiocco / Scatto felino) sul canonico 'Scatto'.\n• Ecologia e Nutrimento: unificate 41 occorrenze del tasto interazione 'Nurture' sul termine canonico 'Nutri'.\n• UI & Navigazione: uniformati 'Visualizza info' (8x), 'Visualizza mappa' (25x) e 'Esci dalla caverna' (23x)."
+    "titolo": "Audit Team Specializzato v1.0.9 (572 Perfezionamenti)",
+    "descrizione": "Audit forense condotto da 3 subagenti specializzati su Nomi di Missioni, Progetti/Ricette e Combo di Combattimento.",
+    "cat1_titolo": "🗺️ Nomi Missioni, Capitoli & Tracciamento (313 fix)",
+    "cat1_testo": "• Coerenza Titoli vs Obiettivi: risolti i disallineamenti in cui il titolo della missione differiva dagli obiettivi di completamento ('Il camper portentoso' vs prodigioso, 'Vieni fuori, Floret' vs Fiorello, 'Regalo fortunato' vs Dono Fortunato, 'Casetta da sogno', 'Sussurro di Nostalgia').\n• Operazione: Furto d'Uova: armonizzate oltre 168 menzioni sparse tra titoli, obiettivi e collezionabili sulla denominazione canonica unica.\n• Serie e Prove: unificati 'Viaggio delle Prove' (20x da Cammino delle prove), 'Prova del Dr. Glass' (15x), 'Un viaggio profumato' e corretta la traduzione della 'Foresta delle Stelle Cadenti'.\n• Titoli di Viaggio: corretta l'inversione 'La Leggenda di Nebbia e Luce' (era Luce e Nebbia), 'Giuramento Vincolante' e 'Arcobaleno della Terra'.",
+    "cat2_titolo": "📐 Progetti, Schemi, Ricette & Dimora (193 fix)",
+    "cat2_testo": "• Progetti Arredo vs Mobili Creati: allineati i nomi dei progetti a quelli dei mobili risultanti ('Progetto mobile: Estate fresca - Cocco rinfrescante', 'Latte con zampetta', 'Luna del Raccolto', 'Misto di frutta', 'Pioggia di stelle').\n• Ricette di Cucina: risolto il grave calco 'Pepe Lun Completo' e 'Peperoncino lunacera' nel corretto 'Peperoncino della luna crescente'; corretto 'Ravanello Lunaguazza/Rugialuna' in 'Ravanello rugiadaluna'; allineati 'Hot pot umbral' e 'Porridge di ginseng'.\n• Postazioni di Fabbricazione: corretti i refusi ortografici 'Tavolo fonolfattivo' (eliminati i doppi Fonolffattivo e Fonolfaattivo); unificate oltre 15 varianti di 'Barile di fermentazione rimbalzante' (addio all'improprio fusto di birra!); standardizzati 'Fornello acchiappatutto' e 'Banco da lavoro'.\n• Formule e Dimora: corretta la 'Ricetta rapida: Aromatite' (era stata scambiata per la professione 'Aromatista') ed eliminato il residuo inglese 'nella tua Home' -> 'nella tua Dimora'.",
+    "cat3_titolo": "⚔️ Combo di Combattimento, Sinergie & QTE (68 fix)",
+    "cat3_testo": "• Combo Supreme e Catene: corretta la clamorosa traduzione 'Combo Supremazia cooperativa' in 'Combo Suprema cooperativa'; eliminati i calchi spagnoli 'affinché lancino le loro Ultime' -> 'le loro Supreme'; uniformata 'Suprema a Catena' su 7 varianti discordanti.\n• Refusi Farseschi di Combattimento: corretto il grottesco 'Spara una catena di Fulmini dal forziere per ATT il bersaglio' in 'Spara una catena di fulmini dal petto per attaccare il bersaglio'.\n• Sinergia vs Legame: risolta la collisione concettuale tra 'Rimani sempre in Legame' (Twine) e l'Addestramento alla Sinergia (Synergy Training dei Cozite).\n• Risorse di Combattimento: risolta la collisione critica tra Punti Suprema 'PU' (Ultimate Points) e 'PS' (Punti Salute); standardizzate statistiche 'ATT F.' e 'ATT M.' nei QTE."
   }
 }
