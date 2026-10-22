@@ -323,8 +323,8 @@ function Get-TsvMetadata([string]$PathToTsv) {
         data      = '2026-10-22'
         voci      = '112418'
         voci_fmt  = '112.418'
-        tsv_md5   = '8471262cdad8739618ec9d96729bc33a'
-        changelog = 'Controllo totale Steam: allineamento missioni secondarie, atti Dimora, Eolo, Spada del Coraggio e armonizzazione cluster.'
+        tsv_md5   = 'e63bac40beed665e116dd9792f4ae7f7'
+        changelog = 'Controllo totale Steam: allineamento missioni secondarie, atti Dimora, Eolo, Spada del Coraggio, Omega Sherro e armonizzazione cluster.'
     }
     # Lettura ultra-rapida da versione.json se presente
     if (Test-Path -LiteralPath $VersionJsonPath) {
