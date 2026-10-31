@@ -1,0 +1,25 @@
+{
+  "versione_traduzione": "1.2.3",
+  "versione": "1.2.3",
+  "build_gioco": "3857679",
+  "build": "3857679",
+  "data_rilascio": "2026-10-30",
+  "data": "2026-10-30",
+  "voci": "134274",
+  "voci_fmt": "134.274",
+  "tsv_md5": "0a4e2cc15f2f7e92f095659ffef68466",
+  "changelog_breve": "Allineamento alla build Steam 3857679 con revisione integrale del corpus: corretti 2 numeri di gameplay erronei, 12 tag rich-text rotti della Simulazione Olo-Battaglia, sprite di meteo ripristinato, marker residuo e frase duplicata rimossi, 2 frasi miste EN/IT completate, paragrafo 3 del Risveglio potenziale tradotto e 4 storie troncate alla nuova versione inglese. 134.274/134.274 voci attive, 0 fallback.",
+  "changelog": "Delta completo del nuovo inglese (build 3857679, _version 1793329842, 134.274 voci esatte) confrontato punto per punto con la traduzione. Corretti 2 errori di numeri di gameplay (ID 2103507442 e 2111964422: 25% e 15% non presenti nell'inglese, ripristinati 10%/15%/[10%]). Riparate 12 stringhe della Simulazione Olo-Battaglia con unità \"s\" finite dentro i tag rich-text e token customRichText alterati (durante)s>, 5ss, 21ss57403, param1→param4, 2122303→2122304). Eliminati i punti infilati interni a parole e tag dell'ID 1580660308 (bers.agli, <s.tyle, cus.tom, mas.s.imi). Ripristinato il nome risorsa sprite UI_Img_Weather_Thunderstorm. Rimossi il marker residuo \"<<<END>>}\" e una frase duplicata. Completato il paragrafo 3 (reimpostazione potenziale al livello 60) e riallineati 4 sottòrioni troncate da FunPlus nella nuova build, oltre a 2 a-capo di titoli batch. Rivedendo l'intero corpus (5.119 segnalazioni analizzate una per una) sono state completate 2 frasi miste EN/IT rimaste parzialmente in inglese (ID 1761194981 e 1838878505: la prima metà del testo era rimasta nella sorgente), tradotto il titolo di Rhoven → Rhaven il Profumiere, eliminato l'anglicismo «must-have» (2 ID) e rifinita la sotto-storia dell'Uovo di Iris. Validazione integrale su 134.274 coppie: 0 tag sbagliati, 0 cifre mancanti reali, 0 a-capo in disaccordo, 0 vuoti, 0 doppio escape. Il TSV contiene 3 ID in più (rimossi dal gioco da FunPlus) che il compilatore ignora automaticamente.",
+  "changelog_dettagliato": {
+    "titolo": "Delta build 3857679 (v1.2.3)",
+    "descrizione": "Confronto integrale del nuovo inglese della build 3857679 con la traduzione: numeri, tag rich-text, sprite, a-capo e contenuti troncati.",
+    "cat1_titolo": "Numeri di gameplay",
+    "cat1_testo": "ID 2103507442 e 2111964422 riportati ai valori dell'inglese (10% per 15 secondi, aumento a 15% / aumento del 10%): la traduzione conteneva 25% e 15% non presenti nel gioco. Verificate le altre 28 segnalazioni di cifre: tutte rese legittime con formati convertiti (orari AM/PM, date, \"terzo\" invece di \"3°\").",
+    "cat2_titolo": "Tag rich-text & token",
+    "cat2_testo": "Corrette 12 stringhe con l'unità \"s\" finita dentro i tag (durante)s>, 0.5ss, 5ss, 20ss, 8ss, 6s) e token riportati identici al nuovo inglese (param4, 2122304, buffConfigData). Ripristinato lo sprite meteorologico UI_Img_Weather_Thunderstorm. Il token delta della build vecchia (buffConfigData al posto di calcData,buff) è stato rimesso in linea con il canone corrente.",
+    "cat3_titolo": "Contenuti & tag di compilazione",
+    "cat3_testo": "Eliminati i punti interni alle parole dell'ID 1580660308, il marker \"<<<END>>}\" e la frase duplicata. Aggiunto il paragrafo 3 completo del Risveglio potenziale (reimpostazione al livello 60 con Carte di Reimpostazione del Potenziale ed Essenze Starcryst). Riallineate alle nuove versioni inglesi 4 sottòrioni troncate da FunPlus e 2 a-capo di titoli batch.",
+    "cat4_titolo": "Validazione & Integrità",
+    "cat4_testo": "Revisione completa su 134.274 coppie EN⇔IT: 0 tag diversi, 0 sprite tradotti, 0 cifre mancanti reali, 0 a-capo in disaccordo, nessuna differenza di punteggiatura finale, 0 vuoti, 0 doppio escape; le stringhe identiche rimaste sono legittime (sprite-glyph, stringhe di debug, toponimi canonici). TSV: UTF-8 senza BOM, LF, 9.096.672 byte, MD5 0a4e2cc15f2f7e92f095659ffef68466. Nessun file del gioco è stato modificato."
+  }
+}
