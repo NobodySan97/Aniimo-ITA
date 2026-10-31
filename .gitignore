@@ -1,0 +1,8 @@
+*.tmp
+*.zip
+dati/config.json
+config.json
+.DS_Store
+Thumbs.db
+Desktop.ini
+.opencode/

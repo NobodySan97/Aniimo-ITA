@@ -1,0 +1,25 @@
+{
+    "versione_traduzione":  "1.2.4",
+    "versione":  "1.2.4",
+    "build_gioco":  "3880756",
+    "build":  "3880756",
+    "data_rilascio":  "2026-11-04",
+    "data":  "2026-11-04",
+    "voci":  "134304",
+    "voci_fmt":  "134.304",
+    "tsv_md5":  "74ca03281637683bd97be8c3668300a3",
+    "changelog_breve":  "Allineamento alla build Steam 3880756: aggiunte 27 nuove chiavi (account Epic/Steam/WeGame/Heybox/TapTap, Sfide Elite Pathfinder, casse misteriose, Ambra Fuggitiva, Nuovo Aspetto, Collezione Lumin, Sogno di Fentuft, ecc.). 134.304 voci attive.",
+    "changelog":  "Delta della nuova build 3880756 (versione inglese _version 1793676870, 134.297 voci): aggiunte 27 nuove stringhe non presenti nella build precedente, tradotte integralmente in italiano. Rimosse 7 chiavi legacy dal gioco (lasciate nel TSV, ignorate dal compilatore). Totale TSV: 134.304 voci. MD5: 74ca03281637683bd97be8c3668300a3.",
+    "changelog_dettagliato":  {
+                                  "titolo":  "Delta build 3880756 (v1.2.4)",
+                                  "descrizione":  "Aggiunta supporto alla nuova build 3880756: 27 nuove chiavi tradotte (account Epic/Steam/WeGame/Heybox/TapTap, Sfide Elite Pathfinder, casse misteriose, Ambra Fuggitiva, Nuovo Aspetto, Collezione Lumin, Sogno di Fentuft, ecc.).",
+                                  "cat1_titolo":  "Nuove chiavi",
+                                  "cat1_testo":  "Aggiunte 27 nuove stringhe della build 3880756: account di login (Epic Games, Steam, WeGame, Heybox, TapTap) con messaggi di scollegamento, Sfide Elite dei Pathfinder, casse misteriose di Idyll, Ambra Fuggitiva, Ambra infusa Lumin, Nuovo Aspetto, Collezione Lumin, Sogno di Fentuft, statue antiche, Aiuta gli Aniimo, energia Prismana, Attiva il Ramo, Avventurati nelle rovine, Sfida i Pathfinder, Nuovo.",
+                                  "cat2_titolo":  "Copertura",
+                                  "cat2_testo":  "Totale TSV: 134.304 voci (134.297 attive nella build 3880756, 7 chiavi legacy rimosse dal gioco ma mantenute nel TSV). MD5: 74ca03281637683bd97be8c3668300a3. UTF-8 senza BOM, LF.",
+                                  "cat3_titolo":  "Compatibilita\u0027",
+                                  "cat3_testo":  "L\u0027installer rileva automaticamente la nuova build (3880756). Il confronto build e\u0027 disabilitato: l\u0027utente installa/aggiorna manualmente. Supporto Steam, Xbox App (PC Game Pass) e Pawprint.",
+                                  "cat4_titolo":  "Validazione",
+                                  "cat4_testo":  "27 nuove stringhe tradotte e verificate. Nessun tag rotto, nessun doppio escape. TSV: 9.101.693 byte, 134.304 record, 0 duplicati."
+                              }
+}

@@ -1,0 +1,51 @@
+======================================================================
+  ANIIMO - TRADUZIONE ITALIANA INTEGRALE
+  Traduzione v1.2.3 · Launcher v1.0.1 · Build 3857679 · 30/10/2026
+  Launcher & Patcher Leggero Universale (Steam · Xbox App · Pawprint)
+======================================================================
+
+COME INSTALLARE O AGGIORNARE LA TRADUZIONE:
+1. Assicurati che Aniimo sia chiuso.
+2. Fai doppio clic su "Installa Traduzione ITA.bat".
+3. Il launcher si avvierà rilevando automaticamente la cartella del
+   gioco e verificando lo stato della traduzione e della Build.
+4. Premi il pulsante "INSTALLA TRADUZIONE ITALIANA" in basso a destra
+   (l'operazione richiede circa 1,5 secondi).
+5. Premi "Avvia Aniimo" (oppure avvialo da Steam): il gioco partirà
+   subito in ITALIANO!
+
+DOPO UN AGGIORNAMENTO DI STEAM O DELLA TRADUZIONE:
+- Quando Steam rilascia una nuova patch per Aniimo o quando viene pubblicata
+  una nuova revisione della traduzione, ti basta riaprire il launcher.
+- Premi nuovamente "REINSTALLA / AGGIORNA TRADUZIONE": l'installer
+  ricompilerà al volo i testi italiani sui file aggiornati del gioco.
+- Questo installer NON sovrascrive né include vecchi script Lua o file
+  binari (pmdata.bin), garantendo compatibilità totale con qualsiasi patch.
+
+REGISTRO MODIFICHE (CHANGELOG) E GUIDA TECNICA:
+- Consulta la scheda "Changelog & Guida" all'interno del launcher (o il file
+  CHANGELOG.md incluso) per vedere l'elenco dettagliato dei miglioramenti
+  e delle correzioni terminologiche apportate in ogni revisione.
+
+DIZIONARIO BILINGUE INTERATTIVO (IT <-> EN):
+- Nella scheda "Dizionario IT <-> EN" del launcher puoi cercare in tempo
+  reale oltre 14.000 termini ufficiali (oggetti, abilità, luoghi e
+  creature) sia in italiano che in inglese, comodissimo per consultare
+  wiki e guide internazionali.
+
+AGGIORNAMENTO DIRETTO DA GITHUB:
+- Nella barra superiore del launcher, puoi cliccare in qualsiasi momento
+  su "Aggiorna Traduzione" per scaricare gli ultimi miglioramenti del file
+  traduzione direttamente da GitHub, senza dover riscaricare l'intero
+  archivio ZIP.
+- Il launcher usa il manifest locale versione.json e non rallenta l'avvio.
+  Se il manifest manca o è illeggibile, prova a recuperare automaticamente
+  da GitHub la versione e le note di rilascio.
+- Ogni aggiornamento verifica il manifest remoto e l'MD5 del TSV scaricato:
+  se i dati non coincidono, il file locale non viene sostituito.
+
+COME TORNARE ALL'INGLESE (RIPRISTINO):
+- Apri il launcher e premi il pulsante "Ripristina Inglese": i file
+  originali della tua build verranno ripristinati istantaneamente
+  senza dover verificare l'integrità dei file su Steam.
+======================================================================
