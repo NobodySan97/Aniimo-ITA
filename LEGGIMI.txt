@@ -1,6 +1,6 @@
 ======================================================================
   ANIIMO - TRADUZIONE ITALIANA INTEGRALE
-  Traduzione v1.2.3 · Launcher v1.0.1 · Build 3857679 · 30/10/2026
+  Traduzione v1.2.4 · Launcher v1.0.1 · Build 3880756 · 04/11/2026
   Launcher & Patcher Leggero Universale (Steam · Xbox App · Pawprint)
 ======================================================================
 

@@ -14,7 +14,7 @@ Il client Steam e' passato alla build **3880756** (versione inglese _version 179
 - **Ambra Fuggitiva**, **Ambra infusa Lumin**, **Nuovo Aspetto**, **Collezione Lumin**, **Sogno di Fentuft**. 
 - **Statue antiche**, **Aiuta gli Aniimo**, **energia Prismana**, **Attiva il Ramo**, **Avventurati nelle rovine**, **Sfida i Pathfinder**, **Nuovo**. 
 
-Totale TSV: **134.304 voci** (134.297 attive nella build 3880756 + 7 chiavi legacy rimosse dal gioco ma mantenute nel TSV). MD5: 74ca03281637683bd97be8c3668300a3. 
+Totale TSV: **134.304 voci** (134.297 attive nella build 3880756 + 7 chiavi legacy rimosse dal gioco ma mantenute nel TSV). TSV: **9.101.693 byte**, UTF-8 con BOM, LF. MD5: 74ca03281637683bd97be8c3668300a3. 
 
 ---
 

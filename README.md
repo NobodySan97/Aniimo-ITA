@@ -26,7 +26,7 @@
 
 ## 🌟 Caratteristiche Principali
 
-- 📜 **100% dei Testi Tradotti (134.274 stringhe attive)**: Storia principale, missioni secondarie, abilità, statistiche di combattimento, descrizioni oggetti, arredi, interfaccia utente e nomi ufficiali delle specie Aniimo.
+- 📜 **100% dei Testi Tradotti (134.304 stringhe attive)**: Storia principale, missioni secondarie, abilità, statistiche di combattimento, descrizioni oggetti, arredi, interfaccia utente e nomi ufficiali delle specie Aniimo.
 - 🚀 **Avvio Diretto in Italiano**: La traduzione va a sostituire lo slot lingua inglese (`en`), avviando il gioco immediatamente in italiano senza dover impostare o selezionare lingue secondarie nei menu.
 - ⚡ **Compilazione In-Memory C# (`AniimoFastPacker`)**:
   - Non sovrascrive né include file `.bin` o script `.lua` di vecchie versioni del gioco.
@@ -66,8 +66,8 @@ Tutte le modifiche, le revisioni terminologiche e i miglioramenti sono documenta
 
 | Parametro | Dettaglio |
 | :--- | :--- |
-| **Versione Traduzione** | **v1.2.3** (30 Ottobre 2026) |
-| **Voci Tradotte** | **134.304 su 134.304 attive** (100% copertura; 3 ID legacy ignorati dal compilatore) |
+| **Versione Traduzione** | **v1.2.4** (4 Novembre 2026) |
+| **Voci Tradotte** | **134.304 su 134.304 attive** (100% copertura; 7 ID legacy rimossi dal gioco e ignorati dal compilatore) |
 | **Nomi Creature Aniimo** | Nomi ufficiali preservati e allineati al canone |
 | **Piattaforme Supportate** | ✅ **Steam** · ✅ **Xbox App (PC Game Pass)** · ✅ **Client Pawprint** |
 | **Slot di Destinazione** | **Inglese (`en`)** → Avvio automatico in Italiano |

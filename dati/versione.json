@@ -16,7 +16,7 @@
                                   "cat1_titolo":  "Nuove chiavi",
                                   "cat1_testo":  "Aggiunte 27 nuove stringhe della build 3880756: account di login (Epic Games, Steam, WeGame, Heybox, TapTap) con messaggi di scollegamento, Sfide Elite dei Pathfinder, casse misteriose di Idyll, Ambra Fuggitiva, Ambra infusa Lumin, Nuovo Aspetto, Collezione Lumin, Sogno di Fentuft, statue antiche, Aiuta gli Aniimo, energia Prismana, Attiva il Ramo, Avventurati nelle rovine, Sfida i Pathfinder, Nuovo.",
                                   "cat2_titolo":  "Copertura",
-                                  "cat2_testo":  "Totale TSV: 134.304 voci (134.297 attive nella build 3880756, 7 chiavi legacy rimosse dal gioco ma mantenute nel TSV). MD5: 74ca03281637683bd97be8c3668300a3. UTF-8 senza BOM, LF.",
+                                  "cat2_testo":  "Totale TSV: 134.304 voci (134.297 attive nella build 3880756, 7 chiavi legacy rimosse dal gioco ma mantenute nel TSV). MD5: 74ca03281637683bd97be8c3668300a3. UTF-8 con BOM, LF.",
                                   "cat3_titolo":  "Compatibilita\u0027",
                                   "cat3_testo":  "L\u0027installer rileva automaticamente la nuova build (3880756). Il confronto build e\u0027 disabilitato: l\u0027utente installa/aggiorna manualmente. Supporto Steam, Xbox App (PC Game Pass) e Pawprint.",
                                   "cat4_titolo":  "Validazione",
