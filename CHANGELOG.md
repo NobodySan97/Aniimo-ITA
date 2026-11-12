@@ -2,6 +2,22 @@
 
 Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **Aniimo** sono documentati in questo file.
 
+## [1.2.5] - 2026-11-12
+
+### Allineamento alla build Steam 3934365 (nuove chiavi)
+
+Il client Steam e' passato alla build **3934365** (versione inglese _version 1794383957, **136.037 voci**). Aggiunte **1.740 nuove chiavi** non presenti nella build precedente, tradotte integralmente in italiano:
+
+- **Quest di Crescent Bay**: "Il Mare di Corallo dei Sogni" (Reefish) e "La Poesia della Rivoluzione di Squarrel" (Chompy), con dialoghi e obiettivi.
+- **Aniimo Dash**: modalita' corsa con i tracciati Greenfield Shallows, Gullcove Cliffs e Redrock Trail.
+- **Prismana Snapshots**: evento fotografico a fasi con tipi Sparkling Regolari/Speciali.
+- **Aniimo Affinity**: nuova feature (rinomina Aniimo, bonus alle abilita' Heal e Swoleshroom).
+- **Nuovi dialoghi ed eventi**: quest, voci NPC e testi di interfaccia.
+
+Rimosse **65 chiavi legacy aggiuntive** dal gioco (totale 72 legacy nel TSV, ignorate dal compilatore). Totale TSV: **136.109 voci** (136.037 attive + 72 legacy). TSV: **9.237.311 byte**, UTF-8 con BOM, LF. MD5: 69b7d0ed73a53302a93b79772c249b74.
+
+---
+
 ## [1.2.4] - 2026-11-04
 
 ### Allineamento alla build Steam 3880756 (nuove chiavi)
