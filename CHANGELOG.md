@@ -2,6 +2,18 @@
 
 Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **Aniimo** sono documentati in questo file.
 
+## [1.2.7] - 2026-11-14
+
+### Fix installer PawPrint (sincronizzazione percorsi)
+
+Il client PawPrint legge i dati di lingua da `Aniimo_Data\cvs\res\lua\` (percorso top-level), **non** da `Aniimo_Data\StreamingAssets\cvs\res\lua\`. L'installer scriveva la traduzione solo in `StreamingAssets`, quindi il gioco mostrava testo in inglese.
+
+- **Fix**: dopo l'installazione, l'installer ora copia automaticamente i file tradotti anche in `StreamingAssets\cvs\res\lua\`, così il gioco li trova indipendentemente dal percorso di lettura.
+- Nessuna modifica al TSV (MD5 invariato: aa3cc4bc62a78a7f2b45369dfb7e7c41).
+- Verificato funzionante su PawPrint: il gioco mostra testo in italiano.
+
+---
+
 ## [1.2.6] - 2026-11-14
 
 ### Supporto alla build 3937699 (canale PawPrint)

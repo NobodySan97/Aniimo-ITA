@@ -1,6 +1,6 @@
 {
-    "versione_traduzione":  "1.2.6",
-    "versione":  "1.2.6",
+    "versione_traduzione":  "1.2.7",
+    "versione":  "1.2.7",
     "build_gioco":  "3937699",
     "build":  "3937699",
     "data_rilascio":  "2026-11-14",
@@ -8,18 +8,18 @@
     "voci":  "136037",
     "voci_fmt":  "136.037",
     "tsv_md5":  "aa3cc4bc62a78a7f2b45369dfb7e7c41",
-    "changelog_breve":  "Supporto alla build 3937699 (Pawprint): corretto BOM stray nel TSV, traduzione persistente sul client Pawprint. 136.037 voci attive.",
-    "changelog":  "Allineamento alla build 3937699: il TSV include tutte le 136.037 stringhe attive (nessuna nuova chiave rispetto alla 3934365; 1 chiave precedentemente corrotta da BOM stray ripristinata). Rimossi 73 ID legacy. Corretto BOM spurio nella prima riga del blocco annesso. Totale TSV: 136.109 voci. MD5: aa3cc4bc62a78a7f2b45369dfb7e7c41. Supporto Pawprint: fix cvsLuaDir (preferisce StreamingAssets) e disabilitazione auto-update (patch_downlaod_enable=false) per evitare il repair automatico.",
+    "changelog_breve":  "Fix installer PawPrint: la traduzione viene sincronizzata anche in StreamingAssets (il gioco legge da entrambi i percorsi). Auto-update disabilitato per evitare il repair. 136.037 voci attive.",
+    "changelog":  "Fix per il client PawPrint: l'installer scriveva la traduzione solo in Aniimo_Data\\cvs\\res\\lua (percorso errato per il gioco). Ora sincronizza anche in Aniimo_Data\\StreamingAssets\\cvs\\res\\lua. Auto-update PawPrint disabilitato per evitare il repair automatico. Nessuna modifica al TSV (MD5 invariato: aa3cc4bc62a78a7f2b45369dfb7e7c41).",
     "changelog_dettagliato":  {
-                                  "titolo":  "Delta build 3937699 (v1.2.6)",
-                                  "descrizione":  "Supporto alla build 3937699 (canale Pawprint): il TSV copre tutte le 136.037 stringhe attive. Corretto BOM spurio nella prima riga del blocco annesso (chiave 269460978). Fix installer: cvsLuaDir preferisce StreamingAssets (Pawprint). Disabilitazione auto-update Pawprint per evitare il repair automatico.",
-                                  "cat1_titolo":  "Correzioni",
-                                  "cat1_testo":  "Rimosso BOM spurio nella prima riga del blocco annesso (chiave 269460978, 'Pulisci il disordine a casa dei vicini.'). Fix cvsLuaDir: preferisce StreamingAssets\\cvs\\res\\lua quando presente (risolve installazione su Pawprint). Disabilitazione patch_downlaod_enable (Pawprint) per bloccare il repair automatico.",
-                                  "cat2_titolo":  "Copertura",
-                                  "cat2_testo":  "Totale TSV: 136.109 voci (136.037 attive nella build 3937699, 73 chiavi legacy rimosse dal gioco ma mantenute nel TSV). MD5: aa3cc4bc62a78a7f2b45369dfb7e7c41. UTF-8 con BOM, LF.",
-                                  "cat3_titolo":  "Compatibilit\u00E0",
-                                  "cat3_testo":  "L\u0027installer rileva automaticamente la nuova build (3937699). Il confronto build \u00E8 disabilitato: l\u0027utente installa/aggiorna manualmente. Supporto Steam, Xbox App (PC Game Pass) e Pawprint. Fix per Pawprint: installazione su StreamingAssets e blocco auto-update.",
+                                  "titolo":  "Fix PawPrint (v1.2.7)",
+                                  "descrizione":  "Fix per il client PawPrint: l'installer ora sincronizza la traduzione in entrambi i percorsi (cvs\\res\\lua e StreamingAssets\\cvs\\res\\lua). Auto-update disabilitato per evitare il repair automatico.",
+                                  "cat1_titolo":  "Fix installer",
+                                  "cat1_testo":  "L'installer scriveva la traduzione solo in Aniimo_Data\\cvs\\res\\lua, ma il gioco PawPrint legge da entrambi i percorsi. Ora sincronizza anche in StreamingAssets\\cvs\\res\\lua. Fix cvsLuaDir: preferisce top-level cvs per PawPrint (ripristinato).",
+                                  "cat2_titolo":  "PawPrint",
+                                  "cat2_testo":  "Auto-update disabilitato (patch_downlaod_enable=false) per evitare il repair automatico. Allineamento versione (verlist.txt e res_save.json a 3937699). Lingua impostata su English (indice 3).",
+                                  "cat3_titolo":  "Copertura",
+                                  "cat3_testo":  "Nessuna modifica al TSV: 136.109 voci (136.037 attive + 73 legacy). MD5: aa3cc4bc62a78a7f2b45369dfb7e7c41. UTF-8 con BOM, LF.",
                                   "cat4_titolo":  "Validazione",
-                                  "cat4_testo":  "136.037 stringhe attive coperte, 0 duplicati, 0 chiavi mancanti. TSV: 9.237.308 byte, 136.109 record. BOM stray rimosso."
+                                  "cat4_testo":  "Traduzione verificata su PawPrint: il gioco mostra testo in italiano. Fix testato e confermato funzionante."
                               }
 }
