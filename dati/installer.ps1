@@ -1574,6 +1574,21 @@ function Invoke-TranslationInstall([string]$TargetDir, $Meta, [scriptblock]$OnPr
     } | ConvertTo-Json -Depth 3
     [System.IO.File]::WriteAllText((Join-Path $cvsLuaDir 'aniimo_ita_meta.json'), $installMeta, $utf8NoBom)
 
+    # Sincronizza la traduzione anche in StreamingAssets (PawPrint legge da entrambi i percorsi)
+    $saLuaDir = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\lua'
+    if ($cvsLuaDir -ne $saLuaDir -and (Test-Path -LiteralPath $saLuaDir)) {
+        foreach ($fn in @('LuaScripts.xdf','LuaScripts.xdt','LuaCacheVer.txt','aniimo_ita_meta.json')) {
+            $srcF = Join-Path $cvsLuaDir $fn
+            $dstF = Join-Path $saLuaDir $fn
+            if (Test-Path -LiteralPath $srcF) { Copy-Item -LiteralPath $srcF -Destination $dstF -Force }
+        }
+        if (Test-Path -LiteralPath (Join-Path $cvsLuaDir 'LuaScripts')) {
+            if (Test-Path -LiteralPath (Join-Path $saLuaDir 'LuaScripts')) { Remove-Item -LiteralPath (Join-Path $saLuaDir 'LuaScripts') -Recurse -Force }
+            Copy-Item -LiteralPath (Join-Path $cvsLuaDir 'LuaScripts') -Destination (Join-Path $saLuaDir 'LuaScripts') -Recurse -Force
+        }
+        if ($OnProgress) { & $OnProgress 98 "Sincronizzazione percorsi PawPrint..." }
+    }
+
     $fmtCount = Format-NumberDot ([string]$translatedCount)
     if ($OnProgress) { & $OnProgress 100 "Installazione completata ($fmtCount stringhe attive)." }
     return [pscustomobject]@{
