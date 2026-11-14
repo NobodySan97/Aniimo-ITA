@@ -2,6 +2,20 @@
 
 Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **Aniimo** sono documentati in questo file.
 
+## [1.2.6] - 2026-11-14
+
+### Supporto alla build 3937699 (canale PawPrint)
+
+Il client PawPrint ha rilasciato la build **3937699** (resource set). Allineamento della traduzione:
+- Nessuna nuova chiave rispetto alla 3934365: tutte le 136.037 stringhe attive coperte.
+- Corretto BOM spurio nella prima riga del blocco annesso (chiave `269460978`, "Pulisci il disordine a casa dei vicini.").
+- Fix installer: `cvsLuaDir` preferisce `StreamingAssets\cvs\res\lua` (risolve l'installazione su PawPrint, che scriveva per errore in `Aniimo_Data\cvs\res\lua`).
+- Disabilitazione auto-update PawPrint (`patch_downlaod_enable=false`) per evitare il repair automatico che cancellava la traduzione.
+
+Totale TSV: **136.109 voci** (136.037 attive + 73 legacy). TSV: **9.237.308 byte**, UTF-8 con BOM, LF. MD5: aa3cc4bc62a78a7f2b45369dfb7e7c41.
+
+---
+
 ## [1.2.5] - 2026-11-12
 
 ### Allineamento alla build Steam 3934365 (nuove chiavi)

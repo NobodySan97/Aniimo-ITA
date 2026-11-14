@@ -1153,10 +1153,15 @@ function Get-TranslationStatus([string]$TargetDir, $CurrentTsvMeta) {
     $buildNum  = $baseFiles.Build
     $saCvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\lua'
     $topCvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\cvs\res\lua'
-    $cvsLuaDir = if ((Test-Path -LiteralPath (Join-Path $saCvsLuaDir 'aniimo_ita_meta.json')) -or -not (Test-Path -LiteralPath $topCvsLuaDir)) {
+    # Il gioco legge sempre da StreamingAssets\cvs\res\lua: preferisci quel percorso
+    # se contiene LuaScripts.xdf. Usa il percorso top-level cvs solo se StreamingAssets
+    # non ha l'archivio (build Xbox in-place).
+    $cvsLuaDir = if (Test-Path -LiteralPath (Join-Path $saCvsLuaDir 'LuaScripts.xdf')) {
         $saCvsLuaDir
-    } else {
+    } elseif (Test-Path -LiteralPath (Join-Path $topCvsLuaDir 'LuaScripts.xdf')) {
         $topCvsLuaDir
+    } else {
+        $saCvsLuaDir
     }
     $cvsXdf    = Join-Path $cvsLuaDir 'LuaScripts.xdf'
     $cvsBin    = Join-Path $cvsLuaDir 'LuaScripts\Data\I18N\Compress_en.bin'
@@ -1461,10 +1466,15 @@ function Invoke-TranslationInstall([string]$TargetDir, $Meta, [scriptblock]$OnPr
     $buildNum  = $baseFiles.Build
     $saCvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\lua'
     $topCvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\cvs\res\lua'
-    $cvsLuaDir = if ((Test-Path -LiteralPath (Join-Path $saCvsLuaDir 'aniimo_ita_meta.json')) -or -not (Test-Path -LiteralPath $topCvsLuaDir)) {
+    # Il gioco legge sempre da StreamingAssets\cvs\res\lua: preferisci quel percorso
+    # se contiene LuaScripts.xdf. Usa il percorso top-level cvs solo se StreamingAssets
+    # non ha l'archivio (build Xbox in-place).
+    $cvsLuaDir = if (Test-Path -LiteralPath (Join-Path $saCvsLuaDir 'LuaScripts.xdf')) {
         $saCvsLuaDir
-    } else {
+    } elseif (Test-Path -LiteralPath (Join-Path $topCvsLuaDir 'LuaScripts.xdf')) {
         $topCvsLuaDir
+    } else {
+        $saCvsLuaDir
     }
     $cvsI18n   = Join-Path $cvsLuaDir 'LuaScripts\Data\I18N'
     $cvsData   = Join-Path $cvsLuaDir 'LuaScripts\Common\Data'
@@ -1590,10 +1600,15 @@ function Invoke-TranslationRestore([string]$TargetDir, [scriptblock]$OnProgress)
     $buildNum  = $baseFiles.Build
     $saCvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\lua'
     $topCvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\cvs\res\lua'
-    $cvsLuaDir = if ((Test-Path -LiteralPath (Join-Path $saCvsLuaDir 'aniimo_ita_meta.json')) -or -not (Test-Path -LiteralPath $topCvsLuaDir)) {
+    # Il gioco legge sempre da StreamingAssets\cvs\res\lua: preferisci quel percorso
+    # se contiene LuaScripts.xdf. Usa il percorso top-level cvs solo se StreamingAssets
+    # non ha l'archivio (build Xbox in-place).
+    $cvsLuaDir = if (Test-Path -LiteralPath (Join-Path $saCvsLuaDir 'LuaScripts.xdf')) {
         $saCvsLuaDir
-    } else {
+    } elseif (Test-Path -LiteralPath (Join-Path $topCvsLuaDir 'LuaScripts.xdf')) {
         $topCvsLuaDir
+    } else {
+        $saCvsLuaDir
     }
     $cvsI18n   = Join-Path $cvsLuaDir 'LuaScripts\Data\I18N'
     $cvsData   = Join-Path $cvsLuaDir 'LuaScripts\Common\Data'
@@ -1654,6 +1669,8 @@ function Invoke-TranslationRestore([string]$TargetDir, [scriptblock]$OnProgress)
 $TsvMeta = Get-TsvMetadata $TsvPath -RemoteFallback
 # Rilevamento cartella gioco differito al primo render della finestra (velocizza l'avvio)
 $ResolvedGameDir = $null
+if ($GameDir) { $ResolvedGameDir = Find-AniimoDir $GameDir }
+if (-not $ResolvedGameDir) { $ResolvedGameDir = Find-AniimoDir "" }
 
 if ($UpdateTsv) {
     [void](Update-TranslationTsvFromGitHub)
