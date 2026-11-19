@@ -3727,7 +3727,7 @@
 1106612042	Battaglia Élite
 1106614039	Le audizioni Glamour Star sono aperte! Vesti il tuo Aniimo in base al tema e punta a un punteggio alto per diventare la stella più brillante!
 1106618718	...Sei davvero senza speranza, vero?
-1106622347	H-Ha funzionato... Questa è... la forma suprema di risonanza del Triplo Movimento... Ah.
+1106622347	H-Ha funzionato... Ascolta: il <style=Hint_BgD>Triplo Movimento</style> risuona!
 1106627458	Pacco Berretto Lunatico
 1106627752	Oggetto Abilità Aniimo
 1106628479	Ha appreso un po' di Lore
@@ -5327,7 +5327,7 @@
 1120719930	Bene! Ti vedo sicuro di te. Verificherò se hai davvero capito tutto durante la sessione di domande e risposte più tardi.
 1120723781	Buoni o cattivi, tutti a nanna
 1120725790	Glameep
-1120727292	Se abbinato alla famiglia <style=Hint_BgL>Saws</style>, puoi usare l'abilitÃ  <style=Hint_BgL>Cavalca le onde</style> per sfrecciare tra le rapide.
+1120727292	Se abbinato alla famiglia <style=Hint_BgL>Saws</style>, puoi usare l'abilità <style=Hint_BgL>Cavalca le onde</style> per sfrecciare tra le rapide.
 1120740078	Stai lontano dalla montagna fumante: il gigante non è di buon umore.
 1120746848	12
 1120750753	Staccionata da giardino ispirata a Emberpup
@@ -6540,7 +6540,7 @@
 1131158131	Dopo aver mangiato, DIF P e DIF M per tutti gli Aniimo nel gruppo +5% per 10 min.
 1131169833	Io
 1131170034	Capo fotografo
-1131176754	Nessun <color=#8F56B>SSSS</color>risultato di ricerca</color>
+1131176754	Nessun risultato di ricerca per <color=#8F56B>SSSS</color>
 1131182412	Questo Prisma Antenato... no, il "Nucleo". Ha semplicemente assorbito... <style=Hint_BgD>acqua</style> all'interno?
 1131196057	Uovo di Dreaple perfetto
 1131197568	Punti di co-costruzione cumulativi personali
@@ -10355,7 +10355,7 @@
 1163605277	Termina volo.
 1163615535	Una brillante combinazione di mulino a vento, giostra e mulino, perfetta per il lavoro e un po' di divertimento. Raggiungi il livello camper <style=Hint_BgL>12</style> per passare alla modalità E.
 1163618231	Un attaccapanni per la tua Dimora.
-1163620639	1. Ogni giorno da <timeAutoChangeServer>18:00</timeAutoChangeServer> a <timeAutoChangeServer>02:00</timeAutoChangeServer> (ora locale), il giorno successivo, il bar di Astra ospita lo Star-Crossed Tea Party.\nDopo una lunga giornata di viaggio, perché non fermarti a rilassarti?\nChatta con i viaggiatori di passaggio, condividi le storie dell'avventura di oggi e potresti persino incontrare un nuovo alleato lungo il percorso.\n2. Rimani e interagisci durante il tea party per guadagnare monete Voxel e timbri stagionali.\nLimiti giornalieri:\nMoneta Voxel ×150\nTimbro stagionale ×40
+1163620639	1. Ogni giorno da <timeAutoChangeServer>18:00</timeAutoChangeServer> a <timeAutoChangeServer>02:00</timeAutoChangeServer> (ora locale), il giorno successivo, il bar di Astra ospita lo Star-Crossed Tea Party.\nDopo una lunga giornata di viaggio, perché non fermarti a rilassarti?\nChatta con i viaggiatori di passaggio, condividi le storie dell'avventura di oggi e potresti persino incontrare un nuovo alleato lungo il percorso.\n2. Rimani e interagisci durante il tea party per guadagnare monete Voxel e timbri stagionali.\nLimiti giornalieri:\nMoneta Voxel ×200\nTimbro stagionale ×40
 1163625885	[Segnaposto dialogo] Segnaposto dialogo Viaggio di Lita
 1163636544	Squadra singola
 1163649235	Come mai?
@@ -14080,7 +14080,7 @@
 1196772594	Non importa. Voglio comunque combattere. Lo vuole anche Lewis. E tu sei già sulla strada giusta.
 1196778118	Hummin 2
 1196781353	Oh, stelline! Allora prima stavo solo avendo le allucinazioni!
-1196785478	Mentre è attivo, applica <style=Hint_BgL><link="source_8291"><u>[Pennywisp Mark]</u></link></style> all'ultimo bersaglio attaccato dalla squadra e provoca <style=Hint_BgL><link="source_8288"><u>[Marchio Pennywisp]</u></link></style> per ripristinare ulteriormente l'energia <style=Hint_BgL><customRichText(calcData,buff, 2163301,param1,1)></style> Energia su se stessa ogni secondo.
+1196785478	Mentre è attivo, applica <style=Hint_BgL><link="source_8291"><u>[Pennywisp Mark]</u></link></style> all'ultimo bersaglio attaccato dalla squadra e provoca <style=Hint_BgL><link="source_8288"><u>[Marchio Pennywisp]</u></link></style> per ripristinare ulteriormente l'energia <style=Hint_BgL><customRichText(calcData,buff, 2163301,param4,1)></style> Energia su se stessa ogni secondo.
 1196796619	<style=Hint_BgL>Colture mutate</style> raramente prodotte dai campi agricoli nella tua Dimora. Possono essere raccolte o vendute nel negozio dedicato per un prezzo superiore.
 1196797179	Budsquire
 1196799327	Nome del mittente del regalo
@@ -15380,7 +15380,7 @@
 1208202698	Certamente! Sei il papà più, più, più potente di sempre!
 1208216304	Innevato
 1208216345	Parte inferiore
-1208226182	Esci dalla schermata di costruzione e vedrai che il terreno agricolo è stato posizionato nella tua Dimora.
+1208226182	Trascina il mobile per <style=Hint_BgL>regolarne la posizione</style>, quindi seleziona Conferma per posizionarlo.
 1208244489	Camper Liv. 4
 1208248046	Testa
 1208257938	Doppio
@@ -16516,7 +16516,7 @@
 1217562650	Phew... Finalmente sono riuscito a salvarlo. Per fortuna neanche tu ti sei fatto male.
 1217563704	(Guarda in lontananza)
 1217568330	Ombra del posatoio notturno
-1217568599	Guarda attentamente! L'Energia è importante tanto quanto i PS! Recupera l'Energia in tempo e il ciclo delle tue abilità principali non verrà interrotto!
+1217568599	Snoozy, <style=Hint_BgD>Onda di luce eterea</style>! Mantieni quell'energia in flusso così non perdiamo il ritmo!
 1217573602	Un seme dormiente in attesa di essere piantato, dove potrà dissetarsi con la rugiada più pura della stagione di luna piena.
 1217573655	Sunia
 1217602515	Ciao, Lainey. Sono qui per la valutazione della mia promozione.
@@ -22608,7 +22608,7 @@
 1270268474	Smettila di seguirmi!
 1270275415	...Il nostro spettacolo di mezzanotte si è concluso alla perfezione! Che squadra incredibile che formiamo!
 1270290060	Creazione completata!
-1270302174	BREAK ridotto subito dalle unitÃ  inferiori a Lv. 75
+1270302174	Riduce i danni BREAK subiti dalle unità inferiori a Lv. 75
 1270309264	Un profumiere che cammina per un sentiero notturno?
 1270311892	Ingresso di Jenny I
 1270312986	Nicola
@@ -30159,7 +30159,7 @@
 1334954306	Eh?! Ehi, non prendermi in giro così!
 1334957750	Ricompense Aumento Serie di Catture
 1334961013	Gentile amico, mi hai trovato e salvato, quindi devi essere davvero intelligente. So solo che troverai il miele e il vero ladro! Gorgoglia, forse c'è un indizio <style=Hint_BgD>su questa scatola</style>?
-1334961407	Dati di Prova 1111111112
+1334961407	Sblocca la funzione Rinomina.
 1334962109	Viaggia attraverso i vari ecosistemi del continente, scopri habitat nascosti, incontra ogni tipo di Aniimo e parti all'avventura insieme a loro.
 1334999689	Raccogli
 1335001416	(Versione funzionalità)
@@ -31904,7 +31904,7 @@
 1350487002	Le parole del vento\nL'acqua cade da luoghi alti; la sua forza forgiata da innumerevoli curve. Anche se gira e rigira, non si allontana mai dal percorso previsto.
 1350488012	Uovo prodigio
 1350506401	Segnaposto pulsante
-1350507026	1. Ogni giorno da <timeAutoChangeServer>18:00</timeAutoChangeServer> a <timeAutoChangeServer>02:00</timeAutoChangeServer> (ora locale), il giorno successivo, il bar di Astra ospita lo Star-Crossed Tea Party.\nDopo una lunga giornata di viaggio, perché non fermarti a rilassarti?\nChatta con i viaggiatori di passaggio, condividi le storie dell'avventura di oggi e potresti persino incontrare un nuovo alleato lungo il percorso.\n2. Rimani e interagisci durante il tea party per guadagnare monete Voxel e timbri stagionali.\nLimiti giornalieri:\nMoneta Voxel ×150\nTimbro stagionale ×40
+1350507026	1. Ogni giorno da <timeAutoChangeServer>18:00</timeAutoChangeServer> a <timeAutoChangeServer>02:00</timeAutoChangeServer> (ora locale), il giorno successivo, il bar di Astra ospita lo Star-Crossed Tea Party.\nDopo una lunga giornata di viaggio, perché non fermarti a rilassarti?\nChatta con i viaggiatori di passaggio, condividi le storie dell'avventura di oggi e potresti persino incontrare un nuovo alleato lungo il percorso.\n2. Rimani e interagisci durante il tea party per guadagnare monete Voxel e timbri stagionali.\nLimiti giornalieri:\nMoneta Voxel ×200\nTimbro stagionale ×40
 1350509364	Non posso dirlo con certezza, ma il fatto che l’albero possa crescere sulla cima della montagna significa che questa terra lo ha accettato.
 1350516896	I sogni ci conducono alla realtà.
 1350531772	B-B-Beh... ehm. Sì. Quello è... un regalo che ho preparato per te.
@@ -35041,7 +35041,7 @@
 1377557466	Potrei passare una giornata intera a raccontarti quanto è fantastica la Principessa! Hai mai sentito la storia del tour reale della principessa?
 1377561900	Le lacrime non sono mai segno di codardia. La lama forgiata dal coraggio traccerà la via della piena fioritura. Si sblocca dopo aver estratto l'oggetto collezionabile [Lama di spine di rosa] durante l'Operazione: Furto d'Uova.
 1377578609	Sovrano dello Sciame
-1377593290	I Cristalliti dell'Elemento Fuoco di Infergon <color=#D89C28>stanno per esplodere</color>! <color=#D89C28>FrantumÃ li</color> per creare zone sicure ed evitare l'onda d'urto!
+1377593290	I Cristalliti dell'Elemento Fuoco di Infergon <color=#D89C28>stanno per esplodere</color>! <color=#D89C28>Frantumali</color> per creare zone sicure ed evitare l'onda d'urto!
 1377594245	01:22
 1377596879	Richiesta di squadra inviata con successo.
 1377607939	Grazie! Ho finalmente trovato la canzone del mio sogno...
@@ -38838,7 +38838,7 @@
 1411093971	Testa
 1411097301	Resilienza
 1411105013	Va tutto bene... Solo che non osavo muovermi nel caso fosse scappato, quindi mi sono un po' congelato.\nAiutami a sgranchirmi un po'. Muoversi con un tempo del genere è il modo migliore per stare al caldo...
-1411121097	Dati di Prova 1111111113
+1411121097	L'abilità di guarigione del personaggio ripristina il 25% in più di PS a questo Aniimo.
 1411122842	Dopo che le abilità mettono a segno <style=Hint_BgL>6</style> colpi critici, entra in stato di <style=Hint_BgL>[Sovraccarico]</style>, ottenendo subito uno scudo pari al <style=Hint_BgL><customRichText(calcData,buff, 2122201,param1,1,%d)>%</style> dei PS. Tutte le abilità costano <style=Hint_BgL><customRichText(calcData,buff, 2122201,param0,1)></style> PE in meno, ma non è possibile accumulare PU. Dura <style=Hint_BgL><customRichText(buffConfigData,2122201,duration)></style>s.
 1411142314	Davvero? Sembri piuttosto affidabile. Forse sai cosa sta succedendo...
 1411142321	Iris
@@ -39952,7 +39952,7 @@
 1421310192	Passato alle Missioni. Tieni premuto #kHud/GamepadMenu#z per aprire la schermata delle Missioni dalla ruota dei menu
 1421310945	...Bene. Se è quello che hai deciso. Si sta già facendo tardi, quindi riposati prima. Ci incontreremo domani al porto.
 1421311639	Certamente!
-1421319961	premi per posizionare.
+1421319961	Seleziona [<style=Hint_BgL>Terreno Agricolo</style>].
 1421321510	Aniimo a sinistra (segnaposto)
 1421327354	Congiunzioni
 1421345244	Vuoto
@@ -44322,7 +44322,7 @@
 1459065658	Dott. Lewis
 1459066810	Colpo critico III
 1459068703	Notifica
-1459074849	1500 monete di addestramento, contenenti 3 olo-congegni casuali
+1459074849	Spendi 1.500 monete di addestramento per ricevere 3 olo-congegni casuali.
 1459078730	Segnaposto scheda
 1459078826	Mobile di prova n. 10
 1459096646	Sayn
@@ -45840,7 +45840,7 @@
 1472125406	Grado C
 1472127709	Occhiali neri
 1472127870	Soia
-1472132420	Info Affinità Aniimo
+1472132420	Interagisci con il tuo Aniimo e combatti al suo fianco per aumentare la tua Affinità. Man mano che il tuo livello di Affinità aumenta, sbloccherai la funzione di rinomina degli Aniimo e otterrai vari potenziamenti.
 1472133092	Completa le missioni, <style=Hint_BgL>combatti</style> con gli Aniimo nel mondo aperto, <style=Hint_BgL>cattura</style> gli Aniimo o usa gli <link="item_150001"><color=#5090df><u>oggetti ESP</u></color></link> per aumentare l'ESP dell'Aniimo. Salire di livello con un Aniimo ne aumenta gli attributi e lo rende più forte.
 1472134127	Giga-Uovo Leggendario
 1472138043	Attributi Acquisiti Salita di Livello Potenziale
@@ -48987,7 +48987,7 @@
 1499916768	Aniimo Forma Thunderstorm
 1499936699	Come ottenere
 1499938193	Né il sole cocente né la pioggia battente possono fermarti. Con ogni colpo di pala, sboccia un giardino fiorito.
-1499965555	Scambio! Indovina qual è quello vero. Eheh, non riesci a starmi dietro, vero?
+1499965555	Foamy, marchiali con <style=Hint_BgD>Magia d'Ombra</style>! Indovina qual è quello vero?
 1499977036	Apri Dimora.
 1499982224	Mobile di prova n. 9
 1499982462	Istruzioni
@@ -51864,7 +51864,7 @@
 1524949749	Aniimo nel magazzino non può utilizzare questo articolo.
 1524963417	Lunara
 1524966604	Ron
-1524980787	Vuoi saltare l'intermezzo Â«BINI va fuori controlloÂ»?
+1524980787	Vuoi saltare l'intermezzo «BINI va fuori controllo»?
 1524993372	Senza luce solare, Reefish diventa acido e irritabile. Lo strato a forma di conchiglia sul dorso si attorciglia in bordi frastagliati, tagliando qualsiasi cosa si avvicini troppo.
 1525009277	Consuma l'oggetto specificato per conferire a un normale Aniimo la <style=Hint_BgL>Mutazione scintillante</style>, trasformandolo in un Aniimo scintillante.
 1525010986	I dati di personalizzazione del volto sono validi solo durante questo test e scadranno al termine del test.
@@ -52759,7 +52759,7 @@
 1532527770	Io
 1532549416	Questa abilità può essere migliorata senza caricare. Al primo colpo contro un bersaglio, applica <customRichText(calcData,buff,91401011,param1,1)> accumuli di <link="source_8038"><u>[Ice Debuff]</u></link>.
 1532551970	Risveglia le Fioriture dormienti, guida il flusso dell'energia della Vena e attiva i nodi collegati alla terra.
-1532553777	Aumenta i danni del 10%, la tenacia del 15%, il vampirismo fisico e usa una lunga coda o braccia per schiaffeggiare o colpire un avversario in attacco. Vampirismo del 20% durante l'uso per 7 secondi. ï¼ˆå ä½ï¼‰
+1532553777	Aumenta i danni del 10%, la tenacia del 15%, il vampirismo fisico e usa una lunga coda o braccia per schiaffeggiare o colpire un avversario in attacco. Vampirismo del 20% durante l'uso per 7 secondi. (Segnaposto)
 1532569134	Istituto Polaris
 1532574840	(Non sembra che nessuno dei due possa aver fatto una palla così bella... Meglio continuare a cercare.)
 1532597743	Il mio Ignitis ha già visto parecchia azione in questo genere di lavoro.\nForza allora, lascia che ti mostri la nostra forza e convinzione!
@@ -56058,7 +56058,7 @@
 1560370492	Mobile di prova n. 10
 1560389189	Lainey
 1560404451	Ho incontrato qui un Aniimo che si faceva chiamare il Guardiano.
-1560429589	Dati di prova 1111111114
+1560429589	Aumenta del 25% l'effetto Amplificatore di danni dello Swoleshroom del personaggio contro questo Aniimo.
 1560446043	Ma al tuo Nimbi non sembra piacere molto.
 1560449858	Awen
 1560451598	Chiudi
@@ -56475,7 +56475,7 @@
 1564172287	Comunque, ancora una volta!
 1564177191	Vinci %s volte nell'Operazione: Il furto delle uova
 1564205445	Quando un Aniimo schierato di tipo Erba viene colpito, riduce il tempo prima che la <style=Hint_BgL><link="source_8020"><u>Nube di Spore</u></link></style> rilasci spore di <style=Hint_BgL>1</style>s e il tempo di crescita di <style=Hint_BgL><link="source_8021"><u>Bombshroom</u></link></style> sul campo di <style=Hint_BgL>1s</style>. Può attivarsi una volta ogni <style=Hint_BgL>1</style>s.
-1564221017	Trenta\nDopo il mio compleanno, io e Tucker ci siamo sdraiati sull'erba.\nEro felice, non solo perché Tucker ha condiviso i suoi tartufi preferiti, ma perché avevo una bella notizia.\nHo sentito da una carovana di un leggendario profumiere che crea profumi sonori.\nIl mio sogno di creare un <style=Hint_BgD>"Profumo della Bella Voce"</style> potrebbe finalmente realizzarsi.\nL'ho detto a Tucker.\nAnche Tucker era felice.\nMa quando Tucker ha saputo che dovevo partire per un po', è sembrato turbato.\n...\nTucker si è sotterrato e non voleva più uscire.\nNon ho detto altro. Sono rimasto semplicemente al suo fianco, cantando le mie canzoni stonate.\n...\nCi siamo addormentati sotto le stelle.\nPrima ancora che partissi, stavamo già sognando il nostro ricongiungimento.
+1564221017	<Thirty>\nDopo il mio compleanno, io e Tucker ci siamo sdraiati sull'erba.\nEro felice, non solo perché Tucker ha condiviso i suoi tartufi preferiti, ma perché avevo una bella notizia.\nHo sentito da una carovana di un leggendario profumiere che crea profumi sonori.\nIl mio sogno di creare un <style=Hint_BgD>"Profumo della Bella Voce"</style> potrebbe finalmente realizzarsi.\nL'ho detto a Tucker.\nAnche Tucker era felice.\nMa quando Tucker ha saputo che dovevo partire per un po', è sembrato turbato.\n...\nTucker si è sotterrato e non voleva più uscire.\nNon ho detto altro. Sono rimasto semplicemente al suo fianco, cantando le mie canzoni stonate.\n...\nCi siamo addormentati sotto le stelle.\nPrima ancora che partissi, stavamo già sognando il nostro ricongiungimento.
 1564229523	Lana
 1564230636	Pronto? Finalmente riesco a contattarti... Sembra che tu abbia attivato qualcosa. L'Holo-Lab sta mostrando una <style=Hint_BgD>strana attività</style>, quindi vieni a dare un'occhiata appena puoi!
 1564231769	Disordine (minerale di ferro)
@@ -57290,7 +57290,7 @@
 1571528241	Aumenta il danno finale del <customRichText(calcData,buff,4001131,param0,1,%d)>%.
 1571535757	Un pesce testardo
 1571542065	...Quel Helmut sembra davvero felice.
-1571544265	Ecco fatto. La melodia impeccabile del Triplo Movimento è incantevole ogni volta che la si ascolta.
+1571544265	<style=Hint_BgD>Triplo Movimento</style>! Per le lune gemelle, risuona!
 1571547525	Prima visita alle Whisperwake Isles
 1571555658	Nuovo record
 1571560630	Segnaposto scheda
@@ -63148,7 +63148,7 @@
 1622922124	Utilizzato per costruire pareti nella tua Dimora.
 1622922452	Solleva il piede sinistro e lascialo ciondolare.
 1622924657	Ho aggiornato il database di BINI #2333. Ora sono disponibili nuovi semi.
-1622927009	Cavalcare rampicanti per raggiungere le stelle... Quel terribile duetto... Condividere lo stesso sogno... Che enorme quantitÃ  di ricordi lui e Tucker hanno condiviso! È davvero tanto da assimilare!
+1622927009	Cavalcare rampicanti per raggiungere le stelle... Quel terribile duetto... Condividere lo stesso sogno... Che enorme quantità di ricordi lui e Tucker hanno condiviso! È davvero tanto da assimilare!
 1622929404	Ala sinistra
 1622931090	Oliver
 1622940561	Aumenta il livello massimo di legame, addestramento e cattura degli Aniimo
@@ -64910,7 +64910,7 @@
 1637824885	Motivo floreale - Muro triangolare verde lime - Piccolo
 1637829807	Camper Liv. 10
 1637833842	Possiedi 10 accessori per il personaggio.
-1637892718	<style=Hint_BgD>Interruzione</style>, il che significa un altro <style=Hint_BgD>Concerto</style>. Non vedi l'ora di sentire di nuovo risuonare il Triplo Movimento, vero?
+1637892718	<style=Hint_BgD>Concerto</style>! Risuona, <style=Hint_BgD>Concerto</style>. Anche se forse preferiresti sentire l'eco del <style=Hint_BgD>Triplo Movimento</style>.
 1637901183	Ma! Non sono mai e poi mai andato a cercare un altro Salabask! Y-Sei l'unico Basker per me!!!
 1637917175	Braccio sinistro
 1637939561	Allevamento
@@ -69276,7 +69276,7 @@
 1676218414	Formazione sulla Terra - Prova
 1676221544	A - Ghiaccio
 1676223047	Oh cielo, il pubblico se n'è andato prima del tempo! Sembra che la nostra musica fosse troppo commovente. Temo che ciò che verrà dopo sarà ancora più difficile da resistere.
-1676247523	(L'ho visto da qualche parte...)
+1676247523	(Credo di averlo visto durante il <style=Hint_BgD>Raduno notturno</style>?)
 1676249312	Cuore
 1676250455	Nova
 1676268070	Muovi i pezzi
@@ -76073,7 +76073,7 @@
 1736605618	Elvira
 1736611664	/
 1736621121	Rilascio non riuscito. Per favore riprova più tardi.
-1736626559	Eone della zucca?
+1736626559	Eheh, sono entrambi veri! La mia volontà divina può dividersi ed essere in tantissimi posti contemporaneamente! Questo è il potere di un Eone!
 1736636610	Noah
 1736643937	Premi di nuovo #kHud/ExploreSkill#z per schizzare fuori e ribaltare la montagnola di terra!
 1736658161	Preparati, <style=Hint_BgD>abbattilo</style>!
@@ -76416,7 +76416,7 @@
 1739662366	Bau! Bau!
 1739663831	Davvero? Anche tu hai degli hobby strani? Pensavo fossi solo io... Che sollievo...
 1739664130	Decorazioni per la Dimora
-1739674078	Un uovo contenente il potere di Prismana Magmarex. Ãˆ una delle tante uova Prismana raccolte dall'Istituto Polaris durante il Flusso di Prismana causato dalla Festival della Fioritura dieci anni fa.
+1739674078	Un uovo contenente il potere di Prismana Magmarex. È una delle tante uova Prismana raccolte dall'Istituto Polaris durante il Flusso di Prismana causato dal Festival della Fioritura dieci anni fa.
 1739680713	Il capo?
 1739685746	Mentore, sono qui per consegnare l'incarico. Mentore, sono (segnaposto)
 1739698107	Una promessa centenaria
@@ -80162,7 +80162,7 @@
 1771405714	Queenie
 1771429800	Copia info account
 1771431655	Esci
-1771434021	La Vena puÃ² aiutare a potenziare il segnale per le apparecchiature dell'Istituto Polaris. Dato che ti trovi in un'area sconosciuta, trova prima una <style=Hint_BgD>Filiale</style>. Questo dovrebbe darti una connessione piÃ¹ stabile.
+1771434021	La Vena può aiutare a potenziare il segnale per le apparecchiature dell'Istituto Polaris. Dato che ti trovi in un'area sconosciuta, trova prima una <style=Hint_BgD>Filiale</style>. Questo dovrebbe darti una connessione più stabile.
 1771435681	Nicole
 1771444214	Bau!
 1771446865	Sophie
@@ -82653,7 +82653,7 @@
 1793294708	Avviso: un gran numero di Sugarfish e Lilipole rilevati in anticipo.
 1793315626	Sfida
 1793322882	Robot offensivo
-1793334090	Aumenta il danno del 10%, la tenacia del 15%, vampirismo fisico e Usa una lunga coda o braccia per schiaffeggiare o sferrare un attacco. ï¼ˆå ä½ï¼‰ (occupato)
+1793334090	Aumenta il danno del 10%, la tenacia del 15%, il vampirismo fisico e usa una lunga coda o braccia per schiaffeggiare o sferrare un attacco. (Segnaposto)
 1793341714	Aniimo Uscite
 1793344885	Espansione del raggio di ricerca... Segnale fluttuante...
 1793380033	Raggiungi il livello 8 del camper.
@@ -86899,7 +86899,7 @@
 1831082051	Barile strano
 1831097806	Questo articolo è stato venduto.
 1831109529	Scatta una foto a un Bolty che scappa sotto forma di fulmine
-1831131307	Siamo arrivati nelle profonditÃ  della grotta, esplorando con cautela nella penombra. Proprio mentre tutti abbassavano la guardia, Lunara ha percepito qualcosa di insolito e ci ha avvertiti.
+1831131307	Siamo arrivati nelle profondità della grotta, esplorando con cautela nella penombra. Proprio mentre tutti abbassavano la guardia, Lunara ha percepito qualcosa di insolito e ci ha avvertiti.\nMa era troppo tardi... Un Aniimo gigante dall'aspetto feroce ma adorabile è emerso dal terreno: Tuckin Omega. Sembrava che questa battaglia fosse inevitabile.
 1831147807	Vento
 1831167514	Ho appena visto alcuni Sugarfish salutarci! Non sono nemmeno scappati!
 1831172101	È celestiale.
@@ -89952,7 +89952,7 @@
 1857372792	Spiaggia dimenticata
 1857401060	Seleziona uovo
 1857407028	Owen
-1857412006	Adesso hai tutta la mia esperienza di pattuglia. Vai a vedere mari piÃ¹ lontani per me.
+1857412006	Adesso hai tutta la mia esperienza di pattuglia. Vai a vedere mari più lontani per me.
 1857443015	Chat privata
 1857443786	Il tipo Erba Aniimo infligge <style=Hint_BgL><customRichText(calcData,buff,2158305,param0,1,%d)>%</style> più danni per gli <style=Hint_BgL><customRichText(buffConfigData,2158305,duration)></style>.
 1857448901	Un'orgogliosa creazione di un designer di mobili anonimo, con linee pulite, dimensioni chiaramente indicate e una meticolosa maestria nascosta in ogni dettaglio.
@@ -94725,7 +94725,7 @@
 1899184023	Buongiorno a te. Oh, attento ai piccoli fili d'erba. Si sentono allegri oggi, non disturbiamoli.
 1899185888	Entra nella schermata <link="appearHelp_211"><color=#5090df><u>Strumento Tenuto</u></color></link> e potenzia gli Strumenti Tenuti consumando <style=Hint_BgL>altri Strumenti Tenuti</style> o <link="item_551000"><color=#5090df><u>Nuclei per Strumenti Tenuti</u></color></link>. Il potenziamento incrementa gli attributi base di uno Strumento Tenuto di una percentuale fissa.
 1899204608	Segnaposto Impostazione Titolo A
-1899205102	Ho sentito dire che nel continente di Idyll, <style=Hint_BgL>toccare un quadrifoglio fortunato</style> farà accadere qualcosa di meraviglioso!\nSembra che <style=Hint_BgL>attivare questo dispositivo</style> per generare un vento potente ti permetterà di raggiungerlo...
+1899205102	Forse <style=Hint_BgL>attivare questo dispositivo</style> creerà una raffica abbastanza forte da raggiungerlo...
 1899207614	BINI #9
 1899209218	Shulala
 1899210824	Livello Aniimo 18
@@ -106843,7 +106843,7 @@
 2005936545	Prima Spina Letale
 2005944596	Manuale delle abilità degli Aniimo
 2005945414	Miya
-2005948146	Al grido corale dei gabbiani, il canto della libertÃ  finalmente ha inizio.
+2005948146	Al grido corale dei gabbiani, il canto della libertà finalmente ha inizio.\nLa Campana della Libertà fiorisce in silenzio con la melodia che scorre.\nAttratti dalla musica, uno stormo di gabbiani arriva da lontano.\nChi sono, e dove sono diretti?
 2005949260	Forza! Continua a scavare!
 2005952802	Nimbi bloccato
 2005960675	Nimbi nell'erba
@@ -107470,7 +107470,7 @@
 2011137593	Quale dei seguenti metodi può far apparire gli Aniimo in <style=Hint_BgD>Forma Prismana</style> nel Mondo aperto?
 2011153069	Io
 2011157134	Uh... sembra che ci possa essere una sorta di malinteso qui...
-2011176564	1. Ogni giorno da <timeAutoChangeServer>18:00</timeAutoChangeServer> a <timeAutoChangeServer>02:00</timeAutoChangeServer> (ora locale), il giorno successivo, il bar di Astra ospita lo Star-Crossed Tea Party.\nDopo una lunga giornata di viaggio, perché non fermarti a rilassarti?\n2. Chatta con i viaggiatori di passaggio, condividi le storie dell'avventura di oggi e potresti persino incontrare un nuovo alleato lungo il percorso.\nRimani e interagisci durante il tea party per guadagnare monete Voxel e timbri stagionali.\nLimiti giornalieri:\nMoneta Voxel ×150\nTimbro stagionale ×40
+2011176564	1. Ogni giorno da <timeAutoChangeServer>18:00</timeAutoChangeServer> a <timeAutoChangeServer>02:00</timeAutoChangeServer> (ora locale), il giorno successivo, il bar di Astra ospita lo Star-Crossed Tea Party.\nDopo una lunga giornata di viaggio, perché non fermarti a rilassarti?\n2. Chatta con i viaggiatori di passaggio, condividi le storie dell'avventura di oggi e potresti persino incontrare un nuovo alleato lungo il percorso.\nRimani e interagisci durante il tea party per guadagnare monete Voxel e timbri stagionali.\nLimiti giornalieri:\nMoneta Voxel ×200\nTimbro stagionale ×40
 2011177644	Glub... Glub...
 2011186836	Prova una canzone diversa per cambiare la musica di sottofondo.
 2011200906	Voce indistinta
@@ -110959,7 +110959,7 @@
 2042025834	Ehi-shu! Andiamo insieme! Non ci si tira indietro!\nI gusci luccicanti appartengono a tutti! Shu!
 2042026839	I piatti di Wolfie's di Astra sono delizie culinarie preparate con un controllo preciso del fuoco, che vantano un aroma incredibilmente ricco. Cosa potrebbe esserci di più appagante di grandi bocconi di carne?
 2042027690	Il regolamento dei conti non è al momento disponibile.
-2042028499	Tende le molle del braccio e le lancia in avanti, infliggendo ingenti danni e <style=Hint_BgL><customRichText(calcData,ability,14039900,param4,1)></style> pile di <style=Hint_BgL><link="source_8038"><u>[Ghiaccio Debuff]</u></link></style> e guadagnando <style=Hint_BgL><customRichText(calcData,ability,14039900,param2,1)></style> <style=Hint_BgL><link="source_8292"><u>[Punti Ferita]</u></link></style>.
+2042028499	Tende le molle del braccio e le lancia in avanti, infliggendo ingenti danni e <style=Hint_BgL><customRichText(calcData,ability,14039900,param4,1)></style> pile di <style=Hint_BgL><link="source_8038"><u>[Ghiaccio Debuff]</u></link></style> e guadagnando <style=Hint_BgL><customRichText(calcData,ability,14039900,param2,1)></style> <style=Hint_BgL><link="source_8293"><u>[Punti Ferita]</u></link></style>.
 2042055634	Esatto. Come ho accennato, il Flusso di Prismana è il nostro obiettivo principale. Dislocherò i membri della squadra in tutta la regione per monitorarlo e studiarne gli effetti.
 2042060299	Aspetta, era una specie di folle tecnologia Astra?!
 2042063348	Ho appena ascoltato il tuo discorso. Allora, com'è andato il resto dello spettacolo?
@@ -111587,7 +111587,7 @@
 2047685263	Collezionista straordinario
 2047710712	Dott. Glass
 2047713638	Seleziona un'abilità che desideri equipaggiare.\n
-2047726329	Sono di nuovo nella familiare Astra, e Piazza Orizzonte Ã¨ vivace come sempre.\nAniimo allegri e volti simpatici rendono facile rilassarsi.\nE adesso, dove si va?
+2047726329	Sono di nuovo nella familiare Astra, e Piazza Orizzonte è vivace come sempre.\nAniimo allegri e volti simpatici rendono facile rilassarsi.\nE adesso, dove si va?
 2047733507	Lana
 2047748305	Visualizza
 2047754093	Campanella rosa in vaso
@@ -111985,7 +111985,7 @@
 2051269983	Non è stato facile ottenere il permesso dall'anziano per venire in visita...
 2051274297	Se anche le persone potessero collaborare in questo modo, chissà quali miracoli potremmo compiere...
 2051276279	Cattura un Aniimo Alfa
-2051276737	Non possiedi ancora alcun Terreno Agricolo. Premi Conferma per un <style=Hint_BgL>Acquisto Rapido</style>.
+2051276737	Posiziona
 2051280617	Codice Regalo
 2051289250	Strati di tegole ricurve rosso-arancio donano a questo colmo del tetto un fascino rustico e accogliente.
 2051292228	Sayn
@@ -112092,7 +112092,7 @@
 2052024825	Io
 2052046475	Squadre Richieste
 2052052961	Interazione con il mondo
-2052059985	1. Ogni giorno da <timeAutoChangeServer>18:00</timeAutoChangeServer> a <timeAutoChangeServer>02:00</timeAutoChangeServer> (ora locale), il giorno successivo, il bar di Astra ospita lo Star-Crossed Tea Party.\nDopo una lunga giornata di viaggio, perché non fermarti a rilassarti?\nChatta con i viaggiatori di passaggio, condividi le storie dell'avventura di oggi e potresti persino incontrare un nuovo alleato lungo il percorso.\n2. Rimani e interagisci durante il tea party per guadagnare monete Voxel e timbri stagionali.\nLimiti giornalieri:\nMoneta Voxel ×150\nTimbro stagionale ×40
+2052059985	1. Ogni giorno da <timeAutoChangeServer>18:00</timeAutoChangeServer> a <timeAutoChangeServer>02:00</timeAutoChangeServer> (ora locale), il giorno successivo, il bar di Astra ospita lo Star-Crossed Tea Party.\nDopo una lunga giornata di viaggio, perché non fermarti a rilassarti?\nChatta con i viaggiatori di passaggio, condividi le storie dell'avventura di oggi e potresti persino incontrare un nuovo alleato lungo il percorso.\n2. Rimani e interagisci durante il tea party per guadagnare monete Voxel e timbri stagionali.\nLimiti giornalieri:\nMoneta Voxel ×200\nTimbro stagionale ×40
 2052075463	Dopo aver assorbito l'energia di Prismana, la lana del Turbo si tinge dei colori di una notte stellata, facendo brillare le nuvole circostanti.
 2052075891	Amplificatore d'Attacco - Tattiche
 2052076471	Perché è successo questo...?
@@ -115141,7 +115141,7 @@
 2078537819	Riesci sempre a creare il Miracoloso. Forse un Sol, sarai davvero in grado di attraversare questa nebbia...\nE mettere veramente piede in questa <style=Hint_BgD>nuovissima Area oceanica</style>.
 2078538133	Lo stormo canta, disperdendosi nei cieli aperti con la libertà tra le ali.
 2078548614	Un minerale di stagno relativamente raro, noto anche come cassiterite, che brilla di una lucentezza metallica.
-2078559717	Mio padre ha imparato per anni sotto il capo. Raccogliere le alghe, essiccarle, conservarle: c'Ã¨ davvero tanto da imparare! Ma ora Ã¨ malato...
+2078559717	Mio padre ha imparato per anni sotto il capo. Raccogliere le alghe, essiccarle, conservarle: c'è davvero tanto da imparare! Ma ora è malato...
 2078575473	Maestro collezionista
 2078577865	Bombardamento di Luce
 2078588208	Grazie, questa è la canzone che ho sentito in sogno, devo trascriverla.
@@ -115460,7 +115460,7 @@
 2081306799	Io
 2081323854	Livello 23 Manuale dei compagni a pagamento
 2081326779	Una piccola e delicata bambola di Popota.
-2081352204	Ottenuto dall'operazione: Furto d'Uova (modalitÃ  PvP) (modalità PvP)
+2081352204	Ottenuto dall'operazione: Furto d'Uova (modalità PvP)
 2081361626	Manuale del compagno Livello Premium 83
 2081381017	Famiglia Flutternym
 2081384535	<style=Hint_BgL>Tutti</style> i membri della tua Area camper privata si trasferiranno insieme a <style=Hint_BgL>{0}</style>. Confermi il trasferimento?
@@ -116093,7 +116093,7 @@
 2086920761	Un blocco da costruzione verde acqua menta per tutti i tipi di strutture.
 2086926347	BINI #9
 2086948883	Un blocco da costruzione per decorare la tua Dimora.
-2086949998	<style=Hint_BgD>Tempesta Floreale</style> di Irisal <style=Hint_BgD>diventa ancora più forte</style> quando l'Energia è superiore a 45!
+2086949998	Twirly, <style=Hint_BgD>Tempesta Floreale</style>! Sbocciate, petali magici!
 2086955654	Votato
 2086976160	Fai clic per posizionare.
 2086979194	Eccezionale! Molte mani rendono il lavoro leggero. Facciamolo insieme! Andate via!
@@ -118211,7 +118211,7 @@
 2105334938	Negozio Luna del Raccolto
 2105343726	Io
 2105350091	Senza paura della fiamma, custodendo l'amore e la speranza.
-2105352615	- Anche fotografare gli Aniimo degli altri Pathfinder permette di completare le ricerche!
+2105352615	- Anche fotografare gli Aniimo degli altri Pathfinder permette di completare le ricerche!\n- Se trovi gli indizi giusti, fotografare gli Aniimo degli altri ti condurrà passo dopo passo alla risposta corretta
 2105355222	Spegnere un incendio?
 2105356199	Abilità Aniimo
 2105359775	Ivy
@@ -118324,7 +118324,7 @@
 2106286509	Riposo e recupero
 2106288956	Sconfiggi tutti i bersagli.
 2106323616	Altri Hummin!
-2106336204	Trascina il mobile per <style=Hint_BgL>regolarne la posizione</style>, quindi tocca Conferma per posizionarlo.
+2106336204	Seleziona [<style=Hint_BgL>Terreno Agricolo</style>].
 2106342696	???
 2106345953	Awen
 2106348987	Questi alberi dorsali... si dice siano nati dalle spine dorsali dei forti... A cosa staranno pensando davvero?
@@ -123335,7 +123335,7 @@
 274985702	Teletrasporto
 274986659	I forzieri misteriosi sono sparsi per tutta Idyll. Possono essere bagagli smarriti da viaggiatori, provviste lasciate dai Pathfinder o tesori sigillati da un'antica civiltà... Tutti attendono di essere scoperti e aperti.
 275018832	Qui emerge l'energia della Vena. I Pathfinder possono usare il Bocciolo per il viaggio rapido.
-275050252	I Salabask mi hanno detto che il loro capo, Lyle, non va con loro da secoli. Galleggia da solo sull'acqua, dormendo. Qualcosa lo preoccupa?
+275050252	I Salabask mi hanno detto che il loro capo, Lyle, non va con loro da secoli. Galleggia da solo sull'acqua, dormendo. Qualcosa lo preoccupa? <style=Hint_BgL>Consiglio: se Lyle si rifiuta di svegliarsi, prova a svegliarlo con la "forza"!</style>
 275081148	Forziere
 275152585	Tana della Bestia Divina
 275169991	I Forzieri Misteriosi sono sparsi per tutta Idyll. Forse sono bagagli lasciati da viaggiatori, scorte nascoste da avventurieri o tesori sigillati dagli antichi... tutti in attesa di essere scoperti e aperti.
@@ -134998,7 +134998,7 @@
 1476378467	Completa {0} gare {1} in solitaria
 1476765775	Grazie! Aspetterò qui in caso torni. Chompy non se ne andrebbe davvero per sempre... Probabilmente comparirà da un momento all'altro. Se vedi uno Squarrel marrone scuro con una piccola bisaccia, quello è il mio Chompy!
 1477270005	Bagliore Solare
-1477740319	Hai ragione, pesciolino gentile. Ma ho paura di tornare da solo. Puoi venire con me? Giusto in caso...
+1477740319	Al momento, mi preoccupa di più che rinunciare deluderebbe tutti. Hanno cercato di dissuadermi, ma mi hanno comunque sostenuto e aiutato... Però davvero non ho il coraggio di cavalcare di nuovo la marea!
 1478511267	Attiva l'evento easter egg {1} {0} volte
 1478725925	Regola
 1480723588	Ooh, è una vestibilità perfetta! Grandioso—ho preso la mia decisione. Arrivo!
@@ -135478,7 +135478,7 @@
 1792556188	Allora perché non glielo lasci provare?
 1792645690	Reefish Pallido
 1794609928	Io
-1794776904	Concede 1 accumulo di Fretta al ritiro, fino a 5 accumuli. Essere colpiti farà perdere gli accumuli di Fretta accumulati.
+1794776904	Concede 1 accumulo di Fretta al ritiro, fino a 5 accumuli. Essere colpiti farà perdere fino a 2 accumuli di Fretta.
 1795452536	Questo pesciolino è così coraggioso. So che ce la farai! Pesciolino gentile, non preoccuparti per noi!
 1797724996	Preset viso applicato con successo: %s
 1798297042	Dimora
@@ -135646,7 +135646,7 @@
 1880803138	Vai al Parco
 1880912695	E tu non eri da meno! Era così buio la scorsa notte che riuscivo a malapena a vederti.
 1881688601	Glameep (Forma Prismana)
-1881752525	Chance to obtain from Random Item Boxes.\nSlows down all other players in the race.
+1881752525	Possibilità di ottenere dalle Scatole Oggetto Casuali.\nRallenta tutti gli altri giocatori nella corsa.
 1882440500	Dora
 1883820938	Whisperwake Isles
 1883927844	Pacchetto Accessori Gratitudine
@@ -135687,7 +135687,7 @@
 1900427699	Ritmo Beat (Altoparlante)
 1900461913	Questa stagione è terminata.
 1900518764	Raggiungi Affinità Lv. 2 per sbloccare la funzione di rinomina.
-1900871528	Chance to obtain from Random Item Boxes.\nGrants a speed boost for a limited time.
+1900871528	Possibilità di ottenere dalle Scatole Oggetto Casuali.\nConcede un aumento di velocità per un tempo limitato.
 1902854983	Istituto Polaris
 1903067504	Sì, e questa volta non ha solo bruciato l'alga dello zio Vic. Mi ha fatto venire fuori anche il viso...
 1904637540	Imposta
@@ -135764,7 +135764,7 @@
 1944636235	Acconciatura
 1944667502	Frammento di Memoria 3
 1944727069	Un'ombra fugace nella notte, vestita di un'armatura d'argento scuro, che avanza senza paura.
-1944943409	Chance to obtain from Random Item Boxes.\nMakes you bigger and grants a speed boost. While active, emits circular shockwaves that interrupt other players’ actions. (Cannot be used while swimming.)
+1944943409	Possibilità di ottenere dalle Scatole Oggetto Casuali.\nTi ingrandisce e concede un aumento di velocità. Mentre è attivo, emette onde d'urto circolari che interrompono le azioni degli altri giocatori. (Non utilizzabile mentre nuoti.)
 1945052995	Sotto l'elmo d'argento giace lo sguardo silenzioso di un eroe.
 1945133176	1
 1945271691	Sai, ho sempre dipinto solo le immagini sfocate nella mia testa—tracce sbiadite di vecchi ricordi.

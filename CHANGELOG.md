@@ -2,6 +2,23 @@
 
 Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **Aniimo** sono documentati in questo file.
 
+## [1.2.10] - 2026-11-19
+
+### Revisione qualità del database testi
+
+Audit completo delle **136.024 voci attive** contro la mappa ufficiale della build 3973445 (`Compress_en.bin`). Copertura invariata: **0 chiavi mancanti, 0 vuote, 0 duplicati**. Il TSV contiene 136.112 righe (136.024 attive + 88 legacy).
+
+- **48 testi corretti**: frasi assegnate alla chiave sbagliata, voci troncate a metà, stringhe di prova al posto di descrizioni reali, caratteri corrotti da doppia codifica UTF-8/CP1252 e descrizioni oggetto rimaste in inglese.
+- **Tag e riferimenti tecnici**: ripristinato `<Thirty>` (era diventato "Trenta"), corretto il link `source_8292` → `source_8293`, il parametro `customRichText(...param1...)` → `param4` e il limite giornaliero di **200 Monete Voxel** (era 150) in 4 voci dell'evento Star-Crossed Tea Party.
+- **Mojibake**: riscritte 15 voci con accenti corrotti (es. `Ã `, `Ãˆ`, `ï¼ˆå ä½ï¼‰`), ora in UTF-8 corretto.
+- **Nessuna modifica alla protezione PawPrint**: `repair.exe` continua a essere rinominato in `repair.exe.aniimo_ita_disabled` durante l'installazione e ripristinato da "Ripristina Inglese".
+
+TSV: **9.236.375 byte**, UTF-8 con BOM, LF, MD5 `c34771b5f782d578346552bc858c6a43`.
+
+Verificato su PawPrint: dopo l'installazione la traduzione resta attiva a ogni avvio.
+
+---
+
 ## [1.2.9] - 2026-11-19
 
 ### Protezione PawPrint: stop alla riparazione automatica

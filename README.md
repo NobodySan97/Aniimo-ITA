@@ -3,7 +3,7 @@
 # 🇮🇹 Aniimo — Traduzione Italiana Integrale
 **Launcher & Patcher Leggero Universale per PC (Steam · Xbox App · Pawprint Client)**
 
-[![Versione Traduzione](https://img.shields.io/badge/Traduzione-v1.2.9-2ea043?style=for-the-badge&logo=github)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
+[![Versione Traduzione](https://img.shields.io/badge/Traduzione-v1.2.10-2ea043?style=for-the-badge&logo=github)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
 [![Launcher](https://img.shields.io/badge/Launcher-v1.0.1-4f46e5?style=for-the-badge)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
 [![Copertura Traduzione](https://img.shields.io/badge/Stringhe_Tradotte-136.024_%2F_136.024-10b981?style=for-the-badge)](#stato-della-traduzione-e-copertura)
 [![Download Totali](https://img.shields.io/github/downloads/NobodySan97/Aniimo-ITA/total?style=for-the-badge&logo=github&color=0284c7&label=Download)](https://github.com/NobodySan97/Aniimo-ITA/releases)
@@ -67,7 +67,7 @@ Tutte le modifiche, le revisioni terminologiche e i miglioramenti sono documenta
 
 | Parametro | Dettaglio |
 | :--- | :--- |
-| **Versione Traduzione** | **v1.2.9** (19 Novembre 2026) |
+| **Versione Traduzione** | **v1.2.10** (19 Novembre 2026) |
 | **Voci Tradotte** | **136.024 su 136.024 attive** (100% copertura; 88 ID legacy rimossi dal gioco e ignorati dal compilatore) |
 | **Nomi Creature Aniimo** | Nomi ufficiali preservati e allineati al canone |
 | **Piattaforme Supportate** | ✅ **Steam** · ✅ **Xbox App (PC Game Pass)** · ✅ **Client Pawprint** |
