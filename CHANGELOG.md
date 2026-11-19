@@ -2,6 +2,20 @@
 
 Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **Aniimo** sono documentati in questo file.
 
+## [1.2.8] - 2026-11-19
+
+### Allineamento alla build Steam 3973445 (nuove chiavi)
+
+Il client Steam e' passato alla build **3973445** (versione inglese _version 1794824763, **136.024 voci**). Aggiunte **3 nuove chiavi** non presenti nella build precedente, tradotte integralmente in italiano:
+
+- **Chompy** (nome personaggio/Aniimo)
+- **Dora** (nome personaggio)
+- **"Hai raggiunto il limite per accettare ordini."** (messaggio di limite ordini)
+
+Rimosse **15 chiavi legacy aggiuntive** dal gioco (totale 88 legacy nel TSV, ignorate dal compilatore). Totale TSV: **136.112 voci** (136.024 attive + 88 legacy). TSV: **9.237.388 byte**, UTF-8 con BOM, LF. MD5: 65b7bcd4106b8511754c8a3201a7abc2.
+
+---
+
 ## [1.2.7] - 2026-11-14
 
 ### Fix installer PawPrint (sincronizzazione percorsi)

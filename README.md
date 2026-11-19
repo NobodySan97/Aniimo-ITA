@@ -3,7 +3,7 @@
 # 🇮🇹 Aniimo — Traduzione Italiana Integrale
 **Launcher & Patcher Leggero Universale per PC (Steam · Xbox App · Pawprint Client)**
 
-[![Versione Traduzione](https://img.shields.io/badge/Traduzione-v1.2.7-2ea043?style=for-the-badge&logo=github)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
+[![Versione Traduzione](https://img.shields.io/badge/Traduzione-v1.2.8-2ea043?style=for-the-badge&logo=github)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
 [![Launcher](https://img.shields.io/badge/Launcher-v1.0.1-4f46e5?style=for-the-badge)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
 [![Copertura Traduzione](https://img.shields.io/badge/Stringhe_Tradotte-136.037_%2F_136.037-10b981?style=for-the-badge)](#stato-della-traduzione-e-copertura)
 [![Download Totali](https://img.shields.io/github/downloads/NobodySan97/Aniimo-ITA/total?style=for-the-badge&logo=github&color=0284c7&label=Download)](https://github.com/NobodySan97/Aniimo-ITA/releases)
@@ -26,7 +26,7 @@
 
 ## 🌟 Caratteristiche Principali
 
-- 📜 **100% dei Testi Tradotti (136.037 stringhe attive)**: Storia principale, missioni secondarie, abilità, statistiche di combattimento, descrizioni oggetti, arredi, interfaccia utente e nomi ufficiali delle specie Aniimo.
+- 📜 **100% dei Testi Tradotti (136.024 stringhe attive)**: Storia principale, missioni secondarie, abilità, statistiche di combattimento, descrizioni oggetti, arredi, interfaccia utente e nomi ufficiali delle specie Aniimo.
 - 🚀 **Avvio Diretto in Italiano**: La traduzione va a sostituire lo slot lingua inglese (`en`), avviando il gioco immediatamente in italiano senza dover impostare o selezionare lingue secondarie nei menu.
 - ⚡ **Compilazione In-Memory C# (`AniimoFastPacker`)**:
   - Non sovrascrive né include file `.bin` o script `.lua` di vecchie versioni del gioco.
@@ -66,8 +66,8 @@ Tutte le modifiche, le revisioni terminologiche e i miglioramenti sono documenta
 
 | Parametro | Dettaglio |
 | :--- | :--- |
-| **Versione Traduzione** | **v1.2.7** (14 Novembre 2026) |
-| **Voci Tradotte** | **136.037 su 136.037 attive** (100% copertura; 73 ID legacy rimossi dal gioco e ignorati dal compilatore) |
+| **Versione Traduzione** | **v1.2.8** (19 Novembre 2026) |
+| **Voci Tradotte** | **136.024 su 136.024 attive** (100% copertura; 88 ID legacy rimossi dal gioco e ignorati dal compilatore) |
 | **Nomi Creature Aniimo** | Nomi ufficiali preservati e allineati al canone |
 | **Piattaforme Supportate** | ✅ **Steam** · ✅ **Xbox App (PC Game Pass)** · ✅ **Client Pawprint** |
 | **Slot di Destinazione** | **Inglese (`en`)** → Avvio automatico in Italiano |
