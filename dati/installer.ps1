@@ -1153,10 +1153,12 @@ function Get-TranslationStatus([string]$TargetDir, $CurrentTsvMeta) {
     $buildNum  = $baseFiles.Build
     $saCvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\lua'
     $topCvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\cvs\res\lua'
-    $cvsLuaDir = if ((Test-Path -LiteralPath (Join-Path $saCvsLuaDir 'aniimo_ita_meta.json')) -or -not (Test-Path -LiteralPath $topCvsLuaDir)) {
-        $saCvsLuaDir
-    } else {
+    # PawPrint: il gioco legge da top-level cvs\res\lua, preferisci sempre quel percorso
+    # se la cartella esiste. Steam/Xbox: top-level non esiste, usa StreamingAssets.
+    $cvsLuaDir = if (Test-Path -LiteralPath $topCvsLuaDir) {
         $topCvsLuaDir
+    } else {
+        $saCvsLuaDir
     }
     $cvsXdf    = Join-Path $cvsLuaDir 'LuaScripts.xdf'
     $cvsBin    = Join-Path $cvsLuaDir 'LuaScripts\Data\I18N\Compress_en.bin'
@@ -1461,10 +1463,12 @@ function Invoke-TranslationInstall([string]$TargetDir, $Meta, [scriptblock]$OnPr
     $buildNum  = $baseFiles.Build
     $saCvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\lua'
     $topCvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\cvs\res\lua'
-    $cvsLuaDir = if ((Test-Path -LiteralPath (Join-Path $saCvsLuaDir 'aniimo_ita_meta.json')) -or -not (Test-Path -LiteralPath $topCvsLuaDir)) {
-        $saCvsLuaDir
-    } else {
+    # PawPrint: il gioco legge da top-level cvs\res\lua, preferisci sempre quel percorso
+    # se la cartella esiste. Steam/Xbox: top-level non esiste, usa StreamingAssets.
+    $cvsLuaDir = if (Test-Path -LiteralPath $topCvsLuaDir) {
         $topCvsLuaDir
+    } else {
+        $saCvsLuaDir
     }
     $cvsI18n   = Join-Path $cvsLuaDir 'LuaScripts\Data\I18N'
     $cvsData   = Join-Path $cvsLuaDir 'LuaScripts\Common\Data'
@@ -1605,10 +1609,12 @@ function Invoke-TranslationRestore([string]$TargetDir, [scriptblock]$OnProgress)
     $buildNum  = $baseFiles.Build
     $saCvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\StreamingAssets\cvs\res\lua'
     $topCvsLuaDir = Join-Path $TargetDir 'Aniimo_Data\cvs\res\lua'
-    $cvsLuaDir = if ((Test-Path -LiteralPath (Join-Path $saCvsLuaDir 'aniimo_ita_meta.json')) -or -not (Test-Path -LiteralPath $topCvsLuaDir)) {
-        $saCvsLuaDir
-    } else {
+    # PawPrint: il gioco legge da top-level cvs\res\lua, preferisci sempre quel percorso
+    # se la cartella esiste. Steam/Xbox: top-level non esiste, usa StreamingAssets.
+    $cvsLuaDir = if (Test-Path -LiteralPath $topCvsLuaDir) {
         $topCvsLuaDir
+    } else {
+        $saCvsLuaDir
     }
     $cvsI18n   = Join-Path $cvsLuaDir 'LuaScripts\Data\I18N'
     $cvsData   = Join-Path $cvsLuaDir 'LuaScripts\Common\Data'
