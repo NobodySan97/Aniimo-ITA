@@ -1,6 +1,6 @@
 ======================================================================
   ANIIMO - TRADUZIONE ITALIANA INTEGRALE
-  Traduzione v1.2.8 · Launcher v1.0.1 · Build 3973445 · 19/11/2026
+  Traduzione v1.2.9 · Launcher v1.0.1 · Build 3973445 · 19/11/2026
   Launcher & Patcher Leggero Universale (Steam · Xbox App · Pawprint)
 ======================================================================
 
@@ -14,13 +14,24 @@ COME INSTALLARE O AGGIORNARE LA TRADUZIONE:
 5. Premi "Avvia Aniimo" (oppure avvialo da Steam): il gioco partirà
    subito in ITALIANO!
 
-DOPO UN AGGIORNAMENTO DI STEAM O DELLA TRADUZIONE:
-- Quando Steam rilascia una nuova patch per Aniimo o quando viene pubblicata
-  una nuova revisione della traduzione, ti basta riaprire il launcher.
+DOPO UN AGGIORNAMENTO DI STEAM, PAWPRINT O DELLA TRADUZIONE:
+- Quando Steam o PawPrint rilasciano una nuova patch per Aniimo, o quando
+  viene pubblicata una nuova revisione della traduzione, riapri il launcher.
 - Premi nuovamente "REINSTALLA / AGGIORNA TRADUZIONE": l'installer
   ricompilerà al volo i testi italiani sui file aggiornati del gioco.
 - Questo installer NON sovrascrive né include vecchi script Lua o file
   binari (pmdata.bin), garantendo compatibilità totale con qualsiasi patch.
+
+PROTEZIONE PAWPRINT (RIPARAZIONE AUTOMATICA):
+- Il launcher ufficiale PawPrint esegue repair.exe all'avvio e riscarica
+  dal server i file Lua ufficiali, riportando il gioco in inglese.
+- L'installer rinomina "game\repair.exe" in "repair.exe.aniimo_ita_disabled":
+  PawPrint salta la riparazione e la traduzione resta attiva.
+- Se la dashboard mostra "Protezione PawPrint non attiva" (succede dopo un
+  aggiornamento di PawPrint), premi di nuovo "REINSTALLA / AGGIORNA
+  TRADUZIONE" per riattivare la protezione.
+- Nessun file binario proprietario viene distribuito: viene solo rinominato
+  il repair.exe già presente nella tua installazione.
 
 REGISTRO MODIFICHE (CHANGELOG) E GUIDA TECNICA:
 - Consulta la scheda "Changelog & Guida" all'interno del launcher (o il file
@@ -48,4 +59,6 @@ COME TORNARE ALL'INGLESE (RIPRISTINO):
 - Apri il launcher e premi il pulsante "Ripristina Inglese": i file
   originali della tua build verranno ripristinati istantaneamente
   senza dover verificare l'integrità dei file su Steam.
+- Su PawPrint viene ripristinato anche repair.exe, riattivando il
+  comportamento originale del launcher ufficiale.
 ======================================================================

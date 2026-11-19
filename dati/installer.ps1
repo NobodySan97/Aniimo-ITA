@@ -1029,6 +1029,77 @@ function Get-GameBuild([string]$TargetDir) {
     return 'Sconosciuta'
 }
 
+# ---------------------------------------------------------------------
+#  Protezione PawPrint: bypass della riparazione automatica
+#  Il launcher ufficiale PawPrint, all'avvio, esegue repair.exe e
+#  riscarica dal server i file Lua ufficiali, sovrascrivendo la
+#  traduzione. Se repair.exe non esiste il launcher salta la
+#  riparazione ("file not found, skip repair and report success").
+#  Durante l'installazione lo rinominiamo, al ripristino lo rimettiamo.
+# ---------------------------------------------------------------------
+$script:PawPrintRepairDisabledSuffix = '.aniimo_ita_disabled'
+
+function Get-PawPrintRepairInfo([string]$TargetDir) {
+    if (-not $TargetDir) {
+        return [pscustomobject]@{
+            Supported = $false
+            State     = 'ABSENT'
+            Exe       = ''
+            Disabled  = ''
+        }
+    }
+    $repairExe      = Join-Path $TargetDir 'repair.exe'
+    $repairDisabled = Join-Path $TargetDir ('repair.exe' + $script:PawPrintRepairDisabledSuffix)
+    $hasRepair = Test-Path -LiteralPath $repairExe -PathType Leaf
+    $hasBackup = Test-Path -LiteralPath $repairDisabled -PathType Leaf
+    $state = if ($hasRepair) {
+        'ACTIVE'
+    } elseif ($hasBackup) {
+        'PROTECTED'
+    } else {
+        'ABSENT'
+    }
+    return [pscustomobject]@{
+        Supported = ($hasRepair -or $hasBackup)
+        State     = $state
+        Exe       = $repairExe
+        Disabled  = $repairDisabled
+    }
+}
+
+function Disable-PawPrintRepair([string]$TargetDir) {
+    $info = Get-PawPrintRepairInfo $TargetDir
+    if (-not $info.Supported -or $info.State -eq 'PROTECTED') { return $info }
+    try {
+        if (Test-Path -LiteralPath $info.Disabled) {
+            Remove-Item -LiteralPath $info.Disabled -Force -ErrorAction Stop
+        }
+        Move-Item -LiteralPath $info.Exe -Destination $info.Disabled -Force -ErrorAction Stop
+    } catch {
+        throw "Impossibile disattivare la riparazione automatica di PawPrint: $($_.Exception.Message)"
+    }
+    return (Get-PawPrintRepairInfo $TargetDir)
+}
+
+function Enable-PawPrintRepair([string]$TargetDir) {
+    $info = Get-PawPrintRepairInfo $TargetDir
+    if (-not $info.Supported -or $info.State -eq 'ABSENT') { return $info }
+    try {
+        if (Test-Path -LiteralPath $info.Disabled) {
+            if (Test-Path -LiteralPath $info.Exe) {
+                # repair.exe già presente (es. ripristinato da un aggiornamento):
+                # il backup è obsoleto, lo rimuoviamo.
+                Remove-Item -LiteralPath $info.Disabled -Force -ErrorAction Stop
+            } else {
+                Move-Item -LiteralPath $info.Disabled -Destination $info.Exe -Force -ErrorAction Stop
+            }
+        }
+    } catch {
+        throw "Impossibile ripristinare il tool di riparazione di PawPrint: $($_.Exception.Message)"
+    }
+    return (Get-PawPrintRepairInfo $TargetDir)
+}
+
 function Get-AniimoBaseLuaFiles([string]$TargetDir) {
     $buildNum = Get-GameBuild $TargetDir
     $cvsRoots = @(
@@ -1593,12 +1664,28 @@ function Invoke-TranslationInstall([string]$TargetDir, $Meta, [scriptblock]$OnPr
         if ($OnProgress) { & $OnProgress 98 "Sincronizzazione percorsi PawPrint..." }
     }
 
+    # PawPrint: disattiva il repair automatico che altrimenti riscarica i
+    # file ufficiali dal server a ogni avvio, cancellando la traduzione.
+    $repairInfo    = Get-PawPrintRepairInfo $TargetDir
+    $repairWarning = $null
+    if ($repairInfo.Supported) {
+        if ($OnProgress) { & $OnProgress 99 "Protezione PawPrint: disattivazione riparazione automatica..." }
+        try {
+            $repairInfo = Disable-PawPrintRepair $TargetDir
+        } catch {
+            $repairWarning = $_.Exception.Message
+            $repairInfo = Get-PawPrintRepairInfo $TargetDir
+        }
+    }
+
     $fmtCount = Format-NumberDot ([string]$translatedCount)
     if ($OnProgress) { & $OnProgress 100 "Installazione completata ($fmtCount stringhe attive)." }
     return [pscustomobject]@{
-        BuildNum   = $buildNum
-        Translated = $translatedCount
-        Fallback   = $fallbackCount
+        BuildNum      = $buildNum
+        Translated    = $translatedCount
+        Fallback      = $fallbackCount
+        RepairState   = $repairInfo.State
+        RepairWarning = $repairWarning
     }
 }
 
@@ -1666,7 +1753,26 @@ function Invoke-TranslationRestore([string]$TargetDir, [scriptblock]$OnProgress)
     if (Test-Path -LiteralPath $backupXdf) {
         Remove-Item -LiteralPath $backupXdf -Force -ErrorAction SilentlyContinue
     }
+
+    # Riattiva il tool di riparazione di PawPrint, riportando il client
+    # al comportamento originale una volta rimossa la traduzione.
+    $repairInfo    = Get-PawPrintRepairInfo $TargetDir
+    $repairWarning = $null
+    if ($repairInfo.Supported) {
+        if ($OnProgress) { & $OnProgress 95 "Ripristino della riparazione automatica PawPrint..." }
+        try {
+            $repairInfo = Enable-PawPrintRepair $TargetDir
+        } catch {
+            $repairWarning = $_.Exception.Message
+            $repairInfo = Get-PawPrintRepairInfo $TargetDir
+        }
+    }
+
     if ($OnProgress) { & $OnProgress 100 "Lingua originale inglese ripristinata." }
+    return [pscustomobject]@{
+        RepairState   = $repairInfo.State
+        RepairWarning = $repairWarning
+    }
 }
 
 # ---------------------------------------------------------------------
@@ -1685,13 +1791,15 @@ if ($UpdateTsv) {
 if ($Install) {
     if (Test-AniimoRunning) { throw "Aniimo è in esecuzione: chiudi il gioco prima di installare la traduzione (modalità -Install)." }
     if (-not $ResolvedGameDir) { throw "Cartella di Aniimo non trovata." }
-    [void](Invoke-TranslationInstall $ResolvedGameDir $TsvMeta $null)
+    $installResult = Invoke-TranslationInstall $ResolvedGameDir $TsvMeta $null
+    if ($installResult.RepairWarning) { Write-Warning $installResult.RepairWarning }
     exit 0
 }
 if ($Uninstall) {
     if (Test-AniimoRunning) { throw "Aniimo è in esecuzione: chiudi il gioco prima di ripristinare la lingua originale (modalità -Uninstall)." }
     if (-not $ResolvedGameDir) { throw "Cartella di Aniimo non trovata." }
-    [void](Invoke-TranslationRestore $ResolvedGameDir $null)
+    $restoreResult = Invoke-TranslationRestore $ResolvedGameDir $null
+    if ($restoreResult.RepairWarning) { Write-Warning $restoreResult.RepairWarning }
     exit 0
 }
 
@@ -2436,7 +2544,7 @@ function Show-PolarisDialog {
                     </Border>
                     <StackPanel Grid.Column="1" Margin="12,0,0,0" VerticalAlignment="Center">
                       <TextBlock x:Name="TxtStatusTitle" Text="Stato traduzione" Foreground="#F8FAFC" FontSize="17.5" FontWeight="Bold"/>
-                      <TextBlock x:Name="TxtStatusSub" Text="Pronta per giocare" Foreground="#94A3B8" FontSize="11.5" Margin="0,1,0,0"/>
+                      <TextBlock x:Name="TxtStatusSub" Text="Pronta per giocare" Foreground="#94A3B8" FontSize="11.5" Margin="0,1,0,0" TextTrimming="CharacterEllipsis"/>
                     </StackPanel>
                     <Border Grid.Column="2" CornerRadius="6" Background="#0B101B" BorderBrush="#1E293B" BorderThickness="1" Padding="10,4" VerticalAlignment="Center">
                       <TextBlock Text="STEAM · XBOX · PAWPRINT" Foreground="#64748B" FontSize="9.5" FontWeight="Bold"/>
@@ -2969,8 +3077,19 @@ function Update-UiDashboard {
     }
 
     $st = Get-TranslationStatus $script:CurrentGameDir $m
+    $statusSub = $st.Sub
+    $repairInfo = Get-PawPrintRepairInfo $script:CurrentGameDir
+    if ($repairInfo.State -eq 'PROTECTED') {
+        $statusSub = "$statusSub · Protezione PawPrint attiva"
+        $TxtStatusSub.ToolTip = "La riparazione automatica di PawPrint è disattivata: repair.exe è stato rinominato in repair.exe.aniimo_ita_disabled. Verrà ripristinato con 'Ripristina Inglese'."
+    } elseif ($repairInfo.State -eq 'ACTIVE') {
+        $statusSub = "$statusSub · ⚠ Protezione PawPrint non attiva"
+        $TxtStatusSub.ToolTip = "PawPrint esegue repair.exe all'avvio e può ripristinare i file inglesi. Reinstalla la traduzione per disattivare la riparazione automatica."
+    } else {
+        $TxtStatusSub.ToolTip = $null
+    }
     $TxtStatusTitle.Text = $st.Title
-    $TxtStatusSub.Text   = $st.Sub
+    $TxtStatusSub.Text   = $statusSub
     $BtnApplyPatch.Content = $st.BtnText
     $BtnRestoreOriginal.IsEnabled = $st.CanRemove
     $BtnOpenFolder.IsEnabled      = [bool]$script:CurrentGameDir
@@ -3344,6 +3463,11 @@ function Start-GuiInstallAction {
         if ($res.Fallback -gt 0) {
             $okMessages += "⚠ $(Format-NumberDot ([string]$res.Fallback)) stringhe non presenti nella traduzione locale restano in inglese: se noti testi in inglese, segnalali su GitHub (Issues)."
         }
+        if ($res.RepairWarning) {
+            $okMessages += "⚠ $($res.RepairWarning) Chiudi PawPrint (icona nel tray > Esci) e reinstalla per completare la protezione."
+        } elseif ($res.RepairState -eq 'PROTECTED') {
+            $okMessages += "✔ Riparazione automatica PawPrint disattivata: la traduzione non verrà più ripristinata in inglese."
+        }
         [void](Show-PolarisDialog -Title "Traduzione Italiana Installata!" -Badge "COMPLETATO" -Severity "Success" -Messages $okMessages)
     } catch {
         Set-ProgressBarState 0 "Errore durante l'installazione." $false
@@ -3388,14 +3512,20 @@ function Start-GuiRestoreAction {
     $BtnApplyPatch.IsEnabled      = $false
     $BtnRestoreOriginal.IsEnabled = $false
     try {
-        Invoke-TranslationRestore $script:CurrentGameDir {
+        $restoreRes = Invoke-TranslationRestore $script:CurrentGameDir {
             param($p, $msg)
             Set-ProgressBarState $p $msg ($p -ge 100)
         }
         Update-UiDashboard
-        [void](Show-PolarisDialog -Title "Lingua Inglese Ripristinata" -Badge "RIPRISTINATO" -Severity "Information" -Messages @(
+        $restoreMessages = @(
             "I file originali in lingua inglese sono stati ripristinati correttamente."
-        ))
+        )
+        if ($restoreRes.RepairWarning) {
+            $restoreMessages += "⚠ $($restoreRes.RepairWarning)"
+        } elseif ($restoreRes.RepairState -eq 'ACTIVE') {
+            $restoreMessages += "✔ Riparazione automatica PawPrint ripristinata."
+        }
+        [void](Show-PolarisDialog -Title "Lingua Inglese Ripristinata" -Badge "RIPRISTINATO" -Severity "Information" -Messages $restoreMessages)
     } catch {
         Set-ProgressBarState 0 "Errore durante il ripristino." $false
         [void](Show-PolarisDialog -Title "Errore durante il ripristino" -Badge "ERRORE" -Severity "Error" -Messages @(

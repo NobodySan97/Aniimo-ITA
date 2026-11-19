@@ -3,9 +3,9 @@
 # 🇮🇹 Aniimo — Traduzione Italiana Integrale
 **Launcher & Patcher Leggero Universale per PC (Steam · Xbox App · Pawprint Client)**
 
-[![Versione Traduzione](https://img.shields.io/badge/Traduzione-v1.2.8-2ea043?style=for-the-badge&logo=github)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
+[![Versione Traduzione](https://img.shields.io/badge/Traduzione-v1.2.9-2ea043?style=for-the-badge&logo=github)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
 [![Launcher](https://img.shields.io/badge/Launcher-v1.0.1-4f46e5?style=for-the-badge)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
-[![Copertura Traduzione](https://img.shields.io/badge/Stringhe_Tradotte-136.037_%2F_136.037-10b981?style=for-the-badge)](#stato-della-traduzione-e-copertura)
+[![Copertura Traduzione](https://img.shields.io/badge/Stringhe_Tradotte-136.024_%2F_136.024-10b981?style=for-the-badge)](#stato-della-traduzione-e-copertura)
 [![Download Totali](https://img.shields.io/github/downloads/NobodySan97/Aniimo-ITA/total?style=for-the-badge&logo=github&color=0284c7&label=Download)](https://github.com/NobodySan97/Aniimo-ITA/releases)
 [![Download Zip](https://img.shields.io/badge/Download_ZIP-3.64_MB-38bdf8?style=for-the-badge&logo=windows)](https://github.com/NobodySan97/Aniimo-ITA/releases/latest)
 
@@ -36,6 +36,7 @@
 - ☁️ **Sincronizzazione Intelligente Cloud**: Controllo versione ultraleggero (pochi KB via `versione.json`) per verificare se la traduzione su GitHub è stata aggiornata. Scarica il file TSV solo in caso di effettive modifiche (zero sprechi di banda e zero API rate-limit) e verifica sempre l'MD5 del file scaricato prima di sostituirlo. Se il manifest locale manca o è illeggibile, il launcher prova a recuperare automaticamente versione e note da GitHub, senza rallentare l'avvio normale.
 - 📜 **Changelog Visivo Integrato**: Scheda dedicata *Changelog & Guida* nel launcher e file [CHANGELOG.md](CHANGELOG.md) per consultare tutte le migliorie e le revisioni terminologiche apportate.
 - ⏪ **Ripristino Sicuro in 1 Clic**: Ripristina i file originali in inglese istantaneamente, senza bisogno di verificare l'integrità dei file su Steam o riscaricare dati.
+- 🛡️ **Protezione PawPrint Integrata**: disattiva la riparazione automatica del launcher ufficiale che riscaricava i file inglesi a ogni avvio. Il tool di riparazione viene ripristinato automaticamente con "Ripristina Inglese".
 
 ---
 
@@ -66,7 +67,7 @@ Tutte le modifiche, le revisioni terminologiche e i miglioramenti sono documenta
 
 | Parametro | Dettaglio |
 | :--- | :--- |
-| **Versione Traduzione** | **v1.2.8** (19 Novembre 2026) |
+| **Versione Traduzione** | **v1.2.9** (19 Novembre 2026) |
 | **Voci Tradotte** | **136.024 su 136.024 attive** (100% copertura; 88 ID legacy rimossi dal gioco e ignorati dal compilatore) |
 | **Nomi Creature Aniimo** | Nomi ufficiali preservati e allineati al canone |
 | **Piattaforme Supportate** | ✅ **Steam** · ✅ **Xbox App (PC Game Pass)** · ✅ **Client Pawprint** |
@@ -107,11 +108,12 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "dati\installer.ps1" -Up
 
 ## 🔄 Cosa Fare Dopo un Aggiornamento del Gioco
 
-Quando Aniimo riceve una nuova patch o aggiornamento su Steam:
-1. Lascia che Steam completi il download dell'aggiornamento.
+Quando Aniimo riceve una nuova patch o aggiornamento su Steam o PawPrint:
+1. Lascia che il client completi il download dell'aggiornamento.
 2. Apri **`Installa Traduzione ITA.bat`**.
 3. Premi **`REINSTALLA / AGGIORNA TRADUZIONE`**.
 4. L'installer leggerà la nuova patch e inietterà i testi italiani sui nuovi file aggiornati.
+5. Su PawPrint, se la dashboard mostra **`Protezione PawPrint non attiva`**, reinstalla la traduzione per disattivare di nuovo la riparazione automatica.
 
 ---
 
@@ -130,13 +132,19 @@ Se hai installato Aniimo su un disco secondario o in una libreria personalizzata
 </details>
 
 <details>
-<summary><b>3. Come posso tornare all'inglese originale?</b></summary>
+<summary><b>3. Perché su PawPrint la traduzione tornava in inglese?</b></summary>
+<br>
+Il launcher PawPrint esegue <code>repair.exe</code> all'avvio e riscarica dal server i file Lua ufficiali, senza basarsi sull'hash dei file locali. Dalla v1.2.9 l'installer rinomina <code>repair.exe</code> in <code>repair.exe.aniimo_ita_disabled</code>: PawPrint salta la riparazione e la traduzione resta attiva. Il file viene ripristinato automaticamente con <b>"Ripristina Inglese"</b>.
+</details>
+
+<details>
+<summary><b>4. Come posso tornare all'inglese originale?</b></summary>
 <br>
 Basta aprire il launcher e cliccare sul pulsante <b>"Ripristina Inglese"</b>. I file originali della tua build verranno ripristinati istantaneamente senza dover verificare l'integrità dei file su Steam.
 </details>
 
 <details>
-<summary><b>4. Come posso segnalare un refuso o contribuire?</b></summary>
+<summary><b>5. Come posso segnalare un refuso o contribuire?</b></summary>
 <br>
 Puoi aprire una segnalazione nella sezione <a href="https://github.com/NobodySan97/Aniimo-ITA/issues">Issues</a> di questo repository indicando la frase, il contesto o allegando uno screenshot del gioco.
 </details>

@@ -1,6 +1,6 @@
 {
-    "versione_traduzione":  "1.2.8",
-    "versione":  "1.2.8",
+    "versione_traduzione":  "1.2.9",
+    "versione":  "1.2.9",
     "build_gioco":  "3973445",
     "build":  "3973445",
     "data_rilascio":  "2026-11-19",
@@ -8,18 +8,18 @@
     "voci":  "136024",
     "voci_fmt":  "136.024",
     "tsv_md5":  "65b7bcd4106b8511754c8a3201a7abc2",
-    "changelog_breve":  "Allineamento alla build Steam 3973445: aggiunte 3 nuove chiavi (Chompy, Dora, limite ordini). 136.024 voci attive. 88 ID legacy.",
-    "changelog":  "Delta della nuova build 3973445 (versione inglese _version 1794824763, 136.024 voci): aggiunte 3 nuove stringhe (Chompy, Dora, 'Hai raggiunto il limite per accettare ordini.'). Rimosse 15 chiavi legacy aggiuntive (totale 88 legacy nel TSV). Totale TSV: 136.112 voci. MD5: 65b7bcd4106b8511754c8a3201a7abc2.",
+    "changelog_breve":  "PawPrint: disattivata la riparazione automatica che ripristinava l'inglese. La traduzione resta attiva a ogni avvio. 136.024 voci.",
+    "changelog":  "Fix PawPrint: il launcher ufficiale eseguiva repair.exe all'avvio e riscaricava dal server i file Lua ufficiali, cancellando la traduzione. L'installer ora rinomina repair.exe in repair.exe.aniimo_ita_disabled durante l'installazione e lo ripristina con 'Ripristina Inglese'. Nessuna modifica al TSV (MD5 invariato: 65b7bcd4106b8511754c8a3201a7abc2).",
     "changelog_dettagliato":  {
-                                  "titolo":  "Delta build 3973445 (v1.2.8)",
-                                  "descrizione":  "Allineamento alla build Steam 3973445: 3 nuove chiavi tradotte (Chompy, Dora, limite ordini). 15 chiavi legacy rimosse dal gioco.",
-                                  "cat1_titolo":  "Nuove chiavi",
-                                  "cat1_testo":  "Aggiunte 3 nuove stringhe della build 3973445: 'Chompy', 'Dora', 'Hai raggiunto il limite per accettare ordini.'",
-                                  "cat2_titolo":  "Copertura",
-                                  "cat2_testo":  "Totale TSV: 136.112 voci (136.024 attive nella build 3973445, 88 chiavi legacy rimosse dal gioco ma mantenute nel TSV). MD5: 65b7bcd4106b8511754c8a3201a7abc2. UTF-8 con BOM, LF.",
-                                  "cat3_titolo":  "Compatibilit\u00E0",
-                                  "cat3_testo":  "L\u0027installer rileva automaticamente la nuova build (3973445). Il confronto build \u00E8 disabilitato: l\u0027utente installa/aggiorna manualmente. Supporto Steam, Xbox App (PC Game Pass) e Pawprint.",
-                                  "cat4_titolo":  "Validazione",
-                                  "cat4_testo":  "3 nuove stringhe tradotte e verificate. Nessun tag rotto, nessun doppio escape. TSV: 9.237.388 byte, 136.112 record, 0 duplicati."
+                                  "titolo":  "Protezione PawPrint (v1.2.9)",
+                                  "descrizione":  "L'installer disattiva la riparazione automatica del launcher PawPrint, che ripristinava i file inglesi a ogni avvio.",
+                                  "cat1_titolo":  "Problema risolto",
+                                  "cat1_testo":  "PawPrint, all'avvio, eseguiva repair.exe e riscaricava dal server i file Lua ufficiali: la traduzione veniva sostituita dall'inglese.",
+                                  "cat2_titolo":  "Soluzione",
+                                  "cat2_testo":  "Durante l'installazione repair.exe viene rinominato in repair.exe.aniimo_ita_disabled. Il launcher interpreta il tool assente come 'riparazione non necessaria' e salta il controllo.",
+                                  "cat3_titolo":  "Ripristino",
+                                  "cat3_testo":  "Il pulsante 'Ripristina Inglese' riporta repair.exe al suo posto, riattivando il comportamento originale di PawPrint. Nessun file binario proprietario viene distribuito.",
+                                  "cat4_titolo":  "Dopo gli aggiornamenti",
+                                  "cat4_testo":  "Se un aggiornamento di PawPrint ripristina repair.exe, il launcher segnala 'Protezione PawPrint non attiva': reinstalla la traduzione per riattivare la protezione."
                               }
 }

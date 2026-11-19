@@ -2,6 +2,22 @@
 
 Tutte le modifiche e gli aggiornamenti apportati alla traduzione italiana di **Aniimo** sono documentati in questo file.
 
+## [1.2.9] - 2026-11-19
+
+### Protezione PawPrint: stop alla riparazione automatica
+
+Su PawPrint il launcher ufficiale esegue `repair.exe` all'avvio: il tool interroga il server, considera la versione remota l'unica fonte autoritativa e riscarica i file Lua ufficiali, riportando il gioco in inglese anche se la traduzione era installata correttamente. Il controllo non si basa sull'hash dei file locali: ripristina direttamente i file della build remota.
+
+- **Fix**: durante l'installazione l'installer rinomina `game\repair.exe` in `repair.exe.aniimo_ita_disabled`. Il launcher PawPrint gestisce esplicitamente il caso "repair.exe assente" come "riparazione non necessaria" e salta il controllo, lasciando la traduzione attiva.
+- **Ripristino**: il pulsante "Ripristina Inglese" (e `-Uninstall`) riporta `repair.exe` al suo posto, riattivando il comportamento originale di PawPrint.
+- **Dopo gli aggiornamenti**: se un aggiornamento di PawPrint ricrea `repair.exe`, lo stato del launcher mostra "Protezione PawPrint non attiva". Basta premere "REINSTALLA / AGGIORNA TRADUZIONE" per riapplicare la protezione.
+- **Nessun binario proprietario**: viene rinominato solo il file già presente nell'installazione dell'utente; non viene distribuito né modificato alcun eseguibile.
+- Nessuna modifica al database testuale (TSV invariato, MD5 `65b7bcd4106b8511754c8a3201a7abc2`).
+
+Verificato su PawPrint: dopo il riavvio del launcher non è stata avviata alcuna riparazione e i file tradotti sono rimasti invariati.
+
+---
+
 ## [1.2.8] - 2026-11-19
 
 ### Allineamento alla build Steam 3973445 (nuove chiavi)
@@ -36,7 +52,7 @@ Il client PawPrint ha rilasciato la build **3937699** (resource set). Allineamen
 - Nessuna nuova chiave rispetto alla 3934365: tutte le 136.037 stringhe attive coperte.
 - Corretto BOM spurio nella prima riga del blocco annesso (chiave `269460978`, "Pulisci il disordine a casa dei vicini.").
 - Fix installer: `cvsLuaDir` preferisce `StreamingAssets\cvs\res\lua` (risolve l'installazione su PawPrint, che scriveva per errore in `Aniimo_Data\cvs\res\lua`).
-- Disabilitazione auto-update PawPrint (`patch_downlaod_enable=false`) per evitare il repair automatico che cancellava la traduzione.
+- Tentativo di disabilitazione auto-update PawPrint (`patch_downlaod_enable=false`): la chiave non veniva mai applicata dall'installer ed è sovrascritta dal launcher. Sostituito dal fix reale in v1.2.9 (bypass di `repair.exe`).
 
 Totale TSV: **136.109 voci** (136.037 attive + 73 legacy). TSV: **9.237.308 byte**, UTF-8 con BOM, LF. MD5: aa3cc4bc62a78a7f2b45369dfb7e7c41.
 
